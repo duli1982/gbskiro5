@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randstad GBS - AI & Sourcing Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="shared/hub-button.css">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .google-sans {
+            font-family: 'Google Sans', sans-serif;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .hub-card {
+            border: 1px solid #dadce0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative;
+        }
+        .hub-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.07), 0 3px 6px rgba(0,0,0,0.05);
+        }
+        .hub-card h3 {
+            color: #1967d2; /* Google Blue */
+        }
+        
+        /* Progress tracking styles */
+        .progress-ring {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 60px;
+            height: 60px;
+        }
+        .progress-ring-circle {
+            transition: stroke-dasharray 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+        .progress-text {
+            font-size: 12px;
+            font-weight: 600;
+            fill: #1967d2;
+        }
+        
+        /* Badge styles */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            margin: 2px;
+        }
+        .badge-new { background: #e8f0fe; color: #1967d2; }
+        .badge-completed { background: #e6f4ea; color: #137333; }
+        .badge-in-progress { background: #fef7e0; color: #ea8600; }
+        
+        /* Search and filter styles */
+        .search-container {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto 2rem;
+        }
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 2rem;
+        }
+        .filter-tag {
+            padding: 6px 12px;
+            border: 1px solid #dadce0;
+            border-radius: 20px;
+            background: white;
+            color: #5f6368;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 14px;
+        }
+        .filter-tag:hover, .filter-tag.active {
+            background: #1967d2;
+            color: white;
+            border-color: #1967d2;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .progress-ring {
+                width: 50px;
+                height: 50px;
+                top: 12px;
+                right: 12px;
+            }
+            .hub-card {
+                padding: 1rem;
+            }
+            .filter-tags {
+                padding: 0 1rem;
+            }
+        }
+        
+        /* Streak indicator */
+        .streak-indicator {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: white;
+            border: 1px solid #dadce0;
+            border-radius: 12px;
+            padding: 12px 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        .streak-flame {
+            color: #ea8600;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Streak Indicator -->
+    <div id="streak-indicator" class="streak-indicator">
+        <div class="flex items-center gap-2">
+            <span class="streak-flame">🔥</span>
+            <div>
+                <div class="text-sm font-semibold text-gray-900" id="streak-count">0 day streak</div>
+                <div class="text-xs text-gray-600">Keep learning!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-12 md:py-20">
+
+        <header class="text-center mb-12">
+            <h1 class="google-sans text-4xl md:text-5xl font-bold text-gray-900">Randstad GBS Learning Hub</h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">A central portal for our AI training programs, sourcing tools, and interactive workshops.</p>
+            
+            <!-- Overall Progress Summary -->
+            <div class="mt-8 bg-white rounded-xl p-6 max-w-2xl mx-auto border border-gray-200">
+                <h3 class="google-sans text-lg font-semibold mb-4">Your Learning Progress</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div>
+                        <div class="text-2xl font-bold text-1967d2" id="total-progress">0%</div>
+                        <div class="text-sm text-gray-600">Overall</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-green-600" id="completed-modules">0</div>
+                        <div class="text-sm text-gray-600">Completed</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-orange-600" id="badges-earned">0</div>
+                        <div class="text-sm text-gray-600">Badges</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-purple-600" id="hours-spent">0h</div>
+                        <div class="text-sm text-gray-600">Time Spent</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Search and Filters -->
+        <div class="search-container">
+            <div class="relative">
+                <input 
+                    type="text" 
+                    id="hub-search" 
+                    placeholder="🔍 Search modules, topics, or skills..."
+                    class="w-full px-4 py-3 pl-12 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                >
+                <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="filter-tags">
+            <span class="filter-tag active" data-filter="all">All Modules</span>
+            <span class="filter-tag" data-filter="beginner">Beginner</span>
+            <span class="filter-tag" data-filter="intermediate">Intermediate</span>
+            <span class="filter-tag" data-filter="advanced">Advanced</span>
+            <span class="filter-tag" data-filter="tools">Tools</span>
+            <span class="filter-tag" data-filter="training">Training</span>
+        </div>
+
+        <main>
+            <div id="modules-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+                <a href="/rpo-training/" class="hub-card bg-white p-8 rounded-xl block">
+                    <h3 class="google-sans text-2xl font-bold mb-2">RPO AI Acceleration Program</h3>
+                    <p class="text-gray-600">The complete, multi-phase training curriculum for all RPO team members, from AI foundations to leadership strategy.</p>
+                </a>
+                
+                <a href="/gbs-ai-workshop/" class="hub-card bg-white p-8 rounded-xl block">
+                    <h3 class="google-sans text-2xl font-bold mb-2">GBS AI Workshop for Leaders</h3>
+                    <p class="text-gray-600">An interactive training SPA for GBS leaders, complete with prompt libraries, simulators, and case studies.</p>
+                </a>
+
+                <a href="/daily-focus/" class="hub-card bg-white p-8 rounded-xl block">
+                    <h3 class="google-sans text-2xl font-bold mb-2">Daily Sourcing Focus</h3>
+                    <p class="text-gray-600">A daily micro-coaching tool with actionable focus cards designed to sharpen the skills of our talent sourcers.</p>
+                </a>
+
+                <a href="/gbs-prompts/" class="hub-card bg-white p-8 rounded-xl block">
+                    <h3 class="google-sans text-2xl font-bold mb-2">GBS Prompt Library</h3>
+                    <p class="text-gray-600">A comprehensive and searchable library of expert prompts designed to accelerate daily tasks for GBS professionals.</p>
+                </a>
+
+                <a href="/knowledge-content/" class="hub-card bg-white p-8 rounded-xl block">
+                    <h3 class="google-sans text-2xl font-bold mb-2">Knowledge Content</h3>
+                    <p class="text-gray-600">Access a wealth of knowledge content here.</p>
+                </a>
+
+                <a href="/sourcing-workshop/" class="hub-card bg-white p-8 rounded-xl block">
+                    <h3 class="google-sans text-2xl font-bold mb-2">Sourcing Workshop</h3>
+                    <p class="text-gray-600">An in-depth workshop dedicated to advanced sourcing techniques, market intelligence, and candidate engagement. (Coming Soon)</p>
+                </a>
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
+
+
