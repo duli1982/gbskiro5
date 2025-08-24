@@ -30,28 +30,40 @@ export function initializeDropdown(dropdownElement) {
   try {
     const button = qs('[data-dropdown-button]', { parent: dropdownElement, required: true });
     const menu = qs('[data-dropdown-menu]', { parent: dropdownElement, required: true });
+    const menuItems = menu.querySelectorAll('a, button, [role="menuitem"]');
+
+    // Accessibility attributes
+    button.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('role', 'menu');
+    menuItems.forEach(item => item.setAttribute('role', 'menuitem'));
 
     /**
      * Toggles the visibility of the dropdown menu with animations.
      */
+    const openMenu = () => {
+      menu.classList.remove('hidden');
+      setTimeout(() => {
+        menu.classList.remove('opacity-0', 'scale-95');
+        menu.classList.add('opacity-100', 'scale-100');
+      }, 10);
+      button.setAttribute('aria-expanded', 'true');
+    };
+
+    const closeMenu = () => {
+      menu.classList.remove('opacity-100', 'scale-100');
+      menu.classList.add('opacity-0', 'scale-95');
+      setTimeout(() => {
+        menu.classList.add('hidden');
+      }, 150);
+      button.setAttribute('aria-expanded', 'false');
+    };
+
     const toggleMenu = () => {
       const isHidden = menu.classList.contains('hidden');
       if (isHidden) {
-        // Show menu
-        menu.classList.remove('hidden');
-        // A small delay to allow the 'hidden' class to be removed before starting the transition
-        setTimeout(() => {
-          menu.classList.remove('opacity-0', 'scale-95');
-          menu.classList.add('opacity-100', 'scale-100');
-        }, 10);
+        openMenu();
       } else {
-        // Hide menu
-        menu.classList.remove('opacity-100', 'scale-100');
-        menu.classList.add('opacity-0', 'scale-95');
-        // Wait for the transition to finish before adding 'hidden'
-        setTimeout(() => {
-          menu.classList.add('hidden');
-        }, 150); // Transition duration is 100ms, 150ms gives a buffer
+        closeMenu();
       }
     };
 
@@ -61,18 +73,58 @@ export function initializeDropdown(dropdownElement) {
       toggleMenu();
     });
 
+    button.addEventListener('keydown', (e) => {
+      if (['Enter', ' '].includes(e.key)) {
+        e.preventDefault();
+        toggleMenu();
+        if (!menu.classList.contains('hidden')) {
+          menuItems[0]?.focus();
+        }
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (menu.classList.contains('hidden')) {
+          openMenu();
+        }
+        menuItems[0]?.focus();
+      }
+    });
+
     // Close dropdown when clicking anywhere else on the page
     window.addEventListener('click', (event) => {
       if (!dropdownElement.contains(event.target) && !menu.classList.contains('hidden')) {
-        toggleMenu();
+        closeMenu();
+      }
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
+        closeMenu();
+        button.focus();
       }
     });
 
     // Close dropdown when an item inside the menu is clicked
     menu.addEventListener('click', () => {
-        if (!menu.classList.contains('hidden')) {
-            toggleMenu();
-        }
+      if (!menu.classList.contains('hidden')) {
+        closeMenu();
+      }
+    });
+
+    menu.addEventListener('keydown', (e) => {
+      const items = Array.from(menuItems);
+      const currentIndex = items.indexOf(document.activeElement);
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        const nextIndex = (currentIndex + 1) % items.length;
+        items[nextIndex].focus();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        const prevIndex = (currentIndex - 1 + items.length) % items.length;
+        items[prevIndex].focus();
+      } else if (e.key === 'Escape') {
+        closeMenu();
+        button.focus();
+      }
     });
 
   } catch (error) {
