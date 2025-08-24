@@ -1,4 +1,5 @@
 import { initBackToTop } from '../../shared/scripts/backToTop.js';
+import { render } from '../../shared/scripts/utils/render.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const mainPage = document.getElementById('main-page');
@@ -33,43 +34,62 @@ document.addEventListener('DOMContentLoaded', () => {
         'session-7-1-page': 'Session 7.1: The ROI of AI in Recruiting'
     };
 
-    function showSessionMenu(moduleId) {
-        const moduleNum = moduleId.split('-')[1];
-        const sessions = Object.keys(pageTitles)
-            .filter(key => key.startsWith(`session-${moduleNum}-`))
-            .map(key => ({
-                id: key,
-                title: pageTitles[key]
-            }));
+      function showSessionMenu(moduleId) {
+          const moduleNum = moduleId.split('-')[1];
+          const sessions = Object.keys(pageTitles)
+              .filter(key => key.startsWith(`session-${moduleNum}-`))
+              .map(key => ({
+                  id: key,
+                  title: pageTitles[key]
+              }));
 
-        let menuHtml = `
-            <div class="content-section">
-                <button onclick="navigateTo('main-page')" class="mb-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                    &larr; Back to All Modules
-                </button>
-                <h2 class="google-sans text-3xl font-bold text-gray-800">${moduleTitles[moduleId]}</h2>
-                <p class="mt-2 text-lg text-gray-600">Select a session to begin.</p>
-                <ul class="mt-6 space-y-4">
-        `;
+          const container = document.createElement('div');
+          container.className = 'content-section';
 
-        sessions.forEach(session => {
-            menuHtml += `
-                <li>
-                    <a href="#" onclick="event.preventDefault(); navigateTo('${session.id}')" class="block bg-white p-6 rounded-lg shadow-md hover:bg-gray-50 transition">
-                        <h3 class="google-sans text-xl font-bold text-blue-700">${session.title}</h3>
-                    </a>
-                </li>
-            `;
-        });
+          const backButton = document.createElement('button');
+          backButton.className = 'mb-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500';
+          backButton.textContent = '← Back to All Modules';
+          backButton.addEventListener('click', () => navigateTo('main-page'));
 
-        menuHtml += '</ul></div>';
+          const h2 = document.createElement('h2');
+          h2.className = 'google-sans text-3xl font-bold text-gray-800';
+          h2.textContent = moduleTitles[moduleId];
 
-        sessionContainer.innerHTML = menuHtml;
-        sessionContainer.classList.add('active');
-        mainPage.classList.remove('active');
-        headerTitle.textContent = moduleTitles[moduleId] || 'Select a Session';
-        window.scrollTo(0, 0);
-    }
+          const p = document.createElement('p');
+          p.className = 'mt-2 text-lg text-gray-600';
+          p.textContent = 'Select a session to begin.';
+
+          const ul = document.createElement('ul');
+          ul.className = 'mt-6 space-y-4';
+
+          sessions.forEach(session => {
+              const li = document.createElement('li');
+              const a = document.createElement('a');
+              a.href = '#';
+              a.className = 'block bg-white p-6 rounded-lg shadow-md hover:bg-gray-50 transition';
+              a.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  navigateTo(session.id);
+              });
+              const h3 = document.createElement('h3');
+              h3.className = 'google-sans text-xl font-bold text-blue-700';
+              h3.textContent = session.title;
+              a.appendChild(h3);
+              li.appendChild(a);
+              ul.appendChild(li);
+          });
+
+          container.appendChild(backButton);
+          container.appendChild(h2);
+          container.appendChild(p);
+          container.appendChild(ul);
+
+          render(sessionContainer, container);
+          sessionContainer.classList.add('active');
+          mainPage.classList.remove('active');
+          headerTitle.textContent = moduleTitles[moduleId] || 'Select a Session';
+          window.scrollTo(0, 0);
+      }
 
     function navigateTo(pageId) {
         // Store the scroll position if leaving the main page
@@ -87,8 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
         sessionContainer.classList.remove('active');
 
         if (pageId === 'main-page') {
-            mainPage.classList.add('active');
-            sessionContainer.innerHTML = '';
+              mainPage.classList.add('active');
+              render(sessionContainer, '');
             // Restore scroll position if returning to the main page
             const savedPosition = sessionStorage.getItem('mainPageScrollPosition');
             if (savedPosition) {
@@ -109,8 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     return response.text();
                 })
                 .then(html => {
-                    sessionContainer.innerHTML = html;
-                    sessionContainer.classList.add('active');
+                      render(sessionContainer, html, { sanitize: true });
+                      sessionContainer.classList.add('active');
                     // Re-attach event listeners for any new buttons in the loaded content if necessary
                     const backButton = sessionContainer.querySelector('button');
                     // Store the current module ID before navigating to a session
@@ -132,9 +152,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 })
                 .catch(error => {
-                    console.error('Error fetching session content:', error);
-                    sessionContainer.innerHTML = '<p class="text-red-500">Error loading content. Please try again later.</p>';
-                    sessionContainer.classList.add('active');
+                      console.error('Error fetching session content:', error);
+                      const p = document.createElement('p');
+                      p.className = 'text-red-500';
+                      p.textContent = 'Error loading content. Please try again later.';
+                      render(sessionContainer, p);
+                      sessionContainer.classList.add('active');
                 });
         }
 
