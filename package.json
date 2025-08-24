@@ -4,8 +4,8 @@
   "description": "This repository hosts static web pages and assets used for GBS AI learning resources, including workshop materials and a prompt library.",
   "main": ".eleventy.js",
   "scripts": {
-    "dev": "vite",
-    "build": "npm run build:css && vite build",
+    "dev": "eleventy --serve",
+    "build": "eleventy && vite build",
     "build:css": "npx tailwindcss -i ./shared/styles/base.css -o ./shared/styles/tailwind.css --minify",
     "lint": "eslint .",
     "format": "prettier --write .",
@@ -17,12 +17,13 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
     "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
     "tailwindcss": "^3.4.4",
-    "vite": "^5.3.4",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.7"
+    "vite": "^5.3.4"
   },
   "lint-staged": {
     "*.{js,css,md}": [
