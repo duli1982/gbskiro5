@@ -1,4 +1,4 @@
-import DOMPurify from 'https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.es.js';
+import DOMPurify from 'dompurify';
 
 /**
  * Safely render content into a target element.

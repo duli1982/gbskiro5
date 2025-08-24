@@ -16,6 +16,9 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "dependencies": {
+    "dompurify": "^3.0.2"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
     "eslint": "^8.57.0",
