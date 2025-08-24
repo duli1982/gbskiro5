@@ -131,24 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 .then(html => {
                       render(sessionContainer, html, { sanitize: true });
                       sessionContainer.classList.add('active');
-                    // Re-attach event listeners for any new buttons in the loaded content if necessary
-                    const backButton = sessionContainer.querySelector('button');
                     // Store the current module ID before navigating to a session
                     const currentModuleId = sessionStorage.getItem('currentModuleId');
                     if (currentModuleId) {
                          sessionStorage.setItem('lastVisitedModule', currentModuleId);
-                    }
-                   
-                    if(backButton) {
- backButton.onclick = () => {
- const lastModule = sessionStorage.getItem('lastVisitedModule');
-                            if (lastModule) {
- navigateTo(lastModule);
-                                sessionStorage.removeItem('lastVisitedModule'); // Clear after use
-                            } else {
- navigateTo('main-page');
-                            }
-                        };
                     }
                 })
                 .catch(error => {
@@ -172,6 +158,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     }
+
+    // Attach navigation handlers
+    document.addEventListener('click', (event) => {
+        const trigger = event.target.closest('[data-navigate]');
+        if (trigger) {
+            event.preventDefault();
+            let destination = trigger.dataset.navigate;
+            if (destination === 'main-page') {
+                const lastModule = sessionStorage.getItem('lastVisitedModule');
+                if (lastModule) {
+                    destination = lastModule;
+                    sessionStorage.removeItem('lastVisitedModule');
+                }
+            }
+            navigateTo(destination);
+        }
+    });
 
     // Make navigateTo globally accessible
     window.navigateTo = navigateTo;
