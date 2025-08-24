@@ -10,11 +10,13 @@ This directory contains a simple browser for reusable prompts used during GBS AI
   - `../shared/ai-sme-colors.css` – shared color palette
 
 ## Building and Testing
-The prompt library is a static page. Start a local server and open `index.html` to preview:
+Preview the prompt library using the development server from the repository root:
 
 ```bash
-python3 -m http.server
+npm run dev
 ```
+
+Eleventy and Vite serve all pages, so open `/gbs-prompts/` in your browser.
 
 There are currently no automated tests. Running `npm test` in the repository root will show that no test script is defined.
 
