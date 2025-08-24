@@ -1,3 +1,5 @@
+import { initBackToTop } from '../../shared/scripts/backToTop.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     const mainPage = document.getElementById('main-page');
     const sessionContainer = document.getElementById('session-container');
@@ -159,34 +161,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set up initial page view
     navigateTo('main-page');
 
-    // --- Back to Top Button Logic ---
-    const backToTopBtn = document.getElementById('back-to-top');
-    
-    // Show/hide back to top button based on scroll position
-    function toggleBackToTopButton() {
-        if (window.pageYOffset > 300) {
-            backToTopBtn.classList.add('visible');
-        } else {
-            backToTopBtn.classList.remove('visible');
-        }
-    }
-    
-    // Smooth scroll to top function
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-    
-    // Event listeners for back to top
-    if (backToTopBtn) {
-        backToTopBtn.addEventListener('click', scrollToTop);
-    }
-    
-    // Show/hide button on scroll
-    window.addEventListener('scroll', toggleBackToTopButton);
-    
-    // Initial check on page load
-    toggleBackToTopButton();
+    // Initialize shared components
+    initBackToTop();
 });
