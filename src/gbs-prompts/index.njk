@@ -146,6 +146,7 @@ nav: true
 
 {% block scripts %}
     <script type="module">
+        import { render } from '../shared/scripts/utils/render.js';
         // --- DATA STRUCTURE ---
         let promptData = {};
         let allPrompts = [];
@@ -261,11 +262,11 @@ nav: true
                 }
             } catch (error) {
                 console.error('Failed to load prompts:', error);
-                categoryCardsContainer.innerHTML = `
+                render(categoryCardsContainer, `
                     <div class="text-center text-red-500">
                         <p>Error loading prompts. Please try again later.</p>
                     </div>
-                `;
+                `, { sanitize: true });
             } finally {
                 loadingIndicator.classList.add('hidden');
                 categoryCardsContainer.classList.remove('hidden');
@@ -346,7 +347,7 @@ nav: true
 
         // --- RENDER FUNCTIONS ---
         function renderHomepage() {
-            categoryCardsContainer.innerHTML = '';
+            categoryCardsContainer.replaceChildren();
             categoryCardsContainer.className = 'grid md:grid-cols-2 lg:grid-cols-3 gap-8';
             for (const categoryName in promptIndex) {
                 const meta = promptIndex[categoryName];
@@ -360,7 +361,7 @@ nav: true
                     `<li><a href="#" class="block py-1.5 text-gray-500" data-category="${categoryName}" data-subcategory="${subName}">→ ${subName}</a></li>`
                 ).join('');
 
-                card.innerHTML = `
+                render(card, `
                     <div class="p-6 text-center">
                         <h2 class="text-xl font-bold main-heading accent-text">${categoryName}</h2>
                         <p class="text-gray-500 text-sm mt-2">${totalPrompts} prompts available</p>
@@ -371,7 +372,7 @@ nav: true
                     <div class="p-6 mt-auto">
                         <button class="see-all-btn w-full py-2.5 rounded-md font-semibold" data-category="${categoryName}">Explore ${categoryName} →</button>
                     </div>
-                `;
+                `, { sanitize: true });
                 categoryCardsContainer.appendChild(card);
             }
         }
@@ -409,7 +410,7 @@ nav: true
 
             promptEl.className = isSearchResult ? 'prompt-block p-4' : 'mb-8';
 
-            promptEl.innerHTML = `
+            render(promptEl, `
                 <div class="flex justify-between items-start mb-3">
                     <div class="flex-1">
                         <div class="badges-container mb-2">
@@ -437,7 +438,7 @@ nav: true
 
                 ${quickStartSection}
                 ${expectedOutputSection}
-            `;
+            `, { sanitize: true });
 
             return promptEl;
         }
@@ -448,9 +449,9 @@ nav: true
          */
         function renderSearchResults(results) {
             const searchTerm = homepageSearchInput.value.trim();
-            categoryCardsContainer.innerHTML = '';
+            categoryCardsContainer.replaceChildren();
             if (results.length === 0) {
-                categoryCardsContainer.innerHTML = `
+                render(categoryCardsContainer, `
                 <div class="text-center text-gray-500 col-span-full py-16">
                     <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                         <path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2z" />
@@ -462,7 +463,7 @@ nav: true
                             Clear Search
                         </button>
                     </div>
-                </div>`;
+                </div>`, { sanitize: true });
                 return;
             }
 
@@ -475,11 +476,11 @@ nav: true
         }
 
         function renderQuickLinks(activeCategory, activeSubCategory) {
-            quickLinksSidebar.innerHTML = '';
+            quickLinksSidebar.replaceChildren();
             for (const categoryName in promptIndex) {
                 const categoryTitle = document.createElement('h4');
                 categoryTitle.className = 'font-bold mt-4 mb-2 main-heading';
-                categoryTitle.innerHTML = `Gemini Prompts for <span class="accent-text">${categoryName}</span>`;
+                render(categoryTitle, `Gemini Prompts for <span class="accent-text">${categoryName}</span>`, { sanitize: true });
                 quickLinksSidebar.appendChild(categoryTitle);
 
                 const subList = document.createElement('ul');
@@ -506,12 +507,12 @@ nav: true
          * @param {string} activeSubCategory - The sub-category to display.
          */
         function renderDetailView(activeCategory, activeSubCategory) {
-            promptDisplayArea.innerHTML = '';
+            promptDisplayArea.replaceChildren();
             const subCategoryPrompts = promptData[activeCategory][activeSubCategory];
 
             const header = document.createElement('h1');
             header.className = 'text-3xl font-bold mb-8 main-heading';
-            header.innerHTML = `Gemini Prompts for <span class="accent-text">${activeSubCategory}</span>`;
+            render(header, `Gemini Prompts for <span class="accent-text">${activeSubCategory}</span>`, { sanitize: true });
             promptDisplayArea.appendChild(header);
 
             subCategoryPrompts.forEach(prompt => {
@@ -528,11 +529,11 @@ nav: true
          * @param {string} activeCategory - The main category to display.
          */
         function renderAllCategoryView(activeCategory) {
-            promptDisplayArea.innerHTML = '';
+            promptDisplayArea.replaceChildren();
 
             const header = document.createElement('h1');
             header.className = 'text-3xl font-bold mb-8 main-heading';
-            header.innerHTML = `All Prompts in <span class="accent-text">${activeCategory}</span>`;
+            render(header, `All Prompts in <span class="accent-text">${activeCategory}</span>`, { sanitize: true });
             promptDisplayArea.appendChild(header);
 
             const category = promptData[activeCategory];
