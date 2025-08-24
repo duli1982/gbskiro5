@@ -1,5 +1,7 @@
 /* eslint-disable */
 import { render } from '../shared/scripts/utils/render.js';
+import { initScrollToTop } from '../shared/scripts/scrollToTop.js';
+
 // --- DATA STRUCTURE ---
 let promptData = {};
 let allPrompts = [];
@@ -7,29 +9,8 @@ let lastScrollPosition = 0;
 let promptIndex = {};
 const categoriesLoaded = new Set();
 
-// --- SCROLL TO TOP FUNCTIONALITY ---
-const scrollToTopBtn = document.getElementById('scroll-to-top');
-
-// Show/hide scroll to top button based on scroll position
-function toggleScrollToTopButton() {
-    if (window.pageYOffset > 300) {
-        scrollToTopBtn.classList.add('visible');
-    } else {
-        scrollToTopBtn.classList.remove('visible');
-    }
-}
-
-// Smooth scroll to top
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-
-// Event listeners for scroll to top
-window.addEventListener('scroll', toggleScrollToTopButton);
-scrollToTopBtn.addEventListener('click', scrollToTop);
+// Initialize scroll-to-top behavior
+initScrollToTop();
 
 /**
  * Flattens the prompt data into a single array for easier searching.

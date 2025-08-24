@@ -4,13 +4,6 @@ layout: layouts/base.njk
 nav: true
 ---
 
-
-
-    <!-- Scroll to Top Button -->
-    <button id="scroll-to-top" class="scroll-to-top" title="Scroll to top">
-        ↑
-    </button>
-
     <!-- =========== HOMEPAGE VIEW =========== -->
     <div id="homepage-view" class="fade-in">
         <header class="text-center py-12 px-4">
@@ -143,6 +136,8 @@ nav: true
 
 
 {% include "partials/gemModal.njk" %}
+
+<button id="scroll-to-top" class="scroll-to-top" title="Scroll to top">▲</button>
 
 {% block scripts %}
     <script type="module" src="./main.js"></script>
