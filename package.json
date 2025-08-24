@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy && vite build",
+    "build": "eleventy && vite build --config vite.config.js",
     "build:css": "npx tailwindcss -i ./shared/styles/base.css -o ./shared/styles/tailwind.css --minify",
     "lint": "eslint --config eslint.config.cjs .",
     "format": "prettier --write .",
