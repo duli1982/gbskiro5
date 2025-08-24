@@ -7,7 +7,7 @@
     "dev": "eleventy --serve",
     "build": "eleventy && vite build",
     "build:css": "npx tailwindcss -i ./shared/styles/base.css -o ./shared/styles/tailwind.css --minify",
-    "lint": "eslint .",
+    "lint": "eslint --config eslint.config.cjs .",
     "format": "prettier --write .",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,7 +28,7 @@
   "lint-staged": {
     "*.{js,css,md}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint --config eslint.config.cjs --fix"
     ]
   }
 }
