@@ -19,12 +19,14 @@ Install dependencies once in the project root:
 npm install
 ```
 
+Eleventy powers the static site build while Vite manages client-side assets.
+
 Available scripts:
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Start the Vite development server |
-| `npm run build` | Build the site for production |
+| `npm run dev` | Serve the site with Eleventy for local development |
+| `npm run build` | Generate pages with Eleventy then bundle assets with Vite |
 | `npm run lint` | Run ESLint on the codebase |
 | `npm run format` | Format files using Prettier |
 
