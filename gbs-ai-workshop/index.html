@@ -10,68 +10,9 @@
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../shared/hub-button.css">
-    <style>
-         .code-block {
-             background-color: #f3f4f6;
-             border: 1px solid #e5e7eb;
-             padding: 1rem;
-             border-radius: 0.5rem;
-             font-family: 'Courier New', Courier, monospace;
-             font-size: 0.875rem;
-             overflow-x: auto;
-             white-space: pre-wrap;
-             color: #374151;
-        }
-        /* Accordion styles for Handling Resistance */
-        .resistance-item summary {
-            cursor: pointer;
-            padding: 1rem;
-            background-color: #f9fafb;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            transition: background-color 0.2s;
-        }
-         .resistance-item summary:hover {
-            background-color: #f3f4f6;
-         }
-        .resistance-item[open] summary {
-            background-color: #eff6ff;
-            color: #4A90E2;
-        }
-        .resistance-item .answer {
-            padding: 1rem;
-            border-top: 1px solid #e5e7eb;
-        }
-        .spinner {
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            border-left-color: #4A90E2;
-            animation: spin 1s ease infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        /* Animated Subtitle */
-        .subtitle-animate-in {
-            animation: fadeInSmooth 0.5s ease-out forwards;
-        }
-        .subtitle-animate-out {
-            animation: fadeOutSmooth 0.5s ease-in forwards;
-        }
-        @keyframes fadeInSmooth {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeOutSmooth {
-            from { opacity: 1; transform: translateY(0); }
-            to { opacity: 0; transform: translateY(-10px); }
-        }
-    </style>
+        <link rel="stylesheet" href="../shared/hub-button.css">
+    <link rel="stylesheet" href="../shared/styles/common.css">
+    
 </head>
 <body class="antialiased pt-16">
 
