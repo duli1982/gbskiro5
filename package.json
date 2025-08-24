@@ -5,7 +5,8 @@
   "main": ".eleventy.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run build:css && vite build",
+    "build:css": "npx tailwindcss -i ./shared/styles/base.css -o ./shared/styles/tailwind.css --minify",
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky install",
