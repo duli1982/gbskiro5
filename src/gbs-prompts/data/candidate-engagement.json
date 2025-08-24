@@ -1,0 +1,88 @@
+{
+  "Candidate Engagement": {
+    "Personalized Outreach": [
+      {
+        "id": "candidate-engagement-1",
+        "title": "Craft Personalized Outreach Messages",
+        "description": "Create compelling, psychology-backed outreach messages that build genuine connections with passive candidates without immediately mentioning job opportunities.",
+        "content": "Act as an expert in candidate engagement using psychology and neuroscience. Craft 3 versions of an outreach message for a senior software engineer from Georgia Tech who has led open-source projects and mentors junior developers. Use relevant humor, spark curiosity without mentioning a job, and end with a compelling call to action."
+      },
+      {
+        "id": "candidate-engagement-2",
+        "title": "Generate Engaging Subject Lines",
+        "description": "Create attention-grabbing email subject lines that stand out in crowded inboxes and intrigue passive candidates to open your message.",
+        "content": "Generate 10 subject lines that stand out in an inbox, tailored for an AI/ML expert with research in computer vision. Each should include a single emoji and intrigue someone who isn't actively job searching."
+      },
+      {
+        "id": "candidate-engagement-3",
+        "title": "Rewrite Outreach Message Tone",
+        "description": "Transform formal recruitment messages into casual, friendly communications that focus on career growth rather than job specifications.",
+        "content": "Rewrite this outreach message to incorporate a casual, friendly tone while emphasizing career aspirations rather than job details. Keep it concise and engaging."
+      },
+      {
+        "id": "candidate-engagement-4",
+        "title": "Create a Follow-Up Message",
+        "description": "Develop strategic follow-up messages that add new value and maintain candidate interest without appearing pushy or desperate.",
+        "content": "Create a follow-up message for a passive candidate who hasn't responded yet. Add a new value point and a light touch of humor to maintain engagement without sounding pushy."
+      }
+    ],
+    "Referral Strategies": [
+      {
+        "id": "candidate-engagement-5",
+        "title": "Create Referral Narratives from Transcripts",
+        "description": "Extract powerful quotes and stories from conversations to create authentic referral narratives that showcase company culture and mission.",
+        "content": "Review this conversation transcript and extract the most impactful quotes about our engineering team's culture and mission. Convert them into 2-3 concise narratives for referral outreach."
+      },
+      {
+        "id": "candidate-engagement-6",
+        "title": "Generate Referral Request Email",
+        "description": "Build referral request templates that emphasize storytelling and career advancement opportunities rather than financial incentives.",
+        "content": "Generate an email template to request employee referrals, emphasizing storytelling and the opportunity to help others advance their careers rather than financial incentives."
+      },
+      {
+        "id": "candidate-engagement-7",
+        "title": "Identify Referral Generation Spaces",
+        "description": "Discover where your ideal candidates gather online and offline, with tailored messaging strategies for each community or event.",
+        "content": "Using our 'Tech Enthusiast' persona, identify industry events, professional groups, and online communities where our ideal candidates are active. Provide messaging ideas to engage in these spaces and generate referrals."
+      },
+      {
+        "id": "candidate-engagement-8",
+        "title": "Craft a Referral Request Follow-Up",
+        "description": "Convert timing mismatches into referral opportunities by maintaining relationships and making it easy for candidates to recommend others.",
+        "content": "Create a follow-up message to a candidate who liked the opportunity but the timing wasn't right. Reference our previous discussion, transition naturally into a referral request, and make it easy for them to say yes."
+      }
+    ],
+    "Pre-Screening Process": [
+      {
+        "id": "candidate-engagement-9",
+        "title": "Generate Screening Questions",
+        "description": "Create comprehensive screening questions that assess both technical competencies and cultural fit based on specific job requirements.",
+        "content": "Using the attached job description and hiring manager notes, generate a set of behavioral and technical screening questions that assess key role competencies and culture fit."
+      },
+      {
+        "id": "candidate-engagement-10",
+        "title": "Develop a Scoring Rubric",
+        "description": "Build structured evaluation frameworks that standardize candidate assessment and ensure consistent screening quality across interviews.",
+        "content": "Develop a structured scoring rubric for pre-screening responses, outlining what constitutes strong, adequate, and concerning answers."
+      },
+      {
+        "id": "candidate-engagement-11",
+        "title": "Provide Sample Responses",
+        "description": "Generate example candidate responses at different qualification levels to help interviewers better calibrate their evaluation standards.",
+        "content": "Provide sample responses at three levels—highly qualified, moderately qualified, and underqualified—based on these screening questions."
+      },
+      {
+        "id": "candidate-engagement-12",
+        "title": "Analyze Transcripts for Success Predictors",
+        "description": "Identify patterns in interview responses that correlate with successful hires to continuously improve your screening process effectiveness.",
+        "content": "Analyze recent pre-screening interview transcripts and identify patterns in responses that indicate strong predictors of success. Recommend adjustments to screening questions based on insights."
+      },
+      {
+        "id": "candidate-engagement-13",
+        "title": "Modify Screening Questions for Collaboration",
+        "description": "Adapt technical screening questions to emphasize collaborative problem-solving skills while maintaining rigorous technical assessment standards.",
+        "content": "Modify these screening questions to emphasize collaborative problem-solving while maintaining technical assessment components, ensuring alignment with our team's culture."
+      }
+    ]
+  }
+}

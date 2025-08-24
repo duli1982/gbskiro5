@@ -1,0 +1,38 @@
+{
+  "Goal Setting": {
+    "Planning & Strategy": [
+      {
+        "id": "goal-setting-1",
+        "title": "Structure Goals",
+        "description": "Break down goals into actionable steps with realistic timelines, milestones, and achievement strategies that balance challenge with feasibility.",
+        "content": "Act as a goal setting expert. Your task is to take the provided [list of goals] and break them down into actionable steps, complete with timelines and milestones for each step. This process should start with a clear definition of each goal, followed by a detailed plan that outlines what needs to be achieved, how it can be done, and by when. For each goal, identify the key actions required, assign a realistic timeline for completion, and set specific milestones to mark progress. Ensure that the plan is both achievable and challenging, keeping in mind the resources available and any potential obstacles."
+      },
+      {
+        "id": "goal-setting-2",
+        "title": "Plan & Track Goals",
+        "description": "Create comprehensive action plans with progress monitoring systems, resource allocation, and adaptive strategies for continuous goal achievement.",
+        "content": "Act as a goal-setting expert responsible for drafting a detailed action plan to track a specific [list of goals] . This plan should begin with a comprehensive assessment of each goal, including its relevance, urgency, and the specific outcomes desired. Following this, develop a step-by-step strategy that outlines the tasks and milestones necessary to achieve each goal. Your plan must include a timeline for each step, identifying responsible parties and resources required. Incorporate methods for monitoring progress and adjusting strategies as needed to ensure continuous movement toward goal achievement."
+      },
+      {
+        "id": "goal-setting-3",
+        "title": "Brainstorm Goals",
+        "description": "Generate SMART goals for specific life areas with clear achievement criteria and practical first steps to inspire motivation and action.",
+        "content": "Act as an expert in setting actionable goals. Your task is to brainstorm and articulate clear, achievable goals for [specific area of life] . Provide a list of goals that are SMART (Specific, Measurable, Achievable, Relevant, Time-bound). Ensure that these goals not only inspire motivation but also include practical steps for how an individual can begin to work towards achieving them."
+      }
+    ],
+    "Mindset & Support": [
+      {
+        "id": "goal-setting-4",
+        "title": "Help With Self-Reflection",
+        "description": "Design guided self-reflection sessions with thought-provoking questions to explore underlying motivations, priorities, and obstacles for deeper goal understanding.",
+        "content": "As a goal setting expert, design a comprehensive session aimed at facilitating deep introspection on the provided [list of goals] . Develop a series of guided questions designed to provoke thought, encourage self-examination, and identify the underlying motivations behind each goal. These questions should challenge the individual to consider their priorities, potential obstacles, and the actionable steps necessary to achieve their objectives. The session should be structured in a way that promotes open and honest reflection, allowing for a thorough exploration of each goal."
+      },
+      {
+        "id": "goal-setting-5",
+        "title": "Provide Motivation & Accountability",
+        "description": "Create personalized affirmations that motivate, inspire confidence, and maintain positive mindset while reinforcing belief in goal attainability.",
+        "content": "Act as a goal setting expert, tasked with creating personalized affirmations for an individual based on their [specific list of goals] . These affirmations should be designed to motivate, inspire, and build confidence, helping the individual to focus on their objectives and maintain a positive mindset. Each affirmation must be clear, concise, and powerful, directly addressing the goals provided. Ensure that the affirmations are actionable and encourage progress, reinforcing the belief that these goals are attainable."
+      }
+    ]
+  }
+}

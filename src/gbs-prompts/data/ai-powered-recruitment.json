@@ -1,0 +1,351 @@
+{
+  "AI-Powered Recruitment": {
+    "Resume Analysis & Screening": [
+      {
+        "id": "ai-recruitment-1",
+        "title": "AI-Powered Resume Analysis & Ranking",
+        "requiredInputs": [
+          "job role",
+          "resumes"
+        ],
+        "description": "Use AI to analyze and rank resumes with detailed scoring, bias detection, and actionable insights for improved candidate selection.",
+        "quickStart": {
+          "steps": [
+            "Provide the [job role] and upload the batch of resumes to analyze",
+            "Copy the prompt and replace the placeholders with your inputs",
+            "Run the AI tool and review the ranked list with scores and insights"
+          ],
+          "tips": [
+            "Ensure resumes are in a machine-readable format (e.g., PDF or DOCX)",
+            "Include a diverse sample of candidates to test bias detection"
+          ]
+        },
+        "expectedOutput": "A scored and ranked list of candidates, with breakdowns for technical fit, experience relevance, growth trajectory, cultural indicators, plus bias-detection flags and interview focus suggestions.",
+        "content": "You are an AI recruitment specialist with expertise in resume parsing, candidate scoring, and bias detection. Your task is to analyze a batch of resumes for [job role] and provide detailed insights. First, extract key information: skills, experience levels, education, achievements, and career progression patterns. Then, score each candidate on: technical fit (40%), experience relevance (30%), career growth trajectory (20%), and cultural indicators (10%). Identify potential bias in language or requirements that might exclude qualified diverse candidates. Provide a ranked list with detailed reasoning for each score, highlight red flags or exceptional qualities, and suggest interview focus areas for top candidates. Include recommendations for improving the job description to attract better candidates."
+      },
+      {
+        "id": "ai-recruitment-2",
+        "title": "Automated Resume Screening Configuration",
+        "requiredInputs": [
+          "job role"
+        ],
+        "description": "Configure intelligent resume screening systems that process high volumes while maintaining quality through bias detection and calibration protocols.",
+        "quickStart": {
+          "steps": [
+            "Specify the [job role] and desired screening volume",
+            "Insert the prompt into your AI configuration console",
+            "Review and adjust the screening criteria and thresholds"
+          ],
+          "tips": [
+            "Distinguish clearly between must-have and nice-to-have skills",
+            "Set up regular audits to catch emerging bias patterns"
+          ]
+        },
+        "expectedOutput": "A detailed system configuration outlining criteria, scoring weights, pass/fail thresholds, QA protocols, and feedback mechanisms.",
+        "content": "Act as an AI recruitment systems specialist. Configure an automated resume screening system for [job role] that can process high volumes while maintaining quality. Define screening criteria including: must-have vs. nice-to-have skills, education equivalencies, experience level calculations, keyword matching algorithms, and red flag detection. Create scoring weights for different qualifications and establish pass/fail thresholds. Design quality assurance protocols to regularly audit AI decisions and identify bias patterns. Include candidate feedback mechanisms and appeals processes. Provide system calibration guidelines and performance metrics to track screening accuracy and efficiency improvements."
+      }
+    ],
+    "Diversity & Inclusion": [
+      {
+        "id": "ai-recruitment-3",
+        "title": "DEI-Focused Recruitment Strategy Development",
+        "requiredInputs": [
+          "job role"
+        ],
+        "description": "Build comprehensive diversity and inclusion strategies that eliminate bias and create equitable hiring processes with measurable outcomes.",
+        "quickStart": {
+          "steps": [
+            "Specify the [job role] and share your current recruitment data",
+            "Paste the prompt into your AI tool and run the analysis",
+            "Review the DEI strategy and prepare to implement the 90-day plan"
+          ],
+          "tips": [
+            "Gather baseline diversity metrics before starting",
+            "Engage stakeholders early to ensure buy-in"
+          ]
+        },
+        "expectedOutput": "A 90-day DEI implementation plan with unbiased job descriptions, sourcing recommendations, interview guidelines, partnerships, success metrics, and accountability measures.",
+        "content": "Act as a diversity and inclusion recruitment strategist with expertise in building equitable hiring processes. Analyze our current recruitment approach for [job role] and identify potential bias points throughout the hiring funnel. Develop a comprehensive DEI strategy that includes: unbiased job description writing, diverse sourcing channel recommendations, inclusive interview panel composition, structured interview questions that minimize bias, and metrics to track diversity progress. Provide specific tactics for reaching underrepresented groups, partnerships with diversity-focused organizations, and process modifications to ensure equitable candidate evaluation. Include a 90-day implementation plan with success metrics and accountability measures."
+      },
+      {
+        "id": "ai-recruitment-4",
+        "title": "Bias Detection and Mitigation Framework",
+        "requiredInputs": [
+          "job role"
+        ],
+        "description": "Identify and eliminate unconscious bias throughout the hiring process using AI tools and structured interventions for equitable outcomes.",
+        "quickStart": {
+          "steps": [
+            "Provide the [job role] and historical hiring data",
+            "Run the prompt in your bias-analysis AI tool",
+            "Review the audit report and implement bias-interruption interventions"
+          ],
+          "tips": [
+            "Ensure you have demographic data anonymized for analysis",
+            "Schedule quarterly bias audits for continuous improvement"
+          ]
+        },
+        "expectedOutput": "A full audit of bias points, AI-driven detection reports, interventions, language guidelines, manager training materials, and real-time alert protocols.",
+        "content": "You are a recruitment bias analyst specializing in identifying and eliminating unconscious bias in hiring processes. Audit our complete recruitment workflow for [job role] to detect bias at each stage: job posting language, sourcing methods, resume screening criteria, interview questions, and decision-making processes. Use AI bias detection tools to analyze historical hiring data for demographic patterns and outcome disparities. Create bias interruption interventions, inclusive language guidelines, and structured evaluation frameworks. Develop training materials for hiring managers on recognizing and countering bias. Include real-time bias alerts for recruitment teams and quarterly bias audit protocols."
+      }
+    ],
+    "Predictive Analytics": [
+      {
+        "id": "ai-recruitment-5",
+        "title": "Predictive Hiring Analytics & Success Modeling",
+        "requiredInputs": [
+          "job role"
+        ],
+        "description": "Create data-driven models that predict candidate success, performance, and cultural fit using historical hiring patterns and outcomes.",
+        "quickStart": {
+          "steps": [
+            "Specify the [job role] and gather historical hiring data",
+            "Run the prompt in your analytics environment",
+            "Examine the predictive indicators and scoring algorithm outputs"
+          ],
+          "tips": [
+            "Include performance ratings and tenure data for accuracy",
+            "Validate the model against a hold-out sample before deployment"
+          ]
+        },
+        "expectedOutput": "A predictive model with top indicators, weighted scoring algorithm, early warning signals, and data-collection recommendations.",
+        "content": "You are a data-driven recruitment analyst specializing in predictive hiring models. Using historical hiring data patterns, create a predictive model for success in [job role]. Analyze factors that correlate with: high performance ratings, long tenure, promotion rates, and cultural fit scores. Identify the top 10 predictive indicators from resume data, interview responses, and assessment scores. Develop a scoring algorithm that weights each factor appropriately. Create early warning signals for potential hiring mistakes and recommend data collection strategies to improve prediction accuracy. Provide actionable insights for hiring managers on which candidate attributes to prioritize and which common hiring biases to avoid."
+      },
+      {
+        "id": "ai-recruitment-6",
+        "title": "Retention-Focused Recruitment Intelligence",
+        "requiredInputs": [
+          "job role"
+        ],
+        "description": "Use predictive analytics to identify candidates likely to stay long-term and optimize recruitment decisions for improved retention outcomes.",
+        "quickStart": {
+          "steps": [
+            "Provide the [job role] and turnover data",
+            "Execute the prompt in your analytics tool",
+            "Review retention risk scores and recommended interview questions"
+          ],
+          "tips": [
+            "Incorporate exit interview feedback for deeper insights",
+            "Track onboarding satisfaction to refine early signals"
+          ]
+        },
+        "expectedOutput": "Predictive models flagging turnover risk, tailored interview criteria, milestone-tracking plans, compensation benchmarks, and onboarding optimizations.",
+        "content": "Act as a people analytics specialist focusing on recruitment decisions that impact retention. Analyze historical hiring and turnover data to identify patterns between recruitment sources, interview processes, and long-term employee success. Create predictive models that flag candidates with higher turnover risk during the hiring process. Develop interview questions and assessment criteria specifically designed to predict retention likelihood. Design early career milestone tracking systems to identify at-risk new hires for intervention. Include compensation benchmarking against retention data and onboarding experience optimization based on retention outcomes. Provide actionable insights for hiring managers to make retention-focused hiring decisions and post-hire success tracking frameworks."
+      }
+    ],
+    "Process Automation": [
+      {
+        "id": "ai-recruitment-7",
+        "title": "Intelligent Interview Process Automation",
+        "requiredInputs": [
+          "company type"
+        ],
+        "description": "Automate complex interview coordination and scheduling processes while maintaining excellent candidate experience and operational efficiency.",
+        "quickStart": {
+          "steps": [
+            "Specify your [company type] and interview volume",
+            "Deploy the prompt into your scheduling automation tool",
+            "Validate template communications and fallback workflows"
+          ],
+          "tips": [
+            "Integrate directly with major calendar APIs for reliability",
+            "Include buffer time to handle last-minute changes"
+          ]
+        },
+        "expectedOutput": "A fully defined automation workflow covering availability collection, calendar integration, reminders, rescheduling, templates, and efficiency metrics.",
+        "content": "Act as a recruitment operations specialist focused on interview process optimization. Design an automated interview coordination system for [company type] that handles: candidate availability collection, interviewer calendar integration, room/video link booking, automated reminder sequences, and rescheduling workflows. Create template communications for each stage: initial scheduling, confirmations, reminders, and follow-ups. Include fallback procedures for scheduling conflicts and last-minute changes. Develop metrics to track scheduling efficiency, candidate experience scores, and interviewer satisfaction. Provide implementation guidelines for integrating with existing ATS and calendar systems, including ROI calculations and change management strategies."
+      },
+      {
+        "id": "ai-recruitment-8",
+        "title": "High-Volume Hiring Process Automation",
+        "requiredInputs": [
+          "number",
+          "role type",
+          "timeframe"
+        ],
+        "description": "Design scalable automated recruitment systems for high-volume hiring while maintaining quality standards and cost efficiency.",
+        "quickStart": {
+          "steps": [
+            "Specify how many candidates, the [role type], and [timeframe]",
+            "Run the prompt in your automation platform",
+            "Review workflows and quality-control checkpoints"
+          ],
+          "tips": [
+            "Plan capacity buffer for peak volumes",
+            "Monitor process bottlenecks in real time"
+          ]
+        },
+        "expectedOutput": "An end-to-end high-volume hiring workflow with AI screening, bulk communications, auto-booking, assessments, QC checkpoints, and dashboards.",
+        "content": "You are a recruitment automation expert specializing in high-volume hiring scenarios. Design an automated recruitment system for hiring [number] candidates for [role type] within [timeframe]. Create workflows for: automated resume screening with AI scoring, bulk communication sequences, interview slot auto-booking, assessment distribution and grading, and offer generation processes. Develop quality control checkpoints to maintain hiring standards at scale. Include candidate pool management strategies, bottleneck identification systems, and capacity planning frameworks. Design reporting dashboards for real-time hiring progress tracking and resource allocation optimization. Provide cost-per-hire reduction strategies and quality maintenance protocols."
+      }
+    ],
+    "Candidate Experience": [
+      {
+        "id": "ai-recruitment-9",
+        "title": "AI-Powered Candidate Experience Optimization",
+        "requiredInputs": [],
+        "description": "Optimize the entire candidate journey using AI insights, personalized communications, and real-time feedback for superior candidate experience.",
+        "quickStart": {
+          "steps": [
+            "Gather your application metrics (completion rates, response times, feedback)",
+            "Insert the prompt into your AI analytics tool",
+            "Implement personalized touchpoints and review A/B test plans"
+          ],
+          "tips": [
+            "Segment candidates by seniority and source channel",
+            "Use quick surveys for real-time feedback collection"
+          ]
+        },
+        "expectedOutput": "A mapped candidate journey with pain points, personalized communication sequences, real-time feedback loops, chatbot flows, and A/B testing frameworks.",
+        "content": "You are a candidate experience specialist using AI insights to optimize the recruitment journey. Map the complete candidate experience from job discovery to offer acceptance, identifying pain points and optimization opportunities. Analyze: application completion rates, response times, communication effectiveness, and candidate feedback patterns. Design personalized communication sequences based on candidate type, seniority level, and source channel. Create automated touchpoints that maintain engagement without overwhelming candidates. Develop a scoring system for candidate experience quality and implement real-time feedback collection. Include chatbot conversation flows for common candidate questions and escalation protocols for complex issues. Provide A/B testing frameworks for continuous improvement."
+      },
+      {
+        "id": "ai-recruitment-10",
+        "title": "Recruitment Chatbot Development",
+        "requiredInputs": [],
+        "description": "Create intelligent recruitment chatbots that handle candidate inquiries, pre-screening, and guidance while integrating with existing systems.",
+        "quickStart": {
+          "steps": [
+            "Clarify your chatbot’s scope (FAQs, status updates, prep guidance)",
+            "Copy the prompt into your conversational AI platform",
+            "Test conversation flows and escalation triggers"
+          ],
+          "tips": [
+            "Train on real candidate queries for better intent recognition",
+            "Define clear hand-off points for human intervention"
+          ]
+        },
+        "expectedOutput": "A conversation design spec, integration protocol with ATS, training dataset outline, analytics plan, and continuous-improvement framework.",
+        "content": "Act as a conversational AI specialist for recruitment. Design an intelligent recruitment chatbot that can handle candidate inquiries, pre-screening questions, and application guidance. Create conversation flows for: job information requests, application status updates, interview preparation guidance, company culture questions, and technical requirement clarifications. Develop natural language processing capabilities to understand candidate intent and provide relevant responses. Include escalation triggers for complex questions requiring human intervention. Design integration protocols with ATS systems for real-time data access. Provide training datasets, conversation analytics, and continuous improvement frameworks to enhance chatbot effectiveness."
+      }
+    ],
+    "Skills-Based Hiring": [
+      {
+        "id": "ai-recruitment-11",
+        "title": "Skills-Based Hiring Framework Development",
+        "requiredInputs": [
+          "job role"
+        ],
+        "description": "Move beyond traditional credentials to focus on demonstrable skills through comprehensive assessment frameworks and bias-free evaluation.",
+        "quickStart": {
+          "steps": [
+            "Specify the [job role] and share current credential requirements",
+            "Run the prompt to generate a skills taxonomy and assessments",
+            "Review the scoring rubrics and bias-reduction strategies"
+          ],
+          "tips": [
+            "Include transferable skills from non-traditional backgrounds",
+            "Use pilot assessments before full rollout"
+          ]
+        },
+        "expectedOutput": "A skills taxonomy, practical assessments, competency-based questions, weighting rubrics, bias mitigation strategies, and implementation guidance.",
+        "content": "Act as a competency-based recruitment expert specializing in skills-first hiring approaches. Move beyond traditional degree and experience requirements to focus on demonstrable skills for [job role]. Create a comprehensive skills taxonomy including: core technical abilities, soft skills, learning agility indicators, and growth potential markers. Design practical skill assessments, portfolio review frameworks, and competency-based interview questions. Develop scoring rubrics that weight skills appropriately and identify transferable abilities from non-traditional backgrounds. Include bias reduction strategies and alternative credential recognition systems. Provide implementation guidance for hiring managers resistant to skills-based approaches and metrics to measure hiring quality improvements."
+      },
+      {
+        "id": "ai-recruitment-12",
+        "title": "AI-Powered Skills Assessment Design",
+        "requiredInputs": [
+          "job role"
+        ],
+        "description": "Create comprehensive AI-driven skills assessments that evaluate technical abilities, problem-solving approaches, and creative thinking beyond traditional testing.",
+        "quickStart": {
+          "steps": [
+            "Provide the [job role] and desired assessment formats",
+            "Paste the prompt into your AI assessment platform",
+            "Validate adaptive testing logic and bias-free criteria"
+          ],
+          "tips": [
+            "Offer multiple modalities for different learning styles",
+            "Continuously monitor validity metrics and adjust difficulty"
+          ]
+        },
+        "expectedOutput": "A set of multi-modal skills assessments, AI scoring algorithms, adaptive test flows, accessibility options, feedback systems, and validity tracking protocols.",
+        "content": "You are a talent assessment specialist focused on AI-driven skills evaluation. Design comprehensive skills assessments for [job role] that go beyond traditional testing methods. Create multi-modal assessments including: coding challenges with automated evaluation, scenario-based problem solving, collaborative simulation exercises, and real-world project portfolios. Develop AI scoring algorithms that evaluate not just correctness but also approach, creativity, and problem-solving methodology. Include adaptive testing that adjusts difficulty based on candidate responses. Design bias-free assessment criteria and provide alternative formats for different learning styles and accessibility needs. Create candidate feedback systems and assessment validity tracking protocols."
+      }
+    ],
+    "Remote & Virtual Hiring": [
+      {
+        "id": "ai-recruitment-13",
+        "title": "Remote-First Recruitment Process Design",
+        "requiredInputs": [
+          "job role"
+        ],
+        "description": "Build comprehensive remote hiring frameworks that maintain quality, scale efficiently, and optimize virtual candidate experiences.",
+        "quickStart": {
+          "steps": [
+            "Specify the [job role] and remote team context",
+            "Run the prompt in your virtual hiring planning tool",
+            "Review best practices and technology stack recommendations"
+          ],
+          "tips": [
+            "Account for multiple time zones in scheduling",
+            "Include cultural-fit evaluations suited for remote teams"
+          ]
+        },
+        "expectedOutput": "A remote hiring framework with virtual interview protocols, onboarding workflows, assessment tools, coordination strategies, training materials, and success metrics.",
+        "content": "Act as a remote hiring specialist with expertise in virtual recruitment processes. Design a comprehensive remote hiring framework that maintains quality while scaling efficiently. Address: virtual interview best practices, remote onboarding workflows, digital assessment tools, time zone coordination strategies, and cultural fit evaluation methods for distributed teams. Create technology stack recommendations for video interviewing, collaborative assessments, and virtual office tours. Develop scripts and training materials for hiring managers new to remote interviewing. Include candidate experience optimization for remote processes and strategies for evaluating remote work capabilities. Provide implementation timelines, cost analysis, and success metrics."
+      },
+      {
+        "id": "ai-recruitment-14",
+        "title": "Virtual Reality Recruitment Experiences",
+        "requiredInputs": [
+          "job role"
+        ],
+        "description": "Design immersive VR-based recruitment experiences that allow realistic job previews and innovative candidate assessment methods.",
+        "quickStart": {
+          "steps": [
+            "Provide the [job role] and VR platform details",
+            "Insert the prompt into your VR design tool",
+            "Test scenarios for accessibility and engagement"
+          ],
+          "tips": [
+            "Offer non-VR alternatives for accessibility",
+            "Measure candidate feedback to refine experiences"
+          ]
+        },
+        "expectedOutput": "A VR experience blueprint including office tours, simulations, assessment criteria, integration protocols, accessibility options, and ROI analysis.",
+        "content": "You are a recruitment technology innovator specializing in immersive candidate experiences. Design VR-based recruitment experiences for [job role] that allow candidates to experience realistic work scenarios. Create virtual office tours, team collaboration simulations, and job-specific skill demonstrations. Develop assessment criteria for VR-based evaluations and integration protocols with traditional hiring processes. Include accessibility considerations and alternative options for candidates without VR access. Design candidate feedback collection systems and effectiveness measurement frameworks. Provide implementation guidelines, technology requirements, and ROI analysis for VR recruitment investments."
+      }
+    ],
+    "Recruitment Marketing": [
+      {
+        "id": "ai-recruitment-15",
+        "title": "Data-Driven Recruitment Marketing Strategy",
+        "requiredInputs": [],
+        "description": "Optimize employer brand and candidate attraction through data-driven marketing strategies, content personalization, and conversion optimization.",
+        "quickStart": {
+          "steps": [
+            "Gather existing brand perception data and competitor benchmarks",
+            "Run the prompt in your marketing analytics tool",
+            "Review the suggested content calendars and campaign plans"
+          ],
+          "tips": [
+            "Tailor messaging to each candidate persona",
+            "Track conversion metrics at each funnel stage"
+          ]
+        },
+        "expectedOutput": "A full recruitment marketing plan with brand analysis, persona content strategies, campaign calendars, channel recommendations, influencer tactics, and ROI frameworks.",
+        "content": "You are a recruitment marketing strategist specializing in employer brand optimization and candidate attraction. Analyze our current employer brand perception using social media sentiment, review site analysis, and competitor positioning research. Develop a comprehensive recruitment marketing strategy including: targeted content creation for different candidate personas, social media campaign optimization, employee advocacy program development, and conversion funnel optimization from awareness to application. Create content calendars, messaging frameworks, and channel-specific strategies for LinkedIn, GitHub, industry forums, and job boards. Include influencer partnership strategies with current employees and industry thought leaders. Provide ROI measurement frameworks and optimization recommendations."
+      },
+      {
+        "id": "ai-recruitment-16",
+        "title": "AI-Powered Talent Pipeline Development",
+        "requiredInputs": [],
+        "description": "Build and maintain candidate relationships before they're actively job searching through automated engagement and predictive intelligence.",
+        "quickStart": {
+          "steps": [
+            "Collect data on passive prospects and past applicants",
+            "Insert the prompt into your CRM or engagement platform",
+            "Evaluate lead scoring outputs and adjust engagement sequences"
+          ],
+          "tips": [
+            "Segment your audience by career stage and interests",
+            "Use predictive triggers to time outreach effectively"
+          ]
+        },
+        "expectedOutput": "A talent-pipeline design with engagement workflows, personalization algorithms, lead scoring models, CRM integration guidelines, and performance metrics.",
+        "content": "Act as a talent pipeline strategist using AI to build and maintain candidate relationships. Design a system that identifies and nurtures potential candidates before they're actively job searching. Create automated engagement sequences for different candidate segments: passive prospects, industry contacts, former applicants, and referral network connections. Develop content personalization algorithms based on candidate interests, career stage, and engagement patterns. Include lead scoring systems to prioritize outreach efforts and predictive models to identify when passive candidates might be ready to move. Design integration protocols with CRM systems and provide measurement frameworks for pipeline quality and conversion rates."
+      }
+    ]
+  }
+}

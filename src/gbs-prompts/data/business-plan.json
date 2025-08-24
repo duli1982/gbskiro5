@@ -1,0 +1,46 @@
+{
+  "Business Plan": {
+    "Core Components": [
+      {
+        "id": "business-plan-1",
+        "title": "Write Executive Summary",
+        "description": "Create compelling executive summaries that outline business ventures, articulate problems solved, and highlight unique value propositions to attract investors and stakeholders.",
+        "content": "Act as a serial entrepreneur with extensive experience in starting and scaling businesses. Write an executive summary that outlines the core aspects of a new venture. This summary should briefly [describe the business] , articulate the [problem it aims to solve] , and highlight its [unique selling proposition] . The document needs to be compelling enough to attract potential investors, partners, or customers. Ensure that the language is clear, the points are concise, and the value proposition is evident. The executive summary should serve as a powerful introduction to the business plan, encapsulating the essence of the venture and why it stands out in the market."
+      },
+      {
+        "id": "business-plan-2",
+        "title": "Write a Business Description",
+        "description": "Craft compelling business descriptions that communicate mission, vision, and core values while resonating with target audiences across multiple platforms and applications.",
+        "content": "As a serial entrepreneur with strong copywriting experience, your task is to craft a compelling business description that encapsulates the essence of the [company's mission and vision] . This description should not only define what the business stands for and aims to achieve but also resonate with its [target audience] , inspiring them to engage with the brand. Your writing must succinctly convey the company's core values, objectives, and the unique approach it takes to fulfill its mission. Highlight the innovative aspects of the business that set it apart from competitors and detail how its vision aligns with future industry trends or societal needs. This business description will be utilized across various platforms, including the company website, press releases, and investor pitches, so it needs to be adaptable yet consistently impactful. It should invoke a sense of trust and credibility, compelling readers to learn more about the company, its products, or services."
+      }
+    ],
+    "Market & Product Analysis": [
+      {
+        "id": "business-plan-3",
+        "title": "Conduct Competitor Analysis",
+        "description": "Perform comprehensive competitive research using primary and secondary methods to analyze market landscape, identify key players, and develop strategic positioning recommendations.",
+        "content": "Act as an experienced market researcher. Conduct comprehensive market research to identify potential competitors for [business description] . This task involves analyzing the current market landscape, identifying key players, and understanding their strengths, weaknesses, opportunities, and threats in relation to our business. Utilize both primary and secondary research methods, including surveys, interviews, and data analysis, to gather relevant information. Develop a detailed report that outlines the competitive environment, provides insights into market trends, and suggests strategic recommendations for positioning our business effectively. Ensure that the research is thorough, up-to-date, and provides actionable insights to inform our business strategy."
+      },
+      {
+        "id": "business-plan-4",
+        "title": "Find Products and Services",
+        "description": "Analyze business capabilities and market opportunities to suggest products or services with detailed market research, scalability assessment, and launch strategies.",
+        "content": "As an experienced market researcher, your task is to analyze the provided [business description] and suggest a product or service that aligns with the business's core competencies, market demands, and potential growth opportunities. Your suggestion should be backed by a thorough market analysis, including competitor analysis, target audience identification, and trend evaluation. You should also consider the scalability of the product or service, its potential impact on the business's revenue, and how it could differentiate the business in the market. Prepare a detailed report outlining your research methodology, data analysis, and rationale behind the suggested product or service. Additionally, provide strategic recommendations for the product/service launch, including marketing strategies, pricing models, and distribution channels."
+      }
+    ],
+    "Strategy": [
+      {
+        "id": "business-plan-5",
+        "title": "Develop Pricing Strategy",
+        "description": "Create comprehensive pricing strategies that balance competitive positioning with profitability through market research, value analysis, and customer willingness-to-pay assessment.",
+        "content": "Act as a Pricing Specialist. Develop a comprehensive pricing strategy for [product description] that positions the product competitively in the market while ensuring profitability. The strategy must consider the product's value proposition, target market, production costs, and the pricing of competing products. Conduct market research to understand the customer's willingness to pay and identify any potential price sensitivities. Your strategy should include a recommended retail price, any discounts or promotional pricing, and a rationale for these decisions. Additionally, outline a plan for monitoring market responses and adjusting prices as necessary to maximize sales and revenue."
+      },
+      {
+        "id": "business-plan-6",
+        "title": "Create Go-To-Market Strategy",
+        "description": "Develop comprehensive market entry strategies with product positioning, distribution channels, marketing tactics, and implementation timelines within budget constraints.",
+        "content": "Act as a serial entrepreneur with extensive experience in launching successful businesses. Develop a comprehensive go-to-market strategy for a new business venture, focusing on its [product] , [budget] , and [target audience] . The strategy should outline the steps necessary to successfully introduce the product to the market, gain traction, and achieve sustainable growth. It must include market analysis, product positioning, pricing strategy, distribution channels, marketing and sales strategies, and a clear timeline for implementation. The strategy should also consider the budget constraints and suggest creative and cost-effective solutions to maximize ROI. Use your expertise to anticipate potential challenges and propose actionable solutions to overcome them, ensuring the product's successful market entry and long-term success."
+      }
+    ]
+  }
+}

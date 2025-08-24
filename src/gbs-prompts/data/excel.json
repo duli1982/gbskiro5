@@ -1,0 +1,46 @@
+{
+  "Excel": {
+    "Function Guidance": [
+      {
+        "id": "excel-1",
+        "title": "Explain How Excel Function Works",
+        "description": "Get clear, step-by-step explanations of Excel functions including parameters, use cases, benefits, and optimization tips for better spreadsheet proficiency.",
+        "content": "Act as a proficient Excel user and explain how the [name of Excel function] works in a clear and concise manner. Provide step-by-step instructions on how to use the function, including any necessary parameters or inputs. Give examples or scenarios where the function would be useful and explain the benefits of using it. Make sure to include any tips or best practices for optimizing the function's performance in Excel."
+      },
+      {
+        "id": "excel-2",
+        "title": "Explain How to Use Excel Functions",
+        "description": "Create comprehensive guides for using specific Excel functions to perform targeted actions with easy-to-follow instructions and practical examples.",
+        "content": "Act as a proficient Excel user and create a step-by-step guide on how to use the [Excel function] to perform a specific [action] . Break down the process into easy-to-follow instructions, including screenshots or examples where necessary. Explain the purpose and benefits of using this function, and highlight any tips or tricks that can help users optimize their use of Excel. Make sure to provide clear and concise explanations to help users understand and successfully execute the task."
+      }
+    ],
+    "Automation & Commands": [
+      {
+        "id": "excel-3",
+        "title": "Write Excel Commands",
+        "description": "Generate accurate Excel commands for specific actions with clear explanations to ensure successful execution and desired outcomes.",
+        "content": "Act as a proficient Excel user. Write an Excel command to perform a specific [action] . The command should accurately achieve the desired outcome. Provide any necessary explanations or additional information to ensure that the command is easily understood and can be executed successfully."
+      },
+      {
+        "id": "excel-4",
+        "title": "Write Macros",
+        "description": "Develop VBA Excel macros that automate repetitive tasks efficiently with user-friendly interfaces and thoroughly tested functionality.",
+        "content": "Act as a proficient Excel user with knowledge of VBA. Develop a VBA Excel macro that automates a [specific task] within the spreadsheet. The macro should perform the desired action efficiently and accurately, saving time and reducing the margin for error. Ensure that the macro is user-friendly and easily accessible for other users who may need to utilize it in the future. Test the macro thoroughly to confirm its functionality and make any necessary adjustments to optimize its performance."
+      }
+    ],
+    "Task Assistance": [
+      {
+        "id": "excel-5",
+        "title": "Perform Complex Tasks",
+        "description": "Execute advanced Excel tasks including data analysis, formula creation, and report generation with precision and efficiency using expert-level skills.",
+        "content": "Act as a proficient Excel user. Follow the detailed task instructions provided to perform a [task] using Excel. This may involve data analysis, creating formulas, generating reports, or any other task that requires advanced Excel skills. Ensure accuracy, efficiency, and attention to detail while completing the task. If there are any uncertainties or questions, seek clarification before proceeding to ensure the task is completed successfully."
+      },
+      {
+        "id": "excel-6",
+        "title": "Turn Gemini Into a Useful Excel Assistant",
+        "description": "Get comprehensive Excel assistance with step-by-step instructions for any task including pivot tables, formulas, charts, and data formatting.",
+        "content": "Act as an Excel expert. Provide step-by-step instructions on how to complete a specific task in Excel. This could include tasks such as creating a pivot table, formatting data, using formulas or functions, creating charts or graphs, or any other Excel-related task. Clearly explain each step, specify any required settings, or options, explain what functions to use, and provide any additional tips or recommendations to ensure accurate and efficient completion of the task. Help me with the following task: [describe your task]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "Time Management": {
+    "Daily Planning": [
+      {
+        "id": "time-management-1",
+        "title": "Organize Daily Tasks",
+        "description": "Create detailed daily schedules with task prioritization, time estimates, and deadline management to ensure focused and productive workdays.",
+        "content": "I need assistance in organizing my tasks for the day to ensure that I stay on track and prioritize effectively. Your task is to create a detailed schedule outlining each task, its priority level, estimated time needed to complete, and any specific deadlines or time constraints. - Tasks to be organized: [list of tasks] - Priority levels: [priority levels] - Deadlines: [deadlines]"
+      },
+      {
+        "id": "time-management-2",
+        "title": "Set Daily Goals",
+        "description": "Establish SMART daily goals with specific, measurable, and actionable steps to maintain focus and productivity throughout the workday.",
+        "content": "I need assistance in setting achievable and realistic goals for the day. The goals should be specific, measurable, attainable, relevant, and time-bound (SMART goals) to ensure that I stay focused and productive throughout the day. Your task is to work with me to identify tasks that need to be completed and prioritize them based on their importance and urgency. Together, we will create a plan of action with clear and actionable steps to help me accomplish my goals for the day. - Tasks to be completed: [list of tasks] - Deadline for completion: [deadline]"
+      },
+      {
+        "id": "time-management-3",
+        "title": "Prioritizing Work",
+        "description": "Evaluate and prioritize tasks based on urgency, importance, and dependencies to create manageable daily workflows and reduce overwhelm.",
+        "content": "I need assistance in prioritizing my tasks for the day. I have a list of tasks that need to be completed, but I am feeling overwhelmed and unsure of where to start. Your task is to review the list of tasks and help me determine which ones are the most urgent and important. Provide a suggested order in which I should tackle each task, taking into consideration deadlines, importance, and any dependencies between tasks. - List of tasks: [list of tasks]"
+      },
+      {
+        "id": "time-management-4",
+        "title": "Adjust Daily Schedule",
+        "description": "Reschedule and reprioritize daily tasks to accommodate unexpected changes while ensuring important deadlines and commitments are maintained.",
+        "content": "I need assistance in rearranging my tasks for today due to an unexpected task that has come up. I need to ensure that all important tasks are still completed, but in a revised order to accommodate the new task. Your task is to help me prioritize and reschedule my tasks for the day, taking into consideration deadlines, importance, and any time constraints. - Current tasks: [current tasks] - Unexpected task: [Unexpected task description]"
+      },
+      {
+        "id": "time-management-5",
+        "title": "Create a Time Block Schedule",
+        "description": "Design structured time block schedules that allocate specific time slots for tasks, breaks, and activities to maximize productivity and maintain focus.",
+        "content": "I need help creating a structured time block schedule for my workday to maximize productivity and efficiency. The schedule should allocate specific time slots for different tasks, breaks, and activities, ensuring that I stay organized and focused throughout the day. Your task is to design a detailed time block schedule that takes into account my work priorities, deadlines, and preferred work habits. The schedule should be realistic and manageable, allowing for flexibility while also promoting productivity. - Work priorities: [work priorities] - Preferred work habits: [work habits]"
+      }
+    ],
+    "Productivity & Organization": [
+      {
+        "id": "time-management-6",
+        "title": "Organize Email Inbox",
+        "description": "Implement effective email management strategies to reduce clutter, prioritize important communications, and streamline workflow processes.",
+        "content": "I need tips on how to effectively manage and organize my email inbox to increase productivity and efficiency. The tips should help me stay on top of important emails, reduce clutter, and streamline my communication process. Your task is to provide a list of practical and actionable tips that can be easily implemented to improve email management skills. - Email platform: [email platform] - Current email management issues: [current issues]"
+      },
+      {
+        "id": "time-management-7",
+        "title": "Improve Focus",
+        "description": "Discover proven techniques and strategies to enhance concentration, minimize distractions, and maintain sustained focus during work hours.",
+        "content": "I need suggestions for techniques that can help improve focus and productivity during work hours. The techniques should be practical, easy to implement, and effective in helping individuals stay focused and avoid distractions while working. Your task is to provide a list of proven techniques that can help improve focus, concentration, and productivity during work hours. - Work environment: [work environment] - Typical distractions: [typical distractions]"
+      },
+      {
+        "id": "time-management-8",
+        "title": "Manage Work-Life Balance",
+        "description": "Create balanced schedules that integrate work responsibilities with personal time to maintain well-being and prevent burnout effectively.",
+        "content": "I am struggling to balance my work commitments with personal time, and I need assistance in creating a plan or schedule that allows me to effectively manage both aspects of my life. The goal is to maintain a healthy work-life balance and prevent burnout. Your task is to help me create a schedule or plan that prioritizes both work responsibilities and personal time, ensuring that I can be productive at work while also taking care of my well-being and personal needs. - Work commitments: [work commitments] - Personal time activities: [personal time activities]"
+      }
+    ],
+    "Project & Team Management": [
+      {
+        "id": "time-management-9",
+        "title": "Track Project Milestones",
+        "description": "Monitor and document project progress, key accomplishments, and deviations to evaluate performance and communicate updates to stakeholders.",
+        "content": "I need someone to track and document the milestones achieved in an ongoing project. This includes noting key accomplishments, deadlines met, and any deviations from the project plan. This information will be used to evaluate progress, identify areas for improvement, and communicate updates to stakeholders. Your task is to regularly update the project milestone tracker with accurate and up-to-date information. - Project details: [project details] - Stakeholders: [stakeholders]"
+      },
+      {
+        "id": "time-management-10",
+        "title": "Coordinate Team Tasks",
+        "description": "Develop comprehensive task lists with clear responsibilities, deadlines, and action items to ensure team alignment and project objective achievement.",
+        "content": "I need help creating a detailed task list for my team to ensure that we stay on track and meet our project objectives. The task list should outline all the necessary steps, deadlines, and responsibilities for each team member. Your task is to develop a comprehensive task list that breaks down the project into manageable action items, assigns roles and responsibilities, and sets clear deadlines for each task. - Project objectives: [project objectives]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "Event Planning": {
+    "Conceptualization": [
+      {
+        "id": "event-planning-1",
+        "title": "Brainstorm Event Themes",
+        "description": "Generate creative, innovative event themes and concepts that resonate with target audiences while considering budget, logistics, and client objectives.",
+        "content": "Act as an experienced event planner tasked with brainstorming unique event themes and concepts based on [topic] . Your role involves leveraging your creative thinking and deep understanding of event planning to conceive innovative and memorable event ideas that resonate with the intended audience. You will need to consider the venue, target demographic, potential sponsors, and the overall objectives of the event. Your concepts should not only be original and engaging but also feasible within budget and logistical constraints. Develop a detailed proposal for each concept, including a vision statement, key activities, potential challenges and solutions, and how the theme aligns with the client's goals and [topic] 's essence. Your ultimate goal is to create an immersive experience that exceeds client expectations and leaves a lasting impact on attendees."
+      },
+      {
+        "id": "event-planning-2",
+        "title": "Help with Decoration and Styling Tips",
+        "description": "Provide comprehensive decoration and styling recommendations including color schemes, lighting, and arrangements to create cohesive, immersive event atmospheres.",
+        "content": "Act as a design & stylist expert specialized in event planning and decoration. Provide comprehensive decor ideas and themes tailored specifically to the [event type] . Your recommendations should encompass everything from color schemes and lighting to table arrangements and focal points, creating a cohesive and immersive atmosphere for the event. Consider the event's purpose, location, and target audience to propose innovative and memorable decor solutions that enhance the overall experience."
+      },
+      {
+        "id": "event-planning-3",
+        "title": "Suggest Entertainment",
+        "description": "Recommend suitable entertainment options tailored to event objectives, target audience demographics, venue capacity, and overall event atmosphere.",
+        "content": "As an experienced event planner, you are tasked with recommending suitable entertainment options tailored to the specific needs and preferences of the [event type] . Your role involves conducting a thorough analysis of the event's target audience, theme, and overall objectives to ensure that the entertainment aligns perfectly with the event's atmosphere and goals. You will need to consider factors such as the venue's capacity, the demographic of attendees, and the tone of the event (formal, casual, educational, etc.) in your recommendations."
+      }
+    ],
+    "Logistics & Management": [
+      {
+        "id": "event-planning-4",
+        "title": "Plan Event Budget",
+        "description": "Create comprehensive event budgets with detailed cost breakdowns, vendor negotiations, and efficient fund allocation across all event components.",
+        "content": "As an experienced event planner, your task is to create a comprehensive budget and cost breakdown for the upcoming event, taking into consideration various aspects such as venue, catering, entertainment, marketing, and any additional services required. Your responsibility includes negotiating with vendors to secure the best prices, ensuring quality services while maintaining the event's budget constraints. You will need to allocate funds efficiently across different segments, ensuring that all critical components of the event are adequately funded to achieve a successful outcome. Start by asking for all necessary details you need."
+      },
+      {
+        "id": "event-planning-5",
+        "title": "Create Event Schedule",
+        "description": "Develop detailed event timelines covering all phases from setup to teardown with minute-by-minute schedules and contingency planning for seamless execution.",
+        "content": "Act as an experienced event planner, tasked with creating a comprehensive timeline for an event centered around [event theme] . This detailed plan should encompass all phases of the event, including setup, the execution of the main event, and the teardown process. Begin by outlining the pre-event planning stages, specifying tasks such as venue booking, supplier contracts, and promotional activities. For the setup phase, detail the timeline for venue decoration, technical setups like sound and lighting, and the arrangement of any booths or exhibits. During the main event, provide a minute-by-minute schedule that includes the timing of keynotes, performances, breaks, meals, and any other significant activities. Factor in time for guest speakers, entertainment, and interactive sessions, ensuring a smooth flow that keeps attendees engaged from start to finish. Finally, describe the teardown process, including the dismantling of setups, cleanup, and the return of rented equipment. Specify any post-event activities such as feedback collection, thank you notes to attendees and partners, and the return of lost items. Ensure that your timeline is realistic, allowing for unforeseen delays, and is communicated clearly to all stakeholders involved. Highlight any critical points where extra attention or resources are needed, and provide contingency plans for potential issues. Your goal is to ensure a seamless experience that leaves a lasting positive impression on all participants."
+      },
+      {
+        "id": "event-planning-6",
+        "title": "Delegate Tasks",
+        "description": "Develop strategic task delegation systems that optimize team member strengths, establish clear communication, and ensure accountability for successful event execution.",
+        "content": "Act as an experienced event planning manager tasked with overseeing a large-scale event. Your responsibility includes suggesting task delegation strategies for the event team members to ensure a smooth and successful execution of the event. Develop a comprehensive strategy that covers the allocation of tasks based on individual strengths and expertise, establishing clear communication channels, setting deadlines, and implementing a system for tracking progress and accountability. Start by asking for all the details about the event."
+      }
+    ],
+    "Promotion": [
+      {
+        "id": "event-planning-7",
+        "title": "Promote Event",
+        "description": "Create comprehensive marketing strategies with social media campaigns, email marketing, and targeted advertising to maximize event reach and engagement.",
+        "content": "Act as an expert in creating comprehensive marketing strategies specifically tailored for events. Develop a detailed marketing plan that encompasses social media campaigns, email marketing, and targeted ad strategies to effectively promote [specific event] . This plan should identify the target audience and tailor the messaging to resonate with them, leveraging the strengths of each platform to maximize reach and engagement. Outline objectives for each campaign, including expected reach, engagement metrics, and conversion goals. Include a timeline for each phase of the campaign, from initial awareness-building to post-event follow-up, ensuring each step is designed to build anticipation, drive registrations or ticket sales, and maintain interest in the event. Provide recommendations for content creation, including themes and messages that align with the event's branding and objectives, as well as suggestions for optimizing ad spend across platforms to achieve the best ROI. Start by asking for all the details about the event."
+      }
+    ]
+  }
+}

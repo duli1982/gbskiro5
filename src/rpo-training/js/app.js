@@ -1,7 +1,8 @@
-import { initBackToTop } from '../../shared/scripts/backToTop.js';
-import { render } from '../../shared/scripts/utils/render.js';
+let initBackToTop, render;
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    ({ initBackToTop } = await import('../../shared/scripts/backToTop.js'));
+    ({ render } = await import('../../shared/scripts/utils/render.js'));
     const mainPage = document.getElementById('main-page');
     const sessionContainer = document.getElementById('session-container');
     const headerTitle = document.getElementById('header-title');

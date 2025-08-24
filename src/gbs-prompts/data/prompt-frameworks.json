@@ -1,0 +1,84 @@
+{
+  "Prompt Frameworks": {
+    "P-T-F (Prompt – Task – Format)": [
+      {
+        "id": "framework-ptf-1",
+        "title": "P-T-F (Prompt – Task – Format)",
+        "description": "Direct, action-first template. Define the role, the exact task, and the output format. Best for concrete deliverables (templates, docs, tables). What it is: A direct, action-first template — say who the AI should be, what exact task to do, and what format you want the output in.",
+        "content": "Act as a [ROLE]. Task: [WHAT to do]. Format: [OUTPUT format]."
+      }
+    ],
+    "T-A-G (Task – Action – Goal)": [
+      {
+        "id": "framework-tag-1",
+        "title": "T-A-G (Task – Action – Goal)",
+        "description": "Problem → action the AI should propose → measurable goal. Use for operational fixes with clear success metrics. What it is: Describe the problem, specify the action you want the AI to propose or perform, and attach a measurable goal.",
+        "content": "Task (problem): [problem statement]. Action: [what should AI propose/do]. Goal: [numeric / time target]."
+      }
+    ],
+    "B-A-B (Before – After – Bridge)": [
+      {
+        "id": "framework-bab-1",
+        "title": "B-A-B (Before – After – Bridge)",
+        "description": "Story arc for transformation. Describe current state, desired state, and practical steps to get there. What it is: Use a narrative arc to show transformation: current state, desired state, and the bridge (steps/tools) to achieve it.",
+        "content": "Before: [current]. After: [desired]. Bridge: [steps/tools to get there]."
+      }
+    ],
+    "C-A-R-E (Context – Action – Reference – Effect)": [
+      {
+        "id": "framework-care-1",
+        "title": "C-A-R-E (Context – Action – Reference – Effect)",
+        "description": "Explain why something matters to stakeholders by tying recommended actions to references and business impact. What it is: Use when you need to explain why something matters to stakeholders; tie the action to an authoritative reference and business effect.",
+        "content": "Context: [situation]. Action: [what to do]. Reference: [existing model/example]. Effect: [business outcome]."
+      }
+    ],
+    "R-I-S-E (Role – Input – Steps – Expectation)": [
+      {
+        "id": "framework-rise-1",
+        "title": "R-I-S-E (Role – Input – Steps – Expectation)",
+        "description": "Operational playbook-style: define the role, the input data, stepwise plan, and measurable expectation. What it is: Specify the role the AI should play, the inputs it has, the step-by-step actions required, and the expected measurable outcome.",
+        "content": "Role: [who AI should be]. Input: [files/data]. Steps: [1,2,3]. Expectation: [result]."
+      }
+    ],
+    "R-A-I-N (Role – Aim – Input – Numeric target – Format)": [
+      {
+        "id": "framework-rain-1",
+        "title": "R-A-I-N (Role – Aim – Input – Numeric target – Format)",
+        "description": "Role-based ask with numeric KPIs. Use when you need deliverables tied to clear metrics. What it is: Add numeric targets to role-based asks so outputs include KPIs.",
+        "content": "ROLE: [role]. AIM: [goal]. INPUT: [data]. NUMERIC TARGET: [metric]. FORMAT: [deliverable]."
+      }
+    ],
+    "C-L-A-R (Context – Limits – Action – Result)": [
+      {
+        "id": "framework-clar-1",
+        "title": "C-L-A-R (Context – Limits – Action – Result)",
+        "description": "Short, constraint-aware brief. Great for scoped operational or compliance tasks where limits must be explicit. What it is: A concise brief that explicitly lists constraints and desired outcome.",
+        "content": "CONTEXT: [situation]. LIMITS: [constraints]. ACTION: [what to do]. RESULT: [deliverable/metric]."
+      }
+    ],
+    "F-L-O-W (Function – Level – Output – Win metric)": [
+      {
+        "id": "framework-flow-1",
+        "title": "F-L-O-W (Function – Level – Output – Win metric)",
+        "description": "Audience-centric content brief for comms, learning modules, and content production. Focus on audience level and success metric. What it is: Use for briefs that must be tailored to an audience and measured by a win metric.",
+        "content": "FUNCTION: [role]. LEVEL: [audience level]. OUTPUT: [format/length]. WIN METRIC: [how success is measured]."
+      }
+    ],
+    "P-I-V-O (Problem – Insights – Voice – Outcome)": [
+      {
+        "id": "framework-pivo-1",
+        "title": "P-I-V-O (Problem – Insights – Voice – Outcome)",
+        "description": "Reframe issues plus the narrative voice. Use when you want diagnosis and recommendations delivered in a specific tone. What it is: Diagnose the problem, surface key insights, set the narrative voice, and request the expected outcome.",
+        "content": "PROBLEM: [issue]. INSIGHTS: [key data points]. VOICE: [tone/persona]. OUTCOME: [deliverable]."
+      }
+    ],
+    "S-E-E-D (Situation – Endgoal – Examples – Deliverables)": [
+      {
+        "id": "framework-seed-1",
+        "title": "S-E-E-D (Situation – Endgoal – Examples – Deliverables)",
+        "description": "Build systems and playbooks. Use when you want concrete toolkits with examples and final artifacts. What it is: Use to request a toolkit/playbook that includes examples and final deliverables.",
+        "content": "Act as a [ROLE]. We're facing [SITUATION]. The ENDGOAL is [ENDGOAL]. Include EXAMPLES such as [list]. Deliver the following DELIVERABLES: [list]."
+      }
+    ]
+  }
+}

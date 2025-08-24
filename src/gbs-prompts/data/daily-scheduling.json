@@ -1,0 +1,44 @@
+{
+  "Daily Scheduling": {
+    "Create Time Blocks": [
+      {
+        "id": "daily-scheduling-1",
+        "title": "Create Time Blocks",
+        "description": "Analyze tasks and create optimal time blocks considering complexity, priority, and concentration spans with built-in breaks and flexibility for maximum productivity.",
+        "content": "Your task is to analyze a provided [list of tasks] and suggest optimal time blocks for each task to ensure maximum productivity and efficiency. Consider factors such as task complexity, priority, and the average human concentration span. Your recommendations should also account for necessary breaks to prevent burnout and maintain high levels of focus throughout the day. Provide a detailed schedule that allocates specific time frames for each task, including start and end times. Offer advice on how to deal with potential distractions and how to adjust the schedule if a task takes more or less time than anticipated."
+      }
+    ],
+    "Align Daily Tasks with Long-Term Goals": [
+      {
+        "id": "daily-scheduling-2",
+        "title": "Align Daily Tasks with Long-Term Goals",
+        "description": "Connect daily activities to long-term objectives by breaking down goals into actionable tasks with strategic scheduling and progress tracking systems.",
+        "content": "Your task is to develop a strategic plan that aligns daily tasks with [long-term goals] for an individual. This involves identifying key long-term objectives and breaking them down into actionable, daily tasks. You will create a comprehensive schedule that not only prioritizes these tasks but also includes time for review and adjustment based on progress. The plan should incorporate effective time management techniques, such as task batching, prioritization methods, and the use of technology for reminders and tracking."
+      }
+    ],
+    "Create Personalized Daily Schedule": [
+      {
+        "id": "daily-scheduling-3",
+        "title": "Create Personalized Daily Schedule",
+        "description": "Design comprehensive daily schedules optimized for individual priorities, deadlines, and goals with strategic time allocation and built-in flexibility.",
+        "content": "Create a comprehensive daily schedule designed to optimize an individual's productivity based on their specified [priorities/deadlines/goals]. The schedule must strategically allocate time blocks for various tasks, ensuring that the most critical and time-sensitive tasks are prioritized. It should also incorporate breaks to prevent burnout, allow for flexibility to handle unforeseen tasks or emergencies, and include time for review and planning at the start and end of the day."
+      }
+    ],
+    "Manage Daily Priorities": [
+      {
+        "id": "daily-scheduling-4",
+        "title": "Manage Daily Priorities",
+        "description": "Evaluate and rank tasks using proven prioritization frameworks like the Eisenhower Matrix with clear rationale for optimal time and resource allocation.",
+        "content": "Evaluate and rank the provided [list of tasks] based on their urgency and importance. This requires a deep understanding of prioritization techniques such as the Eisenhower Matrix, which categorizes tasks into four quadrants: urgent and important, important but not urgent, urgent but not important, and neither urgent nor important. For each task, provide a brief rationale for its placement, considering deadlines, impact on goals, and resources required."
+      }
+    ],
+    "Act as Accountability Partner": [
+      {
+        "id": "daily-scheduling-5",
+        "title": "Act as Accountability Partner",
+        "description": "Provide ongoing support and accountability through SMART goal setting, regular check-ins, progress tracking, and motivational guidance for sustained achievement.",
+        "content": "As an Accountability Partner, your main task is to help me set clear, achievable goals and hold me accountable for reaching those goals. Start by having a detailed discussion with me to understand my aspirations, strengths, and areas for improvement. Based on this discussion, work with me to set specific, measurable, attainable, relevant, and time-bound (SMART) goals. Once the goals are established, create a plan with me outlining the steps needed to achieve those goals. Schedule regular check-ins to track progress, discuss any challenges faced, and offer support and guidance as needed. Encourage me to stay focused and motivated, and celebrate milestones reached along the way."
+      }
+    ]
+  }
+}

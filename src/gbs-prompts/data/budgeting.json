@@ -1,0 +1,44 @@
+{
+  "Budgeting": {
+    "Planning & Tracking": [
+      {
+        "id": "budgeting-1",
+        "title": "Create a Monthly Budget Plan",
+        "description": "Generate comprehensive monthly budgets that balance expenses with savings goals, providing realistic financial plans with cost-saving recommendations and optimization strategies.",
+        "content": "Act as an expert in finance and budgeting. Generate a comprehensive budget plan based on the provided [income], [expenses], and [savings goals]. Your task involves analyzing the financial data to create a realistic and achievable budget that balances monthly expenses with savings objectives. Ensure that the budget allocates funds wisely to cover essential expenses, debt repayment (if any), and contributes towards the [savings goals] without compromising financial stability. Provide recommendations for cost-saving measures and potential adjustments to increase savings or reduce unnecessary spending. The final budget should be clear, detailed, and tailored to prioritize financial health and goal attainment."
+      },
+      {
+        "id": "budgeting-2",
+        "title": "Track Expenses",
+        "description": "Categorize and analyze monthly expenses to identify spending patterns, trends, and optimization opportunities with actionable insights for improved financial management.",
+        "content": "Act as an expert in finance and budgeting. Your task is to categorize and summarize monthly expenses, providing a clear and concise overview that will help in understanding spending habits and identifying areas for potential savings. You will need to organize the expenses into relevant categories such as housing, groceries, utilities, entertainment, transportation, and miscellaneous. Each category should have a total amount spent for the month, along with a brief analysis comparing it to previous months to identify trends. Additionally, provide actionable insights and recommendations on how to optimize spending and increase savings. Ensure that your summary is user-friendly, enabling easy interpretation and implementation of your advice."
+      },
+      {
+        "id": "budgeting-3",
+        "title": "Set Savings Goals",
+        "description": "Develop personalized savings strategies with realistic targets, actionable plans, and comprehensive financial guidance for achieving long-term financial stability and growth.",
+        "content": "Act as an expert in finance and budgeting, tasked with providing personalized and achievable savings goals and strategies tailored to an individual's specific [income] and [expense patterns]. Your role is to analyze the provided financial information, identify areas where expenses can be minimized, and suggest realistic savings targets. You will also develop a comprehensive plan that outlines actionable steps for effectively managing income, reducing unnecessary expenditures, and optimizing savings. This plan should include recommendations for budgeting tools or apps, advice on debt management, and strategies for increasing income if necessary. Additionally, provide tips on creating an emergency fund and investing in long-term financial growth. Your ultimate goal is to empower the individual with the knowledge and resources needed to achieve financial stability and growth."
+      }
+    ],
+    "Optimization & Strategy": [
+      {
+        "id": "budgeting-4",
+        "title": "Find Cost-Cutting Opportunities",
+        "description": "Analyze expenses systematically to identify cost-reduction opportunities with data-backed recommendations and practical implementation strategies for financial optimization.",
+        "content": "Act as an expert in finance and budgeting, tasked with analyzing [expenses] to identify areas where entity can cut back. Your role involves meticulously reviewing the detailed list of expenses, categorizing them appropriately, and identifying patterns or trends that indicate overspending or inefficient use of resources. Employ your expertise to recommend specific areas where costs can be reduced without compromising the quality of operations or the well-being of the workforce. Provide a comprehensive report that not only highlights the potential savings but also suggests practical strategies for implementing these cost-cutting measures. Your recommendations should be backed by data and include a projected impact analysis to demonstrate the financial benefit of your suggestions. Ensure that your advice is actionable, realistic, and tailored to the unique needs and goals of [entity]."
+      },
+      {
+        "id": "budgeting-5",
+        "title": "Plan for Large Purchases",
+        "description": "Create structured savings plans for major purchases with realistic timelines, milestone tracking, and flexible strategies for various income levels and financial situations.",
+        "content": "Act as an expert in finance and budgeting. Your task is to create comprehensive savings plans tailored for individuals looking to purchase big-ticket items such as cars, homes, or luxury vacations. The plans should be realistic and structured to accommodate various income levels and financial situations. Each plan must include a detailed budget breakdown, savings milestones, recommended savings tools or accounts, and strategies for minimizing expenses to increase savings. Additionally, provide guidance on how to adjust the plan in case of financial setbacks or unexpected expenses, ensuring that the goal remains achievable. Your advice should be clear, actionable, and motivate individuals to start saving and stay committed to their financial goals."
+      },
+      {
+        "id": "budgeting-6",
+        "title": "Simulate Financial Scenarios",
+        "description": "Model comprehensive financial impacts of major life decisions with detailed cost analysis, scenario planning, and long-term implications for informed decision-making.",
+        "content": "As an expert in finance and budgeting, your task is to model the financial impacts of [major life decision]. This involves a comprehensive analysis of all relevant financial aspects, including but not to limited to initial costs, ongoing expenses, potential savings, and long-term financial implications. You will need to gather data on prices, interest rates, insurance premiums, maintenance costs, and any other expenses related to the decision. Additionally, assess the impact on the individual's or family's budget, savings, and financial goals. Create a detailed report that outlines the total cost of ownership or the complete financial picture of the decision, offering insights and recommendations based on various scenarios. This report should serve as a valuable tool for making an informed decision, helping to weigh the pros and cons from a financial perspective. Your analysis should be thorough, clear, and tailored to the specific needs and circumstances of the individual or family considering the major life decision."
+      }
+    ]
+  }
+}

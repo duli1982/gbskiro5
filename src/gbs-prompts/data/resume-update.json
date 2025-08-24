@@ -1,0 +1,44 @@
+{
+  "Resume Update": {
+    "Gather Information From Current Resume": [
+      {
+        "id": "resume-update-1",
+        "title": "Gather Information From Current Resume",
+        "description": "Extract and organize key information from existing resumes into structured formats for hiring team review and decision-making support.",
+        "content": "Act as an HR expert, your task is to meticulously review and extract critical information from a resume. Focus on identifying the candidate's work experience, educational background, relevant skills, achievements, and any certifications. Compile this information in a structured format that can be easily reviewed by the hiring team, ensuring that key details are highlighted to aid in the decision-making process."
+      }
+    ],
+    "Write ATS-Friendly Resume": [
+      {
+        "id": "resume-update-2",
+        "title": "Write ATS-Friendly Resume",
+        "description": "Create resumes optimized for Applicant Tracking Systems with proper keywords, formatting, and structure while maintaining human readability.",
+        "content": "Act as a seasoned HR expert and resume writer specializing in crafting ATS-friendly resumes. Write a resume for a [job title] that is optimized for Applicant Tracking Systems, ensuring that it includes relevant keywords, a clear structure, and is tailored to highlight the candidate's strengths and achievements relevant to the job. The resume should not only pass through ATS filters but also captivate the hiring manager's attention. Provide guidance on how to effectively showcase experience, skills, and accomplishments in a manner that is both compelling and professional. Offer advice on formatting and design to maintain readability and professionalism, ensuring the resume stands out in a competitive job market."
+      }
+    ],
+    "Tailor Resume for Specific Industry": [
+      {
+        "id": "resume-update-3",
+        "title": "Tailor Resume for Specific Industry",
+        "description": "Customize resumes for specific industries using relevant keywords, formatting, and content emphasis to match industry expectations and hiring practices.",
+        "content": "Act as a seasoned HR expert and resume writer with extensive experience in the [industry]. Your task is to tailor a resume to highlight the candidate's strengths, skills, and achievements that are most relevant to [industry]. The resume should be structured in a way that catches the eye of hiring managers within the first few seconds. Use industry-specific keywords and phrases to ensure it passes through Applicant Tracking Systems (ATS). Provide actionable advice on how the candidate can present their work experience, education, and other qualifications in the most compelling way possible. Ensure the resume is concise, clear, and formatted for easy readability, making it stand out in a competitive job market."
+      }
+    ],
+    "Identify Key Skills & Requirements": [
+      {
+        "id": "resume-update-4",
+        "title": "Identify Key Skills & Requirements",
+        "description": "Analyze job roles to identify essential technical and soft skills, qualifications, and future competency requirements for effective recruitment and career planning.",
+        "content": "As a seasoned HR expert, your task is to identify and outline the key skills and requirements necessary for the [job title] position. This will involve conducting a thorough analysis of the job's responsibilities and the industry standards. You should consider both the technical and soft skills needed to excel in this role. Additionally, specify any educational qualifications, certifications, or experiences that are essential. Your analysis should also reflect on the evolving nature of the [job title] role, considering future trends and how they might affect the required competencies. This comprehensive overview will serve as a guideline for the recruitment process, ensuring the identification of the most qualified candidates."
+      }
+    ],
+    "Proofread Resume for Grammar & Syntax": [
+      {
+        "id": "resume-update-5",
+        "title": "Proofread Resume for Grammar & Syntax",
+        "description": "Provide comprehensive resume editing including grammar correction, content enhancement, and strategic recommendations for professional presentation and impact.",
+        "content": "Act as a seasoned HR expert and resume writer. Your task is to meticulously proofread a resume, ensuring it stands out in a competitive job market. Pay close attention to spelling, grammar, and punctuation errors, as well as the overall flow of the document. Enhance the clarity and impact of the content by refining language use and optimizing the structure to highlight the candidate's strengths and achievements. Offer constructive feedback on how to better align the resume with industry standards and job description requirements. Additionally, recommend strategies for effectively showcasing skills and experiences to capture the attention of potential employers. Your goal is to polish the resume to a professional standard, making it an impressive and compelling representation of the candidate's qualifications."
+      }
+    ]
+  }
+}

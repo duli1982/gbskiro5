@@ -1,0 +1,36 @@
+{
+  "Market Research": {
+    "Market Research Prompts": [
+      {
+        "id": "market-research-1",
+        "title": "Suggest Research Methodologies",
+        "description": "Develop comprehensive lists of primary and secondary research methodologies including surveys, focus groups, and digital analytics for strategic market insights.",
+        "content": "Act as an experienced market researcher. Develop a comprehensive list of market research methodologies that can be utilized to gather valuable insights about [product/service] and its potential market. These methodologies should cover both primary and secondary research techniques, including but not limited to surveys, focus groups, interviews, observation, case studies, and market analysis. Each suggested methodology should come with a brief explanation of how it will contribute to understanding the market demand, competitive landscape, customer preferences, and potential barriers to entry. Additionally, include recommendations for digital analytics tools and social media listening platforms that could provide real-time data and trends related to [product/service]. Ensure that the methodologies are feasible, cost-effective, and tailored to gather the most relevant information to inform strategic decisions."
+      },
+      {
+        "id": "market-research-2",
+        "title": "Gather Public Data",
+        "description": "Compile comprehensive market intelligence using public databases, industry reports, and social media analytics to identify opportunities and challenges.",
+        "content": "Act as an experienced market researcher. Your task is to gather comprehensive public data on [product/service] and its [target audience]. This involves conducting a detailed analysis of market trends, customer preferences, competitive landscape, and potential growth areas. Utilize a variety of sources, including online databases, consumer surveys, social media analytics, and industry reports, to compile a report that offers insightful and actionable information. The report should identify key opportunities and challenges facing [product/service] in reaching [target audience], and propose data-driven recommendations to enhance market penetration and customer engagement. Ensure that your research is thorough, up-to-date, and complies with all relevant data protection regulations."
+      },
+      {
+        "id": "market-research-3",
+        "title": "Create Customer Personas",
+        "description": "Develop detailed customer personas with demographics, psychographics, behavioral traits, and communication preferences for targeted marketing strategies.",
+        "content": "As an experienced market researcher, your task is to develop a comprehensive customer persona for [product/service]. This persona will serve as a cornerstone for marketing strategies, product development, and customer support initiatives. Your work should involve in-depth research and analysis to accurately represent the target customer. Begin by identifying the key demographics of the target audience, including age, gender, location, and income level. Delve into psychographics, such as interests, values, lifestyle, and challenges that the target audience faces which [product/service] can solve. Your customer persona should detail: Demographic information, Psychographics, Behavioral traits, Goals and challenges, Preferred channels of communication, A day in the life scenario."
+      },
+      {
+        "id": "market-research-4",
+        "title": "Identify Market Gaps",
+        "description": "Conduct comprehensive market analysis to identify unmet needs and opportunities where products or services can gain competitive advantage.",
+        "content": "Act as an experienced market researcher specializing in [niche]. Your task is to conduct a comprehensive analysis to identify existing market gaps where [product/service] could significantly impact and gain an advantage. This involves examining current market trends, customer needs and preferences, competitor strategies, and potential areas for innovation or improvement. Utilize both qualitative and quantitative research methods, including surveys, interviews, and data analysis, to gather insights. Based on your findings, provide a detailed report highlighting specific opportunities for [product/service] to fill these gaps effectively. The report should include actionable recommendations and strategies for positioning [product/service] to capitalize on these identified opportunities, considering the competitive landscape and target audience's evolving needs."
+      },
+      {
+        "id": "market-research-5",
+        "title": "Find Competitors",
+        "description": "Identify and analyze direct and indirect competitors with detailed profiles covering market share, strategies, strengths, and competitive positioning.",
+        "content": "As an experienced market researcher, your task is to identify potential competitors for a specific [product/service]. This involves conducting a comprehensive market analysis to uncover direct and indirect competitors within the market. You will need to use various research methodologies, including online databases, industry reports, social media analysis, and customer feedback platforms to gather relevant data. Your analysis should include a detailed profile of each competitor, covering aspects such as their market share, product offerings, pricing strategies, distribution channels, marketing approaches, and customer base. Additionally, identify any unique selling propositions (USPs) or weaknesses of these competitors to understand their position in the market. The final deliverable should be a comprehensive report that not only lists the potential competitors but also provides an analysis of their strengths and weaknesses, competitive positioning, and potential impact on the [product/service] you are researching. This report will be crucial for strategic planning, helping to inform decisions on product development, marketing strategies, and market entry tactics."
+      }
+    ]
+  }
+}

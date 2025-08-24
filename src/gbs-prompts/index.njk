@@ -150,6 +150,8 @@ nav: true
         let promptData = {};
         let allPrompts = [];
         let lastScrollPosition = 0;
+        let promptIndex = {};
+        const categoriesLoaded = new Set();
 
         // --- SCROLL TO TOP FUNCTIONALITY ---
         const scrollToTopBtn = document.getElementById('scroll-to-top');
@@ -195,29 +197,43 @@ nav: true
             }
         }
 
+        async function fetchCategory(categoryName) {
+            if (categoriesLoaded.has(categoryName)) return;
+            const file = promptIndex[categoryName]?.file;
+            if (!file) return;
+            const res = await fetch(file);
+            if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+            const data = await res.json();
+            Object.assign(promptData, data);
+            categoriesLoaded.add(categoryName);
+        }
+
+        async function loadAllCategories() {
+            const loads = Object.keys(promptIndex).map(name => fetchCategory(name));
+            await Promise.all(loads);
+            flattenPrompts();
+        }
+
         async function loadPrompts() {
             const loadingIndicator = document.getElementById('loading-indicator');
             const categoryCardsContainer = document.getElementById('category-cards-container');
             loadingIndicator.classList.remove('hidden');
 
             try {
-                const response = await fetch('./prompts.json');
+                const response = await fetch('./categories.json');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                const data = await response.json();
-                promptData = data.promptData;
-                flattenPrompts();
-                renderHomepage(); // Initialize UI after data loads
+                promptIndex = await response.json();
+                renderHomepage();
 
-                const promptCount = allPrompts.length;
+                const promptCount = Object.values(promptIndex).reduce((s, v) => s + v.totalPrompts, 0);
                 const date = new Date();
                 const month = date.toLocaleString('default', { month: 'long' });
                 const year = date.getFullYear();
                 const heroSubtitle = document.getElementById('hero-subtitle');
                 heroSubtitle.textContent = `Discover ${promptCount} Gemini prompts you have to try in ${month} ${year}!`;
 
-                // --- Animated Subtitle Logic ---
                 const animatedSubtitleEl = document.getElementById('animated-subtitle');
                 if (animatedSubtitleEl) {
                     const subtitles = [
@@ -227,14 +243,12 @@ nav: true
                         "Understand Prompt Structure...",
                         "Tailor to Your Needs...",
                         "Combine Multiple Prompts...",
-                        "Master Effective Prompting..."
+                        "Master Effective Prompting...",
                     ];
                     let subtitleIndex = 0;
-
                     function cycleSubtitles() {
                         animatedSubtitleEl.classList.remove('subtitle-animate-in');
                         animatedSubtitleEl.classList.add('subtitle-animate-out');
-
                         setTimeout(() => {
                             subtitleIndex = (subtitleIndex + 1) % subtitles.length;
                             animatedSubtitleEl.textContent = subtitles[subtitleIndex];
@@ -242,10 +256,8 @@ nav: true
                             animatedSubtitleEl.classList.add('subtitle-animate-in');
                         }, 500);
                     }
-
-                    // Display the first subtitle immediately and then cycle
                     cycleSubtitles();
-                    setInterval(cycleSubtitles, 3000); // Cycle every 3 seconds
+                    setInterval(cycleSubtitles, 3000);
                 }
             } catch (error) {
                 console.error('Failed to load prompts:', error);
@@ -336,15 +348,10 @@ nav: true
         function renderHomepage() {
             categoryCardsContainer.innerHTML = '';
             categoryCardsContainer.className = 'grid md:grid-cols-2 lg:grid-cols-3 gap-8';
-            for (const categoryName in promptData) {
-                const category = promptData[categoryName];
-                const subCategories = Object.keys(category);
-
-                // Calculate total prompts in this category
-                let totalPrompts = 0;
-                for (const subCategoryName in category) {
-                    totalPrompts += category[subCategoryName].length;
-                }
+            for (const categoryName in promptIndex) {
+                const meta = promptIndex[categoryName];
+                const subCategories = Object.keys(meta.subcategories);
+                const totalPrompts = meta.totalPrompts;
 
                 const card = document.createElement('div');
                 card.className = 'prompt-block flex flex-col';
@@ -469,14 +476,14 @@ nav: true
 
         function renderQuickLinks(activeCategory, activeSubCategory) {
             quickLinksSidebar.innerHTML = '';
-            for (const categoryName in promptData) {
+            for (const categoryName in promptIndex) {
                 const categoryTitle = document.createElement('h4');
                 categoryTitle.className = 'font-bold mt-4 mb-2 main-heading';
                 categoryTitle.innerHTML = `Gemini Prompts for <span class="accent-text">${categoryName}</span>`;
                 quickLinksSidebar.appendChild(categoryTitle);
 
                 const subList = document.createElement('ul');
-                for (const subCategoryName in promptData[categoryName]) {
+                for (const subCategoryName in promptIndex[categoryName].subcategories) {
                     const li = document.createElement('li');
                     const link = document.createElement('a');
                     link.href = '#';
@@ -548,8 +555,9 @@ nav: true
         }
 
         // --- NAVIGATION LOGIC ---
-        function showDetailView(category, subCategory) {
+        async function showDetailView(category, subCategory) {
             lastScrollPosition = window.scrollY;
+            await fetchCategory(category);
             renderDetailView(category, subCategory);
             homepageView.classList.add('hidden');
             detailView.classList.remove('hidden');
@@ -563,8 +571,9 @@ nav: true
             setTimeout(() => { window.scrollTo(0, lastScrollPosition); }, 0);
         }
 
-        function showAllCategoryView(categoryName) {
+        async function showAllCategoryView(categoryName) {
             lastScrollPosition = window.scrollY;
+            await fetchCategory(categoryName);
             renderAllCategoryView(categoryName);
             homepageView.classList.add('hidden');
             detailView.classList.remove('hidden');
@@ -585,10 +594,13 @@ nav: true
         function hideGemModal() { gemModal.classList.add('hidden'); generatedGemTextarea.value = ''; generatedGemContainer.classList.add('hidden'); }
 
         // --- EVENT LISTENERS ---
-        homepageSearchInput.addEventListener('input', (e) => {
+        homepageSearchInput.addEventListener('input', async (e) => {
             const searchTerm = e.target.value.trim().toLowerCase();
             if (searchTerm === '') { renderHomepage(); clearSearchBtn.classList.add('hidden'); return; }
             clearSearchBtn.classList.remove('hidden');
+            if (allPrompts.length === 0) {
+                await loadAllCategories();
+            }
             const filteredPrompts = allPrompts.filter(prompt => {
                 const titleMatch = (prompt.title || '').toLowerCase().includes(searchTerm);
                 const contentMatch = (prompt.content || '').toLowerCase().includes(searchTerm);
@@ -611,13 +623,13 @@ nav: true
             }
         }
 
-        categoryCardsContainer.addEventListener('click', (e) => {
+        categoryCardsContainer.addEventListener('click', async (e) => {
             const target = e.target;
             if (target.id === 'clear-search-suggestions-btn') { homepageSearchInput.value = ''; clearSearchBtn.classList.add('hidden'); renderHomepage(); return; }
             if (target.closest('.copy-btn')) { handleCopyClick(e); return; }
             if (target.classList.contains('create-gem-btn')) { const content = target.dataset.promptContent; showGemModal(content); return; }
-            if (target.classList.contains('see-all-btn')) { const categoryName = target.dataset.category; showAllCategoryView(categoryName); return; }
-            if (target.tagName === 'A' && target.dataset.subcategory) { e.preventDefault(); showDetailView(target.dataset.category, target.dataset.subcategory); }
+            if (target.classList.contains('see-all-btn')) { const categoryName = target.dataset.category; await showAllCategoryView(categoryName); return; }
+            if (target.tagName === 'A' && target.dataset.subcategory) { e.preventDefault(); await showDetailView(target.dataset.category, target.dataset.subcategory); }
         });
 
         promptDisplayArea.addEventListener('click', (e) => {
@@ -625,12 +637,10 @@ nav: true
             handleCopyClick(e);
         });
 
-        quickLinksSidebar.addEventListener('click', (e) => {
+        quickLinksSidebar.addEventListener('click', async (e) => {
             if (e.target.tagName === 'A' && e.target.dataset.subcategory) {
                 e.preventDefault();
-                const category = e.target.dataset.category;
-                const subCategory = e.target.dataset.subcategory;
-                renderDetailView(category, subCategory);
+                await showDetailView(e.target.dataset.category, e.target.dataset.subcategory);
             }
         });
 

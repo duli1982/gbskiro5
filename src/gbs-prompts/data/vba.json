@@ -1,0 +1,46 @@
+{
+  "VBA": {
+    "Automation": [
+      {
+        "id": "vba-1",
+        "title": "Create VBA Macro to Automate Reports in Powerpoint",
+        "description": "Develop VBA macros that automatically update PowerPoint presentations with Excel data, creating dynamic connections for seamless report generation.",
+        "content": "I need a VBA macro created that will automatically update a PowerPoint presentation with data from an Excel spreadsheet. The macro should be able to dynamically populate slides with the latest information from the Excel file, ensuring that the presentation is always up-to-date without manual intervention. Your task is to write a VBA macro that establishes a connection between the PowerPoint presentation and the Excel data, allowing for seamless updates whenever the Excel file is edited. - Excel data: [Excel data] - PowerPoint presentation: [PowerPoint presentation]"
+      },
+      {
+        "id": "vba-2",
+        "title": "Automate Email Sending From Outlook",
+        "description": "Create efficient VBA scripts that automate personalized email sending with attachments using contact data from Excel spreadsheets.",
+        "content": "I need a VBA code that will automate the process of sending personalized emails with attachments to contacts stored in an Excel sheet. The code should be efficient, error-free, and easy to use for someone with basic VBA knowledge. Your task is to write a VBA script that will extract contact information from the Excel sheet, compose individualized emails with specified attachments, and send them out automatically. - Excel sheet format: [format] - Email template: [template]"
+      },
+      {
+        "id": "vba-3",
+        "title": "Write VBA Code to Automate Excel Task",
+        "description": "Develop custom VBA solutions for automating repetitive Excel tasks including data manipulation, formatting, and report generation with user-friendly interfaces.",
+        "content": "I need a VBA code that can automate a specific task in Excel. The code should be efficient, error-free, and easy to use by someone with basic Excel knowledge. The task to be automated could be anything from data manipulation, report generation, formatting, or any other repetitive task that can be streamlined with automation. Your task is to write a VBA code that addresses the specific task mentioned and ensure it runs smoothly without any issues. - Excel task to be automated: [task description] - Desired outcome: [desired outcome]"
+      }
+    ],
+    "Code Management": [
+      {
+        "id": "vba-4",
+        "title": "Optimize Existing VBA Code",
+        "description": "Analyze and optimize VBA code for improved performance, efficiency, and speed by identifying redundant sections and implementing best practices.",
+        "content": "I need someone with expertise in VBA programming to review my code and identify areas where it can be optimized for efficiency. The code is currently functional but I believe it can be improved to run faster and more smoothly. Your task is to analyze the VBA code, identify any redundant or inefficient sections, and suggest optimizations to streamline the code and improve its performance. - VBA code: [code snippet]"
+      },
+      {
+        "id": "vba-5",
+        "title": "Make VBA Code More Readable",
+        "description": "Refactor VBA code to improve readability, maintainability, and organization through better structure, naming conventions, and comprehensive documentation.",
+        "content": "I have a VBA code that needs to be restructured to make it more organized, easier to understand, and maintainable for future updates. The current code is functional but lacks clarity and efficiency. Your task is to refactor the VBA code, breaking it down into smaller, more manageable modules, improving variable naming conventions, and adding comments to explain the logic behind each section. The goal is to make the code more readable and maintainable for any future modifications. - Current VBA code: [current VBA code]"
+      }
+    ],
+    "Function Development": [
+      {
+        "id": "vba-6",
+        "title": "Develop Custom VBA Function",
+        "description": "Create specialized VBA functions that perform specific calculations and automate repetitive tasks to improve data analysis efficiency and accuracy.",
+        "content": "I need a custom VBA function created that will perform a specific calculation in Excel. The function should be designed to automate a repetitive task and improve efficiency in data analysis. Your task is to write a VBA function that takes in the necessary input parameters, performs the calculation accurately, and returns the desired output. - Calculation to be performed: [calculation] - Input parameters: [parameters]"
+      }
+    ]
+  }
+}
