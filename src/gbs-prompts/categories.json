@@ -1,0 +1,404 @@
+{
+  "Recruitment": {
+    "totalPrompts": 8,
+    "subcategories": {
+      "Understand the Role and Job Market": 1,
+      "Write Job Descriptions": 1,
+      "Analyze and Find Potential Gaps in Resumes": 1,
+      "Come Up With Interview Questions": 1,
+      "Draft an Email to a Potential Candidate": 1,
+      "Draft a Reject Email to a Candidate": 1,
+      "Create an Onboarding Strategy": 1,
+      "Draft Post-onboarding Feedback": 1
+    },
+    "file": "data/recruitment.json"
+  },
+  "AI-Powered Recruitment": {
+    "totalPrompts": 16,
+    "subcategories": {
+      "Resume Analysis & Screening": 2,
+      "Diversity & Inclusion": 2,
+      "Predictive Analytics": 2,
+      "Process Automation": 2,
+      "Candidate Experience": 2,
+      "Skills-Based Hiring": 2,
+      "Remote & Virtual Hiring": 2,
+      "Recruitment Marketing": 2
+    },
+    "file": "data/ai-powered-recruitment.json"
+  },
+  "Candidate Engagement": {
+    "totalPrompts": 13,
+    "subcategories": {
+      "Personalized Outreach": 4,
+      "Referral Strategies": 4,
+      "Pre-Screening Process": 5
+    },
+    "file": "data/candidate-engagement.json"
+  },
+  "Sourcing Strategy": {
+    "totalPrompts": 19,
+    "subcategories": {
+      "Sourcing Strategy Development": 4,
+      "Hiring Manager Collaboration": 5,
+      "Talent Search Optimization": 5,
+      "Candidate-Job Matching": 5
+    },
+    "file": "data/sourcing-strategy.json"
+  },
+  "Interview Preparation": {
+    "totalPrompts": 8,
+    "subcategories": {
+      "Suggest Behavioral Questions": 1,
+      "Suggest Scenario-Based Questions": 1,
+      "Answer Tell Me About Yourself Question": 1,
+      "Discuss Strengths and Weaknesses": 1,
+      "Discuss Career Goals": 1,
+      "Research Specific Industry": 1,
+      "Perform Mock Interview": 1,
+      "Suggest Technical Questions": 1
+    },
+    "file": "data/interview-preparation.json"
+  },
+  "Performance Reviews": {
+    "totalPrompts": 8,
+    "subcategories": {
+      "Suggest Potential Performance Metrics": 1,
+      "Suggest KPIs for Measuring a Metric": 1,
+      "Develop Smart Goals for a Team": 1,
+      "Benchmark Employee Feedback": 1,
+      "Identify Skill Gaps in a Review": 1,
+      "Outline Possible Career Paths": 1,
+      "Set Performance Goals": 1,
+      "Suggest Training Programs for a Skill": 1
+    },
+    "file": "data/performance-reviews.json"
+  },
+  "Career Advice": {
+    "totalPrompts": 5,
+    "subcategories": {
+      "Exploration & Goal Setting": 2,
+      "Job Application Prep": 3
+    },
+    "file": "data/career-advice.json"
+  },
+  "Career Coaching": {
+    "totalPrompts": 7,
+    "subcategories": {
+      "Self-Discovery & Goal Setting": 3,
+      "Action & Development": 4
+    },
+    "file": "data/career-coaching.json"
+  },
+  "Job Search": {
+    "totalPrompts": 5,
+    "subcategories": {
+      "Analyze Job Description": 1,
+      "Build a Resume": 1,
+      "Write Cover Letter": 1,
+      "Prepare for Job Interview": 1,
+      "Provide Self-Assessment": 1
+    },
+    "file": "data/job-search.json"
+  },
+  "Resume Writing": {
+    "totalPrompts": 4,
+    "subcategories": {
+      "Gather and Organize All Necessary Information": 1,
+      "Write a Full Resume in One Go": 1,
+      "Proofread and Edit the Resume for Errors": 1,
+      "Tailor Resume to a Job Description": 1
+    },
+    "file": "data/resume-writing.json"
+  },
+  "Resume Update": {
+    "totalPrompts": 5,
+    "subcategories": {
+      "Gather Information From Current Resume": 1,
+      "Write ATS-Friendly Resume": 1,
+      "Tailor Resume for Specific Industry": 1,
+      "Identify Key Skills & Requirements": 1,
+      "Proofread Resume for Grammar & Syntax": 1
+    },
+    "file": "data/resume-update.json"
+  },
+  "Business Plan": {
+    "totalPrompts": 6,
+    "subcategories": {
+      "Core Components": 2,
+      "Market & Product Analysis": 2,
+      "Strategy": 2
+    },
+    "file": "data/business-plan.json"
+  },
+  "Product Management": {
+    "totalPrompts": 6,
+    "subcategories": {
+      "Product Management Prompts": 6
+    },
+    "file": "data/product-management.json"
+  },
+  "Project Management": {
+    "totalPrompts": 5,
+    "subcategories": {
+      "Project Management Prompts": 5
+    },
+    "file": "data/project-management.json"
+  },
+  "Research & Market Intelligence": {
+    "totalPrompts": 16,
+    "subcategories": {
+      "Talent Market Analysis": 4,
+      "Decoding Roles & Skills Across Industries": 4,
+      "Competitive Intelligence": 4,
+      "Industry Trend Analysis": 4
+    },
+    "file": "data/research-market-intelligence.json"
+  },
+  "Market Research": {
+    "totalPrompts": 5,
+    "subcategories": {
+      "Market Research Prompts": 5
+    },
+    "file": "data/market-research.json"
+  },
+  "Sales": {
+    "totalPrompts": 5,
+    "subcategories": {
+      "Market Research": 1,
+      "Sales Enablement": 4
+    },
+    "file": "data/sales.json"
+  },
+  "Financial Advice": {
+    "totalPrompts": 8,
+    "subcategories": {
+      "Market Analysis": 2,
+      "Investment Strategy": 3,
+      "Financial Planning": 3
+    },
+    "file": "data/financial-advice.json"
+  },
+  "Budgeting": {
+    "totalPrompts": 6,
+    "subcategories": {
+      "Planning & Tracking": 3,
+      "Optimization & Strategy": 3
+    },
+    "file": "data/budgeting.json"
+  },
+  "Branding": {
+    "totalPrompts": 7,
+    "subcategories": {
+      "Brand Strategy": 3,
+      "Brand Identity": 3,
+      "Market Research": 1
+    },
+    "file": "data/branding.json"
+  },
+  "Graphic Design": {
+    "totalPrompts": 5,
+    "subcategories": {
+      "Design & Ideation": 3,
+      "Client Management": 2
+    },
+    "file": "data/graphic-design.json"
+  },
+  "UX Design": {
+    "totalPrompts": 8,
+    "subcategories": {
+      "User Research": 2,
+      "Design & Prototyping": 3,
+      "Strategy & Documentation": 3
+    },
+    "file": "data/ux-design.json"
+  },
+  "Newsletter": {
+    "totalPrompts": 10,
+    "subcategories": {
+      "Newsletter Prompts": 10
+    },
+    "file": "data/newsletter.json"
+  },
+  "Course Creation": {
+    "totalPrompts": 8,
+    "subcategories": {
+      "Content Development": 4,
+      "Student Engagement": 2,
+      "Assessment": 2
+    },
+    "file": "data/course-creation.json"
+  },
+  "Instructional Design": {
+    "totalPrompts": 7,
+    "subcategories": {
+      "Content & Curriculum Development": 3,
+      "Interactive Learning": 3,
+      "Review & Inclusivity": 1
+    },
+    "file": "data/instructional-design.json"
+  },
+  "Time Management": {
+    "totalPrompts": 10,
+    "subcategories": {
+      "Daily Planning": 5,
+      "Productivity & Organization": 3,
+      "Project & Team Management": 2
+    },
+    "file": "data/time-management.json"
+  },
+  "Daily Scheduling": {
+    "totalPrompts": 5,
+    "subcategories": {
+      "Create Time Blocks": 1,
+      "Align Daily Tasks with Long-Term Goals": 1,
+      "Create Personalized Daily Schedule": 1,
+      "Manage Daily Priorities": 1,
+      "Act as Accountability Partner": 1
+    },
+    "file": "data/daily-scheduling.json"
+  },
+  "Goal Setting": {
+    "totalPrompts": 5,
+    "subcategories": {
+      "Planning & Strategy": 3,
+      "Mindset & Support": 2
+    },
+    "file": "data/goal-setting.json"
+  },
+  "Meeting Notes": {
+    "totalPrompts": 6,
+    "subcategories": {
+      "Create Meeting Notes From a Transcript": 1,
+      "Summarize Meeting Notes": 1,
+      "Anonymize Meeting Notes": 1,
+      "Create Action Items": 1,
+      "Create Follow-up Tasks": 1,
+      "Draft an Email With a Meeting Summary": 1
+    },
+    "file": "data/meeting-notes.json"
+  },
+  "ADHD": {
+    "totalPrompts": 6,
+    "subcategories": {
+      "Organize Daily Tasks": 1,
+      "Help With Weekly Planning": 1,
+      "Prioritize Tasks": 1,
+      "Create Focus Challenges": 1,
+      "Guide Through Mindfulness Exercise": 1,
+      "Create Efficient Workflows": 1
+    },
+    "file": "data/adhd.json"
+  },
+  "Event Planning": {
+    "totalPrompts": 7,
+    "subcategories": {
+      "Conceptualization": 3,
+      "Logistics & Management": 3,
+      "Promotion": 1
+    },
+    "file": "data/event-planning.json"
+  },
+  "Data Analysis": {
+    "totalPrompts": 6,
+    "subcategories": {
+      "Data Preparation": 3,
+      "Analysis & Visualization": 3
+    },
+    "file": "data/data-analysis.json"
+  },
+  "Excel": {
+    "totalPrompts": 6,
+    "subcategories": {
+      "Function Guidance": 2,
+      "Automation & Commands": 2,
+      "Task Assistance": 2
+    },
+    "file": "data/excel.json"
+  },
+  "VBA": {
+    "totalPrompts": 6,
+    "subcategories": {
+      "Automation": 3,
+      "Code Management": 2,
+      "Function Development": 1
+    },
+    "file": "data/vba.json"
+  },
+  "Prompting Techniques": {
+    "totalPrompts": 20,
+    "subcategories": {
+      "Zero-Shot Prompting": 1,
+      "Few-Shot Prompting": 1,
+      "One-Shot Prompting": 1,
+      "Self-Refine Prompting": 1,
+      "Comparative Prompting": 1,
+      "Role Prompting": 1,
+      "Meta Prompting": 1,
+      "Input/Output Formatting": 1,
+      "Dynamic Prompting": 1,
+      "Recursive Prompting": 1,
+      "Interleaved Prompting": 1,
+      "Least-to-Most Prompting": 1,
+      "Simulated Interaction Prompting": 1,
+      "Guided Exploration Prompting": 1,
+      "Tree-of-Thought Prompting": 1,
+      "Generated Knowledge Prompting": 1,
+      "Task-Specific Prompting": 1,
+      "Iterative Prompting": 1,
+      "Directional-Stimulus Prompting": 1,
+      "Chain-of-Thought Prompting": 1
+    },
+    "file": "data/prompting-techniques.json"
+  },
+  "Advanced Frameworks & Systems": {
+    "totalPrompts": 14,
+    "subcategories": {
+      "McKinsey-Style Strategic Report": 1,
+      "Gemini Advanced Templates": 1,
+      "Ultimate Prompt Engineering": 1,
+      "Guided Exploration Prompting": 1,
+      "Reverse Genius Protocol": 1,
+      "Research Frameworks": 1,
+      "Landing Page Conversion Strategy": 1,
+      "Life System Redesign": 1,
+      "Competitive Positioning": 1,
+      "Create Focus Challenges": 1,
+      "Content Strategy": 1,
+      "Gmail Customer Journey Analysis": 1,
+      "Growth Audit & Strategy": 1,
+      "Content Creation Framework": 1
+    },
+    "file": "data/advanced-frameworks-systems.json"
+  },
+  "Prompt Frameworks": {
+    "totalPrompts": 10,
+    "subcategories": {
+      "P-T-F (Prompt – Task – Format)": 1,
+      "T-A-G (Task – Action – Goal)": 1,
+      "B-A-B (Before – After – Bridge)": 1,
+      "C-A-R-E (Context – Action – Reference – Effect)": 1,
+      "R-I-S-E (Role – Input – Steps – Expectation)": 1,
+      "R-A-I-N (Role – Aim – Input – Numeric target – Format)": 1,
+      "C-L-A-R (Context – Limits – Action – Result)": 1,
+      "F-L-O-W (Function – Level – Output – Win metric)": 1,
+      "P-I-V-O (Problem – Insights – Voice – Outcome)": 1,
+      "S-E-E-D (Situation – Endgoal – Examples – Deliverables)": 1
+    },
+    "file": "data/prompt-frameworks.json"
+  },
+  "GBS Hub Productivity": {
+    "totalPrompts": 21,
+    "subcategories": {
+      "Daily Efficiency": 3,
+      "Meeting Management": 2,
+      "Data & Reporting": 3,
+      "Process Improvement": 3,
+      "Global Communication": 2,
+      "Training & Development": 3,
+      "Project Risk & Communication": 3,
+      "Career Development": 2
+    },
+    "file": "data/gbs-hub-productivity.json"
+  }
+}

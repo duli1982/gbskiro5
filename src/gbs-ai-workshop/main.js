@@ -1,6 +1,4 @@
-import { qs, qsa } from '../shared/scripts/utils/dom-helpers.js';
-import { initializeDropdown } from '../shared/scripts/components/dropdown.js';
-import { initializeNavigation } from '../shared/scripts/components/navigation.js';
+let qs, qsa, initializeDropdown, initializeNavigation;
 
 /**
  * Initializes all dropdown components on the page by finding
@@ -48,12 +46,15 @@ function initBackToTopButton() {
  * Main function to set up the GBS AI Workshop page.
  * This function is the entry point for all JavaScript on the page.
  */
-function main() {
+async function main() {
   try {
+    [{ qs, qsa }, { initializeDropdown }, { initializeNavigation }] = await Promise.all([
+      import('../shared/scripts/utils/dom-helpers.js'),
+      import('../shared/scripts/components/dropdown.js'),
+      import('../shared/scripts/components/navigation.js')
+    ]);
     initComponents();
     initBackToTopButton();
-    // NOTE: Other page-specific logic (like charts, simulators, etc.)
-    // will be progressively moved from the inline script to this file or other modules.
     console.log("GBS AI Workshop page scripts initialized successfully.");
   } catch (error) {
     console.error("Failed to initialize GBS AI Workshop page:", error);

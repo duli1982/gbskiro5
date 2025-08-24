@@ -1,0 +1,58 @@
+{
+  "Financial Advice": {
+    "Market Analysis": [
+      {
+        "id": "financial-advice-1",
+        "title": "Analyze Economic Trends",
+        "description": "Conduct comprehensive sector analysis including market conditions, historical data, and future projections with actionable recommendations for informed decision-making.",
+        "content": "As an experienced financial advisor, your task is to analyze economic trends for a [sector]. You are required to conduct comprehensive research on current market conditions, historical data, and future projections. Your analysis should identify key factors influencing the sector, such as regulatory changes, technological advancements, and consumer behavior shifts. Provide detailed insights and actionable recommendations for stakeholders. Your report should be clear, concise, and backed by data, enabling informed decision-making for investors and businesses within the sector."
+      },
+      {
+        "id": "financial-advice-2",
+        "title": "Get Stock Market Updates",
+        "description": "Provide concise market performance analysis highlighting key movements, significant stock performances, and insights into market drivers with future implications.",
+        "content": "Act as an experienced financial advisor. Provide a concise yet comprehensive update on today's stock market performance. Analyze key market movements, highlight significant stock performances, and offer insights into potential reasons behind these changes. Your update should be informative, providing valuable information to clients, and should also include a brief forecast or implications for future trading days."
+      }
+    ],
+    "Investment Strategy": [
+      {
+        "id": "financial-advice-3",
+        "title": "Find Investment Opportunities",
+        "description": "Research and identify promising investment opportunities with comprehensive risk-reward analysis, market condition assessment, and growth prospect evaluation.",
+        "content": "Act as an experienced financial advisor. Your task is to research and identify promising investment opportunities in [sector]. Utilize your expertise to analyze market trends, financial reports, and industry news to pinpoint the most lucrative and stable investment options. Provide a comprehensive report that includes a detailed analysis of potential risks and rewards, market conditions, and future growth prospects. Your report should offer well-founded advice to help clients make informed investment decisions, tailored to their financial goals and risk tolerance."
+      },
+      {
+        "id": "financial-advice-4",
+        "title": "Provide Investment Advice",
+        "description": "Create personalized investment recommendations tailored to client goals and risk tolerance with market trend analysis and long-term growth strategies.",
+        "content": "Act as an experienced financial advisor. Draft a personalized message offering investment advice to a client interested in [sector]. The message should be informative, reassuring, and tailored to the client's financial goals and risk tolerance. Utilize your expertise to analyze the current market trends in [sector], providing insights and recommendations. Your advice should be clear, concise, and backed by data, helping the client make well-informed investment decisions. Ensure the message also addresses potential risks and outlines a strategy for long-term growth and security."
+      },
+      {
+        "id": "financial-advice-5",
+        "title": "Analyze Portfolios",
+        "description": "Evaluate investment portfolios comprehensively including risk-return profiles, asset allocation, and performance analysis with optimization recommendations.",
+        "content": "As an experienced financial advisor, your task is to analyze the risk and return profile of a given investment portfolio. This involves a detailed assessment of the portfolio's asset allocation, historical performance, and potential future risks and returns. You'll need to use your expertise to evaluate how the portfolio's composition aligns with the client's risk tolerance and investment objectives. The analysis should include a review of market trends, economic indicators, and the performance of similar portfolios. Provide a comprehensive report with recommendations for adjustments to optimize the portfolio's performance, balancing risk and return in a manner that suits the client's financial goals."
+      }
+    ],
+    "Financial Planning": [
+      {
+        "id": "financial-advice-6",
+        "title": "Create Educational Materials",
+        "description": "Develop beginner-friendly financial guides that break down complex concepts into practical, actionable advice with real-life examples and common pitfall warnings.",
+        "content": "Act as an experienced financial advisor. Create an informative and easy-to-understand guide on the basics of [topic]. The guide should be tailored to beginners, breaking down complex financial concepts into digestible parts. Focus on providing practical advice, real-life examples, and actionable steps that readers can follow. Ensure that the guide is comprehensive, covering all fundamental aspects of the topic, and includes tips for avoiding common pitfalls. The aim is to educate readers, build their confidence in handling financial matters related to [topic], and encourage them to take informed actions."
+      },
+      {
+        "id": "financial-advice-7",
+        "title": "Create a Budget Plan",
+        "description": "Design comprehensive budget plans with personalized spending allocations, debt management strategies, and savings optimization aligned with long-term financial objectives.",
+        "content": "Create a comprehensive budget plan for a client with an [income]. The plan should be personalized to meet the client's financial goals and circumstances. Analyze the client's income, expenses, savings, and debts. Provide a detailed breakdown of recommended spending allocations in categories such as housing, utilities, groceries, transportation, savings, and debt repayment. Include strategies for reducing expenses, increasing savings, and managing debt effectively. Offer guidance on financial planning, investment options, and emergency funds. Ensure the plan is practical, sustainable, and aligned with the client's long-term financial objectives."
+      },
+      {
+        "id": "financial-advice-8",
+        "title": "Plan a Retirement",
+        "description": "Outline comprehensive retirement strategies including savings plans, investment approaches, and timeline milestones tailored to individual circumstances and goals.",
+        "content": "As an experienced financial advisor, your task is to outline a comprehensive retirement plan for an individual earning [income], aged [age], with the goal of retiring at [retirement age]. This plan should include detailed strategies for saving, investing, and managing finances to ensure a comfortable retirement. Address key factors like risk tolerance, investment options, and potential tax implications. Provide a timeline for achieving milestones and suggest ways to adjust the plan as circumstances change. Ensure the plan is personalized, realistic, and aligned with the client's long-term financial goals."
+      }
+    ]
+  }
+}

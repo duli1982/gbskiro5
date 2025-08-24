@@ -1,0 +1,164 @@
+{
+  "Prompting Techniques": {
+    "Zero-Shot Prompting": [
+      {
+        "id": "prompting-techniques-1",
+        "title": "Zero-Shot Prompting",
+        "description": "Ask the AI to perform tasks without providing examples, relying on its built-in knowledge and understanding.",
+        "content": "Ask the model to perform a task without providing any examples. Example Prompt: \"Summarize the following article in one paragraph.\""
+      }
+    ],
+    "Few-Shot Prompting": [
+      {
+        "id": "prompting-techniques-2",
+        "title": "Few-Shot Prompting",
+        "description": "Provide multiple examples to guide the AI's understanding and improve output consistency through pattern recognition.",
+        "content": "Provide a few examples to guide the model's output. Example Prompt: \"Translate to French: Hello = Bonjour, Goodbye = Au revoir. Now translate: Thank you.\""
+      }
+    ],
+    "One-Shot Prompting": [
+      {
+        "id": "prompting-techniques-3",
+        "title": "One-Shot Prompting",
+        "description": "Give exactly one example to demonstrate the desired format or approach before requesting the main task.",
+        "content": "Give exactly one example before the main task. Example Prompt: \"Correct the grammar: 'She go to school.' → 'She goes to school.' Now correct: 'He eat apple.'\""
+      }
+    ],
+    "Self-Refine Prompting": [
+      {
+        "id": "prompting-techniques-4",
+        "title": "Self-Refine Prompting",
+        "description": "Have the AI critique and improve its own responses through iterative self-evaluation and enhancement.",
+        "content": "Instruct the model to critique and improve its own answer. Example Prompt: \"Write a summary, critique it for clarity, and then rewrite it to be clearer.\""
+      }
+    ],
+    "Comparative Prompting": [
+      {
+        "id": "prompting-techniques-5",
+        "title": "Comparative Prompting",
+        "description": "Request side-by-side comparisons of multiple items using specific criteria for structured analysis.",
+        "content": "Ask the model to compare two or more items using specific criteria. Example Prompt: \"Compare apples and oranges in terms of nutrition and taste.\""
+      }
+    ],
+    "Role Prompting": [
+      {
+        "id": "prompting-techniques-6",
+        "title": "Role Prompting",
+        "description": "Assign the AI a specific role, persona, or expertise to generate more targeted and contextually appropriate responses.",
+        "content": "Assign the model a specific role or persona. Example Prompt: \"You are a career coach. Advise a recent graduate on job searching.\""
+      }
+    ],
+    "Meta Prompting": [
+      {
+        "id": "prompting-techniques-7",
+        "title": "Meta Prompting",
+        "description": "Ask the AI to generate, analyze, or improve prompts themselves, creating better prompting strategies.",
+        "content": "Ask the model to generate or improve prompts. Example Prompt: \"Create five prompts to help someone learn about climate change.\""
+      }
+    ],
+    "Input/Output Formatting": [
+      {
+        "id": "prompting-techniques-8",
+        "title": "Input/Output Formatting",
+        "description": "Specify exact input and output formats to ensure responses match your desired structure and presentation.",
+        "content": "Specify the desired input and output formats. Example Prompt: \"List three pros and cons of electric cars in bullet points.\""
+      }
+    ],
+    "Dynamic Prompting": [
+      {
+        "id": "prompting-techniques-9",
+        "title": "Dynamic Prompting",
+        "description": "Adapt and build upon previous responses in a conversation for deeper exploration and progressive understanding.",
+        "content": "Adapt prompts based on previous responses for deeper exploration. Example Prompt: \"Tell me about the Renaissance. Now, elaborate on Leonardo da Vinci's contributions.\""
+      }
+    ],
+    "Recursive Prompting": [
+      {
+        "id": "prompting-techniques-10",
+        "title": "Recursive Prompting",
+        "description": "Build systematically on previous answers to refine, expand, or analyze information through multiple iterations.",
+        "content": "Build on previous answers to refine or expand information. Example Prompt: \"Summarize 'Romeo and Juliet.' Now, analyze its main themes based on your summary.\""
+      }
+    ],
+    "Interleaved Prompting": [
+      {
+        "id": "prompting-techniques-11",
+        "title": "Interleaved Prompting",
+        "description": "Combine multiple question types or tasks within a single prompt for comprehensive, multi-faceted responses.",
+        "content": "Mix different question types in one prompt for a comprehensive answer. Example Prompt: \"Define climate change, list three effects, and suggest two solutions.\""
+      }
+    ],
+    "Least-to-Most Prompting": [
+      {
+        "id": "prompting-techniques-12",
+        "title": "Least-to-Most Prompting",
+        "description": "Break complex problems into smaller subproblems and solve them sequentially from simplest to most complex.",
+        "content": "Have the model break a problem into subproblems and solve them sequentially. Example Prompt: \"List the steps to solve 2x + 3 = 11, then solve each step.\""
+      }
+    ],
+    "Simulated Interaction Prompting": [
+      {
+        "id": "prompting-techniques-13",
+        "title": "Simulated Interaction Prompting",
+        "description": "Create realistic scenarios for role-playing conversations or interactive simulations with dynamic responses.",
+        "content": "Create a scenario for the model to role-play or simulate a conversation. Example Prompt: \"Pretend you are a doctor and I am a patient describing symptoms. Ask me questions.\""
+      }
+    ],
+    "Guided Exploration Prompting": [
+      {
+        "id": "prompting-techniques-14",
+        "title": "Guided Exploration Prompting",
+        "description": "Structure prompts to explore topics systematically through organized stages or progressive learning steps.",
+        "content": "Structure the prompt to explore a topic in stages. Example Prompt: \"Explain photosynthesis: start with a definition, then describe the steps, then its importance.\""
+      }
+    ],
+    "Tree-of-Thought Prompting": [
+      {
+        "id": "prompting-techniques-15",
+        "title": "Tree-of-Thought Prompting",
+        "description": "Guide the AI to consider multiple solution paths or decision branches before selecting the optimal approach.",
+        "content": "Guide the model to consider multiple solution paths or options. Example Prompt: \"List all possible ways to solve this puzzle, then pick the best one and explain why.\""
+      }
+    ],
+    "Generated Knowledge Prompting": [
+      {
+        "id": "prompting-techniques-16",
+        "title": "Generated Knowledge Prompting",
+        "description": "Have the AI generate relevant background knowledge first, then use that information to answer the main question.",
+        "content": "Ask the model to generate relevant facts before answering the main question. Example Prompt: \"List key facts about deforestation, then write an essay using those facts.\""
+      }
+    ],
+    "Task-Specific Prompting": [
+      {
+        "id": "prompting-techniques-17",
+        "title": "Task-Specific Prompting",
+        "description": "Clearly define specific tasks with precise constraints and requirements for highly targeted, accurate outputs.",
+        "content": "Clearly define the task and constraints for precise outputs. Example Prompt: \"Summarize this article in exactly three sentences.\""
+      }
+    ],
+    "Iterative Prompting": [
+      {
+        "id": "prompting-techniques-18",
+        "title": "Iterative Prompting",
+        "description": "Refine prompts and responses through multiple rounds of feedback and improvement for optimal results.",
+        "content": "Refine the prompt or response through multiple rounds of interaction. Example Prompt: \"Draft a business email. Now, make it more formal. Now, shorten it to 100 words.\""
+      }
+    ],
+    "Directional-Stimulus Prompting": [
+      {
+        "id": "prompting-techniques-19",
+        "title": "Directional-Stimulus Prompting",
+        "description": "Include specific keywords, cues, or constraints to guide the AI's output toward desired themes or elements.",
+        "content": "Include keywords or cues to guide the model's output. Example Prompt: \"Write a poem about love using the words 'heart,' 'passion,' and 'eternal.'\""
+      }
+    ],
+    "Chain-of-Thought Prompting": [
+      {
+        "id": "prompting-techniques-20",
+        "title": "Chain-of-Thought Prompting",
+        "description": "Encourage step-by-step reasoning and logical progression to improve accuracy in complex problem-solving tasks.",
+        "content": "Instruct the model to reason step by step. Example Prompt: \"Solve: 12 + 23. Think step by step.\""
+      }
+    ]
+  }
+}

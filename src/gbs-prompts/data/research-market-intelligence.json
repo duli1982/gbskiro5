@@ -1,0 +1,108 @@
+{
+  "Research & Market Intelligence": {
+    "Talent Market Analysis": [
+      {
+        "id": "research-market-intelligence-1",
+        "title": "Analyze Talent Market for a Specific Role/Location",
+        "description": "Conduct comprehensive talent market research with verifiable data on supply, demand, trends, and key employers for strategic hiring decisions.",
+        "content": "Act as a talent intelligence expert. Using only verifiable data sources, analyze the talent market for software engineers in Texas. Provide with citations: 1) Talent supply, 2) Growth trends, 3) Major employers, 4) Geographic hubs, 5) Market events impacting supply and demand."
+      },
+      {
+        "id": "research-market-intelligence-2",
+        "title": "Research Compensation and Benefits",
+        "description": "Gather current compensation data, benefits packages, and emerging trends to inform competitive salary offers and talent attraction strategies.",
+        "content": "Using recent salary surveys and reputable market data sources, research the following for quantitative analysts in New York City: 1) Compensation ranges (base, bonus, equity), 2) Common benefits and perks, 3) Emerging compensation trends."
+      },
+      {
+        "id": "research-market-intelligence-3",
+        "title": "Compare Talent Markets Across Locations",
+        "description": "Compare talent markets across multiple locations to identify optimal hiring regions, cost advantages, and market opportunities.",
+        "content": "Compare the ML Engineer talent markets in Seattle, Austin, and Atlanta. Include with sources: 1) Market size, 2) Compensation ranges, 3) Growth trends, 4) Unique market characteristics."
+      },
+      {
+        "id": "research-market-intelligence-4",
+        "title": "Recommend Sources for Market Intelligence Validation",
+        "description": "Identify authoritative sources and validation methods to ensure accuracy and reliability of market intelligence data for decision-making.",
+        "content": "What specific sources would you recommend to verify this market intelligence? Are there industry reports, salary surveys, or professional organizations that provide additional validation?"
+      }
+    ],
+    "Decoding Roles & Skills Across Industries": [
+      {
+        "id": "research-market-intelligence-5",
+        "title": "Explain a Complex Role in Simple Terms",
+        "description": "Break down complex or niche roles into understandable terms, clarifying responsibilities, business applications, and value to organizations.",
+        "content": "Explain mechatronics in simple terms, including: 1) Core responsibilities and skills, 2) How it's typically used in business, 3) Common challenges these professionals solve. Cite reliable sources."
+      },
+      {
+        "id": "research-market-intelligence-6",
+        "title": "Identify Alternative Job Titles for a Role",
+        "description": "Discover how roles are titled across different industries, company sizes, and regions to improve search strategies and candidate identification.",
+        "content": "Using verifiable industry data, provide: 1) Alternative titles for mechatronics engineers across different industries, 2) How the role is named in startups vs. enterprises, 3) Regional variations in job titles."
+      },
+      {
+        "id": "research-market-intelligence-7",
+        "title": "Analyze Equivalent and Overlapping Roles",
+        "description": "Map role equivalencies and skill overlaps across industries to identify broader talent pools and alternative candidate sources.",
+        "content": "Analyze the Site Reliability Engineer (SRE) role and provide with sources: 1) Equivalent titles in different industries, 2) Roles with overlapping skills, 3) Traditional roles that commonly transition into SRE positions."
+      },
+      {
+        "id": "research-market-intelligence-8",
+        "title": "Identify Transferable Skills and Career Paths for a Role",
+        "description": "Uncover non-obvious career pathways and transferable skills that lead to success in specific roles, expanding candidate pool strategies.",
+        "content": "Based on verified industry data, analyze the product owner role and identify: 1) Core skills that transfer from other industries, 2) Adjacent roles with high skill overlap, 3) Non-obvious career paths leading to success in this role."
+      }
+    ],
+    "Competitive Intelligence": [
+      {
+        "id": "research-market-intelligence-9",
+        "title": "Analyze a Competitor's Talent Strategy",
+        "description": "Research competitor talent strategies using public information to identify successful practices, attraction factors, and differentiation opportunities.",
+        "content": "Using only publicly available information, analyze a major tech company's talent strategy. Provide: 1) Key elements of their employer value proposition, 2) Primary attraction factors, 3) Development opportunities, 4) Unique benefits, 5) Recent changes in approach."
+      },
+      {
+        "id": "research-market-intelligence-10",
+        "title": "Compare Employer Brands",
+        "description": "Benchmark your employer brand against competitors to identify competitive advantages, gaps, and opportunities for brand differentiation.",
+        "content": "Compare our company's employer brand with Company A in terms of: 1) Areas where we outperform them, 2) Gaps we need to address, 3) Opportunities to differentiate our brand."
+      },
+      {
+        "id": "research-market-intelligence-11",
+        "title": "Analyze Public Employee Reviews for a Competitor",
+        "description": "Analyze employee sentiment and feedback patterns from review sites to understand competitor strengths, weaknesses, and culture trends.",
+        "content": "Analyze recent public employee reviews for a major global pharmaceutical company using sources like Glassdoor, Indeed, and Blind. Identify: 1) Common themes in positive feedback, 2) Recurring concerns, 3) Changes in sentiment over time."
+      },
+      {
+        "id": "research-market-intelligence-12",
+        "title": "Recommend Sources for Competitive Intelligence Validation",
+        "description": "Identify reliable sources and validation methods for competitive intelligence to ensure accuracy and completeness of competitor analysis.",
+        "content": "What additional sources would you recommend for verifying this competitive intelligence? Are there industry reports, employee review sites, or professional forums that provide additional validation?"
+      }
+    ],
+    "Industry Trend Analysis": [
+      {
+        "id": "research-market-intelligence-13",
+        "title": "Analyze Emerging Skills Trends in an Industry",
+        "description": "Identify and analyze emerging skill requirements and technology trends to anticipate future talent needs and hiring strategies.",
+        "content": "Based on verifiable industry sources, analyze emerging skills trends in the FMCG industry. Provide: 1) Skills gaining prominence, 2) Skills growing in job postings, 3) Technologies driving skill evolution, 4) Predicted critical skills for the next 2-3 years."
+      },
+      {
+        "id": "research-market-intelligence-14",
+        "title": "Compare Skills Trends from Multiple Sources",
+        "description": "Cross-reference skill trends from multiple data sources to identify consensus patterns and conflicting signals for strategic planning.",
+        "content": "Compare skills trends identified in: 1) Industry analyst reports, 2) Job posting data, 3) Professional certification programs, 4) Academic curriculum changes. Highlight areas of consensus and divergence."
+      },
+      {
+        "id": "research-market-intelligence-15",
+        "title": "Identify Sources for Trend Validation",
+        "description": "Find authoritative sources and thought leaders for validating industry trends and ensuring your intelligence is current and accurate.",
+        "content": "What specific sources provide the most current validation for these trends? Which industry experts or organizations are leading research in these areas?"
+      },
+      {
+        "id": "research-market-intelligence-16",
+        "title": "Compare Job Postings for a Single Role",
+        "description": "Analyze how different companies describe similar roles to understand market variations, unique requirements, and terminology differences.",
+        "content": "Analyze job postings from 3 different companies for the same role and identify: 1) Common core requirements, 2) Unique company-specific requirements, 3) Different ways companies describe similar skills or technologies."
+      }
+    ]
+  }
+}

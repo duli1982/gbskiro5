@@ -1,0 +1,225 @@
+{
+  "Recruitment": {
+    "Understand the Role and Job Market": [
+      {
+        "id": "recruitment-1",
+        "title": "Understand the Role and Job Market",
+        "requiredInputs": [
+          "job role name"
+        ],
+        "description": "Analyze roles comprehensively including responsibilities, skills, qualifications, and current market trends with salary benchmarks and demand insights.",
+        "quickStart": {
+          "steps": [
+            "Replace [job role] with the specific position you're researching (e.g., 'Senior React Developer')",
+            "Copy the complete prompt and paste it into your AI tool",
+            "Review the comprehensive analysis provided",
+            "Use insights for hiring decisions or career planning"
+          ],
+          "tips": [
+            "Be specific with job titles for better analysis",
+            "Consider adding location for more targeted salary data",
+            "Save the analysis for future reference when hiring"
+          ]
+        },
+        "expectedOutput": "A detailed report covering job responsibilities, required skills, market demand, salary ranges, hiring trends, and growth prospects for the specified role.",
+        "content": "Act as a Recruitment Specialist. Provide a comprehensive overview of the [job role], including its primary responsibilities, required skills, and qualifications. Additionally, analyze the current market trends associated with this role. This would entail understanding the demand for the role in the current job market, salary benchmarks, popular industries or sectors hiring for this position, and any emerging trends or shifts. Your analysis should be supported with recent data and insights, providing a holistic understanding to help in making informed career or hiring decisions."
+      }
+    ],
+    "Write Job Descriptions": [
+      {
+        "id": "recruitment-2",
+        "title": "Write Job Descriptions",
+        "requiredInputs": [
+          "job role",
+          "company values",
+          "specific requirements"
+        ],
+        "description": "Create compelling, inclusive job descriptions that attract qualified candidates while clearly communicating role expectations and company culture.",
+        "quickStart": {
+          "steps": [
+            "Gather: job title, key responsibilities, required skills, and company culture info",
+            "Replace [job role] with your specific position title",
+            "Add your company's values and culture details where needed",
+            "Review the generated description for inclusivity and clarity",
+            "Customize benefits and unique selling points for your organization"
+          ],
+          "tips": [
+            "Have your company's mission/values ready before starting",
+            "Consider what makes your role unique compared to competitors",
+            "Think about both must-have and nice-to-have qualifications",
+            "Use inclusive language that welcomes diverse candidates"
+          ]
+        },
+        "expectedOutput": "A complete job description with clear responsibilities, qualifications, inclusive language, company culture alignment, benefits overview, and SEO-optimized content for job boards.",
+        "content": "Act as a Recruitment Specialist. Draft a comprehensive job description for the specified [job role]. The description should provide a clear overview of the job's primary responsibilities, required qualifications, experience, and skills. Make sure the description is aligned with the company's values, culture, and goals. Ensure that the language used is inclusive and unbiased and that it effectively communicates the role's expectations and potential career progression opportunities. Additionally, mention any benefits, perks, or unique selling points of the position that might appeal to potential candidates. Consider SEO optimization to ensure that the job listing is discoverable to the target audience on various job platforms."
+      }
+    ],
+    "Analyze and Find Potential Gaps in Resumes": [
+      {
+        "id": "recruitment-3",
+        "title": "Analyze and Find Potential Gaps in Resumes",
+        "requiredInputs": [
+          "resume content",
+          "job requirements"
+        ],
+        "description": "Identify resume inconsistencies, employment gaps, and potential red flags to prepare targeted interview questions and assessments.",
+        "quickStart": {
+          "steps": [
+            "Have the candidate's resume ready to review",
+            "Paste the resume content for analysis",
+            "Review the identified gaps and inconsistencies",
+            "Prepare follow-up questions based on findings"
+          ],
+          "tips": [
+            "Look for unexplained time gaps between positions",
+            "Check for consistency in dates, job titles, and responsibilities",
+            "Consider cultural differences in resume formats"
+          ]
+        },
+        "expectedOutput": "A detailed analysis highlighting employment gaps, skill mismatches, inconsistencies, and suggested interview questions to address concerns.",
+        "content": "Act as a Recruitment Specialist. Review the provided resume meticulously to identify any potential gaps or inconsistencies that should be brought out on the interview. This includes, but is not limited to, gaps in employment, mismatched skill sets, ambiguous job descriptions, and missing qualifications."
+      }
+    ],
+    "Come Up With Interview Questions": [
+      {
+        "id": "recruitment-4",
+        "title": "Come Up With Interview Questions",
+        "requiredInputs": [
+          "job role",
+          "key competencies"
+        ],
+        "description": "Develop comprehensive interview questions that assess technical skills, soft skills, and cultural fit while ensuring legal compliance.",
+        "quickStart": {
+          "steps": [
+            "Identify the [job role] you're hiring for",
+            "List key technical and soft skills required",
+            "Copy the prompt and replace [job role] with your position",
+            "Review generated questions for relevance to your role",
+            "Select 8-12 questions for your interview"
+          ],
+          "tips": [
+            "Mix behavioral, technical, and situational questions",
+            "Prepare follow-up questions for deeper insights",
+            "Ensure questions are legal and non-discriminatory"
+          ]
+        },
+        "expectedOutput": "A comprehensive set of interview questions covering technical competencies, soft skills, cultural fit, with explanations of what each question assesses.",
+        "content": "Act as a Recruitment Specialist with expertise in crafting interview questions tailored to assess the right skills and fit for a specific job role. Develop a set of interview questions for the [job role]. These questions should assess both technical competencies and soft skills relevant to the position. Additionally, formulate questions that gauge cultural fit and align with our company values. Ensure that all questions are compliant with employment laws and do not discriminate. Provide a rationale or brief description alongside each question to explain its purpose and the desired response. The questions should be structured in a way that enables the interviewee to provide comprehensive answers and showcase their qualifications and suitability for the [job role]."
+      }
+    ],
+    "Draft an Email to a Potential Candidate": [
+      {
+        "id": "recruitment-5",
+        "title": "Draft an Email to a Potential Candidate",
+        "requiredInputs": [
+          "candidate name",
+          "job role",
+          "next steps"
+        ],
+        "description": "Compose professional, welcoming candidate communications that outline next steps and create positive first impressions of your organization.",
+        "quickStart": {
+          "steps": [
+            "Replace [name] with the candidate's actual name",
+            "Replace [job role] with the specific position",
+            "Add specific next steps and timeline details",
+            "Include your contact information and company details"
+          ],
+          "tips": [
+            "Personalize the email beyond just the name",
+            "Be clear about timeline and expectations",
+            "Maintain enthusiasm while being professional"
+          ]
+        },
+        "expectedOutput": "A professional, welcoming email that acknowledges the candidate's application, outlines next steps, and maintains a positive tone throughout.",
+        "content": "Act as a recruitment specialist. Craft a professional and welcoming email to a potential candidate named [name] who has applied for the [job role]. Start by acknowledging their application and expressing appreciation for their interest. Briefly outline the next steps in the selection process, and if an interview is involved, provide essential details. Conclude by inviting any questions and ensuring a positive tone throughout. Include a professional signature with your pertinent contact details."
+      }
+    ],
+    "Draft a Reject Email to a Candidate": [
+      {
+        "id": "recruitment-6",
+        "title": "Draft a Reject Email to a Candidate",
+        "requiredInputs": [
+          "candidate name",
+          "job role",
+          "interview stage",
+          "optional feedback"
+        ],
+        "description": "Create respectful, empathetic rejection communications that maintain positive candidate experience and protect company reputation.",
+        "quickStart": {
+          "steps": [
+            "Replace [candidate name] with the actual name of the applicant",
+            "Replace [job role] with the position they interviewed for",
+            "Replace [interview stage] with where they left off in the process (e.g., \"final interview\")",
+            "Optionally include brief, constructive feedback in [optional feedback]",
+            "Copy the complete prompt into your AI tool and generate the email",
+            "Review and personalize before sending"
+          ],
+          "tips": [
+            "Keep the message concise and professional",
+            "Use an empathetic tone and avoid overly specific criticisms",
+            "Encourage future engagement without overpromising",
+            "Ensure any feedback is constructive and limited to areas the candidate can improve"
+          ]
+        },
+        "expectedOutput": "A polite, professional rejection email addressed to the candidate, conveying the decision respectfully, including optional feedback, and inviting them to consider future openings.",
+        "content": "Act as a recruitment specialist. Craft a polite and professional rejection email to a candidate named [candidate name] who interviewed for the [job role] and reached the [interview stage]. The email should convey the decision in a respectful manner without providing excessive detail on the reasons. Ensure the tone is empathetic, optionally include the following feedback: [optional feedback], and encourage the candidate to consider future opportunities with our organization."
+      }
+    ],
+    "Create an Onboarding Strategy": [
+      {
+        "id": "recruitment-7",
+        "title": "Create an Onboarding Strategy",
+        "requiredInputs": [
+          "job role",
+          "start date"
+        ],
+        "description": "Design comprehensive onboarding programs that integrate new hires into company culture while ensuring rapid productivity and engagement.",
+        "quickStart": {
+          "steps": [
+            "Replace [job role] with the specific position",
+            "Add the employee’s [start date] where applicable",
+            "Copy the prompt into your AI tool to generate the strategy",
+            "Review the plan and adjust timelines or activities as needed",
+            "Share with HR and the hiring manager to finalize logistics"
+          ],
+          "tips": [
+            "Tailor the content and pacing to the complexity of the role",
+            "Include both formal training and informal cultural touchpoints",
+            "Identify experienced mentors or buddies for each new hire",
+            "Schedule regular check-ins and feedback sessions during the first 90 days"
+          ]
+        },
+        "expectedOutput": "A multi-phase onboarding plan for the [job role], detailing culture immersion, training modules, mentor assignments, resource provisioning, and a schedule of check-ins with feedback loops over the first three months.",
+        "content": "Act as a recruitment specialist and design an onboarding strategy tailored for [job role] starting on [start date]. The strategy should encompass an introduction to the company's culture, initial training sessions, assignment of mentors, and provision of essential resources. Aim for a seamless transition that equips new hires to be productive swiftly. Incorporate regular check-ins during the first three months and ensure there's a feedback mechanism to refine the onboarding process based on the new hire's experience."
+      }
+    ],
+    "Draft Post-onboarding Feedback": [
+      {
+        "id": "recruitment-8",
+        "title": "Draft Post-onboarding Feedback",
+        "requiredInputs": [
+          "job role",
+          "time period of onboarding"
+        ],
+        "description": "Create structured feedback questionnaires to evaluate onboarding effectiveness and identify improvement opportunities for future hires.",
+        "quickStart": {
+          "steps": [
+            "Replace [job role] with the position name",
+            "Specify the [time period of onboarding] (e.g., \"first 30 days\")",
+            "Paste the prompt into your AI tool to generate the questionnaire",
+            "Review the questions for clarity and relevance",
+            "Pilot with a recent hire and refine based on their input"
+          ],
+          "tips": [
+            "Mix rating-scale items with open-ended questions",
+            "Keep the form concise to encourage completion",
+            "Focus on actionable insights (e.g., clarity of training)",
+            "Include optional sections for additional comments or suggestions"
+          ]
+        },
+        "expectedOutput": "A post-onboarding feedback questionnaire for the [job role] covering qualitative and quantitative questions on training effectiveness, cultural integration, resource adequacy, and suggestions for improvement.",
+        "content": "Act as a recruitment specialist. Draft a post-onboarding feedback questionnaire tailored for a [job role] who has completed their [time period of onboarding]. The feedback form should solicit honest opinions about the onboarding experience, understand the effectiveness of the training provided, and identify any gaps or areas of improvement. Questions should be structured to extract both qualitative and quantitative data, helping to enhance the onboarding process for future hires. Ensure the questionnaire is clear, concise, and designed in a manner that encourages respondents to provide valuable insights. Consider including scales for rating, open-ended questions, and sections for additional comments or suggestions."
+      }
+    ]
+  }
+}

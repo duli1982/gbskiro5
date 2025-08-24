@@ -1,0 +1,58 @@
+{
+  "Course Creation": {
+    "Content Development": [
+      {
+        "id": "course-1",
+        "title": "Assist in Research",
+        "description": "Conduct comprehensive research on specific topics and create detailed summaries of latest studies, trends, and developments for current course content.",
+        "content": "As an experienced course creator, your task is to provide a comprehensive summary of the latest studies or news on a specific [topic] . This involves conducting thorough research to gather the most recent and relevant information, studies, and developments in the field. Your summary should be detailed, yet concise, and tailored to an audience interested in learning more about this topic. It should include key findings, notable trends, and any significant changes or advancements in the field. This summary will be used to update or create course content, ensuring that it remains current and informative for students or learners. Your expertise in course creation should guide the structure and presentation of the summary, making it both engaging and educational."
+      },
+      {
+        "id": "course-2",
+        "title": "Outline Course Syllabus",
+        "description": "Develop comprehensive course syllabi with progressive learning structures, varied teaching methodologies, and clear evaluation methods for effective education.",
+        "content": "Act as an experienced course creator. Develop a detailed course syllabus for a course on [topic] . The syllabus should provide a comprehensive overview of the course content, including a week-by-week breakdown of topics, learning objectives, and required readings or resources. Ensure that the course is structured to facilitate progressive learning, building on concepts in a logical sequence. Incorporate varied teaching methodologies, such as lectures, discussions, and hands-on activities. Also, include evaluation methods like assignments, quizzes, or projects to assess student understanding. The syllabus should be clear, engaging, and tailored to the needs and interests of the intended audience."
+      },
+      {
+        "id": "course-3",
+        "title": "Suggest Supplemental Materials",
+        "description": "Identify diverse supplemental resources including books, videos, podcasts, and interactive tools that enhance learning and cater to different learning styles.",
+        "content": "As an experienced course creator, your task is to identify and suggest a range of supplemental materials for a course on [topic] . These materials should enhance the learning experience, providing additional depth and perspective beyond the core curriculum. Evaluate various types of resources such as books, articles, videos, podcasts, and interactive tools. Ensure these materials are accessible, relevant, and engaging for the target audience. Your suggestions should cater to different learning styles and complement the main course content, aiming to reinforce and expand upon key concepts. Consider the current trends and advancements in the field of [topic] to keep the course content fresh and up-to-date."
+      },
+      {
+        "id": "course-4",
+        "title": "Draft a Script for a Video",
+        "description": "Create engaging video scripts with clear objectives, conversational tone, real-world examples, and logical progression for effective educational content delivery.",
+        "content": "As an experienced course creator, your task is to draft a script for a [lecture/video] focusing on [topic] . The script should be informative, engaging, and structured to facilitate easy understanding. Begin with an introduction that hooks the audience and clearly states the objectives of the lecture/video. Use a conversational tone to explain key concepts, incorporating real-world examples or case studies to illustrate points. Ensure the content is well-organized, with logical progression and clear transitions between sections. Conclude with a summary of the key takeaways and a call to action, encouraging further exploration of the topic. Remember to align the script with the target audience's level of knowledge and interest in the subject."
+      }
+    ],
+    "Student Engagement": [
+      {
+        "id": "course-5",
+        "title": "Suggest Discussion Topics",
+        "description": "Develop thought-provoking discussion topics that stimulate critical thinking, encourage participation, and incorporate real-world applications for deeper learning.",
+        "content": "As an experienced course creator, develop a list of engaging and thought-provoking discussion topics related to [topic] . These topics should stimulate critical thinking, encourage interactive participation, and deepen learners' understanding of the subject. Each topic should be framed in a way that is accessible yet challenging, catering to a diverse range of perspectives. Additionally, consider incorporating real-world applications and current trends in the field to make the discussions more relevant and enriching for the participants."
+      },
+      {
+        "id": "course-6",
+        "title": "Create Personalized Learning Tips",
+        "description": "Develop customized learning strategies tailored to individual student needs, learning styles, and strengths with actionable, engaging methods for improved outcomes.",
+        "content": "As an experienced course creator, your task is to develop personalized learning tips for [student] focused on [topic] . This requires analyzing the student's learning style, strengths, and areas for improvement. Create an engaging and effective learning strategy that caters specifically to the student's needs. The tips should be actionable, clear, and tailored to help the student grasp the concepts in [topic] more effectively. Include a mix of different teaching methods like visual aids, practical exercises, and interactive activities. Ensure the tips are structured to facilitate both understanding and retention, aiming to boost the student's confidence and interest in the subject."
+      }
+    ],
+    "Assessment": [
+      {
+        "id": "course-7",
+        "title": "Give Feedback on Assignments",
+        "description": "Provide constructive, detailed feedback on assignments that highlights strengths, identifies improvements, and supports student learning with actionable guidance.",
+        "content": "As an experienced course creator, review and provide constructive feedback on an assignment. Your role involves evaluating the assignment's content, structure, and adherence to the given guidelines. Offer insightful suggestions to improve clarity, engagement, and educational value. Highlight strengths and areas for improvement, maintaining a positive and encouraging tone. Ensure your feedback is detailed, actionable, and supports the student's learning journey, helping them understand not just what to improve, but also how to make those improvements effectively."
+      },
+      {
+        "id": "course-8",
+        "title": "Create an Interactive Quiz",
+        "description": "Design comprehensive quizzes with varied question types, immediate feedback mechanisms, and critical thinking challenges aligned with learning objectives.",
+        "content": "Act as an experienced course creator. Design a comprehensive and engaging quiz on [topic] that accurately assesses learners' understanding and retention of the material. The quiz should be structured to challenge and stimulate critical thinking, offering a variety of question types such as multiple-choice, true/false, and short answer. Ensure that the questions are clear, relevant, and aligned with the learning objectives. The quiz should also include a feedback mechanism for each answer, providing learners with immediate insight into their performance and encouraging further learning."
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "Graphic Design": {
+    "Design & Ideation": [
+      {
+        "id": "graphic-design-1",
+        "title": "Generate Design Concepts",
+        "description": "Create multiple visual design concepts that are on-brand, visually appealing, and effectively communicate key messages with variety for client selection.",
+        "content": "Act as an experienced graphic designer. Create 5 different graphic concepts based on the [project description] provided. These concepts should be visually appealing, on-brand, and effectively communicate the key message of the project. Use your design skills to bring the project description to life in a creative and engaging way. Provide a variety of options to give the client a range of choices to choose from. Ensure that the designs are high-quality and ready for presentation to the client."
+      },
+      {
+        "id": "graphic-design-2",
+        "title": "Suggest Color Scheme",
+        "description": "Develop cohesive color palettes based on project goals, target audience, and color psychology principles with clear reasoning and visual presentation.",
+        "content": "Act as an experienced graphic designer and suggest a color palette for a [project description] . Consider the project's goals, target audience, and overall aesthetic when selecting colors. Create a cohesive and visually appealing color scheme that conveys the desired mood and message of the project. Provide reasoning behind your color choices, taking into account color psychology and design principles. Present the color palette in a visually appealing and easily understandable format, such as a mood board or color swatches."
+      },
+      {
+        "id": "graphic-design-3",
+        "title": "Write Copy",
+        "description": "Craft compelling, memorable taglines that encapsulate project essence, resonate with target audiences, and differentiate from competitors with clear value communication.",
+        "content": "Act as an experienced business copywriter. Write a compelling and memorable tagline for a [project description] that encapsulates the essence of the project and resonates with the target audience. The tagline should be clear, concise, and impactful, helping to differentiate the project from competitors and leave a lasting impression. Use your creativity and knowledge of branding and marketing to craft a tagline that effectively communicates the project's value proposition and generates interest and excitement."
+      }
+    ],
+    "Client Management": [
+      {
+        "id": "graphic-design-4",
+        "title": "Draft Email for Client Updates",
+        "description": "Create professional project update emails with clear progress reporting, milestone achievements, and positive communication to maintain client engagement and confidence.",
+        "content": "Act as an experienced email copywriter. Draft an email to update the client on the [progress of the project] . The email should be clear, concise, and professional, providing detailed information on the current status of the project, any milestones achieved, and any potential challenges or delays. Use a positive and reassuring tone to reassure the client of the project's progress and highlight any positive outcomes. Ensure that the email is well-structured, easy to read, and includes all necessary information to keep the client informed and engaged."
+      },
+      {
+        "id": "graphic-design-5",
+        "title": "Interpret Client's Feedback",
+        "description": "Analyze and implement client feedback effectively while maintaining design principles and collaborating iteratively to achieve complete client satisfaction.",
+        "content": "Act as an experienced graphic designer responsible for addressing and adapting designs based on client feedback. Take into consideration the client's preferences, suggestions, and requirements to make necessary changes to the designs. Ensure that the revised designs meet the client's expectations and effectively communicate their message. Use your expertise in design principles, typography, color theory, and layout to enhance the overall visual appeal of the designs while staying true to the client's vision. Collaborate with the client to iterate on the designs until they are fully satisfied with the final result."
+      }
+    ]
+  }
+}

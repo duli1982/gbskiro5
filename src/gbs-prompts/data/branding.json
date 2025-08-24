@@ -1,0 +1,52 @@
+{
+  "Branding": {
+    "Brand Strategy": [
+      {
+        "id": "branding-1",
+        "title": "Suggest Brand Names",
+        "description": "Generate unique, memorable brand names that align with company identity, resonate with target markets, and pass trademark availability checks.",
+        "content": "Act as a brand naming expert. Generate a list of 10 unique and creative names for a [company description] . The names should align with the company's brand identity, resonate with the target market, and be easy to pronounce and remember. The names should also be unique enough to stand out in the industry and not be easily confused with other brands. Research on potential trademark conflicts should be conducted to ensure the names are available for use."
+      },
+      {
+        "id": "branding-2",
+        "title": "Craft Mission and Vision Statements",
+        "description": "Create inspiring mission and vision statements that articulate company purpose, future ambitions, and core values to guide strategy and inspire stakeholders.",
+        "content": "Act as a brand positioning expert. Write a mission and vision statement for a [company description] . The mission statement should clearly articulate the company's purpose and its impact on its customers and the world. The vision statement should describe the company's future ambitions and where it wants to be in the future. Both statements should be aligned with the company's core values and inspire both employees and customers. Ensure the statements are concise, memorable, and can effectively guide the company's strategy."
+      },
+      {
+        "id": "branding-3",
+        "title": "Plan Long-Term Positioning",
+        "description": "Develop comprehensive 5-year brand positioning strategies with competitive differentiation, market positioning, and measurable goals for sustained growth.",
+        "content": "Act as a brand positioning expert for the given [company] . Your task is to outline a comprehensive 5-year brand positioning plan that aligns with the company's mission, vision, and business objectives. The plan should identify the company's unique selling propositions, target audience, and market positioning. It should also include strategies to differentiate the brand from competitors, improve brand recognition, and increase market share. Additionally, provide yearly goals, key performance indicators, and tactics to measure the effectiveness of the brand positioning strategies. Ensure the plan is adaptable to market changes and trends."
+      }
+    ],
+    "Brand Identity": [
+      {
+        "id": "branding-4",
+        "title": "Create Logo Design Concepts",
+        "description": "Develop five distinct logo concepts that reflect brand identity, values, and mission with versatile designs suitable for multiple platforms and formats.",
+        "content": "As an expert in graphic design who has worked with major brands, your task is to suggest five unique concepts for a logo for a [company description] . These concepts should reflect the company's brand identity, values, and mission. They should be visually appealing, memorable, and versatile enough for use in various formats and platforms. Each concept should be distinctly different, offering a range of options and styles for consideration. Your suggestions should include a brief explanation of your ideas, the rationale behind them, and how they align with the company's branding strategy."
+      },
+      {
+        "id": "branding-5",
+        "title": "Generate Color Scheme",
+        "description": "Recommend strategic color palettes that convey brand personality, resonate with target audiences, and work effectively across all media platforms.",
+        "content": "Act as an expert graphic designer with experience working with major brands. Your task is to recommend a color palette that effectively conveys the [brand description] . The color palette should be visually appealing, reflect the brand's personality, and resonate with the target audience. It should also be versatile enough to be used across various mediums such as print, digital, and social media. Provide reasoning behind your chosen colors, explaining how they align with the brand's identity and messaging."
+      },
+      {
+        "id": "branding-6",
+        "title": "Write a Brand Story",
+        "description": "Craft compelling brand narratives that connect emotionally with audiences, convey core values, and differentiate the brand through authentic storytelling.",
+        "content": "As an experienced business copywriter, your task is to write a compelling brand story for a [company description] . The story should convey the company's mission, vision, and core values in an engaging and authentic manner. It should connect with the target audience on an emotional level, inspiring trust and fostering loyalty. Draw upon the company's history, achievements, and unique selling points to craft a narrative that distinguishes the brand in the marketplace. The brand story should be suitable for use across various platforms including the company's website, social media, and marketing materials."
+      }
+    ],
+    "Market Research": [
+      {
+        "id": "branding-7",
+        "title": "Research Market Trends",
+        "description": "Analyze current industry trends and predict future developments with comprehensive research to inform strategic business decisions and positioning.",
+        "content": "Act as a Market Research Specialist. Your task is to summarize the latest trends in the given [industry] . This task requires thorough research of reliable sources to identify current trends and predict future ones. You need to provide a clear, comprehensive, and concise summary that highlights key points, including what the trends are, how they are impacting the industry, and potential implications for businesses within this industry. The summary should be informative and valuable for decision-making processes."
+      }
+    ]
+  }
+}

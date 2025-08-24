@@ -1,4 +1,4 @@
-        import { render } from '../shared/scripts/utils/render.js';
+let render;
 
         // --- App State ---
         let focusPoints = [];
@@ -278,7 +278,8 @@
         }
 
         // --- Initial Load & Event Listeners ---
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', async () => {
+            ({ render } = await import('../shared/scripts/utils/render.js'));
             fetch('focus.json')
                 .then(response => response.json())
                 .then(data => {

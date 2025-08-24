@@ -1,0 +1,126 @@
+{
+  "Sourcing Strategy": {
+    "Sourcing Strategy Development": [
+      {
+        "id": "sourcing-strategy-1",
+        "title": "Analyze Target Employers",
+        "description": "Research and identify companies that employ your target talent, including job title variations, certifications, and educational backgrounds for strategic sourcing.",
+        "content": "As a talent acquisition expert specializing in cybersecurity, use the job description below and current industry trends to analyze employers of cybersecurity engineers with cloud security specialization in Washington, D.C. Include job title variations, professional certifications, and educational backgrounds."
+      },
+      {
+        "id": "sourcing-strategy-2",
+        "title": "Identify Niche Sourcing Channels",
+        "description": "Discover specialized professional communities, conferences, associations, and thought leaders where your ideal candidates are most active and engaged.",
+        "content": "Identify professional associations, key conferences, online communities, and thought leaders relevant to cybersecurity engineers specializing in cloud security."
+      },
+      {
+        "id": "sourcing-strategy-3",
+        "title": "Analyze Candidate Motivations",
+        "description": "Understand what drives career decisions, pain points, and motivators for your target talent to craft more compelling outreach and opportunities.",
+        "content": "Analyze career motivations and pain points for cybersecurity engineers. What factors drive career changes? What work environments and growth opportunities are most attractive to them?"
+      },
+      {
+        "id": "sourcing-strategy-4",
+        "title": "Create a Sourcing Strategy Plan",
+        "description": "Develop comprehensive sourcing strategies with ranked channels, targeted outreach content, and execution steps based on probability of success.",
+        "content": "Based on previous analysis, create a sourcing strategy for cybersecurity engineers in Washington, D.C. Include primary and niche sourcing channels, outreach content recommendations, and execution steps ranked by probability of success."
+      }
+    ],
+    "Hiring Manager Collaboration": [
+      {
+        "id": "sourcing-strategy-5",
+        "title": "Develop Hiring Manager Alignment Guide",
+        "description": "Create structured intake processes that align hiring managers and recruiters on role requirements, success metrics, and team dynamics.",
+        "content": "Help me develop a hiring manager alignment guide for ML engineer roles in Amsterdam. Include key intake questions covering role responsibilities, required vs. preferred skills, success metrics, team dynamics, and business impact."
+      },
+      {
+        "id": "sourcing-strategy-6",
+        "title": "Create a Requirements Validation Framework",
+        "description": "Build frameworks to validate job requirements against market reality, identifying deal-breakers versus flexible criteria for better hiring outcomes.",
+        "content": "Develop a structured requirements validation framework. Identify potential misalignments in skills requested versus market availability, clarify deal-breakers vs. flexible requirements, and recommend adjustments."
+      },
+      {
+        "id": "sourcing-strategy-7",
+        "title": "Analyze Job Description Change Impact",
+        "description": "Assess how evolving job requirements affect hiring timelines, candidate pipelines, and sourcing strategies to maintain recruitment momentum.",
+        "content": "Create a requirement change impact analysis for an evolving job description. Assess impacts on hiring timeline, candidate pipeline, and sourcing strategy."
+      },
+      {
+        "id": "sourcing-strategy-8",
+        "title": "Role-Play: Overcoming Hiring Manager Bias",
+        "description": "Practice conversations with resistant hiring managers through interactive role-play scenarios to improve persuasion and collaboration skills.",
+        "content": "Simulate an interactive role-play where I act as a recruiter and you play a hiring manager hesitant to interview candidates from non-traditional backgrounds. Provide feedback on my approach and suggest alternative strategies."
+      },
+      {
+        "id": "sourcing-strategy-9",
+        "title": "Interactive Role-Play: Persuading a Resistant HM",
+        "description": "Engage in realistic role-play scenarios to practice overcoming hiring manager objections about candidate qualifications and industry experience requirements.",
+        "content": "Let's engage in an interactive role play where you will play the role of a strategic technical recruiter and I will play the role of a hiring manager for a sales engineer position. I believe that only candidates with specific industry experience can succeed, though it's not a formal requirement. You're having difficulty finding candidates with my desired industry experience and feel you are finding well qualified candidates that meet the requirements. I will be resistant, raising common objections about risk, ramp time, and domain knowledge and wonder why you just can't find me the candidates I want. No matter how difficult I become, be infinitely patient and respectful and be logical and persuasive in your reasoning to reach a mutually acceptable resolution. After our role play, please provide a breakdown of the techniques you used, explaining why you chose certain approaches and how they helped overcome specific objections. Feel free to pause the roleplay at critical points if you want to explain or elaborate on your reasoning."
+      }
+    ],
+    "Talent Search Optimization": [
+      {
+        "id": "sourcing-strategy-10",
+        "title": "Generate Inclusive Boolean Search String",
+        "description": "Create comprehensive Boolean search strings that include variations, alternative terms, and implicit indicators to maximize candidate discovery.",
+        "content": "Act as an expert-level sourcer and generate a maximally inclusive Boolean search string for forklift operators. Ensure variations of key terms, verb forms, alternative job titles, and implicit search terms are included."
+      },
+      {
+        "id": "sourcing-strategy-11",
+        "title": "Review Boolean String for Bias",
+        "description": "Audit search strings for potential bias, exclusions, and regional variations to ensure inclusive and comprehensive talent discovery.",
+        "content": "Analyze this Boolean search string for potential bias or exclusions. Consider regional terminology, industry vocabulary, and non-traditional career paths. Suggest modifications to improve inclusivity and relevance."
+      },
+      {
+        "id": "sourcing-strategy-12",
+        "title": "Create a GitHub Sourcing Guide",
+        "description": "Master technical sourcing techniques using GitHub's native search and Google X-Ray methods to find software developers efficiently.",
+        "content": "Provide step-by-step instructions for sourcing software developers on GitHub using both GitHub search functionality and Google X-Ray search."
+      },
+      {
+        "id": "sourcing-strategy-13",
+        "title": "Plan Sourcing for Hard-to-Fill Roles",
+        "description": "Develop creative sourcing strategies for challenging positions by identifying niche communities, alternative titles, and adjacent skill sets.",
+        "content": "Generate a targeted sourcing plan for a hard-to-fill role. Identify niche communities, alternative job titles, and adjacent skills that could expand the talent pool."
+      },
+      {
+        "id": "sourcing-strategy-14",
+        "title": "Identify Non-Obvious Talent Pools",
+        "description": "Discover hidden talent sources by analyzing adjacent roles, transferable skills, career transition patterns, and alternative qualification paths.",
+        "content": "Help me identify non-obvious talent pools for data analyst roles by analyzing: 1) Adjacent roles with transferable skills, 2) Industries with similar technical requirements, 3) Academic or certification paths that develop relevant capabilities, 4) Career transition patterns into this role. Explain how each pool connects to the required skills."
+      }
+    ],
+    "Candidate-Job Matching": [
+      {
+        "id": "sourcing-strategy-15",
+        "title": "Create a Skills-Based Evaluation Matrix",
+        "description": "Build objective evaluation frameworks that assess technical competencies, project experience, and transferable skills for consistent candidate assessment.",
+        "content": "Using the attached job description, create an objective skills-based evaluation matrix for ML engineers. Include technical competencies, project experience criteria, and transferable skills considerations."
+      },
+      {
+        "id": "sourcing-strategy-16",
+        "title": "Expand Job Title and Skill Search Terms",
+        "description": "Identify comprehensive search terms including alternative job titles, related technologies, implicit skills, and industry-specific terminology for broader talent discovery.",
+        "content": "Please consider all possible job titles for this role. Include any alternative terms that people might use for required skills. Include any related technologies or tools that might indicate relevant experience. If applicable, include industry terms and/or companies that typically develop this talent. Enhance the search with implicit skill indicators, company-based targeting logic, and career progression markers, and explain the value each addition brings."
+      },
+      {
+        "id": "sourcing-strategy-17",
+        "title": "Compare Candidate Profiles to Framework",
+        "description": "Objectively evaluate candidate profiles against established criteria, focusing on skill alignment, experience relevance, and development potential.",
+        "content": "Compare three anonymized candidate profiles against this evaluation framework. Focus on skill alignment, project experience, and potential development areas while maintaining strict objectivity."
+      },
+      {
+        "id": "sourcing-strategy-18",
+        "title": "Identify Alternative Candidate Qualifications",
+        "description": "Recognize non-traditional pathways and alternative experiences that demonstrate competency, expanding your qualified candidate pool beyond conventional backgrounds.",
+        "content": "Identify alternative experiences or skill combinations that could demonstrate capability in ML engineering. Consider adjacent skills, relevant projects, and non-traditional learning paths."
+      },
+      {
+        "id": "sourcing-strategy-19",
+        "title": "Review Evaluation Framework for Bias",
+        "description": "Audit assessment criteria for unconscious bias and ensure fair evaluation of diverse backgrounds while maintaining competency standards.",
+        "content": "Review this candidate evaluation framework for bias. Suggest adjustments to ensure all backgrounds and career pathways are fairly considered while maintaining core competency focus."
+      }
+    ]
+  }
+}

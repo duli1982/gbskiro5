@@ -1,0 +1,52 @@
+{
+  "Meeting Notes": {
+    "Create Meeting Notes From a Transcript": [
+      {
+        "id": "meeting-notes-1",
+        "title": "Create Meeting Notes From a Transcript",
+        "description": "Transform raw meeting transcripts into organized, structured notes that capture key decisions, action items, and outcomes for easy reference.",
+        "content": "Act as a helpful assistant. Your task is to create concise, organized, and informative meeting notes from a provided [meeting transcript]. These notes should accurately capture the key points, decisions, action items, and any unresolved issues discussed during the meeting. Ensure that the notes are clear and structured in a way that makes them easy to read and reference. Additionally, the notes should include a brief summary or overview of the meeting's main objectives and outcomes for quick reference."
+      }
+    ],
+    "Summarize Meeting Notes": [
+      {
+        "id": "meeting-notes-2",
+        "title": "Summarize Meeting Notes",
+        "description": "Create concise executive summaries of meeting notes that enable non-attendees to quickly understand key outcomes and next steps.",
+        "content": "Act as a helpful assistant. Your task is to summarize the key points from [meeting notes]. The summary should be concise yet comprehensive, capturing the essence of the meeting. Your summary should enable someone who wasn't present at the meeting to understand its outcomes and next steps clearly."
+      }
+    ],
+    "Anonymize Meeting Notes": [
+      {
+        "id": "meeting-notes-3",
+        "title": "Anonymize Meeting Notes",
+        "description": "Remove sensitive information and personal identifiers from meeting notes while preserving essential content and maintaining confidentiality.",
+        "content": "Act as a helpful assistant responsible for handling sensitive information. Your task is to anonymize the [meeting notes] to ensure confidentiality and privacy. Carefully review the notes and remove or alter any names, job titles, company names, or any other specific details that could identify individuals or organizations. Replace these details with generic terms or placeholders as needed. Ensure the notes remain coherent and useful, retaining all key decisions, actions, and insights, while strictly adhering to privacy and data protection policies."
+      }
+    ],
+    "Create Action Items": [
+      {
+        "id": "meeting-notes-4",
+        "title": "Create Action Items",
+        "description": "Extract and organize actionable tasks from meeting notes with clear ownership, deadlines, and accountability for effective follow-through.",
+        "content": "Act as a helpful assistant. Your task is to distill key points and action items from the provided [meeting notes]. This involves carefully reading through the notes, and identifying the main discussion points, decisions made, and tasks assigned. Create a concise list of action items, ensuring each item is clear and specific. Assign responsible parties and deadlines for each action item. This will help in tracking progress and ensuring accountability. The final list should be organized, easy to understand, and ready for distribution to all meeting participants."
+      }
+    ],
+    "Create Follow-up Tasks": [
+      {
+        "id": "meeting-notes-5",
+        "title": "Create Follow-up Tasks",
+        "description": "Identify and organize follow-up tasks with dependencies, priorities, and timelines to ensure comprehensive post-meeting execution.",
+        "content": "Act as a helpful assistant who excels in organizing and planning. Your task is to carefully review the [meeting notes] and identify key action items, decisions, and any follow‑up tasks that need to be addressed. Your responsibility includes creating a detailed list of these tasks and setting deadlines where appropriate. Ensure that each task is clear, specific, and actionable. Additionally, consider any dependencies between tasks and highlight these in your plan. Your goal is to facilitate smooth progress and ensure that all important points from the meeting are acted upon efficiently."
+      }
+    ],
+    "Draft an Email With a Meeting Summary": [
+      {
+        "id": "meeting-notes-6",
+        "title": "Draft an Email With a Meeting Summary",
+        "description": "Compose professional summary emails that communicate meeting outcomes, decisions, and action items to stakeholders and team members.",
+        "content": "Act as a helpful assistant responsible for drafting emails. Write a concise and informative email that summarizes the key points and action items from [meeting notes]. The email should be structured clearly, beginning with a brief overview of the meeting's purpose and participants. Then, detail the main discussions, decisions made, and any agreed‑upon action items or follow‑up tasks. The tone should be professional yet approachable, ensuring that the email is easy to read and understand. The email should serve as a useful reference for attendees and others who need to be informed about the meeting's outcomes."
+      }
+    ]
+  }
+}

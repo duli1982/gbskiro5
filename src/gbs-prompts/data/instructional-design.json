@@ -1,0 +1,52 @@
+{
+  "Instructional Design": {
+    "Content & Curriculum Development": [
+      {
+        "id": "instructional-design-1",
+        "title": "Write Lecture Script",
+        "description": "Create engaging lecture scripts with interactive elements, visual aids, and real-life examples that align with learning objectives and promote active participation.",
+        "content": "Act as an experienced instructional designer. Write a detailed lecture script about [topic] that is engaging, informative, and educational. The script should be structured in a way that effectively conveys the key concepts and information to the audience. Incorporate interactive elements, visual aids, and real-life examples to enhance learning and retention. Ensure that the script aligns with the learning objectives and is suitable for the target audience's level of understanding. Additionally, include opportunities for audience participation and discussion to promote active learning and engagement."
+      },
+      {
+        "id": "instructional-design-2",
+        "title": "Develop Quizzes and Tests",
+        "description": "Design comprehensive assessments with varied difficulty levels, clear questions, and explanatory feedback to test knowledge and reinforce learning effectively.",
+        "content": "As an experienced instructional designer, your task is to create a set of 10 multiple-choice questions for a quiz on [topic] . The questions should cover a range of difficulty levels and test the knowledge of the learners on the topic. Ensure that the questions are clear, concise, and relevant to the learning objectives. Provide four answer choices for each question, including one correct answer and three distractors. Additionally, include explanations for the correct answers to help reinforce learning and understanding. The quiz should be engaging and challenging, encouraging learners to test their knowledge and retention of the topic."
+      },
+      {
+        "id": "instructional-design-3",
+        "title": "Generate Learning Objective",
+        "description": "Develop creative, engaging themes and concepts that align with educational goals while considering target audience and effective message communication.",
+        "content": "As an experienced instructional designer, your task is to generate creative themes for a photoshoot centered around [topic] . These themes should be engaging, visually appealing, and align with the overall message or goal of the shoot. Consider the target audience and the key message that needs to be conveyed through the photos. Brainstorm different concepts, settings, props, and visual elements that will bring the theme to life and make the photoshoot memorable. Your goal is to inspire and guide the team in creating visually stunning and impactful images that effectively communicate the intended message."
+      }
+    ],
+    "Interactive Learning": [
+      {
+        "id": "instructional-design-4",
+        "title": "Suggest Interactive Content",
+        "description": "Brainstorm engaging interactive learning activities including quizzes, simulations, and case studies that enhance understanding and promote active participation.",
+        "content": "Act as an experienced instructional designer. Brainstorm and suggest interactive content ideas for a [course description] . The interactive content should engage learners, enhance their understanding of the material, and promote active participation. Consider incorporating activities such as quizzes, simulations, case studies, group discussions, or virtual labs. Ensure that the interactive content aligns with the course objectives and enhances the overall learning experience for the target audience. Provide detailed descriptions and rationale for each interactive content idea."
+      },
+      {
+        "id": "instructional-design-5",
+        "title": "Brainstorm Virtual Classroom Activities",
+        "description": "Create diverse virtual learning activities that cater to different learning styles while incorporating technology tools for enhanced online educational experiences.",
+        "content": "Act as an experienced instructional designer. Create a list of engaging and interactive virtual classroom activities for a [course description] . These activities should align with the course objectives and cater to different learning styles. Include a variety of activities such as group discussions, case studies, simulations, quizzes, polls, and interactive presentations. Ensure that the activities promote active learning, encourage participation, and provide opportunities for students to apply their knowledge. Consider incorporating technology tools and platforms to enhance the virtual learning experience."
+      },
+      {
+        "id": "instructional-design-6",
+        "title": "Create Interactive Scenarios",
+        "description": "Design realistic, engaging scenarios that provide practical contexts for learners to apply knowledge and skills while supporting overall learning outcomes.",
+        "content": "As an experienced instructional designer, your task is to create a scenario for a [specific module] within a course. The scenario should be engaging, relevant, and align with the learning objectives of the module. It should provide a realistic context for learners to apply the knowledge and skills they are acquiring. Consider the target audience, learning preferences, and desired learning outcomes when crafting the scenario. Make sure the scenario is clear, concise, and effectively supports the overall learning experience."
+      }
+    ],
+    "Review & Inclusivity": [
+      {
+        "id": "instructional-design-7",
+        "title": "Review Course Content for Bias",
+        "description": "Analyze educational content for cultural bias and provide recommendations to promote inclusivity, diversity, and culturally responsive teaching practices.",
+        "content": "As an experienced instructional designer, your task is to review [course module] for any potential cultural bias and suggest changes if needed. Analyze the module's content, activities, assessments, and language to identify any elements that may alienate or disadvantage learners from diverse cultural backgrounds. Offer recommendations for adjustments that promote inclusivity, cultural sensitivity, and diversity in the instructional materials. Ensure that the revised module aligns with best practices in culturally responsive teaching and learning."
+      }
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "GBS Hub Productivity": {
+    "Daily Efficiency": [
+      {
+        "id": "gbs-productivity-1",
+        "title": "Daily Kick-Start Briefing",
+        "content": "Act as my productivity assistant. It's the start of my day, [current date and time]. Using @Gmail and my @Calendar for today, please: 1. Summarize any high-priority emails received since 5 PM yesterday. 2. List my meetings for today, including attendees and objectives from the calendar invite. 3. Identify the top 3 tasks I should focus on based on email content and my calendar."
+      },
+      {
+        "id": "gbs-productivity-2",
+        "title": "Draft a Professional Follow-Up Email",
+        "content": "Act as a business communication expert. I need to follow up on a request I sent to [Recipient's Name/Team] on [Date of original email] regarding [Topic of email]. The tone should be professional and polite, but firm. Draft an email that reminds them of the pending request, states the importance of their input, and asks for an estimated timeline for their response."
+      },
+      {
+        "id": "gbs-productivity-11",
+        "title": "Post-Holiday Catch-Up Briefing",
+        "content": "I was on holiday from [Start Date] to [End Date]. Please act as my executive assistant and create a \"Welcome Back\" briefing. Use @Gmail and @Drive to: 1. Summarize urgent emails that require my direct attention. 2. List new documents in Drive that have been shared with me for review. Combine everything into a single, prioritized list of action items."
+      }
+    ],
+    "Meeting Management": [
+      {
+        "id": "gbs-productivity-3",
+        "title": "Pre-Meeting Intelligence Report",
+        "content": "Act as my research analyst. I have a meeting titled '[Meeting Title]' in my @Calendar on [Date]. Please use @Gmail and @Drive to find relevant documents, previous email threads with the attendees ([List of Attendees]), and any past meeting notes related to this topic. Synthesize this information into a 1-page briefing summary with key discussion points and potential questions to ask."
+      },
+      {
+        "id": "gbs-productivity-4",
+        "title": "Generate Meeting Minutes & Action Items",
+        "content": "Act as a project coordinator. I am providing you with the raw notes/transcript from a meeting about [Meeting Topic]. Please structure this information into a formal meeting minutes document that includes: 1. A list of attendees. 2. A brief summary of the discussion. 3. Key decisions made. 4. A clear table of action items with columns for 'Task', 'Owner', and 'Due Date'."
+      }
+    ],
+    "Data & Reporting": [
+      {
+        "id": "gbs-productivity-5",
+        "title": "Analyze Spreadsheet Data for Trends",
+        "content": "Act as a data analyst. I have attached a spreadsheet [@Drive file name] containing [type of data, e.g., monthly sales figures, IT support tickets, etc.]. Please analyze the data and provide: 1. A summary of key trends observed over the period. 2. Identification of any significant anomalies or outliers. 3. Three data-backed insights that could be used for our next performance review. Present the results in a clear, bulleted list."
+      },
+      {
+        "id": "gbs-productivity-6",
+        "title": "Create a Presentation Outline from a Report",
+        "content": "Act as a strategy consultant. Based on the attached document [@Drive file name], which is a [type of report, e.g., Q3 Financial Report], create a compelling 10-slide presentation outline for an executive audience. For each slide, provide a title, key bullet points, and a suggestion for a visual element (e.g., chart, graph, table)."
+      },
+      {
+        "id": "gbs-productivity-7",
+        "title": "Simplify a Complex Topic",
+        "content": "Act as an expert technical writer. I need to explain the concept of [complex GBS topic, e.g., 'the Procure-to-Pay process', 'robotic process automation in finance'] to new hires who have no prior experience. Write a simple, one-page explanation using an analogy and avoiding technical jargon. The goal is clarity and easy understanding."
+      }
+    ],
+    "Process Improvement": [
+      {
+        "id": "gbs-productivity-8",
+        "title": "Brainstorm Process Improvement Ideas",
+        "content": "Act as a Six Sigma facilitator. Our team is facing a challenge with [describe the business problem, e.g., 'the long turnaround time for customer query resolution']. Lead a brainstorming session by generating a list of 10 potential root causes and for each cause, suggest one innovative solution involving technology, process change, or people/training."
+      },
+      {
+        "id": "gbs-productivity-9",
+        "title": "Draft a Standard Operating Procedure (SOP)",
+        "content": "Act as a process documentation specialist. I will describe a task: [Describe the steps of the task you want to document, e.g., 'To process a new vendor invoice, first you check it against the PO, then you get manager approval via email, then you enter it into SAP...']. Your task is to convert this description into a formal, clearly structured SOP document. Include sections for Purpose, Scope, Step-by-Step Instructions, and Roles & Responsibilities."
+      },
+      {
+        "id": "gbs-productivity-10",
+        "title": "Year-End Performance Review Prep",
+        "content": "Act as a career coach. I need to prepare for my year-end performance review. I worked on projects like [List 2-3 key projects]. Please scan my @Gmail and @Drive from [Start of Year] to [End of Year] to: 1. Find emails containing positive feedback or recognition. 2. Identify key documents I created or significantly contributed to. 3. Summarize my main achievements into 5-7 STAR (Situation, Task, Action, Result) method bullet points."
+      }
+    ],
+    "Global Communication": [
+      {
+        "id": "gbs-productivity-1",
+        "title": "Draft a Culturally Aware Global Announcement",
+        "content": "Act as a global communications specialist. Draft an announcement about [topic of announcement, e.g., a new system rollout]. The primary audience is in [Primary Region, e.g., North America], but it will be read by teams in EMEA and APAC. Ensure the tone is professional, the language is clear and avoids jargon, and mention that regional-specific details will follow. Consider time zone differences in your call to action."
+      },
+      {
+        "id": "gbs-productivity-2",
+        "title": "Localize Communication for a Specific Region",
+        "content": "Act as a localization expert for Germany. I have an announcement written for a US audience (pasted below). Please review and adapt it for our team in Germany. Check for US-centric idioms, adjust formatting for dates (DD.MM.YYYY), and add a culturally relevant closing. Given today is Thursday, August 7, 2025, ensure any deadlines mentioned are reasonable. \n\n[Paste original announcement text here]"
+      }
+    ],
+    "Training & Development": [
+      {
+        "id": "gbs-productivity-3",
+        "title": "Create a New Hire Onboarding Plan",
+        "content": "Act as an HR onboarding specialist. Create a detailed 5-day onboarding plan for a new [Job Title, e.g., 'Financial Analyst'] joining our team. The plan should include: introductions to key team members, mandatory training modules, initial tasks to get them started, and links to important documents in our @Drive like SOPs and team charters. Structure it as a checklist."
+      },
+      {
+        "id": "gbs-productivity-4",
+        "title": "Generate a Knowledge Quiz from a Document",
+        "content": "Act as a corporate trainer. I have attached a training document or SOP named [@Drive file name]. Read the document and create a 10-question multiple-choice quiz to test a user's understanding of the key concepts. Provide the questions and the correct answer for each."
+      },
+      {
+        "id": "gbs-productivity-5",
+        "title": "Develop a 'Frequently Asked Questions' (FAQ)",
+        "content": "Act as a knowledge management specialist. I have a collection of emails/tickets in a document [@Drive file name] where our team has answered questions about [specific topic, e.g., 'the new expense reporting system']. Analyze these interactions and generate a comprehensive FAQ document that addresses the most common questions and provides clear, concise answers."
+      }
+    ],
+    "Project Risk & Communication": [
+      {
+        "id": "gbs-productivity-6",
+        "title": "Identify Project Risks and Mitigation",
+        "content": "Act as a certified Project Management Professional (PMP). Here is a brief for a new project: [Describe project, e.g., 'We are migrating our vendor data to a new platform over the next 3 months.']. Please identify 5 potential risks related to this project. For each risk, create a table with columns for: 'Risk Description', 'Likelihood (High/Medium/Low)', 'Impact (High/Medium/Low)', and 'Proposed Mitigation Strategy'."
+      },
+      {
+        "id": "gbs-productivity-7",
+        "title": "Draft a Concise Project Status Update",
+        "content": "Act as a project manager. I need to send a weekly status update to stakeholders. Using the following notes, draft a clear and concise email update. The update should have three sections: 1. Key Accomplishments This Week. 2. Challenges/Roadblocks. 3. Priorities for Next Week. \n\nMy notes: [Paste your bullet points, e.g., - User testing phase 1 complete. - API integration is delayed. - Need approval on budget for X. - Will start data mapping next Monday.]"
+      },
+      {
+        "id": "gbs-productivity-8",
+        "title": "Formulate a Stakeholder Communication Plan",
+        "content": "Act as a change management consultant. For our upcoming project, '[Project Name]', the key stakeholders are [List stakeholders, e.g., 'Head of Finance, IT Support Team, all GBS employees']. Create a communication plan in a table format. The table should include: 'Stakeholder Group', 'Key Message/Interest', 'Communication Method (Email, Meeting, etc.)', 'Frequency', and 'Owner'."
+      }
+    ],
+    "Career Development": [
+      {
+        "id": "gbs-productivity-9",
+        "title": "Identify Skills for Career Progression",
+        "content": "Act as a career development coach. My current role is [Your Job Title] and I want to progress to a [Target Job Title] role within the next 2 years. Based on a generic job description for the target role, analyze the likely skill gaps compared to my current role. List the top 3 technical skills and 3 soft skills I should develop, and suggest one specific action for each (e.g., 'Take a specific online course', 'Volunteer for a specific type of project')."
+      },
+      {
+        "id": "gbs-productivity-10",
+        "title": "Turn Responsibilities into Achievements",
+        "content": "Act as an expert resume writer. I am updating my internal profile for a development discussion. Please rewrite the following list of my daily tasks into impactful achievement-oriented bullet points using the STAR (Situation, Task, Action, Result) method. \n\nMy tasks: [List 3-5 of your job responsibilities, e.g., - I process invoices every day. - I answer support tickets from users. - I run the weekly sales report.]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "Resume Writing": {
+    "Gather and Organize All Necessary Information": [
+      {
+        "id": "resume-writing-1",
+        "title": "Gather and Organize All Necessary Information",
+        "description": "Conduct comprehensive information gathering through strategic questioning to collect all necessary details for building complete, compelling resumes.",
+        "content": "Act as an HR specialist with strong organizational skills. Your task is to ask me questions and gather all the required information needed to build a comprehensive and compelling resume. This involves collecting personal details, educational background, work experience, skills, certifications, achievements, and references. You won't stop asking questions until you have all the necessary information."
+      }
+    ],
+    "Write a Full Resume in One Go": [
+      {
+        "id": "resume-writing-2",
+        "title": "Write a Full Resume in One Go",
+        "description": "Create complete, ATS-optimized resumes from scratch using provided information, focusing on keyword integration and professional formatting for maximum impact.",
+        "content": "Act as an HR specialist with expertise in resume building and Applicant Tracking System (ATS) optimization. Write a resume based on the provided [information] that is tailored to pass through ATS filters effectively and appeal to hiring managers. The resume should be structured in a clear, professional format highlighting the candidate's skills, experiences, and accomplishments with relevant keywords that match the job description. Ensure that the layout is simple yet compelling, focusing on readability and the inclusion of quantifiable achievements. Offer guidance on how to present gaps in employment or switch in industries in a positive light. The final product should enhance the candidate's chances of securing an interview by standing out in both ATS algorithms and human evaluations."
+      }
+    ],
+    "Proofread and Edit the Resume for Errors": [
+      {
+        "id": "resume-writing-3",
+        "title": "Proofread and Edit the Resume for Errors",
+        "description": "Provide comprehensive resume editing services including grammar correction, content enhancement, and structural improvements for professional presentation.",
+        "content": "Act as a resume proofreader expert. Carefully examine and proofread the provided resume to ensure it is error-free and polished to the highest standard. Pay close attention to grammar, punctuation, and spelling. Ensure that the language is clear, concise, and professional, enhancing the job seeker's qualifications and experiences. Offer constructive feedback on the resume's layout, design, and overall structure, suggesting improvements where necessary to make it more appealing to potential employers. Your goal is to optimize the resume, increasing the job seeker's chances of securing interviews in their desired field."
+      }
+    ],
+    "Tailor Resume to a Job Description": [
+      {
+        "id": "resume-writing-4",
+        "title": "Tailor Resume to a Job Description",
+        "description": "Customize existing resumes to match specific job requirements through strategic keyword integration and content prioritization for targeted applications.",
+        "content": "Act as an HR specialist with expertise in resume building. Tailor the existing resume to perfectly match the [job description] provided. This task involves analyzing the job description in detail to understand the specific skills, experiences, and qualifications the employer is seeking. Then, meticulously revise the existing resume to highlight the most relevant aspects of the candidate's background. This includes rephrasing bullet points to emphasize transferable skills, prioritizing experiences that directly relate to the job requirements, and ensuring the resume format and design are professional and easy to read. Incorporate keywords from the job description to ensure the resume passes through Applicant Tracking Systems (ATS) effectively."
+      }
+    ]
+  }
+}

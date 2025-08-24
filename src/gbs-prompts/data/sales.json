@@ -1,0 +1,38 @@
+{
+  "Sales": {
+    "Market Research": [
+      {
+        "id": "sales-1",
+        "title": "Perform Market Research",
+        "description": "Conduct comprehensive market analysis to understand competitive landscape, identify target segments, and develop data-driven sales strategies with pricing and promotional tactics.",
+        "content": "Act as an experienced salesman with years of expertise in the field. Your task is to gather crucial market data that will inform a comprehensive sales strategy for [product type] . This involves conducting in-depth market research to understand the competitive landscape, identifying target customer segments, and analyzing current trends and customer behaviors related to [product type] . Utilize a variety of research methods, including surveys, focus groups, and analysis of sales data. The goal is to compile a detailed report that includes potential sales channels, pricing strategies, and recommendations for marketing and promotional tactics. Your insights will be instrumental in positioning [product type] for success in the market, leveraging your experience to anticipate challenges and capitalize on opportunities."
+      }
+    ],
+    "Sales Enablement": [
+      {
+        "id": "sales-2",
+        "title": "Help With Sales Enablement",
+        "description": "Create strategic sales outlines that identify customer needs, highlight product benefits, and build compelling value propositions for targeted customer engagement.",
+        "content": "As an experienced salesman with years of expertise, your task is to create a comprehensive sales outline tailored for [target customer] that showcases the key benefits they will gain from [product] . This outline should serve not only as a persuasive tool but also as a strategic guide for engaging potential customers effectively. Begin by identifying and understanding the specific needs, preferences, and pain points of [target customer] . Use this insight to highlight how [product] directly addresses these areas, emphasizing the unique value proposition and competitive advantages it offers. Ensure that your sales outline is structured logically, flows smoothly, and speaks directly to [target customer] in a language they understand and appreciate. Your goal is to not only inform and persuade but also to build a connection that positions [product] as the ideal solution for their needs."
+      },
+      {
+        "id": "sales-3",
+        "title": "Write Sales Scripts",
+        "description": "Develop compelling sales scripts with engaging openings, objection handling, interactive questions, and strong closing techniques to maximize conversion rates.",
+        "content": "Act as an experienced salesman with years of expertise in direct sales. Your task is to write a compelling sales script for [product] that targets [target audience] . The script must be designed to engage potential customers from the beginning, addressing their needs and concerns while highlighting the benefits and features of [product] . Use persuasive language to build interest, create a connection, and ultimately convince the customer to make a purchase. The script should include questions that encourage customer interaction, responses to common objections, and a strong closing that urges immediate action. Ensure the script is concise, adaptable for different sales scenarios, and encapsulates your years of sales wisdom to maximize conversion rates."
+      },
+      {
+        "id": "sales-4",
+        "title": "Simulate Sales Call",
+        "description": "Practice sales scenarios by simulating realistic customer objections including price concerns, relevance doubts, and effectiveness questions for improved objection handling.",
+        "content": "Act as a hesitant customer on a sales call. You're being presented with [product] , but despite the salesperson's best efforts, you're not yet convinced to make a purchase. Your task is to articulate your objections clearly, covering a range of concerns such as the product's price, its relevance to your needs, potential doubts about its effectiveness, and any other reservations you might have. Your objections should be rational and reflect common concerns that customers might have, providing a realistic scenario for the salesperson to address. The objective is to present these objections as challenges that need to be overcome for you to consider moving forward with the purchase."
+      },
+      {
+        "id": "sales-5",
+        "title": "Suggest Sales Collaterals",
+        "description": "Recommend effective sales materials including brochures, case studies, demos, and testimonials with strategic guidance for usage throughout the sales funnel.",
+        "content": "As an experienced salesman with years of expertise, your task is to identify and suggest a range of effective sales collaterals for the sales process of [product] . These materials should be designed to support and enhance the sales strategy, providing potential clients with compelling information that addresses their needs and concerns. Your suggestions should include a variety of formats such as brochures, case studies, product demos, comparison charts, and testimonials that can be used at different stages of the sales funnel to build trust, demonstrate value, and ultimately close deals. Additionally, provide guidance on how each collateral type can be effectively utilized in the sales process to engage prospects, overcome objections, and facilitate decision-making. Your recommendations should be based on proven sales principles and your own successful experiences in the field."
+      }
+    ]
+  }
+}
