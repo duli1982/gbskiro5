@@ -12,13 +12,15 @@ This folder contains the interactive workshop used to introduce GBS teams to pra
   - `../shared/ai-sme-colors.css` – shared color palette
 
 ## Building and Testing
-No build step is necessary. Launch a local server and open `index.html`:
+Run the development server from the repository root to preview this workshop alongside the rest of the site:
 
 ```bash
-python3 -m http.server
+npm run dev
 ```
 
-Automated tests are not defined for this project. Running `npm test` will confirm the absence of tests.
+Eleventy and Vite will serve all pages; open `/gbs-ai-workshop/` in your browser.
+
+Automated tests are not defined for this project. Running `npm test` in the project root will confirm the absence of tests.
 
 ## Contribution Guidelines
 1. Keep markup and styles minimal and reuse files from `../shared/`.
