@@ -1,3 +1,5 @@
+        import { render } from '../shared/scripts/utils/render.js';
+
         // --- App State ---
         let focusPoints = [];
         let progressState = {};
@@ -45,51 +47,123 @@
             cardElement.className = 'card w-full bg-white p-6 rounded-xl shadow-lg border border-gray-200';
             cardElement.dataset.pointId = pointId;
 
-            const actionsHtml = point.actions.map((action, index) => {
-                const isChecked = progressState[pointId] ? progressState[pointId][index] : false;
-                return `
-                    <li class="action-item rounded-lg ${isChecked ? 'completed' : ''}">
-                        <label for="action-${pointId}-${index}" class="flex items-center p-3 cursor-pointer">
-                            <input id="action-${pointId}-${index}" type="checkbox"
-                                   class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                                   ${isChecked ? 'checked' : ''}
-                                   onchange="handleCheckboxChange(this, '${pointId}', ${index})">
-                            <span class="ml-3 text-gray-700">${action}</span>
-                        </label>
-                    </li>
-                `;
-            }).join('');
+            // Top section
+            const topDiv = document.createElement('div');
+            const headerDiv = document.createElement('div');
+            headerDiv.className = 'flex justify-between items-center mb-3';
 
-            cardElement.innerHTML = `
-                <div>
-                    <div class="flex justify-between items-center mb-3">
-                        <span class="text-sm font-semibold text-indigo-600">${point.category}</span>
-                        <span class="progress-text text-sm font-medium text-gray-500"></span>
-                    </div>
-                    <div class="progress-bar w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                        <div class="progress-bar-inner bg-green-500 h-2.5 rounded-full" style="width: 0%"></div>
-                    </div>
-                    <h3 class="text-lg md:text-xl font-bold text-gray-800">${point.title}</h3>
-                    <p class="text-gray-500 italic my-2 text-sm md:text-base">"${point.quote}"</p>
-                </div>
-                <div>
-                    <p class="font-semibold mb-2 text-gray-700">Action Items:</p>
-                    <ul class="space-y-2">${actionsHtml}</ul>
-                    <div class="completion-banner hidden mt-4 p-4 bg-green-100 border-l-4 border-green-500 rounded-r-lg">
-                        <div class="flex">
-                            <div class="py-1">
-                                <svg class="h-6 w-6 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="font-bold text-green-800">All Actions Completed!</p>
-                                <p class="text-sm text-green-700">✨ Fantastic work! You've mastered this focus. ✨</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
+            const categorySpan = document.createElement('span');
+            categorySpan.className = 'text-sm font-semibold text-indigo-600';
+            categorySpan.textContent = point.category;
+
+            const progressSpan = document.createElement('span');
+            progressSpan.className = 'progress-text text-sm font-medium text-gray-500';
+
+            headerDiv.appendChild(categorySpan);
+            headerDiv.appendChild(progressSpan);
+
+            const progressBar = document.createElement('div');
+            progressBar.className = 'progress-bar w-full bg-gray-200 rounded-full h-2.5 mb-4';
+            const progressBarInner = document.createElement('div');
+            progressBarInner.className = 'progress-bar-inner bg-green-500 h-2.5 rounded-full';
+            progressBarInner.style.width = '0%';
+            progressBar.appendChild(progressBarInner);
+
+            const title = document.createElement('h3');
+            title.className = 'text-lg md:text-xl font-bold text-gray-800';
+            title.textContent = point.title;
+
+            const quote = document.createElement('p');
+            quote.className = 'text-gray-500 italic my-2 text-sm md:text-base';
+            quote.textContent = `"${point.quote}"`;
+
+            topDiv.appendChild(headerDiv);
+            topDiv.appendChild(progressBar);
+            topDiv.appendChild(title);
+            topDiv.appendChild(quote);
+
+            // Bottom section
+            const bottomDiv = document.createElement('div');
+
+            const actionsLabel = document.createElement('p');
+            actionsLabel.className = 'font-semibold mb-2 text-gray-700';
+            actionsLabel.textContent = 'Action Items:';
+
+            const ul = document.createElement('ul');
+            ul.className = 'space-y-2';
+
+            point.actions.forEach((action, index) => {
+                const isChecked = progressState[pointId] ? progressState[pointId][index] : false;
+
+                const li = document.createElement('li');
+                li.className = `action-item rounded-lg ${isChecked ? 'completed' : ''}`;
+
+                const label = document.createElement('label');
+                label.className = 'flex items-center p-3 cursor-pointer';
+                label.setAttribute('for', `action-${pointId}-${index}`);
+
+                const input = document.createElement('input');
+                input.id = `action-${pointId}-${index}`;
+                input.type = 'checkbox';
+                input.className = 'h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500';
+                if (isChecked) {
+                    input.checked = true;
+                }
+                input.addEventListener('change', () => window.handleCheckboxChange(input, pointId, index));
+
+                const span = document.createElement('span');
+                span.className = 'ml-3 text-gray-700';
+                span.textContent = action;
+
+                label.appendChild(input);
+                label.appendChild(span);
+                li.appendChild(label);
+                ul.appendChild(li);
+            });
+
+            const completionBanner = document.createElement('div');
+            completionBanner.className = 'completion-banner hidden mt-4 p-4 bg-green-100 border-l-4 border-green-500 rounded-r-lg';
+
+            const bannerFlex = document.createElement('div');
+            bannerFlex.className = 'flex';
+
+            const iconWrapper = document.createElement('div');
+            iconWrapper.className = 'py-1';
+            const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            svg.setAttribute('class', 'h-6 w-6 text-green-500 mr-4');
+            svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+            svg.setAttribute('fill', 'none');
+            svg.setAttribute('viewBox', '0 0 24 24');
+            svg.setAttribute('stroke', 'currentColor');
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('stroke-linecap', 'round');
+            path.setAttribute('stroke-linejoin', 'round');
+            path.setAttribute('stroke-width', '2');
+            path.setAttribute('d', 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z');
+            svg.appendChild(path);
+            iconWrapper.appendChild(svg);
+
+            const textWrapper = document.createElement('div');
+            const bannerTitle = document.createElement('p');
+            bannerTitle.className = 'font-bold text-green-800';
+            bannerTitle.textContent = 'All Actions Completed!';
+            const bannerText = document.createElement('p');
+            bannerText.className = 'text-sm text-green-700';
+            bannerText.textContent = "✨ Fantastic work! You've mastered this focus. ✨";
+            textWrapper.appendChild(bannerTitle);
+            textWrapper.appendChild(bannerText);
+
+            bannerFlex.appendChild(iconWrapper);
+            bannerFlex.appendChild(textWrapper);
+            completionBanner.appendChild(bannerFlex);
+
+            bottomDiv.appendChild(actionsLabel);
+            bottomDiv.appendChild(ul);
+            bottomDiv.appendChild(completionBanner);
+
+            cardElement.appendChild(topDiv);
+            cardElement.appendChild(bottomDiv);
+
             return cardElement;
         }
 
@@ -146,8 +220,7 @@
 
             if (dailyPoint) {
                 const card = createCard(dailyPoint);
-                cardOfTheDayContainer.innerHTML = '';
-                cardOfTheDayContainer.appendChild(card);
+                render(cardOfTheDayContainer, card);
                 updateProgressUI(dailyPoint.id);
             }
         }
@@ -161,10 +234,13 @@
         }
 
         function showCardInLibrary(index) {
-            cardContainer.innerHTML = '';
-
             if (!currentDeck || currentDeck.length === 0) {
-                cardContainer.innerHTML = `<div class="text-center text-gray-500 p-8 bg-white rounded-xl shadow-md"><h3>No items in this category.</h3></div>`;
+                const noItemsDiv = document.createElement('div');
+                noItemsDiv.className = 'text-center text-gray-500 p-8 bg-white rounded-xl shadow-md';
+                const h3 = document.createElement('h3');
+                h3.textContent = 'No items in this category.';
+                noItemsDiv.appendChild(h3);
+                render(cardContainer, noItemsDiv);
                 cardNavigation.style.display = 'none';
                 return;
             }
@@ -173,7 +249,7 @@
 
             const point = currentDeck[index];
             const card = createCard(point);
-            cardContainer.appendChild(card);
+            render(cardContainer, card);
             updateProgressUI(point.id);
 
             cardCounter.textContent = `${index + 1} / ${currentDeck.length}`;
