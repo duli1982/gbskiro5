@@ -11,12 +11,24 @@ This repository hosts static web pages and assets used for GBS AI learning resou
   - `shared/scripts/` – JavaScript components and utilities shared across pages
   - `shared/ai-sme-colors.css` – shared color palette and design tokens
 
-## Building and Testing
-No build step is required. To preview the site locally, run a simple web server and open `index.html` in a browser:
+## Development Workflow
+
+Install dependencies once in the project root:
 
 ```bash
-python3 -m http.server
+npm install
 ```
+
+Available scripts:
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Build the site for production |
+| `npm run lint` | Run ESLint on the codebase |
+| `npm run format` | Format files using Prettier |
+
+Pre-commit hooks are managed by [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged); staged files are automatically linted and formatted before each commit.
 
 Automated tests are not yet configured. Running `npm test` will indicate the absence of a test script.
 
@@ -25,4 +37,5 @@ Automated tests are not yet configured. Running `npm test` will indicate the abs
 2. Reuse files under `shared/` instead of duplicating scripts or styles.
 3. Verify changes in a browser and run available checks such as `npm test`.
 4. Use clear commit messages and keep the directory structure tidy.
+
 
