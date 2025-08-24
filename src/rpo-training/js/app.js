@@ -1,7 +1,7 @@
-let initBackToTop, render;
+let initScrollToTop, render;
 
 document.addEventListener('DOMContentLoaded', async () => {
-    ({ initBackToTop } = await import('../../shared/scripts/backToTop.js'));
+    ({ initScrollToTop } = await import('../../shared/scripts/scrollToTop.js'));
     ({ render } = await import('../../shared/scripts/utils/render.js'));
     const mainPage = document.getElementById('main-page');
     const sessionContainer = document.getElementById('session-container');
@@ -189,5 +189,5 @@ document.addEventListener('DOMContentLoaded', async () => {
     navigateTo('main-page');
 
     // Initialize shared components
-    initBackToTop();
+    initScrollToTop();
 });
