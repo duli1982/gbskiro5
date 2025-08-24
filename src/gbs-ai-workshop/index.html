@@ -1097,6 +1097,7 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
         import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, doc, getDoc, addDoc, setDoc, updateDoc, deleteDoc, onSnapshot, collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        import { render } from '../shared/scripts/utils/render.js';
 
         // --- GLOBAL STATE ---
         let db, auth, userId, userPromptsUnsubscribe, appId;
@@ -1442,8 +1443,8 @@
 
             if (!customList) return; // Exit if not on the right page
 
-            customList.innerHTML = '';
-            favoriteList.innerHTML = '';
+            customList.replaceChildren();
+            favoriteList.replaceChildren();
 
             const customPrompts = userLibrary.filter(p => p.type === 'custom');
             const favoritePrompts = userLibrary.filter(p => p.type === 'favorite');
@@ -1481,7 +1482,7 @@
         const promptLibraryEl = document.getElementById('prompt-library');
         function displayPrompts(filter) {
             if (!promptLibraryEl) return;
-            promptLibraryEl.innerHTML = '';
+            promptLibraryEl.replaceChildren();
             const filteredPrompts = (filter === 'All') ? prompts : prompts.filter(p => p.category === filter);
 
             filteredPrompts.forEach(prompt => {
@@ -1511,7 +1512,7 @@
                 `;
             }
 
-            card.innerHTML = `
+            render(card, `
                 <div>
                     <h4 class="font-bold text-lg mb-2 text-[#4A90E2]">${prompt.title}</h4>
                     <p class="text-gray-600 text-sm">${prompt.content}</p>
@@ -1519,7 +1520,7 @@
                 <div class="mt-4 pt-4 border-t border-gray-100 flex justify-end items-center">
                     ${buttonsHtml}
                 </div>
-            `;
+            `, { sanitize: true });
             return card;
         }
 
@@ -1679,7 +1680,7 @@
                             document.getElementById('opportunity-title').textContent = details.title;
                             document.getElementById('opportunity-description').textContent = details.description;
                             const examplesList = document.getElementById('opportunity-examples');
-                            examplesList.innerHTML = '';
+                            examplesList.replaceChildren();
                             details.examples.forEach(ex => {
                                 const li = document.createElement('li');
                                 li.textContent = ex;
@@ -1855,10 +1856,10 @@
                 </div>
             `).join('');
 
-            simulatorContainer.innerHTML = `
+            render(simulatorContainer, `
                 <h3 class="text-2xl font-bold text-center mb-6">Choose a Scenario Category</h3>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">${categoryHtml}</div>
-            `;
+            `, { sanitize: true });
         }
 
         function loadScenario() {
@@ -1867,12 +1868,12 @@
             const scenario = scenarios[currentScenarioCategory][currentScenarioIndex];
 
             if (!scenario) {
-                simulatorContainer.innerHTML = `
+                render(simulatorContainer, `
                     <p class="text-center text-gray-600 text-xl">You've completed all scenarios in this category!</p>
                     <div class="mt-6 text-center">
                         <button id="backToCategoriesBtn" class="bg-gray-600 text-white font-bold py-2 px-6 rounded-full hover:bg-gray-700 transition-colors">Back to Categories</button>
                     </div>
-                `;
+                `, { sanitize: true });
                 return;
             }
 
@@ -1883,7 +1884,7 @@
                 </div>
             `).join('');
 
-            simulatorContainer.innerHTML = `
+            render(simulatorContainer, `
                  <div class="flex justify-between items-center mb-4">
                     <h3 class="text-2xl font-bold text-[#4A90E2]">${scenario.title}</h3>
                     <button id="backToCategoriesBtn" class="text-sm text-gray-500 hover:text-gray-800">&larr; Back to Categories</button>
@@ -1893,7 +1894,7 @@
                 <div class="mt-6 text-right">
                     <button id="nextScenarioBtn" class="hidden bg-[#4A90E2] text-white font-bold py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">Next Scenario</button>
                 </div>
-            `;
+            `, { sanitize: true });
         }
 
         if (simulatorContainer) {
@@ -1964,15 +1965,15 @@
             caseStudyContent.id = 'case-study-content';
             caseStudyContent.className = 'mt-8';
 
-            caseStudyContainer.innerHTML = '';
+            caseStudyContainer.replaceChildren();
             caseStudyContainer.appendChild(caseStudyTabs);
             caseStudyContainer.appendChild(caseStudyContent);
 
             const categories = Object.keys(caseStudies);
 
-            caseStudyTabs.innerHTML = categories.map((category, index) => `
+            render(caseStudyTabs, categories.map((category, index) => `
                 <button class="case-study-tab ${index === 0 ? 'active' : ''}" data-category="${category}">${category}</button>
-            `).join('');
+            `).join(''), { sanitize: true });
 
             loadCaseStudy(categories[0]);
 
@@ -1999,7 +2000,7 @@
                 ${index < studySteps.length - 1 ? '<div class="timeline-connector"></div>' : ''}
             `).join('');
 
-            caseStudyContent.innerHTML = `<div class="timeline-container">${stepsHtml}</div>`;
+            render(caseStudyContent, `<div class="timeline-container">${stepsHtml}</div>`, { sanitize: true });
         }
 
         // --- "My Day with AI" Logic ---
@@ -2009,13 +2010,13 @@
             if (!myDayContainer) return;
 
             if (index >= myDayEvents.length) {
-                myDayContainer.innerHTML = `
+                render(myDayContainer, `
                     <p class="text-center text-gray-600 text-2xl font-bold">You've completed your day!</p>
                     <p class="text-center text-gray-500 mt-4">You've seen how a few smart prompts can save hours of work. You're ready to start integrating AI into your real workflow.</p>
                     <div class="mt-6 text-center">
                         <button id="restartDayBtn" class="bg-gray-600 text-white font-bold py-2 px-6 rounded-full hover:bg-gray-700 transition-colors">Start Day Over</button>
                     </div>
-                `;
+                `, { sanitize: true });
                 return;
             }
 
@@ -2027,7 +2028,7 @@
                 </div>
             `).join('');
 
-            myDayContainer.innerHTML = `
+            render(myDayContainer, `
                  <div class="mb-4">
                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">${event.time}</span>
                  </div>
@@ -2036,7 +2037,7 @@
                 <div class="mt-6 text-right">
                     <button id="nextDayEventBtn" class="hidden bg-[#4A90E2] text-white font-bold py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">Continue Day &rarr;</button>
                 </div>
-            `;
+            `, { sanitize: true });
         }
 
         if(myDayContainer) {
