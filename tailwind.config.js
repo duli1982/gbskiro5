@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./**/*.html'],
+  content: ['./src/**/*.{html,njk,js}'],
   theme: {
     extend: {
       colors: {
@@ -13,5 +13,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('./plugins/forms')],
 };
