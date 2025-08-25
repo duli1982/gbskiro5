@@ -1,1099 +1,1928 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Training: Gemini for GBS Leaders</title>
     <!-- Chosen Palette: Calm Neutrals -->
     <!-- Application Structure Plan: An eleven-part thematic SPA is chosen. This non-linear design empowers busy managers to directly access the content most relevant to them. Key interactions include an interactive "4 R's" audit chart, a filterable "Prompt Explorer," a "Guided Prompt Builder", a "Reverse Prompt" generator, a personalized "My Prompt Library", a categorized "Scenario Simulator", a "My Day with AI" simulator, categorized "Case Studies", and a "Team Leadership" module. -->
     <!-- Visualization & Content Choices: 1. Agenda -> App navigation. 2. "4 R's" Audit -> Interactive Doughnut Chart with sliders. 3. Case Study -> Categorized, step-by-step workflow examples. 4. Team Leadership -> Conversation starters, an interactive playbook for handling resistance, and a "Show and Tell" framework. 5. Gemini Prompts -> Filterable cards with favorite button. 6. Prompt Builder -> Step-by-step form to generate and save optimal prompts. 7. Reverse Prompt -> Analyzes text to generate a potential source prompt. 8. My Prompt Library -> User's saved/favorited prompts. 9. Scenario Simulator -> Categorized, interactive problem/solution module. 10. My Day with AI -> "Choose your own adventure" daily task simulator. 11. Framework Image -> HTML/CSS diagram. -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
-    <link rel="stylesheet" href="/shared/styles/tailwind.css">
+    <link rel="stylesheet" href="/shared/styles/tailwind.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <link rel="stylesheet" href="../shared/hub-button.css">
-    <link rel="stylesheet" href="../shared/styles/common.css">
-    
-</head>
-<body class="antialiased pt-16">
-
+    <link rel="stylesheet" href="../shared/hub-button.css" />
+    <link rel="stylesheet" href="../shared/styles/common.css" />
+  </head>
+  <body class="antialiased pt-16">
     <!-- Header (Nav) -->
-    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
-        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-xl font-bold text-[#4A90E2]">Randstad GBS</span>
-                    <span class="ml-2 text-xl font-light text-gray-600">| Gemini for Leaders</span>
-                </div>
-                <a href="../index.html" class="hub-button">Back To Hub</a>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-center space-x-4">
-                        <a href="#why" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700">The Why</a>
-                        <a href="#how" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700">The How</a>
-			<a href="#best-practices" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700">Best Practices</a>
-			<a href="#ai-glossary" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700">AI Glossary</a>
-                        <a href="#case-studies" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700">Case Studies</a>
-                        <a href="#team-leadership" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700">Team Leadership</a>
+    <header
+      class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm"
+    >
+      <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <span class="text-xl font-bold text-[#4A90E2]">Randstad GBS</span>
+            <span class="ml-2 text-xl font-light text-gray-600"
+              >| Gemini for Leaders</span
+            >
+          </div>
+          <div data-include="header"></div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-center space-x-4">
+              <a
+                href="#why"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700"
+                >The Why</a
+              >
+              <a
+                href="#how"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700"
+                >The How</a
+              >
+              <a
+                href="#best-practices"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700"
+                >Best Practices</a
+              >
+              <a
+                href="#ai-glossary"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700"
+                >AI Glossary</a
+              >
+              <a
+                href="#case-studies"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700"
+                >Case Studies</a
+              >
+              <a
+                href="#team-leadership"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700"
+                >Team Leadership</a
+              >
 
-                        <!-- Tools Dropdown -->
-                        <div class="relative" id="tools-dropdown">
-                            <button id="tools-dropdown-btn" class="nav-link inline-flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 focus:outline-none">
-                                <span>Tools</span>
-                                <svg class="ml-2 -mr-1 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <div id="tools-dropdown-menu" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden transition ease-out duration-100 transform opacity-0 scale-95">
-                                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="tools-dropdown-btn">
-                                    <a href="#what" class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Prompt Library</a>
-                                    <a href="#builder" class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Prompt Builder</a>
-                                    <a href="#reverse-prompt" class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Reverse Prompt</a>
-                                    <a href="#my-library" class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">My Library</a>
-                                    <a href="#simulator" class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Scenario Simulator</a>
-                                    <a href="#my-day" class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">My Day with AI</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a href="#now" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700">The Now</a>
-                    </div>
+              <!-- Tools Dropdown -->
+              <div class="relative" id="tools-dropdown">
+                <button
+                  id="tools-dropdown-btn"
+                  class="nav-link inline-flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 focus:outline-none"
+                >
+                  <span>Tools</span>
+                  <svg
+                    class="ml-2 -mr-1 h-5 w-5 text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <div
+                  id="tools-dropdown-menu"
+                  class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden transition ease-out duration-100 transform opacity-0 scale-95"
+                >
+                  <div
+                    class="py-1"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="tools-dropdown-btn"
+                  >
+                    <a
+                      href="#what"
+                      class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      role="menuitem"
+                      >Prompt Library</a
+                    >
+                    <a
+                      href="#builder"
+                      class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      role="menuitem"
+                      >Prompt Builder</a
+                    >
+                    <a
+                      href="#reverse-prompt"
+                      class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      role="menuitem"
+                      >Reverse Prompt</a
+                    >
+                    <a
+                      href="#my-library"
+                      class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      role="menuitem"
+                      >My Library</a
+                    >
+                    <a
+                      href="#simulator"
+                      class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      role="menuitem"
+                      >Scenario Simulator</a
+                    >
+                    <a
+                      href="#my-day"
+                      class="nav-dropdown-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      role="menuitem"
+                      >My Day with AI</a
+                    >
+                  </div>
                 </div>
+              </div>
+
+              <a
+                href="#now"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700"
+                >The Now</a
+              >
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-
-        <section id="why" class="page-section text-center mb-16 md:mb-24 fade-in">
-            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Reclaim Your Team's Time. Work Smarter, Not Harder.</h1>
-            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-8">
-                Our goal is to shift your mindset from seeing AI as a complex tool to embracing it as an essential teammate. This training provides the framework and action plan to strategically integrate Gemini Pro into your team's daily workflows, unlocking new levels of productivity and value.
+      <section id="why" class="page-section text-center mb-16 md:mb-24 fade-in">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          Reclaim Your Team's Time. Work Smarter, Not Harder.
+        </h1>
+        <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-8">
+          Our goal is to shift your mindset from seeing AI as a complex tool to
+          embracing it as an essential teammate. This training provides the
+          framework and action plan to strategically integrate Gemini Pro into
+          your team's daily workflows, unlocking new levels of productivity and
+          value.
+        </p>
+        <div class="text-2xl text-gray-700 mt-8 mb-12 h-8">
+          With Gemini, you can instantly:
+          <span
+            id="animated-subtitle"
+            class="font-semibold text-[#4A90E2] inline-block"
+          ></span>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 text-left mb-16">
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+            <div class="flex justify-center mb-4">
+              <svg
+                class="h-12 w-12 text-[#4A90E2]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-bold text-xl mb-2 text-[#4A90E2]">
+              1. The Mindset
+            </h3>
+            <p class="text-gray-600">
+              View Gemini Pro not as a job replacement, but as a powerful
+              partner that handles tedious work, freeing your team for
+              higher-value strategic thinking.
             </p>
-            <div class="text-2xl text-gray-700 mt-8 mb-12 h-8">
-                With Gemini, you can instantly:
-                <span id="animated-subtitle" class="font-semibold text-[#4A90E2] inline-block"></span>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+            <div class="flex justify-center mb-4">
+              <svg
+                class="h-12 w-12 text-[#4A90E2]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2 1M4 7l2-1M4 7v2.5M12 21.5v-2.5M12 18.5l-2 1m2-1l2 1"
+                />
+              </svg>
             </div>
-            <div class="grid md:grid-cols-3 gap-8 text-left mb-16">
-                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="flex justify-center mb-4">
-                        <svg class="h-12 w-12 text-[#4A90E2]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2 text-[#4A90E2]">1. The Mindset</h3>
-                    <p class="text-gray-600">View Gemini Pro not as a job replacement, but as a powerful partner that handles tedious work, freeing your team for higher-value strategic thinking.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="flex justify-center mb-4">
-                        <svg class="h-12 w-12 text-[#4A90E2]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2 1M4 7l2-1M4 7v2.5M12 21.5v-2.5M12 18.5l-2 1m2-1l2 1" />
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2 text-[#4A90E2]">2. The Framework</h3>
-                    <p class="text-gray-600">Learn a simple but effective method to identify the best opportunities for AI within your team's existing processes and workflows.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="flex justify-center mb-4">
-                        <svg class="h-12 w-12 text-[#4A90E2]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2 text-[#4A90E2]">3. The Action Plan</h3>
-                    <p class="text-gray-600">Leave with a concrete first step to immediately begin implementing Gemini Pro, driving quick wins and building momentum for change.</p>
-                </div>
+            <h3 class="font-bold text-xl mb-2 text-[#4A90E2]">
+              2. The Framework
+            </h3>
+            <p class="text-gray-600">
+              Learn a simple but effective method to identify the best
+              opportunities for AI within your team's existing processes and
+              workflows.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+            <div class="flex justify-center mb-4">
+              <svg
+                class="h-12 w-12 text-[#4A90E2]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                />
+              </svg>
             </div>
-
-            <!-- Call to Action Button -->
-            <div class="mt-12">
-                <a href="#how" class="bg-[#4A90E2] text-white font-bold py-4 px-8 rounded-full hover:bg-blue-600 transition-colors shadow-lg text-lg">
-                    Start Learning: See The Framework
-                </a>
-            </div>
-
-            <!-- Statistics Section -->
-            <div class="mt-24 text-center">
-                <h2 class="text-3xl font-bold tracking-tight mb-4">Unlock Real Results</h2>
-                <p class="max-w-2xl mx-auto text-lg text-gray-600 mb-10">Integrating AI isn't just about new technology; it's about tangible outcomes. Here are the results you can aim for.</p>
-                <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                    <div class="bg-white p-8 rounded-lg shadow-sm">
-                        <p class="text-5xl font-bold text-[#4A90E2]">40%</p>
-                        <h4 class="mt-2 text-xl font-semibold">Less Time on Reports</h4>
-                        <p class="mt-1 text-gray-600">Automate first drafts of weekly and monthly reports, freeing up your team for analysis.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-lg shadow-sm">
-                        <p class="text-5xl font-bold text-[#4A90E2]">5x</p>
-                        <h4 class="mt-2 text-xl font-semibold">Faster Insights</h4>
-                        <p class="mt-1 text-gray-600">Summarize long documents, emails, and meeting transcripts in seconds, not hours.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-lg shadow-sm">
-                        <p class="text-5xl font-bold text-[#4A90E2]">1 Hr</p>
-                        <h4 class="mt-2 text-xl font-semibold">Saved Per Day</h4>
-                        <p class="mt-1 text-gray-600">By automating email drafts, meeting agendas, and follow-ups, you reclaim valuable time.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="how" class="page-section mb-16 md:mb-24 fade-in hidden">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">The GBS Opportunity Framework</h2>
-                <p class="max-w-3xl mx-auto text-lg text-gray-600">This section introduces our core framework: Don't just use AI, build your workflows around it. We'll start by identifying where your team's time is spent and then connect those tasks directly to AI-powered solutions.</p>
-            </div>
-
-            <div class="grid lg:grid-cols-5 gap-8 items-start">
-                <div class="lg:col-span-2">
-                    <div class="text-center">
-                        <h3 class="text-2xl font-semibold mb-2">My Team's "4 R's" Audit</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Adjust the sliders to estimate your team's time distribution. The chart will update instantly.</p>
-                    </div>
-                    <div class="chart-container">
-                        <canvas id="opportunityChart"></canvas>
-                    </div>
-                    <div id="audit-controls" class="mt-6 space-y-4 px-4">
-                        <div>
-                            <label for="repetitiveSlider" class="flex justify-between text-sm font-medium text-gray-700 mb-1">
-                                <span>Repetitive</span>
-                                <span id="repetitiveValue" class="font-semibold">35%</span>
-                            </label>
-                            <input id="repetitiveSlider" type="range" min="0" max="100" value="35" class="w-full">
-                        </div>
-                        <div>
-                            <label for="researchSlider" class="flex justify-between text-sm font-medium text-gray-700 mb-1">
-                                <span>Research-heavy</span>
-                                <span id="researchValue" class="font-semibold">25%</span>
-                            </label>
-                            <input id="researchSlider" type="range" min="0" max="100" value="25" class="w-full">
-                        </div>
-                        <div>
-                            <label for="reactiveSlider" class="flex justify-between text-sm font-medium text-gray-700 mb-1">
-                                <span>Reactive</span>
-                                <span id="reactiveValue" class="font-semibold">20%</span>
-                            </label>
-                            <input id="reactiveSlider" type="range" min="0" max="100" value="20" class="w-full">
-                        </div>
-                        <div>
-                            <label for="reportingSlider" class="flex justify-between text-sm font-medium text-gray-700 mb-1">
-                                <span>Reporting</span>
-                                <span id="reportingValue" class="font-semibold">20%</span>
-                            </label>
-                            <input id="reportingSlider" type="range" min="0" max="100" value="20" class="w-full">
-                        </div>
-                        <div class="text-right pt-2">
-                            <p class="text-md font-bold">Total: <span id="totalPercentage" class="transition-colors">100%</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-3">
-                    <div id="opportunity-intro" class="p-6 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg">
-                        <h4 class="font-bold text-xl mb-2 text-blue-800">Discover Your AI Opportunities</h4>
-                        <p class="text-blue-700">Use the sliders on the left to create a personalized model of your team's workload. Once the chart reflects your reality, click on its segments to reveal specific ways Gemini can streamline work, saving time and reducing manual effort.</p>
-                    </div>
-                    <div id="opportunity-details" class="mt-4 hidden">
-                        <h4 id="opportunity-title" class="font-bold text-xl mb-2"></h4>
-                        <p id="opportunity-description" class="mb-4"></p>
-                        <div class="bg-white p-4 rounded-lg shadow-sm">
-                            <h5 class="font-semibold mb-2">Example Gemini Applications:</h5>
-                            <ul id="opportunity-examples" class="list-disc list-inside text-gray-600 space-y-1"></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="best-practices" class="page-section mb-16 md:mb-24 fade-in hidden">
-    <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Best Practices for Prompting</h2>
-        <p class="max-w-3xl mx-auto text-lg text-gray-600">Follow these golden rules to get the best possible
-            results from Gemini. A well-crafted prompt is the key to unlocking high-quality, relevant, and
-            actionable outputs.</p>
-    </div>
-    
-    <!-- ONE SINGLE GRID CONTAINER FOR ALL CARDS -->
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-        
-        <!-- Cards 1-10: Original Best Practices -->
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">1. Give Clear Context</h3>
-            <p class="text-gray-600 mb-4">Tell Gemini what you're doing and set the scene clearly. The more
-                background it has, the more relevant the response will be.</p>
-            <div class="code-block text-sm">"I have a biology test in 2 days."</div>
+            <h3 class="font-bold text-xl mb-2 text-[#4A90E2]">
+              3. The Action Plan
+            </h3>
+            <p class="text-gray-600">
+              Leave with a concrete first step to immediately begin implementing
+              Gemini Pro, driving quick wins and building momentum for change.
+            </p>
+          </div>
         </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">2. Be Specific About Output</h3>
-            <p class="text-gray-600 mb-4">Say exactly what you want back. Include the desired type, format,
-                length, or structure.</p>
-            <div class="code-block text-sm">"Give 10 MCQs on the circulatory system."</div>
+
+        <!-- Call to Action Button -->
+        <div class="mt-12">
+          <a
+            href="#how"
+            class="bg-[#4A90E2] text-white font-bold py-4 px-8 rounded-full hover:bg-blue-600 transition-colors shadow-lg text-lg"
+          >
+            Start Learning: See The Framework
+          </a>
         </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">3. Assign the AI a Role</h3>
-            <p class="text-gray-600 mb-4">Define who Gemini should act as. This adds a specific tone, style, and
-                level of expertise to the response.</p>
+
+        <!-- Statistics Section -->
+        <div class="mt-24 text-center">
+          <h2 class="text-3xl font-bold tracking-tight mb-4">
+            Unlock Real Results
+          </h2>
+          <p class="max-w-2xl mx-auto text-lg text-gray-600 mb-10">
+            Integrating AI isn't just about new technology; it's about tangible
+            outcomes. Here are the results you can aim for.
+          </p>
+          <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <p class="text-5xl font-bold text-[#4A90E2]">40%</p>
+              <h4 class="mt-2 text-xl font-semibold">Less Time on Reports</h4>
+              <p class="mt-1 text-gray-600">
+                Automate first drafts of weekly and monthly reports, freeing up
+                your team for analysis.
+              </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <p class="text-5xl font-bold text-[#4A90E2]">5x</p>
+              <h4 class="mt-2 text-xl font-semibold">Faster Insights</h4>
+              <p class="mt-1 text-gray-600">
+                Summarize long documents, emails, and meeting transcripts in
+                seconds, not hours.
+              </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <p class="text-5xl font-bold text-[#4A90E2]">1 Hr</p>
+              <h4 class="mt-2 text-xl font-semibold">Saved Per Day</h4>
+              <p class="mt-1 text-gray-600">
+                By automating email drafts, meeting agendas, and follow-ups, you
+                reclaim valuable time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="page-section mb-16 md:mb-24 fade-in hidden">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            The GBS Opportunity Framework
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            This section introduces our core framework: Don't just use AI, build
+            your workflows around it. We'll start by identifying where your
+            team's time is spent and then connect those tasks directly to
+            AI-powered solutions.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-8 items-start">
+          <div class="lg:col-span-2">
+            <div class="text-center">
+              <h3 class="text-2xl font-semibold mb-2">
+                My Team's "4 R's" Audit
+              </h3>
+              <p class="text-gray-600 mb-4 text-sm">
+                Adjust the sliders to estimate your team's time distribution.
+                The chart will update instantly.
+              </p>
+            </div>
+            <div class="chart-container">
+              <canvas id="opportunityChart"></canvas>
+            </div>
+            <div id="audit-controls" class="mt-6 space-y-4 px-4">
+              <div>
+                <label
+                  for="repetitiveSlider"
+                  class="flex justify-between text-sm font-medium text-gray-700 mb-1"
+                >
+                  <span>Repetitive</span>
+                  <span id="repetitiveValue" class="font-semibold">35%</span>
+                </label>
+                <input
+                  id="repetitiveSlider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="35"
+                  class="w-full"
+                />
+              </div>
+              <div>
+                <label
+                  for="researchSlider"
+                  class="flex justify-between text-sm font-medium text-gray-700 mb-1"
+                >
+                  <span>Research-heavy</span>
+                  <span id="researchValue" class="font-semibold">25%</span>
+                </label>
+                <input
+                  id="researchSlider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="25"
+                  class="w-full"
+                />
+              </div>
+              <div>
+                <label
+                  for="reactiveSlider"
+                  class="flex justify-between text-sm font-medium text-gray-700 mb-1"
+                >
+                  <span>Reactive</span>
+                  <span id="reactiveValue" class="font-semibold">20%</span>
+                </label>
+                <input
+                  id="reactiveSlider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="20"
+                  class="w-full"
+                />
+              </div>
+              <div>
+                <label
+                  for="reportingSlider"
+                  class="flex justify-between text-sm font-medium text-gray-700 mb-1"
+                >
+                  <span>Reporting</span>
+                  <span id="reportingValue" class="font-semibold">20%</span>
+                </label>
+                <input
+                  id="reportingSlider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="20"
+                  class="w-full"
+                />
+              </div>
+              <div class="text-right pt-2">
+                <p class="text-md font-bold">
+                  Total:
+                  <span id="totalPercentage" class="transition-colors"
+                    >100%</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-3">
+            <div
+              id="opportunity-intro"
+              class="p-6 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg"
+            >
+              <h4 class="font-bold text-xl mb-2 text-blue-800">
+                Discover Your AI Opportunities
+              </h4>
+              <p class="text-blue-700">
+                Use the sliders on the left to create a personalized model of
+                your team's workload. Once the chart reflects your reality,
+                click on its segments to reveal specific ways Gemini can
+                streamline work, saving time and reducing manual effort.
+              </p>
+            </div>
+            <div id="opportunity-details" class="mt-4 hidden">
+              <h4 id="opportunity-title" class="font-bold text-xl mb-2"></h4>
+              <p id="opportunity-description" class="mb-4"></p>
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h5 class="font-semibold mb-2">Example Gemini Applications:</h5>
+                <ul
+                  id="opportunity-examples"
+                  class="list-disc list-inside text-gray-600 space-y-1"
+                ></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="best-practices"
+        class="page-section mb-16 md:mb-24 fade-in hidden"
+      >
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            Best Practices for Prompting
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Follow these golden rules to get the best possible results from
+            Gemini. A well-crafted prompt is the key to unlocking high-quality,
+            relevant, and actionable outputs.
+          </p>
+        </div>
+
+        <!-- ONE SINGLE GRID CONTAINER FOR ALL CARDS -->
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          <!-- Cards 1-10: Original Best Practices -->
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              1. Give Clear Context
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Tell Gemini what you're doing and set the scene clearly. The more
+              background it has, the more relevant the response will be.
+            </p>
+            <div class="code-block text-sm">
+              "I have a biology test in 2 days."
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              2. Be Specific About Output
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Say exactly what you want back. Include the desired type, format,
+              length, or structure.
+            </p>
+            <div class="code-block text-sm">
+              "Give 10 MCQs on the circulatory system."
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              3. Assign the AI a Role
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Define who Gemini should act as. This adds a specific tone, style,
+              and level of expertise to the response.
+            </p>
             <div class="code-block text-sm">"Act as a finance professor."</div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">4. Break It Into Steps</h3>
-            <p class="text-gray-600 mb-4">For complex requests, break your needs into logical steps. This helps
-                the AI follow your train of thought.</p>
-            <div class="code-block text-sm">"Explain in 3 steps using an analogy."</div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">5. Provide Examples</h3>
-            <p class="text-gray-600 mb-4">If you want a specific style or structure, give Gemini an example of
-                what you're looking for.</p>
-            <div class="code-block text-sm">"Give 3 ways photosynthesis helps humans."</div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">6. Refine and Retry</h3>
-            <p class="text-gray-600 mb-4">Your first try is a draft. If the output isn't quite right, tweak your
-                prompt with more clarity and try again.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              4. Break It Into Steps
+            </h3>
+            <p class="text-gray-600 mb-4">
+              For complex requests, break your needs into logical steps. This
+              helps the AI follow your train of thought.
+            </p>
+            <div class="code-block text-sm">
+              "Explain in 3 steps using an analogy."
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              5. Provide Examples
+            </h3>
+            <p class="text-gray-600 mb-4">
+              If you want a specific style or structure, give Gemini an example
+              of what you're looking for.
+            </p>
+            <div class="code-block text-sm">
+              "Give 3 ways photosynthesis helps humans."
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              6. Refine and Retry
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Your first try is a draft. If the output isn't quite right, tweak
+              your prompt with more clarity and try again.
+            </p>
             <div class="code-block text-sm">Better input → better output.</div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">7. Avoid Vague Language</h3>
-            <p class="text-gray-600 mb-4">Don't be general. Vague inputs lead to weak replies. Replace "help me
-                study" with a specific request.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              7. Avoid Vague Language
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Don't be general. Vague inputs lead to weak replies. Replace "help
+              me study" with a specific request.
+            </p>
             <div class="code-block text-sm">Skip "Help me study."</div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">8. Treat It Like an Assistant</h3>
-            <p class="text-gray-600 mb-4">Write like you're briefing a new team member. Be simple, clear, and
-                direct in your instructions.</p>
-            <div class="code-block text-sm">Like giving a task to an intern.</div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">9. Choose a Format</h3>
-            <p class="text-gray-600 mb-4">Explicitly tell the AI how to present the information, whether as
-                bullets, a numbered list, a table, or prose.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              8. Treat It Like an Assistant
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Write like you're briefing a new team member. Be simple, clear,
+              and direct in your instructions.
+            </p>
+            <div class="code-block text-sm">
+              Like giving a task to an intern.
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              9. Choose a Format
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Explicitly tell the AI how to present the information, whether as
+              bullets, a numbered list, a table, or prose.
+            </p>
             <div class="code-block text-sm">"Summarize as a table."</div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">10. Provide Negative Constraints</h3>
-            <p class="text-gray-600 mb-4">Sometimes it's helpful to tell the AI what *not* to do. This helps
-                narrow its focus and avoid unwanted information.</p>
-            <div class="code-block text-sm">"Write an email to the team, but do not use overly corporate
-                jargon."</div>
-        </div>
+          </div>
 
-        <!-- Section Divider Card -->
-        <div class="col-span-full bg-blue-50 p-6 rounded-lg border-l-4 border-[#4A90E2] mt-8">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-2">Pro-Level Prompting Examples</h3>
-            <p class="text-gray-600">Garbage in, garbage out. If your prompts suck, your results will too. Here's how pros prompt Gemini.</p>
-        </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              10. Provide Negative Constraints
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Sometimes it's helpful to tell the AI what *not* to do. This helps
+              narrow its focus and avoid unwanted information.
+            </p>
+            <div class="code-block text-sm">
+              "Write an email to the team, but do not use overly corporate
+              jargon."
+            </div>
+          </div>
 
-        <!-- Cards 11-17: Professional Examples (Simplified Structure) -->
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">11. Be Specific and Detailed</h3>
-            <p class="text-gray-600 mb-4">Transform vague requests into detailed, actionable prompts. Provide context, specify your role, set clear expectations, and include concrete deliverables.</p>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded">"Help me source candidates"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded">"You're a senior RPO sourcing specialist at Randstad. I need 15 qualified candidates for (ROLE) at (CLIENT COMPANY) within 72 hours. Create a multi-channel sourcing strategy including: Boolean search strings for LinkedIn/Indeed, 5 alternative sourcing channels, and a candidate outreach sequence that gets 40%+ response rates. Show me the exact messaging for each touchpoint."</div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">12. Provide Context and Expertise</h3>
-            <p class="text-gray-600 mb-4">Give the AI a specific role and detailed context. Include your goals, constraints, and expected deliverables to get professional-level output.</p>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded">"Schedule interviews better"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded">"I'm coordinating interviews for 12 candidates across 3 time zones with 5 hiring managers who have conflicting calendars. Create an interview scheduling framework that: minimizes back-and-forth emails, provides candidate experience scoring, includes backup plans for no-shows, and sends automated reminders. Give me template emails for each scenario."</div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">13. Handle Administrative Tasks</h3>
-            <p class="text-gray-600 mb-4">Transform general admin requests into specific workflow management tasks with clear deliverables and stakeholder considerations.</p>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded">"Handle this admin work"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded">"You're managing RPO operations for 200+ open positions across 15 hiring managers. Design a workflow that tracks: candidate pipeline stages, client feedback loops, supplier performance metrics, and SLA compliance. Create status update templates that keep stakeholders informed without overwhelming them with details."</div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">14. Manage Client Relations</h3>
-            <p class="text-gray-600 mb-4">Convert complaint handling into strategic relationship management with data-backed solutions and clear action plans.</p>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded">"Deal with this complaint"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded">"A hiring manager is escalating because their Software Engineer position has been open 45 days with only 3 interviews scheduled. They're threatening to pull the RPO contract. Draft a response that: acknowledges their frustration, provides data-backed explanations, presents 3 immediate action items, and repositions this as a partnership opportunity. Include follow-up cadence."</div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">15. Improve Candidate Experience</h3>
-            <p class="text-gray-600 mb-4">Turn vague improvement requests into systematic process optimization with measurable outcomes and client-ready documentation.</p>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded">"Improve candidate experience"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded">"Map the entire candidate journey for our RPO process from application to offer. Identify the top 5 friction points that cause 60% candidate drop-off. For each point, provide: specific improvement tactics, implementation timeline, success metrics, and client communication strategy. Make this bulletproof for client reviews."</div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">16. Manage Supplier Performance</h3>
-            <p class="text-gray-600 mb-4">Convert basic supplier management into comprehensive performance tracking systems with accountability measures and improvement frameworks.</p>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded">"Manage supplier relationships"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded">"Create a supplier performance scorecard for our MSP program managing 25 staffing vendors. Include metrics that matter to clients: quality of candidates, time-to-submit, rate competitiveness, and diversity sourcing. Design quarterly business reviews that drive accountability and identify top/bottom performers with clear improvement plans."</div>
-            </div>
-        </div>
-
-        <!-- Section Divider Card -->
-        <div class="col-span-full bg-green-50 p-6 rounded-lg border-l-4 border-green-500 mt-8">
-            <h3 class="text-2xl font-bold text-green-700 mb-2">Universal Pro Tips</h3>
-            <p class="text-gray-600">Master these patterns for any situation - from cover letters to complex analysis.</p>
-        </div>
-
-        <!-- Cards 17-22: Universal Pro Tips -->
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">17. Make Content Better</h3>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded">"Make this better"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded">"Analyze this (CONTENT) for: clarity (1-10), emotional impact (1-10), and actionability (1-10). Rewrite to score 10/10 on all metrics. Show me what you changed and why."</div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">18. Write Cover Letters</h3>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded">"Write me a cover letter"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded">"You're a hiring manager at (COMPANY) who's rejected 200 applicants. I'm applying for (ROLE). Write a cover letter that makes you stop and say 'finally, someone who gets it.'"</div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">19. Explain Complex Topics</h3>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded">"Explain this simply"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded">"Explain (COMPLEX TOPIC) using only the 1,000 most common English words. Then explain it through a metaphor involving (FAMILIAR ACTIVITY). Make a 10-year-old excited to learn more."</div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">20. Optimize Resumes</h3>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded">"Help me with my resume"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded">"Here's the job posting: (PASTE). Here's my experience: (PASTE). Rewrite my bullets to use their exact keywords while quantifying impact with numbers that make me undeniable."</div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">21. Professional Tone</h3>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded">"Make this sound professional"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded">"Rewrite this using the vocabulary and tone of (SPECIFIC INDUSTRY) leaders. Include 3 subtle power phrases that make me sound experienced without arrogance."</div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">22. Edit and Improve</h3>
-            <div class="mb-4">
-                <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
-                <div class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded">"Check my grammar"</div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
-                <div class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded">"Edit this for: grammar, flow, and impact. Show me the top 3 changes that transform this from amateur to executive-level communication. Explain the psychology behind each edit."</div>
-            </div>
-        </div>
-        
-    </div> <!-- End of single grid container -->
-</section>
-
-        <section id="ai-glossary" class="page-section mb-16 md:mb-24 fade-in hidden">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">AI Glossary</h2>
-            <p class="max-w-3xl mx-auto text-lg text-gray-600">
-              Demystifying the language of AI. Use this searchable glossary to
-              quickly understand common terms and concepts.
+          <!-- Section Divider Card -->
+          <div
+            class="col-span-full bg-blue-50 p-6 rounded-lg border-l-4 border-[#4A90E2] mt-8"
+          >
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-2">
+              Pro-Level Prompting Examples
+            </h3>
+            <p class="text-gray-600">
+              Garbage in, garbage out. If your prompts suck, your results will
+              too. Here's how pros prompt Gemini.
             </p>
           </div>
 
-           <!-- cards -->
-          <div
-            id="glossary-grid"
-            class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-
-            <!-- Bias -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Bias</h3>
-              <p class="text-gray-600 text-sm">
-                When an AI unfairly prefers certain things over others, often because of
-                biases in the data it was trained on.
-              </p>
+          <!-- Cards 11-17: Professional Examples (Simplified Structure) -->
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              11. Be Specific and Detailed
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Transform vague requests into detailed, actionable prompts.
+              Provide context, specify your role, set clear expectations, and
+              include concrete deliverables.
+            </p>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded"
+              >
+                "Help me source candidates"
+              </div>
             </div>
-
-            <!-- Label -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Label</h3>
-              <p class="text-gray-600 text-sm">
-                A tag or answer given to data so AI knows what it is.
-              </p>
-            </div>
-
-            <!-- Model -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Model</h3>
-              <p class="text-gray-600 text-sm">
-                The final program that can perform tasks after learning from data.
-              </p>
-            </div>
-
-            <!-- Training -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Training</h3>
-              <p class="text-gray-600 text-sm">
-                The process where AI learns from data to get better at its job.
-              </p>
-            </div>
-
-            <!-- Chatbot -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Chatbot</h3>
-              <p class="text-gray-600 text-sm">
-                A computer program that talks to people using text or voice.
-              </p>
-            </div>
-
-            <!-- Dataset -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Dataset</h3>
-              <p class="text-gray-600 text-sm">
-                A big collection of information that AI learns from.
-              </p>
-            </div>
-
-            <!-- Algorithm -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Algorithm</h3>
-              <p class="text-gray-600 text-sm">
-                Step‑by‑step instructions for solving a problem.
-              </p>
-            </div>
-
-            <!-- Token -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Token</h3>
-              <p class="text-gray-600 text-sm">
-                Words or pieces of words AI uses to read and write text.
-              </p>
-            </div>
-
-            <!-- Overfitting -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Overfitting</h3>
-              <p class="text-gray-600 text-sm">
-                When AI learns the training data too closely and can’t handle new,
-                different examples.
-              </p>
-            </div>
-
-            <!-- AI Agent -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">AI Agent</h3>
-              <p class="text-gray-600 text-sm">
-                Software that carries out tasks for you on its own.
-              </p>
-            </div>
-
-            <!-- AI Ethics -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">AI Ethics</h3>
-              <p class="text-gray-600 text-sm">
-                Making sure AI is used in ways that are right and fair to everyone.
-              </p>
-            </div>
-
-            <!-- Explainability -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Explainability</h3>
-              <p class="text-gray-600 text-sm">
-                How easily people can understand why an AI made a certain decision.
-              </p>
-            </div>
-
-            <!-- Inference -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Inference</h3>
-              <p class="text-gray-600 text-sm">
-                When an AI uses what it has learned to answer new questions.
-              </p>
-            </div>
-
-            <!-- Turing Test -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Turing Test</h3>
-              <p class="text-gray-600 text-sm">
-                A test to see if a computer can act so human that people can't tell
-                the difference.
-              </p>
-            </div>
-
-            <!-- Prompt -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Prompt</h3>
-              <p class="text-gray-600 text-sm">
-                The text or question you give an AI to get a response.
-              </p>
-            </div>
-
-            <!-- Fine‑Tuning -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Fine‑Tuning</h3>
-              <p class="text-gray-600 text-sm">
-                Training an AI on a smaller set of special data to improve it at
-                specific tasks.
-              </p>
-            </div>
-
-            <!-- Generative AI -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Generative AI</h3>
-              <p class="text-gray-600 text-sm">
-                AI that can create new things such as pictures, writing, or music.
-              </p>
-            </div>
-
-            <!-- AI Automation -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">AI Automation</h3>
-              <p class="text-gray-600 text-sm">
-                Using AI to make processes run by themselves without people doing them.
-              </p>
-            </div>
-
-            <!-- Neural Network -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Neural Network</h3>
-              <p class="text-gray-600 text-sm">
-                A type of AI computer system built a little like the human brain.
-              </p>
-            </div>
-
-            <!-- Computer Vision -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Computer Vision</h3>
-              <p class="text-gray-600 text-sm">
-                AI that helps computers “see” and understand images or video.
-              </p>
-            </div>
-
-            <!-- Transfer Learning -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Transfer Learning</h3>
-              <p class="text-gray-600 text-sm">
-                Using an AI already trained for one job to help with a new, different
-                job.
-              </p>
-            </div>
-
-            <!-- Guardrails -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Guardrails (in AI)</h3>
-              <p class="text-gray-600 text-sm">
-                Built‑in checks that stop an AI from making mistakes or causing harm.
-              </p>
-            </div>
-
-            <!-- Open Source AI -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Open Source AI</h3>
-              <p class="text-gray-600 text-sm">
-                AI whose design code is public, so anyone can use or change it.
-              </p>
-            </div>
-
-            <!-- Deep Learning -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Deep Learning</h3>
-              <p class="text-gray-600 text-sm">
-                AI that learns through very large neural networks with many layers.
-              </p>
-            </div>
-
-            <!-- Reinforcement Learning -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Reinforcement Learning</h3>
-              <p class="text-gray-600 text-sm">
-                AI learns by trying things and getting rewards for good actions.
-              </p>
-            </div>
-
-            <!-- Hallucination -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Hallucination (in AI)</h3>
-              <p class="text-gray-600 text-sm">
-                When AI makes up information that isn’t true or isn’t based on facts.
-              </p>
-            </div>
-
-            <!-- Zero‑Shot Learning -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Zero‑Shot Learning</h3>
-              <p class="text-gray-600 text-sm">
-                AI completes a new task it wasn’t directly trained on just by reading
-                the task description.
-              </p>
-            </div>
-
-            <!-- Speech Recognition -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Speech Recognition</h3>
-              <p class="text-gray-600 text-sm">
-                AI that turns spoken words into written text.
-              </p>
-            </div>
-
-            <!-- Supervised Learning -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Supervised Learning</h3>
-              <p class="text-gray-600 text-sm">
-                AI learns from data that’s already labeled with the right answers.
-              </p>
-            </div>
-
-            <!-- Model Context Protocol -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Model Context Protocol</h3>
-              <p class="text-gray-600 text-sm">
-                Rules for how AIs share and use the information they learn from.
-              </p>
-            </div>
-
-            <!-- Machine Learning -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Machine Learning</h3>
-              <p class="text-gray-600 text-sm">
-                A way for computers to learn by seeing many examples.
-              </p>
-            </div>
-
-            <!-- AI (Artificial Intelligence) -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal">AI (Artificial Intelligence)</h3>
-              <p class="text-gray-600 text-sm">
-                Technology that makes computers act like smart humans do.
-              </p>
-            </div>
-
-            <!-- Unsupervised Learning -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Unsupervised Learning</h3>
-              <p class="text-gray-600 text-sm">
-                AI finds patterns in data that has no labels.
-              </p>
-            </div>
-
-            <!-- LLM -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal">LLM (Large Language Model)</h3>
-              <p class="text-gray-600 text-sm">
-                An AI model that understands and writes text, trained on vast amounts
-                of data.
-              </p>
-            </div>
-
-            <!-- ASI -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal">ASI (Artificial Superintelligence)</h3>
-              <p class="text-gray-600 text-sm">
-                An AI even smarter than the smartest human ever.
-              </p>
-            </div>
-
-            <!-- GPU -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal">GPU (Graphics Processing Unit)</h3>
-              <p class="text-gray-600 text-sm">
-                Special computer chips that help train and run AI models faster.
-              </p>
-            </div>
-
-            <!-- NLP -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal">NLP (Natural Language Processing)</h3>
-              <p class="text-gray-600 text-sm">
-                AI that understands and works with human language.
-              </p>
-            </div>
-
-            <!-- AGI -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal">AGI (Artificial General Intelligence)</h3>
-              <p class="text-gray-600 text-sm">
-                A super‑smart AI that can learn and do any task a human can.
-              </p>
-            </div>
-
-            <!-- GPT -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal">GPT (Generative Pre‑trained Transformer)</h3>
-              <p class="text-gray-600 text-sm">
-                A famous type of AI that writes text like a human.
-              </p>
-            </div>
-
-            <!-- API -->
-            <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal">API (Application Programming Interface)</h3>
-              <p class="text-gray-600 text-sm">
-                A way for different programs to talk to each other and access AI
-                features.
-              </p>
-            </div>
-
-          </div>
-        </section>
-
-        <section id="case-studies" class="page-section mb-16 md:mb-24 fade-in hidden">
-             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">End-to-End Case Studies</h2>
-                <p class="max-w-3xl mx-auto text-lg text-gray-600">Walk through a complete GBS workflow from start to finish. These examples show how to chain prompts together to handle multi-step tasks in your functional area.</p>
-            </div>
-            <div id="case-study-container" class="max-w-5xl mx-auto">
-                 <!-- Case Studies will be injected here -->
-            </div>
-        </section>
-
-        <section id="team-leadership" class="page-section mb-16 md:mb-24 fade-in hidden">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Leading Your Team Through Change</h2>
-                <p class="max-w-3xl mx-auto text-lg text-gray-600">Integrating AI is as much about people as it is about technology. Here are tools to help you lead the conversation, address concerns, and build a culture of curiosity and adoption.</p>
-            </div>
-            <div class="max-w-4xl mx-auto space-y-12">
-                <!-- Conversation Starters -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <h3 class="text-2xl font-bold text-[#4A90E2] mb-4">Conversation Starters</h3>
-                    <p class="text-gray-600 mb-6">Use these open-ended questions in team meetings or 1-on-1s to start a positive dialogue about AI.</p>
-                    <ul class="space-y-4 text-gray-700 list-disc list-inside">
-                        <li>"What's one task from last week that felt like a chore? Let's brainstorm for 10 minutes on how an AI could have helped."</li>
-                        <li>"If you had an expert assistant who could instantly answer any question, what would you ask it to help you with your work?"</li>
-                        <li>"What are you most curious about learning to do with AI? What are you most concerned about?"</li>
-                         <li>"Let's identify one repetitive report we create. How could we use Gemini to generate the first draft for us?"</li>
-                    </ul>
-                </div>
-                <!-- Handling Resistance -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <h3 class="text-2xl font-bold text-[#4A90E2] mb-4">Handling Resistance Playbook</h3>
-                    <p class="text-gray-600 mb-6">Click on a concern to see constructive, empathetic talking points to help you address it.</p>
-                    <div class="space-y-4" id="resistance-accordion">
-                        <details class="resistance-item">
-                            <summary>"Is this going to take my job?"</summary>
-                            <div class="answer">
-                                <p class="text-gray-700">"That's a valid concern, and I want to be clear: our goal isn't to replace anyone. It's to get rid of the boring, repetitive parts of our jobs so we can focus on the more strategic, interesting work that requires our expertise. Think of this as a tool to make you more effective, not to replace you."</p>
-                            </div>
-                        </details>
-                         <details class="resistance-item">
-                            <summary>"I don't have time to learn a new tool."</summary>
-                            <div class="answer">
-                                <p class="text-gray-700">"I completely understand that everyone is busy. That's why we're starting small. Let's find just one task that takes you 30 minutes a week and see if we can use this tool to do it in 5 minutes. The goal is to invest a little time now to save a lot of time later."</p>
-                            </div>
-                        </details>
-                         <details class="resistance-item">
-                            <summary>"I'm not a 'tech person', this seems too complicated."</summary>
-                            <div class="answer">
-                                <p class="text-gray-700">"You don't need to be a tech expert to use this. It's designed to be a conversation. If you can write an email, you can use Gemini. We'll learn together, and the 'Simulator' in this training is a great, no-pressure place to start."</p>
-                            </div>
-                        </details>
-                         <details class="resistance-item">
-                            <summary>"How can we trust its answers?"</summary>
-                            <div class="answer">
-                                <p class="text-gray-700">"That's an excellent point. We should always treat the output as a 'first draft' from a talented but new assistant. It's our job as the experts to review, verify, and refine the output. It's here to assist our judgment, not replace it."</p>
-                            </div>
-                        </details>
-                    </div>
-                </div>
-                <!-- Show and Tell Framework -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <h3 class="text-2xl font-bold text-[#4A90E2] mb-4">"Show and Tell" Meeting Framework</h3>
-                    <p class="text-gray-600 mb-6">Encourage peer-to-peer learning and make success contagious with a short, informal "Show and Tell" meeting.</p>
-                    <div class="space-y-4">
-                        <div>
-                            <h4 class="font-semibold text-lg">Purpose:</h4>
-                            <p class="text-gray-700">To create a safe space for team members to share what they've accomplished or learned with Gemini, no matter how small.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-lg">Sample Agenda (30 mins):</h4>
-                            <ul class="list-disc list-inside text-gray-700">
-                                <li><strong>5 min:</strong> Welcome & Introduction</li>
-                                <li><strong>15 min:</strong> 3 team members each get 5 minutes to "show and tell" one thing they did with Gemini.</li>
-                                <li><strong>10 min:</strong> Open Q&A and brainstorming.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-lg">Tips for Success:</h4>
-                            <ul class="list-disc list-inside text-gray-700">
-                                <li>Keep it informal and low-pressure.</li>
-                                <li>Celebrate all attempts, not just perfect results.</li>
-                                <li>Focus on the learning: "What did you try? What was the result? What would you do differently?"</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="what" class="page-section mb-16 md:mb-24 fade-in hidden">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">The Leader's Playbook & Prompt Library</h2>
-                <p class="max-w-3xl mx-auto text-lg text-gray-600">Here are the practical tools you need. Below is an interactive library of Gemini prompts tailored for GBS tasks. Use the filters to find proven prompts you and your team can use today to start saving time and improving output quality.</p>
-            </div>
-
-            <div class="flex justify-center space-x-2 md:space-x-4 mb-8">
-                <button class="prompt-filter-btn active bg-[#4A90E2] text-white px-4 py-2 rounded-full text-sm font-semibold shadow">All</button>
-                <button class="prompt-filter-btn bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow">Email</button>
-                <button class="prompt-filter-btn bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow">Meetings</button>
-                <button class="prompt-filter-btn bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow">Analysis</button>
-                <button class="prompt-filter-btn bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow">Team</button>
-            </div>
-
-            <div id="prompt-library" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            </div>
-        </section>
-
-        <section id="builder" class="page-section mb-16 md:mb-24 fade-in hidden">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Guided Prompt Builder</h2>
-                <p class="max-w-3xl mx-auto text-lg text-gray-600">Craft the perfect prompt by following these steps. This tool helps you structure your request for Gemini to get the best possible results, tailored to your specific needs.</p>
-            </div>
-            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-                <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
-                    <!-- Step 1: Goal -->
-                    <div>
-                        <label for="promptGoal" class="block text-sm font-semibold text-gray-800 mb-2">Step 1: What is your goal?</label>
-                        <select id="promptGoal" class="builder-select w-full">
-                            <option>Summarize a document</option>
-                            <option>Draft an email</option>
-                            <option>Brainstorm ideas</option>
-                            <option>Explain a complex topic</option>
-                            <option>Create a plan</option>
-                        </select>
-                    </div>
-                    <!-- Step 2: Audience -->
-                    <div>
-                        <label for="promptAudience" class="block text-sm font-semibold text-gray-800 mb-2">Step 2: Who is the audience?</label>
-                        <select id="promptAudience" class="builder-select w-full">
-                            <option>For a senior executive</option>
-                            <option>For my team</option>
-                            <option>For a new hire</option>
-                            <option>For an external stakeholder</option>
-                        </select>
-                    </div>
-                    <!-- Step 3: Tone -->
-                    <div>
-                        <label for="promptTone" class="block text-sm font-semibold text-gray-800 mb-2">Step 3: What is the desired tone?</label>
-                        <select id="promptTone" class="builder-select w-full">
-                            <option>Formal</option>
-                            <option>Professional</option>
-                            <option>Friendly</option>
-                            <option>Assertive</option>
-                        </select>
-                    </div>
-                    <!-- Step 4: Format -->
-                    <div>
-                        <label for="promptFormat" class="block text-sm font-semibold text-gray-800 mb-2">Step 4: What is the output format?</label>
-                        <select id="promptFormat" class="builder-select w-full">
-                            <option>Bullet points</option>
-                            <option>A paragraph</option>
-                            <option>An email</option>
-                            <option>A JSON object</option>
-                            <option>A checklist</option>
-                        </select>
-                    </div>
-                    <!-- Step 5: Context -->
-                    <div class="md:col-span-2">
-                        <label for="promptContext" class="block text-sm font-semibold text-gray-800 mb-2">Step 5: Provide context (e.g., paste text to summarize, describe the topic to brainstorm)</label>
-                        <textarea id="promptContext" rows="6" class="builder-textarea w-full" placeholder="Paste your text or describe your task here..."></textarea>
-                    </div>
-                </div>
-                <div class="mt-8 text-center">
-                    <button id="generatePromptBtn" class="bg-[#4A90E2] text-white font-bold py-3 px-8 rounded-full hover:bg-blue-600 transition-colors shadow-lg">
-                        Generate My Prompt
-                    </button>
-                </div>
-                <div id="generatedPromptContainer" class="mt-8 hidden">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Your Generated Prompt:</h4>
-                    <div class="relative bg-gray-100 p-4 rounded-lg">
-                        <pre id="generatedPromptOutput" class="whitespace-pre-wrap text-gray-700 text-sm leading-relaxed"></pre>
-                        <div class="absolute top-2 right-2 flex space-x-2">
-                            <button id="saveToLibraryBtn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-3 rounded text-xs">Save</button>
-                            <button id="copyPromptBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded text-xs">Copy</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="reverse-prompt" class="page-section mb-16 md:mb-24 fade-in hidden">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">"Reverse Prompt" Generator</h2>
-                <p class="max-w-3xl mx-auto text-lg text-gray-600">Learn by deconstruction. Paste in a piece of high-quality text you've written, and this tool will analyze it and generate the prompt that could have created it.</p>
-            </div>
-            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-                <div>
-                    <label for="reversePromptInput" class="block text-sm font-semibold text-gray-800 mb-2">Paste your completed work here (e.g., a well-written email, a summary):</label>
-                    <textarea id="reversePromptInput" rows="8" class="builder-textarea w-full" placeholder="Paste your text here..."></textarea>
-                </div>
-                <div class="mt-6 text-center">
-                    <button id="generateReversePromptBtn" class="bg-[#4A90E2] text-white font-bold py-3 px-8 rounded-full hover:bg-blue-600 transition-colors shadow-lg">
-                        Generate Reverse Prompt
-                    </button>
-                </div>
-                <div id="reverse-prompt-spinner" class="hidden mx-auto mt-8 spinner"></div>
-                <div id="reverse-prompt-output-container" class="mt-8 hidden">
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-4">Generated Prompt:</h4>
-                        <div class="relative code-block bg-gray-800 text-gray-200">
-                            <pre id="reverse-prompt-output" class="whitespace-pre-wrap"></pre>
-                        </div>
-                    </div>
-                    <div class="mt-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-4">Why this prompt is effective:</h4>
-                        <div id="reverse-prompt-explanation" class="p-4 bg-blue-50 border border-blue-200 rounded-lg text-blue-800"></div>
-                    </div>
-                </div>
-                 <div id="reverse-prompt-error" class="hidden mt-8 p-4 bg-red-100 text-red-700 rounded-lg"></div>
-            </div>
-        </section>
-
-        <section id="my-library" class="page-section mb-16 md:mb-24 fade-in hidden">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">My Prompt Library</h2>
-                <p class="max-w-3xl mx-auto text-lg text-gray-600">Your personal collection of powerful prompts. Here you'll find your saved custom prompts from the builder and your favorited prompts from the main library.</p>
-            </div>
-
             <div>
-                <h3 class="text-2xl font-bold tracking-tight mb-4 text-gray-800">My Custom Prompts</h3>
-                <div id="my-custom-prompts-list" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Custom prompts will be rendered here -->
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded"
+              >
+                "You're a senior RPO sourcing specialist at Randstad. I need 15
+                qualified candidates for (ROLE) at (CLIENT COMPANY) within 72
+                hours. Create a multi-channel sourcing strategy including:
+                Boolean search strings for LinkedIn/Indeed, 5 alternative
+                sourcing channels, and a candidate outreach sequence that gets
+                40%+ response rates. Show me the exact messaging for each
+                touchpoint."
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              12. Provide Context and Expertise
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Give the AI a specific role and detailed context. Include your
+              goals, constraints, and expected deliverables to get
+              professional-level output.
+            </p>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded"
+              >
+                "Schedule interviews better"
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded"
+              >
+                "I'm coordinating interviews for 12 candidates across 3 time
+                zones with 5 hiring managers who have conflicting calendars.
+                Create an interview scheduling framework that: minimizes
+                back-and-forth emails, provides candidate experience scoring,
+                includes backup plans for no-shows, and sends automated
+                reminders. Give me template emails for each scenario."
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              13. Handle Administrative Tasks
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Transform general admin requests into specific workflow management
+              tasks with clear deliverables and stakeholder considerations.
+            </p>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded"
+              >
+                "Handle this admin work"
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded"
+              >
+                "You're managing RPO operations for 200+ open positions across
+                15 hiring managers. Design a workflow that tracks: candidate
+                pipeline stages, client feedback loops, supplier performance
+                metrics, and SLA compliance. Create status update templates that
+                keep stakeholders informed without overwhelming them with
+                details."
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              14. Manage Client Relations
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Convert complaint handling into strategic relationship management
+              with data-backed solutions and clear action plans.
+            </p>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded"
+              >
+                "Deal with this complaint"
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded"
+              >
+                "A hiring manager is escalating because their Software Engineer
+                position has been open 45 days with only 3 interviews scheduled.
+                They're threatening to pull the RPO contract. Draft a response
+                that: acknowledges their frustration, provides data-backed
+                explanations, presents 3 immediate action items, and repositions
+                this as a partnership opportunity. Include follow-up cadence."
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              15. Improve Candidate Experience
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Turn vague improvement requests into systematic process
+              optimization with measurable outcomes and client-ready
+              documentation.
+            </p>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded"
+              >
+                "Improve candidate experience"
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded"
+              >
+                "Map the entire candidate journey for our RPO process from
+                application to offer. Identify the top 5 friction points that
+                cause 60% candidate drop-off. For each point, provide: specific
+                improvement tactics, implementation timeline, success metrics,
+                and client communication strategy. Make this bulletproof for
+                client reviews."
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              16. Manage Supplier Performance
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Convert basic supplier management into comprehensive performance
+              tracking systems with accountability measures and improvement
+              frameworks.
+            </p>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block text-sm bg-red-50 border border-red-200 p-3 rounded"
+              >
+                "Manage supplier relationships"
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block text-sm bg-green-50 border border-green-200 p-3 rounded"
+              >
+                "Create a supplier performance scorecard for our MSP program
+                managing 25 staffing vendors. Include metrics that matter to
+                clients: quality of candidates, time-to-submit, rate
+                competitiveness, and diversity sourcing. Design quarterly
+                business reviews that drive accountability and identify
+                top/bottom performers with clear improvement plans."
+              </div>
+            </div>
+          </div>
+
+          <!-- Section Divider Card -->
+          <div
+            class="col-span-full bg-green-50 p-6 rounded-lg border-l-4 border-green-500 mt-8"
+          >
+            <h3 class="text-2xl font-bold text-green-700 mb-2">
+              Universal Pro Tips
+            </h3>
+            <p class="text-gray-600">
+              Master these patterns for any situation - from cover letters to
+              complex analysis.
+            </p>
+          </div>
+
+          <!-- Cards 17-22: Universal Pro Tips -->
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              17. Make Content Better
+            </h3>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded"
+              >
+                "Make this better"
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded"
+              >
+                "Analyze this (CONTENT) for: clarity (1-10), emotional impact
+                (1-10), and actionability (1-10). Rewrite to score 10/10 on all
+                metrics. Show me what you changed and why."
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              18. Write Cover Letters
+            </h3>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded"
+              >
+                "Write me a cover letter"
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded"
+              >
+                "You're a hiring manager at (COMPANY) who's rejected 200
+                applicants. I'm applying for (ROLE). Write a cover letter that
+                makes you stop and say 'finally, someone who gets it.'"
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              19. Explain Complex Topics
+            </h3>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded"
+              >
+                "Explain this simply"
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded"
+              >
+                "Explain (COMPLEX TOPIC) using only the 1,000 most common
+                English words. Then explain it through a metaphor involving
+                (FAMILIAR ACTIVITY). Make a 10-year-old excited to learn more."
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              20. Optimize Resumes
+            </h3>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded"
+              >
+                "Help me with my resume"
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded"
+              >
+                "Here's the job posting: (PASTE). Here's my experience: (PASTE).
+                Rewrite my bullets to use their exact keywords while quantifying
+                impact with numbers that make me undeniable."
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              21. Professional Tone
+            </h3>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded"
+              >
+                "Make this sound professional"
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded"
+              >
+                "Rewrite this using the vocabulary and tone of (SPECIFIC
+                INDUSTRY) leaders. Include 3 subtle power phrases that make me
+                sound experienced without arrogance."
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-3">
+              22. Edit and Improve
+            </h3>
+            <div class="mb-4">
+              <h4 class="text-lg font-bold text-red-600 mb-2">❌ Don't say:</h4>
+              <div
+                class="code-block bg-red-50 border border-red-200 text-sm p-3 rounded"
+              >
+                "Check my grammar"
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-green-600 mb-2">✅ Say:</h4>
+              <div
+                class="code-block bg-green-50 border border-green-200 text-sm p-3 rounded"
+              >
+                "Edit this for: grammar, flow, and impact. Show me the top 3
+                changes that transform this from amateur to executive-level
+                communication. Explain the psychology behind each edit."
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of single grid container -->
+      </section>
+
+      <section
+        id="ai-glossary"
+        class="page-section mb-16 md:mb-24 fade-in hidden"
+      >
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            AI Glossary
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Demystifying the language of AI. Use this searchable glossary to
+            quickly understand common terms and concepts.
+          </p>
+        </div>
+
+        <!-- cards -->
+        <div
+          id="glossary-grid"
+          class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+        >
+          <!-- Bias -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Bias</h3>
+            <p class="text-gray-600 text-sm">
+              When an AI unfairly prefers certain things over others, often
+              because of biases in the data it was trained on.
+            </p>
+          </div>
+
+          <!-- Label -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Label</h3>
+            <p class="text-gray-600 text-sm">
+              A tag or answer given to data so AI knows what it is.
+            </p>
+          </div>
+
+          <!-- Model -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Model</h3>
+            <p class="text-gray-600 text-sm">
+              The final program that can perform tasks after learning from data.
+            </p>
+          </div>
+
+          <!-- Training -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Training</h3>
+            <p class="text-gray-600 text-sm">
+              The process where AI learns from data to get better at its job.
+            </p>
+          </div>
+
+          <!-- Chatbot -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Chatbot</h3>
+            <p class="text-gray-600 text-sm">
+              A computer program that talks to people using text or voice.
+            </p>
+          </div>
+
+          <!-- Dataset -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Dataset</h3>
+            <p class="text-gray-600 text-sm">
+              A big collection of information that AI learns from.
+            </p>
+          </div>
+
+          <!-- Algorithm -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Algorithm</h3>
+            <p class="text-gray-600 text-sm">
+              Step‑by‑step instructions for solving a problem.
+            </p>
+          </div>
+
+          <!-- Token -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Token</h3>
+            <p class="text-gray-600 text-sm">
+              Words or pieces of words AI uses to read and write text.
+            </p>
+          </div>
+
+          <!-- Overfitting -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Overfitting</h3>
+            <p class="text-gray-600 text-sm">
+              When AI learns the training data too closely and can’t handle new,
+              different examples.
+            </p>
+          </div>
+
+          <!-- AI Agent -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">AI Agent</h3>
+            <p class="text-gray-600 text-sm">
+              Software that carries out tasks for you on its own.
+            </p>
+          </div>
+
+          <!-- AI Ethics -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">AI Ethics</h3>
+            <p class="text-gray-600 text-sm">
+              Making sure AI is used in ways that are right and fair to
+              everyone.
+            </p>
+          </div>
+
+          <!-- Explainability -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Explainability
+            </h3>
+            <p class="text-gray-600 text-sm">
+              How easily people can understand why an AI made a certain
+              decision.
+            </p>
+          </div>
+
+          <!-- Inference -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Inference</h3>
+            <p class="text-gray-600 text-sm">
+              When an AI uses what it has learned to answer new questions.
+            </p>
+          </div>
+
+          <!-- Turing Test -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Turing Test</h3>
+            <p class="text-gray-600 text-sm">
+              A test to see if a computer can act so human that people can't
+              tell the difference.
+            </p>
+          </div>
+
+          <!-- Prompt -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Prompt</h3>
+            <p class="text-gray-600 text-sm">
+              The text or question you give an AI to get a response.
+            </p>
+          </div>
+
+          <!-- Fine‑Tuning -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Fine‑Tuning</h3>
+            <p class="text-gray-600 text-sm">
+              Training an AI on a smaller set of special data to improve it at
+              specific tasks.
+            </p>
+          </div>
+
+          <!-- Generative AI -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Generative AI</h3>
+            <p class="text-gray-600 text-sm">
+              AI that can create new things such as pictures, writing, or music.
+            </p>
+          </div>
+
+          <!-- AI Automation -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">AI Automation</h3>
+            <p class="text-gray-600 text-sm">
+              Using AI to make processes run by themselves without people doing
+              them.
+            </p>
+          </div>
+
+          <!-- Neural Network -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Neural Network
+            </h3>
+            <p class="text-gray-600 text-sm">
+              A type of AI computer system built a little like the human brain.
+            </p>
+          </div>
+
+          <!-- Computer Vision -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Computer Vision
+            </h3>
+            <p class="text-gray-600 text-sm">
+              AI that helps computers “see” and understand images or video.
+            </p>
+          </div>
+
+          <!-- Transfer Learning -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Transfer Learning
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Using an AI already trained for one job to help with a new,
+              different job.
+            </p>
+          </div>
+
+          <!-- Guardrails -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Guardrails (in AI)
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Built‑in checks that stop an AI from making mistakes or causing
+              harm.
+            </p>
+          </div>
+
+          <!-- Open Source AI -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Open Source AI
+            </h3>
+            <p class="text-gray-600 text-sm">
+              AI whose design code is public, so anyone can use or change it.
+            </p>
+          </div>
+
+          <!-- Deep Learning -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">Deep Learning</h3>
+            <p class="text-gray-600 text-sm">
+              AI that learns through very large neural networks with many
+              layers.
+            </p>
+          </div>
+
+          <!-- Reinforcement Learning -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Reinforcement Learning
+            </h3>
+            <p class="text-gray-600 text-sm">
+              AI learns by trying things and getting rewards for good actions.
+            </p>
+          </div>
+
+          <!-- Hallucination -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Hallucination (in AI)
+            </h3>
+            <p class="text-gray-600 text-sm">
+              When AI makes up information that isn’t true or isn’t based on
+              facts.
+            </p>
+          </div>
+
+          <!-- Zero‑Shot Learning -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Zero‑Shot Learning
+            </h3>
+            <p class="text-gray-600 text-sm">
+              AI completes a new task it wasn’t directly trained on just by
+              reading the task description.
+            </p>
+          </div>
+
+          <!-- Speech Recognition -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Speech Recognition
+            </h3>
+            <p class="text-gray-600 text-sm">
+              AI that turns spoken words into written text.
+            </p>
+          </div>
+
+          <!-- Supervised Learning -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Supervised Learning
+            </h3>
+            <p class="text-gray-600 text-sm">
+              AI learns from data that’s already labeled with the right answers.
+            </p>
+          </div>
+
+          <!-- Model Context Protocol -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Model Context Protocol
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Rules for how AIs share and use the information they learn from.
+            </p>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Machine Learning
+            </h3>
+            <p class="text-gray-600 text-sm">
+              A way for computers to learn by seeing many examples.
+            </p>
+          </div>
+
+          <!-- AI (Artificial Intelligence) -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3
+              class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal"
+            >
+              AI (Artificial Intelligence)
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Technology that makes computers act like smart humans do.
+            </p>
+          </div>
+
+          <!-- Unsupervised Learning -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-[#4A90E2] mb-3">
+              Unsupervised Learning
+            </h3>
+            <p class="text-gray-600 text-sm">
+              AI finds patterns in data that has no labels.
+            </p>
+          </div>
+
+          <!-- LLM -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3
+              class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal"
+            >
+              LLM (Large Language Model)
+            </h3>
+            <p class="text-gray-600 text-sm">
+              An AI model that understands and writes text, trained on vast
+              amounts of data.
+            </p>
+          </div>
+
+          <!-- ASI -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3
+              class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal"
+            >
+              ASI (Artificial Superintelligence)
+            </h3>
+            <p class="text-gray-600 text-sm">
+              An AI even smarter than the smartest human ever.
+            </p>
+          </div>
+
+          <!-- GPU -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3
+              class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal"
+            >
+              GPU (Graphics Processing Unit)
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Special computer chips that help train and run AI models faster.
+            </p>
+          </div>
+
+          <!-- NLP -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3
+              class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal"
+            >
+              NLP (Natural Language Processing)
+            </h3>
+            <p class="text-gray-600 text-sm">
+              AI that understands and works with human language.
+            </p>
+          </div>
+
+          <!-- AGI -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3
+              class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal"
+            >
+              AGI (Artificial General Intelligence)
+            </h3>
+            <p class="text-gray-600 text-sm">
+              A super‑smart AI that can learn and do any task a human can.
+            </p>
+          </div>
+
+          <!-- GPT -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3
+              class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal"
+            >
+              GPT (Generative Pre‑trained Transformer)
+            </h3>
+            <p class="text-gray-600 text-sm">
+              A famous type of AI that writes text like a human.
+            </p>
+          </div>
+
+          <!-- API -->
+          <div class="glossary-card bg-white p-6 rounded-lg shadow-sm">
+            <h3
+              class="text-xl font-bold text-[#4A90E2] mb-3 break-words whitespace-normal"
+            >
+              API (Application Programming Interface)
+            </h3>
+            <p class="text-gray-600 text-sm">
+              A way for different programs to talk to each other and access AI
+              features.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="case-studies"
+        class="page-section mb-16 md:mb-24 fade-in hidden"
+      >
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            End-to-End Case Studies
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Walk through a complete GBS workflow from start to finish. These
+            examples show how to chain prompts together to handle multi-step
+            tasks in your functional area.
+          </p>
+        </div>
+        <div id="case-study-container" class="max-w-5xl mx-auto">
+          <!-- Case Studies will be injected here -->
+        </div>
+      </section>
+
+      <section
+        id="team-leadership"
+        class="page-section mb-16 md:mb-24 fade-in hidden"
+      >
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            Leading Your Team Through Change
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Integrating AI is as much about people as it is about technology.
+            Here are tools to help you lead the conversation, address concerns,
+            and build a culture of curiosity and adoption.
+          </p>
+        </div>
+        <div class="max-w-4xl mx-auto space-y-12">
+          <!-- Conversation Starters -->
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-4">
+              Conversation Starters
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Use these open-ended questions in team meetings or 1-on-1s to
+              start a positive dialogue about AI.
+            </p>
+            <ul class="space-y-4 text-gray-700 list-disc list-inside">
+              <li>
+                "What's one task from last week that felt like a chore? Let's
+                brainstorm for 10 minutes on how an AI could have helped."
+              </li>
+              <li>
+                "If you had an expert assistant who could instantly answer any
+                question, what would you ask it to help you with your work?"
+              </li>
+              <li>
+                "What are you most curious about learning to do with AI? What
+                are you most concerned about?"
+              </li>
+              <li>
+                "Let's identify one repetitive report we create. How could we
+                use Gemini to generate the first draft for us?"
+              </li>
+            </ul>
+          </div>
+          <!-- Handling Resistance -->
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-4">
+              Handling Resistance Playbook
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Click on a concern to see constructive, empathetic talking points
+              to help you address it.
+            </p>
+            <div class="space-y-4" id="resistance-accordion">
+              <details class="resistance-item">
+                <summary>"Is this going to take my job?"</summary>
+                <div class="answer">
+                  <p class="text-gray-700">
+                    "That's a valid concern, and I want to be clear: our goal
+                    isn't to replace anyone. It's to get rid of the boring,
+                    repetitive parts of our jobs so we can focus on the more
+                    strategic, interesting work that requires our expertise.
+                    Think of this as a tool to make you more effective, not to
+                    replace you."
+                  </p>
                 </div>
-                <div id="no-custom-prompts" class="text-center py-8 px-4 bg-white rounded-lg shadow-sm">
-                    <p class="text-gray-500">You haven't saved any custom prompts yet. Use the "Builder" to create and save your own!</p>
+              </details>
+              <details class="resistance-item">
+                <summary>"I don't have time to learn a new tool."</summary>
+                <div class="answer">
+                  <p class="text-gray-700">
+                    "I completely understand that everyone is busy. That's why
+                    we're starting small. Let's find just one task that takes
+                    you 30 minutes a week and see if we can use this tool to do
+                    it in 5 minutes. The goal is to invest a little time now to
+                    save a lot of time later."
+                  </p>
                 </div>
-            </div>
-
-            <div class="mt-12">
-                <h3 class="text-2xl font-bold tracking-tight mb-4 text-gray-800">My Favorite Prompts</h3>
-                <div id="my-favorite-prompts-list" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Favorite prompts will be rendered here -->
+              </details>
+              <details class="resistance-item">
+                <summary>
+                  "I'm not a 'tech person', this seems too complicated."
+                </summary>
+                <div class="answer">
+                  <p class="text-gray-700">
+                    "You don't need to be a tech expert to use this. It's
+                    designed to be a conversation. If you can write an email,
+                    you can use Gemini. We'll learn together, and the
+                    'Simulator' in this training is a great, no-pressure place
+                    to start."
+                  </p>
                 </div>
-                 <div id="no-favorite-prompts" class="text-center py-8 px-4 bg-white rounded-lg shadow-sm">
-                    <p class="text-gray-500">You haven't favorited any prompts yet. Click the star icon on prompts in "The What" section to add them here.</p>
+              </details>
+              <details class="resistance-item">
+                <summary>"How can we trust its answers?"</summary>
+                <div class="answer">
+                  <p class="text-gray-700">
+                    "That's an excellent point. We should always treat the
+                    output as a 'first draft' from a talented but new assistant.
+                    It's our job as the experts to review, verify, and refine
+                    the output. It's here to assist our judgment, not replace
+                    it."
+                  </p>
                 </div>
+              </details>
             </div>
-        </section>
+          </div>
+          <!-- Show and Tell Framework -->
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-[#4A90E2] mb-4">
+              "Show and Tell" Meeting Framework
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Encourage peer-to-peer learning and make success contagious with a
+              short, informal "Show and Tell" meeting.
+            </p>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-semibold text-lg">Purpose:</h4>
+                <p class="text-gray-700">
+                  To create a safe space for team members to share what they've
+                  accomplished or learned with Gemini, no matter how small.
+                </p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Sample Agenda (30 mins):</h4>
+                <ul class="list-disc list-inside text-gray-700">
+                  <li><strong>5 min:</strong> Welcome & Introduction</li>
+                  <li>
+                    <strong>15 min:</strong> 3 team members each get 5 minutes
+                    to "show and tell" one thing they did with Gemini.
+                  </li>
+                  <li><strong>10 min:</strong> Open Q&A and brainstorming.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Tips for Success:</h4>
+                <ul class="list-disc list-inside text-gray-700">
+                  <li>Keep it informal and low-pressure.</li>
+                  <li>Celebrate all attempts, not just perfect results.</li>
+                  <li>
+                    Focus on the learning: "What did you try? What was the
+                    result? What would you do differently?"
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="simulator" class="page-section mb-16 md:mb-24 fade-in hidden">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Scenario Simulator</h2>
-                <p class="max-w-3xl mx-auto text-lg text-gray-600">Test your prompt-crafting skills. For each real-world GBS scenario below, choose the best prompt to solve the problem and get immediate feedback on your choice.</p>
-            </div>
-            <div id="simulator-container" class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-                <!-- Scenarios will be injected here -->
-            </div>
-        </section>
+      <section id="what" class="page-section mb-16 md:mb-24 fade-in hidden">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            The Leader's Playbook & Prompt Library
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Here are the practical tools you need. Below is an interactive
+            library of Gemini prompts tailored for GBS tasks. Use the filters to
+            find proven prompts you and your team can use today to start saving
+            time and improving output quality.
+          </p>
+        </div>
 
-        <section id="my-day" class="page-section mb-16 md:mb-24 fade-in hidden">
-             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">My Day with AI</h2>
-                <p class="max-w-3xl mx-auto text-lg text-gray-600">Experience a day in the life of an AI-powered GBS leader. Make choices to tackle common tasks and see how Gemini can help you save time and be more effective.</p>
-            </div>
-            <div id="my-day-container" class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-                <!-- "My Day" simulator will be injected here -->
-            </div>
-        </section>
+        <div class="flex justify-center space-x-2 md:space-x-4 mb-8">
+          <button
+            class="prompt-filter-btn active bg-[#4A90E2] text-white px-4 py-2 rounded-full text-sm font-semibold shadow"
+          >
+            All
+          </button>
+          <button
+            class="prompt-filter-btn bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow"
+          >
+            Email
+          </button>
+          <button
+            class="prompt-filter-btn bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow"
+          >
+            Meetings
+          </button>
+          <button
+            class="prompt-filter-btn bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow"
+          >
+            Analysis
+          </button>
+          <button
+            class="prompt-filter-btn bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow"
+          >
+            Team
+          </button>
+        </div>
 
-        <section id="now" class="page-section fade-in hidden">
-             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Your Action Plan: The "One-Task" Challenge</h2>
-                <p class="max-w-3xl mx-auto text-lg text-gray-600">Change starts with a single step. Don't try to revolutionize everything overnight. Your mission is to identify one small, high-impact area and apply what you've learned. This creates a quick win and builds the confidence your team needs to embrace AI.</p>
-            </div>
+        <div
+          id="prompt-library"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        ></div>
+      </section>
 
-            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-                <div class="grid md:grid-cols-2 gap-8 items-center">
-                    <div>
-                        <h3 class="text-2xl font-bold text-[#4A90E2] mb-4">Your Mission, Should You Choose to Accept It:</h3>
-                        <ol class="list-decimal list-inside space-y-4 text-gray-700">
-                            <li><span class="font-semibold">Identify ONE Task:</span> Use the "4 R's" audit to pick one repetitive or time-consuming task your team handles.</li>
-                            <li><span class="font-semibold">Block One Hour:</span> Schedule a "Gemini Jam Session" in your team's calendar this week.</li>
-                            <li><span class="font-semibold">Tackle the Task:</span> As a group, use the prompts from the library to see how Gemini can help with that specific task.</li>
-                            <li><span class="font-semibold">Share Your Experience:</span> Come prepared to share what you learned—the successes and the challenges—in our follow-up Teams channel.</li>
-                        </ol>
-                    </div>
-                     <div class="p-4">
-                        <div class="text-center flow-box p-4 rounded-lg shadow-inner">
-                            <h4 class="font-bold">List Every Task</h4>
-                        </div>
-                        <div class="flow-arrow"></div>
-                        <div class="text-center flow-box p-4 rounded-lg shadow-inner">
-                            <h4 class="font-bold">Streamline What Remains</h4>
-                        </div>
-                        <div class="flow-arrow"></div>
-                        <div class="text-center flow-box p-4 rounded-lg shadow-inner">
-                            <h4 class="font-bold">Automate with AI</h4>
-                        </div>
-                        <div class="flow-arrow"></div>
-                        <div class="text-center flow-box p-4 rounded-lg bg-green-100 border-green-300">
-                            <h4 class="font-bold text-green-800">Scale Faster</h4>
-                        </div>
-                    </div>
-                </div>
+      <section id="builder" class="page-section mb-16 md:mb-24 fade-in hidden">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            Guided Prompt Builder
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Craft the perfect prompt by following these steps. This tool helps
+            you structure your request for Gemini to get the best possible
+            results, tailored to your specific needs.
+          </p>
+        </div>
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+          <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+            <!-- Step 1: Goal -->
+            <div>
+              <label
+                for="promptGoal"
+                class="block text-sm font-semibold text-gray-800 mb-2"
+                >Step 1: What is your goal?</label
+              >
+              <select id="promptGoal" class="builder-select w-full">
+                <option>Summarize a document</option>
+                <option>Draft an email</option>
+                <option>Brainstorm ideas</option>
+                <option>Explain a complex topic</option>
+                <option>Create a plan</option>
+              </select>
             </div>
-        </section>
+            <!-- Step 2: Audience -->
+            <div>
+              <label
+                for="promptAudience"
+                class="block text-sm font-semibold text-gray-800 mb-2"
+                >Step 2: Who is the audience?</label
+              >
+              <select id="promptAudience" class="builder-select w-full">
+                <option>For a senior executive</option>
+                <option>For my team</option>
+                <option>For a new hire</option>
+                <option>For an external stakeholder</option>
+              </select>
+            </div>
+            <!-- Step 3: Tone -->
+            <div>
+              <label
+                for="promptTone"
+                class="block text-sm font-semibold text-gray-800 mb-2"
+                >Step 3: What is the desired tone?</label
+              >
+              <select id="promptTone" class="builder-select w-full">
+                <option>Formal</option>
+                <option>Professional</option>
+                <option>Friendly</option>
+                <option>Assertive</option>
+              </select>
+            </div>
+            <!-- Step 4: Format -->
+            <div>
+              <label
+                for="promptFormat"
+                class="block text-sm font-semibold text-gray-800 mb-2"
+                >Step 4: What is the output format?</label
+              >
+              <select id="promptFormat" class="builder-select w-full">
+                <option>Bullet points</option>
+                <option>A paragraph</option>
+                <option>An email</option>
+                <option>A JSON object</option>
+                <option>A checklist</option>
+              </select>
+            </div>
+            <!-- Step 5: Context -->
+            <div class="md:col-span-2">
+              <label
+                for="promptContext"
+                class="block text-sm font-semibold text-gray-800 mb-2"
+                >Step 5: Provide context (e.g., paste text to summarize,
+                describe the topic to brainstorm)</label
+              >
+              <textarea
+                id="promptContext"
+                rows="6"
+                class="builder-textarea w-full"
+                placeholder="Paste your text or describe your task here..."
+              ></textarea>
+            </div>
+          </div>
+          <div class="mt-8 text-center">
+            <button
+              id="generatePromptBtn"
+              class="bg-[#4A90E2] text-white font-bold py-3 px-8 rounded-full hover:bg-blue-600 transition-colors shadow-lg"
+            >
+              Generate My Prompt
+            </button>
+          </div>
+          <div id="generatedPromptContainer" class="mt-8 hidden">
+            <h4 class="text-xl font-semibold text-gray-800 mb-4">
+              Your Generated Prompt:
+            </h4>
+            <div class="relative bg-gray-100 p-4 rounded-lg">
+              <pre
+                id="generatedPromptOutput"
+                class="whitespace-pre-wrap text-gray-700 text-sm leading-relaxed"
+              ></pre>
+              <div class="absolute top-2 right-2 flex space-x-2">
+                <button
+                  id="saveToLibraryBtn"
+                  class="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-3 rounded text-xs"
+                >
+                  Save
+                </button>
+                <button
+                  id="copyPromptBtn"
+                  class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded text-xs"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section
+        id="reverse-prompt"
+        class="page-section mb-16 md:mb-24 fade-in hidden"
+      >
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            "Reverse Prompt" Generator
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Learn by deconstruction. Paste in a piece of high-quality text
+            you've written, and this tool will analyze it and generate the
+            prompt that could have created it.
+          </p>
+        </div>
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+          <div>
+            <label
+              for="reversePromptInput"
+              class="block text-sm font-semibold text-gray-800 mb-2"
+              >Paste your completed work here (e.g., a well-written email, a
+              summary):</label
+            >
+            <textarea
+              id="reversePromptInput"
+              rows="8"
+              class="builder-textarea w-full"
+              placeholder="Paste your text here..."
+            ></textarea>
+          </div>
+          <div class="mt-6 text-center">
+            <button
+              id="generateReversePromptBtn"
+              class="bg-[#4A90E2] text-white font-bold py-3 px-8 rounded-full hover:bg-blue-600 transition-colors shadow-lg"
+            >
+              Generate Reverse Prompt
+            </button>
+          </div>
+          <div
+            id="reverse-prompt-spinner"
+            class="hidden mx-auto mt-8 spinner"
+          ></div>
+          <div id="reverse-prompt-output-container" class="mt-8 hidden">
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                Generated Prompt:
+              </h4>
+              <div class="relative code-block bg-gray-800 text-gray-200">
+                <pre
+                  id="reverse-prompt-output"
+                  class="whitespace-pre-wrap"
+                ></pre>
+              </div>
+            </div>
+            <div class="mt-6">
+              <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                Why this prompt is effective:
+              </h4>
+              <div
+                id="reverse-prompt-explanation"
+                class="p-4 bg-blue-50 border border-blue-200 rounded-lg text-blue-800"
+              ></div>
+            </div>
+          </div>
+          <div
+            id="reverse-prompt-error"
+            class="hidden mt-8 p-4 bg-red-100 text-red-700 rounded-lg"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        id="my-library"
+        class="page-section mb-16 md:mb-24 fade-in hidden"
+      >
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            My Prompt Library
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Your personal collection of powerful prompts. Here you'll find your
+            saved custom prompts from the builder and your favorited prompts
+            from the main library.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold tracking-tight mb-4 text-gray-800">
+            My Custom Prompts
+          </h3>
+          <div
+            id="my-custom-prompts-list"
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <!-- Custom prompts will be rendered here -->
+          </div>
+          <div
+            id="no-custom-prompts"
+            class="text-center py-8 px-4 bg-white rounded-lg shadow-sm"
+          >
+            <p class="text-gray-500">
+              You haven't saved any custom prompts yet. Use the "Builder" to
+              create and save your own!
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <h3 class="text-2xl font-bold tracking-tight mb-4 text-gray-800">
+            My Favorite Prompts
+          </h3>
+          <div
+            id="my-favorite-prompts-list"
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <!-- Favorite prompts will be rendered here -->
+          </div>
+          <div
+            id="no-favorite-prompts"
+            class="text-center py-8 px-4 bg-white rounded-lg shadow-sm"
+          >
+            <p class="text-gray-500">
+              You haven't favorited any prompts yet. Click the star icon on
+              prompts in "The What" section to add them here.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="simulator"
+        class="page-section mb-16 md:mb-24 fade-in hidden"
+      >
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            Scenario Simulator
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Test your prompt-crafting skills. For each real-world GBS scenario
+            below, choose the best prompt to solve the problem and get immediate
+            feedback on your choice.
+          </p>
+        </div>
+        <div
+          id="simulator-container"
+          class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8"
+        >
+          <!-- Scenarios will be injected here -->
+        </div>
+      </section>
+
+      <section id="my-day" class="page-section mb-16 md:mb-24 fade-in hidden">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            My Day with AI
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Experience a day in the life of an AI-powered GBS leader. Make
+            choices to tackle common tasks and see how Gemini can help you save
+            time and be more effective.
+          </p>
+        </div>
+        <div
+          id="my-day-container"
+          class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8"
+        >
+          <!-- "My Day" simulator will be injected here -->
+        </div>
+      </section>
+
+      <section id="now" class="page-section fade-in hidden">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            Your Action Plan: The "One-Task" Challenge
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Change starts with a single step. Don't try to revolutionize
+            everything overnight. Your mission is to identify one small,
+            high-impact area and apply what you've learned. This creates a quick
+            win and builds the confidence your team needs to embrace AI.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 class="text-2xl font-bold text-[#4A90E2] mb-4">
+                Your Mission, Should You Choose to Accept It:
+              </h3>
+              <ol class="list-decimal list-inside space-y-4 text-gray-700">
+                <li>
+                  <span class="font-semibold">Identify ONE Task:</span> Use the
+                  "4 R's" audit to pick one repetitive or time-consuming task
+                  your team handles.
+                </li>
+                <li>
+                  <span class="font-semibold">Block One Hour:</span> Schedule a
+                  "Gemini Jam Session" in your team's calendar this week.
+                </li>
+                <li>
+                  <span class="font-semibold">Tackle the Task:</span> As a
+                  group, use the prompts from the library to see how Gemini can
+                  help with that specific task.
+                </li>
+                <li>
+                  <span class="font-semibold">Share Your Experience:</span> Come
+                  prepared to share what you learned—the successes and the
+                  challenges—in our follow-up Teams channel.
+                </li>
+              </ol>
+            </div>
+            <div class="p-4">
+              <div class="text-center flow-box p-4 rounded-lg shadow-inner">
+                <h4 class="font-bold">List Every Task</h4>
+              </div>
+              <div class="flow-arrow"></div>
+              <div class="text-center flow-box p-4 rounded-lg shadow-inner">
+                <h4 class="font-bold">Streamline What Remains</h4>
+              </div>
+              <div class="flow-arrow"></div>
+              <div class="text-center flow-box p-4 rounded-lg shadow-inner">
+                <h4 class="font-bold">Automate with AI</h4>
+              </div>
+              <div class="flow-arrow"></div>
+              <div
+                class="text-center flow-box p-4 rounded-lg bg-green-100 border-green-300"
+              >
+                <h4 class="font-bold text-green-800">Scale Faster</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-        <script type="module" src="./main.js"></script>
-
-</body>
+    <div data-include="footer"></div>
+    <script type="module" src="/shared/scripts/loadHeaderFooter.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
