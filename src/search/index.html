@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="/shared/styles/tailwind.css" />
+    <link rel="stylesheet" href="../shared/hub-button.css" />
+    <link rel="stylesheet" href="../shared/styles/common.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div data-include="header"></div>
+    <div class="container mx-auto p-4 md:p-6 max-w-3xl">
+      <h1 class="text-3xl font-bold text-center mb-4">Search</h1>
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Type to search..."
+        class="w-full p-2 border rounded"
+      />
+      <div id="filters" class="flex gap-4 justify-center my-4">
+        <label class="flex items-center gap-1">
+          <input type="checkbox" value="daily-focus" checked />
+          <span>Daily Focus</span>
+        </label>
+        <label class="flex items-center gap-1">
+          <input type="checkbox" value="gbs-prompts" checked />
+          <span>Prompts</span>
+        </label>
+        <label class="flex items-center gap-1">
+          <input type="checkbox" value="training" checked />
+          <span>Training</span>
+        </label>
+      </div>
+      <div id="results" class="space-y-4"></div>
+    </div>
+    <div data-include="footer"></div>
+    <script type="module" src="/shared/scripts/loadHeaderFooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

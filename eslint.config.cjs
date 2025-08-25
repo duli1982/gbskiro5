@@ -1,4 +1,5 @@
 const js = require('@eslint/js');
+const globals = require('globals');
 
 module.exports = [
   js.configs.recommended,
@@ -8,11 +9,10 @@ module.exports = [
       ecmaVersion: 2021,
       sourceType: 'module',
       globals: {
-        ...js.environments.browser.globals,
-        ...js.environments.node.globals,
+        ...globals.browser,
+        ...globals.node,
       },
     },
     rules: {},
   },
 ];
-
