@@ -4,141 +4,230 @@ layout: layouts/base.njk
 nav: true
 ---
 
-    <!-- =========== HOMEPAGE VIEW =========== -->
-    <div id="homepage-view" class="fade-in">
-        <header class="text-center py-12 px-4">
-            <h1 class="text-4xl md:text-5xl font-bold tracking-tight main-heading">Gemini Prompt Library</h1>
-            <p id="hero-subtitle" class="max-w-2xl mx-auto text-lg text-gray-500 mt-4">
-                Discover a curated collection of prompts to help you unlock the full potential of Gemini.
-            </p>
-            <div class="max-w-2xl mx-auto text-lg text-gray-500 mt-4">
-                How To Use:
-                <span id="animated-subtitle" class="font-semibold text-[#4A90E2] inline-block"></span>
-            </div>
-            <div class="mt-8 max-w-xl mx-auto relative">
-                <input type="text" id="homepage-search" placeholder="🔍 Search for prompts..."
-                    class="w-full p-3 border border-gray-300 rounded-lg text-lg pr-10">
-                <button id="clear-search-btn"
-                    class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-gray-500 hover:text-gray-700">
-                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-        </header>
-
-        <!-- Pro Tips Section -->
-        <section class="container mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-            <div class="max-w-4xl mx-auto">
-                <div
-                    class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 p-6 shadow-sm">
-                    <div class="text-center mb-6">
-                        <div
-                            class="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mb-3">
-                            <span class="text-white text-xl">💡</span>
-                        </div>
-                        <h2 class="text-xl font-bold text-gray-800">Pro Tips for Better Prompting</h2>
-                        <p class="text-gray-600 text-sm mt-1">Master these techniques to get the most out of Gemini</p>
-                    </div>
-
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <div class="bg-white rounded-lg p-4 border border-green-100 shadow-sm">
-                            <div class="flex items-center mb-3">
-                                <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                                    <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                </div>
-                                <h3 class="font-semibold text-gray-800">Be Specific</h3>
-                            </div>
-                            <p class="text-gray-600 text-sm leading-relaxed">Include context, format, and desired
-                                outcome in your prompts for better results.</p>
-                        </div>
-
-                        <div class="bg-white rounded-lg p-4 border border-purple-100 shadow-sm">
-                            <div class="flex items-center mb-3">
-                                <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3">
-                                    <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h3 class="font-semibold text-gray-800">Set the Role</h3>
-                            </div>
-                            <p class="text-gray-600 text-sm leading-relaxed">Tell Gemini what role to play - expert,
-                                teacher, analyst, or any specific persona.</p>
-                        </div>
-
-                        <div class="bg-white rounded-lg p-4 border border-blue-100 shadow-sm">
-                            <div class="flex items-center mb-3">
-                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                    <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h3 class="font-semibold text-gray-800">Iterate</h3>
-                            </div>
-                            <p class="text-gray-600 text-sm leading-relaxed">Refine your prompts based on results to
-                                continuously improve output quality.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <main class="container mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-            <div id="loading-indicator" class="hidden text-center p-8">
-                <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
-                <p class="mt-4 text-gray-600">Loading prompts...</p>
-            </div>
-            <!-- Category cards will be injected here by JavaScript -->
-            <div id="category-cards-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 hidden"></div>
-        </main>
+<!-- =========== HOMEPAGE VIEW =========== -->
+<div id="homepage-view" class="fade-in">
+  <header class="text-center py-12 px-4">
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tight main-heading">
+      Gemini Prompt Library
+    </h1>
+    <p id="hero-subtitle" class="max-w-2xl mx-auto text-lg text-gray-500 mt-4">
+      Discover a curated collection of prompts to help you unlock the full
+      potential of Gemini.
+    </p>
+    <div class="max-w-2xl mx-auto text-lg text-gray-500 mt-4">
+      How To Use:
+      <span
+        id="animated-subtitle"
+        class="font-semibold text-[#4A90E2] inline-block"
+      ></span>
     </div>
+    <div class="max-w-2xl mx-auto mt-6 text-left">
+      <h2 class="text-xl font-semibold text-gray-800">Executive Summary</h2>
+      <ul class="list-disc list-inside text-gray-600">
+        <li>Search and filter prompts across multiple categories.</li>
+        <li>Apply pro tips to craft effective instructions.</li>
+        <li>Save favorites to build your personal library.</li>
+      </ul>
+    </div>
+    <div class="mt-8 max-w-xl mx-auto relative">
+      <input
+        type="text"
+        id="homepage-search"
+        placeholder="🔍 Search for prompts..."
+        class="w-full p-3 border border-gray-300 rounded-lg text-lg pr-10"
+      />
+      <button
+        id="clear-search-btn"
+        class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-gray-500 hover:text-gray-700"
+      >
+        <svg
+          class="h-5 w-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </header>
 
-    <!-- =========== DETAIL VIEW =========== -->
-    <div id="detail-view" class="hidden">
-        <div class="flex">
-            <!-- Quick Links Sidebar (Right Side) -->
-            <aside class="w-1/4 max-w-xs fixed right-0 top-0 bottom-0 bg-white/50 backdrop-blur-sm
-                            border-l border-gray-200 p-6 flex flex-col">
-                <h2 class="text-lg font-bold mb-4 main-heading">Quick Links</h2>
-                <input type="text" id="quick-links-search" placeholder="🔍 Search links…"
-                    class="mb-4 p-2 border border-gray-300 rounded w-full" />
-
-                <nav id="quick-links-sidebar" class="flex-1 overflow-y-auto pr-4 scrollable-list">
-                    <!-- injected links… -->
-                </nav>
-            </aside>
-
-            <!-- Main Content (Left Side) -->
-            <main class="w-3/4 pr-4">
-                <div class="p-6 md:p-8">
-                    <button id="back-to-home-btn" class="text-gray-500 hover:text-black mb-8">&larr; Back to All
-                        Categories</button>
-                    <!-- Prompt content will be injected here by JavaScript -->
-                    <div id="prompt-display-area"></div>
-                </div>
-            </main>
+  <!-- Pro Tips Section -->
+  <section class="container mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+    <div class="max-w-4xl mx-auto">
+      <div
+        class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 p-6 shadow-sm"
+      >
+        <div class="text-center mb-6">
+          <div
+            class="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mb-3"
+          >
+            <span class="text-white text-xl">💡</span>
+          </div>
+          <h2 class="text-xl font-bold text-gray-800">
+            Pro Tips for Better Prompting
+          </h2>
+          <p class="text-gray-600 text-sm mt-1">
+            Master these techniques to get the most out of Gemini
+          </p>
         </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="bg-white rounded-lg p-4 border border-green-100 shadow-sm"
+          >
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3"
+              >
+                <svg
+                  class="w-4 h-4 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-gray-800">Be Specific</h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Include context, format, and desired outcome in your prompts for
+              better results.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-lg p-4 border border-purple-100 shadow-sm"
+          >
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3"
+              >
+                <svg
+                  class="w-4 h-4 text-purple-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-gray-800">Set the Role</h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Tell Gemini what role to play - expert, teacher, analyst, or any
+              specific persona.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg p-4 border border-blue-100 shadow-sm">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3"
+              >
+                <svg
+                  class="w-4 h-4 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-gray-800">Iterate</h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Refine your prompts based on results to continuously improve
+              output quality.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
+  <main class="container mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <div id="loading-indicator" class="hidden text-center p-8">
+      <div
+        class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"
+      ></div>
+      <p class="mt-4 text-gray-600">Loading prompts...</p>
+    </div>
+    <!-- Category cards will be injected here by JavaScript -->
+    <div
+      id="category-cards-container"
+      class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 hidden"
+    ></div>
+  </main>
+</div>
 
+<!-- =========== DETAIL VIEW =========== -->
+<div id="detail-view" class="hidden">
+  <div class="flex">
+    <!-- Quick Links Sidebar (Right Side) -->
+    <aside
+      class="w-1/4 max-w-xs fixed right-0 top-0 bottom-0 bg-white/50 backdrop-blur-sm border-l border-gray-200 p-6 flex flex-col"
+    >
+      <h2 class="text-lg font-bold mb-4 main-heading">Quick Links</h2>
+      <input
+        type="text"
+        id="quick-links-search"
+        placeholder="🔍 Search links…"
+        class="mb-4 p-2 border border-gray-300 rounded w-full"
+      />
 
+      <nav
+        id="quick-links-sidebar"
+        class="flex-1 overflow-y-auto pr-4 scrollable-list"
+      >
+        <!-- injected links… -->
+      </nav>
+    </aside>
+
+    <!-- Main Content (Left Side) -->
+    <main class="w-3/4 pr-4">
+      <div class="p-6 md:p-8">
+        <button
+          id="back-to-home-btn"
+          class="text-gray-500 hover:text-black mb-8"
+        >
+          &larr; Back to All Categories
+        </button>
+        <!-- Prompt content will be injected here by JavaScript -->
+        <div id="prompt-display-area"></div>
+      </div>
+    </main>
+  </div>
+</div>
 
 {% include "partials/gemModal.njk" %}
 
-<button id="scroll-to-top" class="scroll-to-top" title="Scroll to top">▲</button>
+<button id="scroll-to-top" class="scroll-to-top" title="Scroll to top">
+  ▲
+</button>
 
 {% block scripts %}
-    <script type="module" src="./main.js"></script>
+<script type="module" src="./main.js"></script>
 {% endblock %}
