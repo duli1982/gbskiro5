@@ -1,0 +1,3859 @@
+[
+  {
+    "id": "daily-focus-1",
+    "title": "Track and Share Top Performing Messaging Intros",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Strong intros build curiosity—and open doors."
+  },
+  {
+    "id": "daily-focus-2",
+    "title": "Align Candidate Messaging with Employer Brand Voice",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Consistency builds credibility—and trust starts with the first message."
+  },
+  {
+    "id": "daily-focus-3",
+    "title": "Audit and Improve Message Length",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Brevity gets noticed. Clarity gets replies."
+  },
+  {
+    "id": "daily-focus-4",
+    "title": "Conduct a “One-Line Pitch” Audit",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Your one-liner is your foot in the door—make it powerful."
+  },
+  {
+    "id": "daily-focus-5",
+    "title": "Improve Personalization at Scale",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Smart systems make meaningful messaging scalable."
+  },
+  {
+    "id": "daily-focus-6",
+    "title": "Highlight “Why This Role” in Every Outreach",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "When candidates understand the “why,” they’re more likely to say “yes.”"
+  },
+  {
+    "id": "daily-focus-7",
+    "title": "Optimize Outreach for Mobile Readability",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "If it’s easy to read, it’s easier to reply."
+  },
+  {
+    "id": "daily-focus-8",
+    "title": "Integrate “Why Now” Market Context into Sourcing",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Timely relevance makes your message stand out."
+  },
+  {
+    "id": "daily-focus-9",
+    "title": "Strengthen Your “Call to Action” in Outreach",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Clear next steps = more replies, less guesswork."
+  },
+  {
+    "id": "daily-focus-10",
+    "title": "Try a “Why Now?” Angle in Outreach",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Timeliness turns interest into action. Make it matter now."
+  },
+  {
+    "id": "daily-focus-11",
+    "title": "Refine Your Outreach Subject Lines",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "First impressions start with the subject line—make it count."
+  },
+  {
+    "id": "daily-focus-12",
+    "title": "Personalize Your LinkedIn Connection Requests",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Personal connections lead to professional conversations. Make them count."
+  },
+  {
+    "id": "daily-focus-13",
+    "title": "Refresh Messaging for Passive Candidates",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Passive talent responds to relevance, not spam. Make every message count."
+  },
+  {
+    "id": "daily-focus-14",
+    "title": "Review and Improve Outreach Templates",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Better messaging = better engagement = better pipelines."
+  },
+  {
+    "id": "daily-focus-15",
+    "title": "Refining Outreach Timing for Better Responses",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Optimizing message timing helps you connect with more candidates effectively!"
+  },
+  {
+    "id": "daily-focus-16",
+    "title": "Personalizing Outreach for Higher Engagement",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Personalization increases response rates and builds better candidate relationships!"
+  },
+  {
+    "id": "daily-focus-17",
+    "title": "Refining Job Pitches for Better Engagement",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "A well-crafted pitch creates interest and improves response rates!"
+  },
+  {
+    "id": "daily-focus-18",
+    "title": "Strengthening Employer Branding in Outreach",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Great employer branding in sourcing increases engagement and long-term interest!"
+  },
+  {
+    "id": "daily-focus-19",
+    "title": "Crafting Engaging Outreach Messages",
+    "type": "daily-focus",
+    "category": "Outreach & Messaging",
+    "description": "Great outreach isn’t just about volume; it’s about grabbing attention fast!"
+  },
+  {
+    "id": "daily-focus-20",
+    "title": "Revisit and Refresh “Evergreen” Role Strategies",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Even high-volume roles deserve high-impact strategy."
+  },
+  {
+    "id": "daily-focus-21",
+    "title": "Refresh Talent Pools with New Filters",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Updated pools = quicker hires when the right role opens."
+  },
+  {
+    "id": "daily-focus-22",
+    "title": "Build Sourcing “Bench Strength” for High-Risk Roles",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "A strong bench gives you speed and security."
+  },
+  {
+    "id": "daily-focus-23",
+    "title": "Surface Untapped Internal Talent",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Sometimes the best hires are already inside—just not yet seen."
+  },
+  {
+    "id": "daily-focus-24",
+    "title": "Build Talent Maps for Strategic Roles",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Proactive sourcing today = faster fills tomorrow."
+  },
+  {
+    "id": "daily-focus-25",
+    "title": "Create Sourcing Playbooks for Recurring Roles",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "A solid playbook turns speed into scale."
+  },
+  {
+    "id": "daily-focus-26",
+    "title": "Leverage Boolean Boosts from Past Successes",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Success leaves clues—make your searches smarter by learning from wins."
+  },
+  {
+    "id": "daily-focus-27",
+    "title": "Build Relationships with Niche Communities",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Go where the talent lives—not just where everyone else looks."
+  },
+  {
+    "id": "daily-focus-28",
+    "title": "Build Role-Specific Candidate Archetypes",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Clear personas = faster sourcing and sharper matches."
+  },
+  {
+    "id": "daily-focus-29",
+    "title": "Expand Diversity Through Sourcing",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Diverse sourcing = stronger teams and smarter hiring."
+  },
+  {
+    "id": "daily-focus-30",
+    "title": "Build “Lookalike” Pipelines from Recent Hires",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Model success, then multiply it."
+  },
+  {
+    "id": "daily-focus-31",
+    "title": "Test a New Outreach Channel",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "New channels = new conversations = new hires."
+  },
+  {
+    "id": "daily-focus-32",
+    "title": "Use “Candidate-Led” Search Terms",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Speaking the candidate’s language brings new talent into view."
+  },
+  {
+    "id": "daily-focus-33",
+    "title": "Tap into Boomerang Talent",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Past talent with fresh experience can bring even greater value back."
+  },
+  {
+    "id": "daily-focus-34",
+    "title": "Build a Bench of Fast-Start Candidates",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Speed matters—having a bench of ready-to-go talent wins time and trust."
+  },
+  {
+    "id": "daily-focus-35",
+    "title": "Source for Transferable Skills, Not Just Titles",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Sourcing beyond the obvious expands opportunity."
+  },
+  {
+    "id": "daily-focus-36",
+    "title": "Target Candidates with Cross-Industry Value",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Fresh perspectives often come from outside the usual lane."
+  },
+  {
+    "id": "daily-focus-37",
+    "title": "Identify Hidden Talent via Non-Traditional Education Paths",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Talent isn’t always defined by degrees—look deeper."
+  },
+  {
+    "id": "daily-focus-38",
+    "title": "Search for Career Pivot Candidates",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Pivot candidates often bring the boldest perspective."
+  },
+  {
+    "id": "daily-focus-39",
+    "title": "Source Candidates with “Bridge Skills” for Hybrid Roles",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Bridge-skill candidates future-proof your hiring."
+  },
+  {
+    "id": "daily-focus-40",
+    "title": "Explore Underutilized Talent Sources",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "New channels = new candidates = new results."
+  },
+  {
+    "id": "daily-focus-41",
+    "title": "Spot Transferable Skills, Not Just Keywords",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Creative sourcing = competitive advantage. Look beyond the obvious."
+  },
+  {
+    "id": "daily-focus-42",
+    "title": "Simplify Your Boolean to Go Deeper",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Less complexity can reveal more quality."
+  },
+  {
+    "id": "daily-focus-43",
+    "title": "Refresh Your Top 5 Go-To Keywords",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Sharper keywords = faster, more accurate sourcing."
+  },
+  {
+    "id": "daily-focus-44",
+    "title": "Sharpen Your Search Filters",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Sharper filters = smarter sourcing = faster results."
+  },
+  {
+    "id": "daily-focus-45",
+    "title": "Map Out Your Top 10 Target Companies",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Smart targeting = better fit + stronger pipelines."
+  },
+  {
+    "id": "daily-focus-46",
+    "title": "Create Role-Specific Sourcing Cheat Sheets",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Standardized playbooks = faster ramp-up, fewer mistakes, better results."
+  },
+  {
+    "id": "daily-focus-47",
+    "title": "Use Referrals to Fill Niche Roles",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Referrals = trust, speed, and often the perfect match."
+  },
+  {
+    "id": "daily-focus-48",
+    "title": "Build Talent Pools for Future Needs",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Future-ready sourcing saves time and fills roles faster."
+  },
+  {
+    "id": "daily-focus-49",
+    "title": "Source Beyond LinkedIn",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Broader reach = fresher talent and less competition."
+  },
+  {
+    "id": "daily-focus-50",
+    "title": "Strengthen Your Boolean Game",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Sharper Boolean = sharper sourcing."
+  },
+  {
+    "id": "daily-focus-51",
+    "title": "Experimenting with New Talent Channels",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Innovation in sourcing leads to untapped talent. Stay curious."
+  },
+  {
+    "id": "daily-focus-52",
+    "title": "Strengthening Diversity Sourcing Strategies",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "A strong diversity strategy leads to better hiring outcomes and a stronger team!"
+  },
+  {
+    "id": "daily-focus-53",
+    "title": "Reviewing and Refreshing Job Descriptions",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "A great job description makes sourcing easier and more effective!"
+  },
+  {
+    "id": "daily-focus-54",
+    "title": "Leveraging Employee Networks for Sourcing",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Referrals and internal networks speed up hiring and improve candidate quality!"
+  },
+  {
+    "id": "daily-focus-55",
+    "title": "Optimizing Boolean Search Strings",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Mastering Boolean search means less time wasted and more top talent found!"
+  },
+  {
+    "id": "daily-focus-56",
+    "title": "Refreshing Passive Talent Pools",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Staying engaged with past candidates saves time and builds long-term relationships!"
+  },
+  {
+    "id": "daily-focus-57",
+    "title": "Maximizing Referral Networks",
+    "type": "daily-focus",
+    "category": "Sourcing Strategy & Technique",
+    "description": "Referrals save time and often lead to faster, higher-quality hires!"
+  },
+  {
+    "id": "daily-focus-58",
+    "title": "Review and Refresh “Silver Medalist” Candidates",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Yesterday’s runner-up could be today’s perfect fit."
+  },
+  {
+    "id": "daily-focus-59",
+    "title": "Refresh Passive Candidate Engagement",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "A quiet candidate today might be ready tomorrow—stay on their radar."
+  },
+  {
+    "id": "daily-focus-60",
+    "title": "Ask for Feedback from a Candidate",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Great sourcing isn't just what you send—it's how it's received."
+  },
+  {
+    "id": "daily-focus-61",
+    "title": "Rethink Rejection Templates",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "How you say no defines your brand just as much as how you say yes."
+  },
+  {
+    "id": "daily-focus-62",
+    "title": "Reconnect with High-Potential Candidates from Past Campaigns",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Your best future hires may already know you. Don’t let them fade."
+  },
+  {
+    "id": "daily-focus-63",
+    "title": "Elevate Your Follow-Up Strategy",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Smart follow-ups turn silence into opportunity."
+  },
+  {
+    "id": "daily-focus-64",
+    "title": "Reconnect with Former Candidates Who Declined",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Yesterday’s “no” could be today’s perfect match. Stay connected."
+  },
+  {
+    "id": "daily-focus-65",
+    "title": "Prioritize Candidate Follow-Through",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Timely follow-through keeps candidates engaged and your pipeline moving."
+  },
+  {
+    "id": "daily-focus-66",
+    "title": "Reframe Rejections as Future Opportunities",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Rejections today can become hires tomorrow—with the right mindset."
+  },
+  {
+    "id": "daily-focus-67",
+    "title": "Focus on Candidate Experience First",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "A positive experience leaves lasting impressions and builds a stronger brand."
+  },
+  {
+    "id": "daily-focus-68",
+    "title": "Build Relationships, Not Just Pipelines",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Strong relationships today = stronger pipelines tomorrow."
+  },
+  {
+    "id": "daily-focus-69",
+    "title": "Tighten Candidate Qualification Early",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Clear qualification upfront saves time and builds a stronger, faster pipeline."
+  },
+  {
+    "id": "daily-focus-70",
+    "title": "Refresh Passive Candidate Outreach Lists",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "An active, up-to-date pipeline keeps momentum strong."
+  },
+  {
+    "id": "daily-focus-71",
+    "title": "Practice Empathy in Candidate Conversations",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Empathy builds trust—and trust builds better pipelines."
+  },
+  {
+    "id": "daily-focus-72",
+    "title": "Improve Candidate Follow-Up Timing",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Great follow-ups show persistence without pressure."
+  },
+  {
+    "id": "daily-focus-73",
+    "title": "Clarify Candidate Motivators",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Knowing the “why” behind the “what” leads to stronger connections."
+  },
+  {
+    "id": "daily-focus-74",
+    "title": "Reconnect with Dormant Leads",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Sometimes the best hires are the ones you don’t give up on."
+  },
+  {
+    "id": "daily-focus-75",
+    "title": "Building Long-Term Talent Communities",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Strong networks today = fast, high-quality hires in the future."
+  },
+  {
+    "id": "daily-focus-76",
+    "title": "Strengthening Passive Candidate Engagement",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Engaged passive candidates today become top hires tomorrow!"
+  },
+  {
+    "id": "daily-focus-77",
+    "title": "Re-engaging Silver Medalist Candidates",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Re-engaging silver medalists saves time and strengthens your talent pipeline!"
+  },
+  {
+    "id": "daily-focus-78",
+    "title": "Enhancing Follow-Up Strategy",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "The best sourcers are the ones who follow up effectively!"
+  },
+  {
+    "id": "daily-focus-79",
+    "title": "Improving Candidate Experience",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "A positive experience means more referrals, better responses, and stronger relationships!"
+  },
+  {
+    "id": "daily-focus-80",
+    "title": "Building Strong Candidate Relationships",
+    "type": "daily-focus",
+    "category": "Candidate Engagement & Experience",
+    "description": "Strong relationships lead to better hires and long-term success!"
+  },
+  {
+    "id": "daily-focus-81",
+    "title": "Collaborate on Hard-to-Fill Roles",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Two perspectives = double the impact on tough searches."
+  },
+  {
+    "id": "daily-focus-82",
+    "title": "Track and Celebrate Micro-Wins",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Tiny wins create big momentum. Celebrate the climb."
+  },
+  {
+    "id": "daily-focus-83",
+    "title": "Identify and Share “Quick Wins” for the Week",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Tiny adjustments can lead to major sourcing breakthroughs."
+  },
+  {
+    "id": "daily-focus-84",
+    "title": "Create a Sourcing Feedback Loop with Recruiters",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Tighter feedback loops = faster alignment and better hires."
+  },
+  {
+    "id": "daily-focus-85",
+    "title": "Share One Sourcing Success Story",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Success shared = success multiplied. Let’s learn from each other."
+  },
+  {
+    "id": "daily-focus-86",
+    "title": "Track and Celebrate Conversion Wins",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Awareness of what’s working = more consistent success."
+  },
+  {
+    "id": "daily-focus-87",
+    "title": "Strengthen Collaboration with Recruiters",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Better collaboration = sharper focus and faster results."
+  },
+  {
+    "id": "daily-focus-88",
+    "title": "Strengthen Sourcing Notes for Team Clarity",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Good notes = less duplicate effort and better collaboration."
+  },
+  {
+    "id": "daily-focus-89",
+    "title": "Streamlining Candidate Feedback Loops",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Refined feedback leads to refined sourcing. Stay aligned, stay efficient."
+  },
+  {
+    "id": "daily-focus-90",
+    "title": "Celebrate Small Wins",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Momentum builds confidence. Celebrate it!"
+  },
+  {
+    "id": "daily-focus-91",
+    "title": "Documenting Learnings for Continuous Improvement",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Documented learnings = smarter sourcing and faster team growth!"
+  },
+  {
+    "id": "daily-focus-92",
+    "title": "Sharing Market Insights with Stakeholders",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "Insight-driven sourcing = smarter decisions and stronger partnerships!"
+  },
+  {
+    "id": "daily-focus-93",
+    "title": "Strengthening Hiring Manager Collaboration",
+    "type": "daily-focus",
+    "category": "Collaboration & Teamwork",
+    "description": "A well-aligned sourcing team + hiring managers = faster, better hires!"
+  },
+  {
+    "id": "daily-focus-94",
+    "title": "Analyze Drop-Off Rates Between Sourcing Stages",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Fixing friction points sharpens the entire pipeline."
+  },
+  {
+    "id": "daily-focus-95",
+    "title": "Track First Response Time from Candidates",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Knowing when they reply helps you know when to reach out."
+  },
+  {
+    "id": "daily-focus-96",
+    "title": "Create “Role Health Checks” Weekly",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Weekly alignment prevents wasted effort and sharpens results."
+  },
+  {
+    "id": "daily-focus-97",
+    "title": "Track Time-to-First-Submit for Each Role",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Faster first submissions set the pace for successful hiring."
+  },
+  {
+    "id": "daily-focus-98",
+    "title": "Audit and Improve Your Candidate Tracker Notes",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Well-kept notes keep the team aligned and the process smooth."
+  },
+  {
+    "id": "daily-focus-99",
+    "title": "Focus on Sourcing Message Open Rates",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "If it’s not opened, it’s not read—optimize the first impression."
+  },
+  {
+    "id": "daily-focus-100",
+    "title": "Audit Inactive Candidates in Your Tracker",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "A clean pipeline makes room for stronger sourcing and faster action."
+  },
+  {
+    "id": "daily-focus-101",
+    "title": "Reduce Time from Identification to Outreach",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Speed shows intent—and gets you in front of candidates before the competition."
+  },
+  {
+    "id": "daily-focus-102",
+    "title": "Focus on Candidate Availability Timing",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Right message + right timing = better sourcing impact."
+  },
+  {
+    "id": "daily-focus-103",
+    "title": "Audit Candidate Drop-Off Reasons",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Knowing the \"why\" helps you build a smoother, smarter pipeline."
+  },
+  {
+    "id": "daily-focus-104",
+    "title": "Identify and Eliminate Bottlenecks",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Removing friction speeds everything up. One fix can unlock a week’s worth of results."
+  },
+  {
+    "id": "daily-focus-105",
+    "title": "Analyze Time-to-Response Metrics",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Understanding response patterns = smarter, more strategic sourcing."
+  },
+  {
+    "id": "daily-focus-106",
+    "title": "Refresh Your Candidate Pipeline",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "A refreshed pipeline brings renewed momentum—and often, renewed results."
+  },
+  {
+    "id": "daily-focus-107",
+    "title": "Auditing Your Sourcing Funnel",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "A healthy funnel = better efficiency, faster hiring, and less frustration!"
+  },
+  {
+    "id": "daily-focus-108",
+    "title": "Speed to Engage",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Speed creates momentum—and often, results. Let’s move fast, stay sharp!"
+  },
+  {
+    "id": "daily-focus-109",
+    "title": "Analyzing Drop-Off Points in the Hiring Funnel",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Fixing drop-off points leads to higher conversions and smoother hiring!"
+  },
+  {
+    "id": "daily-focus-110",
+    "title": "Leveraging Data for Smarter Sourcing",
+    "type": "daily-focus",
+    "category": "Pipeline Management & Analytics",
+    "description": "Sourcing is not just about volume; it’s about targeting the right talent efficiently!"
+  },
+  {
+    "id": "daily-focus-111",
+    "title": "Master LinkedIn Sales Navigator Advanced Filters",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "The right tools in skilled hands become competitive advantages."
+  },
+  {
+    "id": "daily-focus-112",
+    "title": "Optimize Your ATS Workflow Efficiency",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Smooth systems create space for strategic thinking."
+  },
+  {
+    "id": "daily-focus-113",
+    "title": "Leverage Chrome Extensions for Sourcing",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Small tools can create big efficiencies when used strategically."
+  },
+  {
+    "id": "daily-focus-114",
+    "title": "Explore AI-Powered Sourcing Tools",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "AI doesn't replace great sourcers—it amplifies them."
+  },
+  {
+    "id": "daily-focus-115",
+    "title": "Automate Your Social Media Sourcing",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Automation frees you to focus on relationship-building."
+  },
+  {
+    "id": "daily-focus-116",
+    "title": "Master Boolean Search Operators",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Boolean mastery turns search engines into precision instruments."
+  },
+  {
+    "id": "daily-focus-117",
+    "title": "Optimize Your Email Tracking and Analytics",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Data-driven outreach beats intuition every time."
+  },
+  {
+    "id": "daily-focus-118",
+    "title": "Build Custom Sourcing Dashboards",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Visual data drives faster, smarter decisions."
+  },
+  {
+    "id": "daily-focus-119",
+    "title": "Conduct Competitive Salary Benchmarking",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Knowledge of market rates builds credibility and closes deals."
+  },
+  {
+    "id": "daily-focus-120",
+    "title": "Analyze Competitor Hiring Patterns",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Understanding the competition helps you stay one step ahead."
+  },
+  {
+    "id": "daily-focus-121",
+    "title": "Map Industry Talent Flow Trends",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Talent flows like water—understand the currents to navigate effectively."
+  },
+  {
+    "id": "daily-focus-122",
+    "title": "Research Emerging Skill Requirements",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Staying ahead of skill trends keeps your sourcing relevant and valuable."
+  },
+  {
+    "id": "daily-focus-123",
+    "title": "Analyze Local vs. Remote Market Dynamics",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Understanding geography gives you strategic sourcing advantages."
+  },
+  {
+    "id": "daily-focus-124",
+    "title": "Track Industry News and Impact on Hiring",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Current events shape candidate availability and motivation."
+  },
+  {
+    "id": "daily-focus-125",
+    "title": "Study High-Performing Team Compositions",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Understanding what makes teams successful informs better hiring."
+  },
+  {
+    "id": "daily-focus-126",
+    "title": "Practice Advanced Interview Screening Techniques",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Better questions reveal better candidates faster."
+  },
+  {
+    "id": "daily-focus-127",
+    "title": "Enhance Your Industry Knowledge",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Deep industry knowledge makes you a trusted advisor, not just a recruiter."
+  },
+  {
+    "id": "daily-focus-128",
+    "title": "Improve Your Negotiation and Closing Skills",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Great sourcers don't just find talent—they successfully engage it."
+  },
+  {
+    "id": "daily-focus-129",
+    "title": "Develop Cultural Competency for Diverse Hiring",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Cultural awareness opens doors to untapped talent pools."
+  },
+  {
+    "id": "daily-focus-130",
+    "title": "Build Your Professional Network Strategically",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Your network is your net worth in the recruiting world."
+  },
+  {
+    "id": "daily-focus-131",
+    "title": "Master Consultative Selling in Recruiting",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Consultative selling builds relationships that last beyond single placements."
+  },
+  {
+    "id": "daily-focus-132",
+    "title": "Audit Your Sourcing for Inclusive Language",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Inclusive language attracts diverse talent and builds stronger teams."
+  },
+  {
+    "id": "daily-focus-133",
+    "title": "Ensure GDPR and Privacy Compliance",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Respecting privacy builds trust and protects your organization."
+  },
+  {
+    "id": "daily-focus-134",
+    "title": "Practice Ethical Sourcing Standards",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Ethical sourcing protects candidates and enhances your reputation."
+  },
+  {
+    "id": "daily-focus-135",
+    "title": "Implement Bias-Free Sourcing Processes",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Removing bias creates fairer outcomes and better hires."
+  },
+  {
+    "id": "daily-focus-136",
+    "title": "Maintain Professional Boundaries in Sourcing",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Professional boundaries protect both you and candidates."
+  },
+  {
+    "id": "daily-focus-137",
+    "title": "Craft Compelling Company Story Narratives",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Stories stick where facts fade—make your company unforgettable."
+  },
+  {
+    "id": "daily-focus-138",
+    "title": "Showcase Employee Success Stories",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Peer stories build credibility better than corporate messaging."
+  },
+  {
+    "id": "daily-focus-139",
+    "title": "Highlight Unique Perks and Benefits",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Differentiation happens in the details that matter to candidates."
+  },
+  {
+    "id": "daily-focus-140",
+    "title": "Develop Role-Specific Value Propositions",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Generic pitches get generic responses—customize for impact."
+  },
+  {
+    "id": "daily-focus-141",
+    "title": "Leverage Social Proof in Sourcing",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Social proof builds trust faster than any sales pitch."
+  },
+  {
+    "id": "daily-focus-142",
+    "title": "Master Passive Candidate Psychology",
+    "type": "daily-focus",
+    "category": "Specialized Sourcing Techniques",
+    "description": "Understanding passive candidate motivations unlocks hidden talent."
+  },
+  {
+    "id": "daily-focus-143",
+    "title": "Develop Niche Community Sourcing",
+    "type": "daily-focus",
+    "category": "Specialized Sourcing Techniques",
+    "description": "Great talent often congregates in specialized communities."
+  },
+  {
+    "id": "daily-focus-144",
+    "title": "Source Through Content and Thought Leadership",
+    "type": "daily-focus",
+    "category": "Specialized Sourcing Techniques",
+    "description": "Following great content leads you to great minds."
+  },
+  {
+    "id": "daily-focus-145",
+    "title": "Leverage Event-Based Sourcing",
+    "type": "daily-focus",
+    "category": "Specialized Sourcing Techniques",
+    "description": "Events reveal engaged, learning-oriented professionals."
+  },
+  {
+    "id": "daily-focus-146",
+    "title": "Implement CRM Integration for Sourcing",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Connected systems create seamless workflows and better candidate experiences."
+  },
+  {
+    "id": "daily-focus-147",
+    "title": "Master GitHub and Technical Portfolio Sourcing",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Code tells the story that resumes can't capture."
+  },
+  {
+    "id": "daily-focus-148",
+    "title": "Optimize Mobile Sourcing Capabilities",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Great opportunities don't wait for you to get back to your desk."
+  },
+  {
+    "id": "daily-focus-149",
+    "title": "Build Automated Sourcing Workflows",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Automation handles the routine so you can focus on the relationship."
+  },
+  {
+    "id": "daily-focus-150",
+    "title": "Master Video Sourcing and Assessment Tools",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Video reveals personality and communication skills that text cannot."
+  },
+  {
+    "id": "daily-focus-151",
+    "title": "Leverage Social Media Analytics Tools",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Data-driven social sourcing beats random scrolling every time."
+  },
+  {
+    "id": "daily-focus-152",
+    "title": "Implement Advanced Excel/Sheets for Sourcing Data",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Spreadsheet mastery turns raw data into strategic insights."
+  },
+  {
+    "id": "daily-focus-153",
+    "title": "Master Screen Recording for Training and Documentation",
+    "type": "daily-focus",
+    "category": "Technology & Tools Mastery",
+    "description": "Capturing your process helps others learn and improves consistency."
+  },
+  {
+    "id": "daily-focus-154",
+    "title": "Develop Industry-Specific Talent Landscape Maps",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Understanding the talent ecosystem gives you strategic advantage."
+  },
+  {
+    "id": "daily-focus-155",
+    "title": "Analyze Seasonal Hiring and Market Patterns",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Timing your sourcing with market rhythms improves success rates."
+  },
+  {
+    "id": "daily-focus-156",
+    "title": "Monitor Venture Capital and Funding Activity",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Following the money helps predict talent movement and opportunities."
+  },
+  {
+    "id": "daily-focus-157",
+    "title": "Research Educational Institution Partnerships",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Strong university relationships create sustainable talent pipelines."
+  },
+  {
+    "id": "daily-focus-158",
+    "title": "Analyze Remote Work Impact on Talent Markets",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Remote work has reshuffled the talent deck—understand the new game."
+  },
+  {
+    "id": "daily-focus-159",
+    "title": "Track Technology Adoption and Skill Evolution",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Staying ahead of technology trends keeps your sourcing relevant."
+  },
+  {
+    "id": "daily-focus-160",
+    "title": "Conduct Exit Interview Intelligence Gathering",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Understanding why people leave helps you find those ready to move."
+  },
+  {
+    "id": "daily-focus-161",
+    "title": "Monitor Economic Indicators Affecting Hiring",
+    "type": "daily-focus",
+    "category": "Market Intelligence & Research",
+    "description": "Economic awareness helps you navigate market ups and downs strategically."
+  },
+  {
+    "id": "daily-focus-162",
+    "title": "Develop Emotional Intelligence for Candidate Interactions",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "EQ often matters more than IQ in building lasting candidate relationships."
+  },
+  {
+    "id": "daily-focus-163",
+    "title": "Master Cross-Cultural Communication Skills",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Cultural fluency opens doors to global talent pools."
+  },
+  {
+    "id": "daily-focus-164",
+    "title": "Enhance Your Sales and Persuasion Skills",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Recruiting is selling—master the art of ethical influence."
+  },
+  {
+    "id": "daily-focus-165",
+    "title": "Build Subject Matter Expertise in Your Verticals",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Deep expertise makes you a trusted advisor, not just a recruiter."
+  },
+  {
+    "id": "daily-focus-166",
+    "title": "Develop Storytelling Skills for Recruiting",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Great stories move people to action better than any data point."
+  },
+  {
+    "id": "daily-focus-167",
+    "title": "Master Time Management and Productivity Systems",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Efficient sourcers have more time for relationship building."
+  },
+  {
+    "id": "daily-focus-168",
+    "title": "Build Resilience and Stress Management Skills",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Resilient recruiters weather rejection and maintain long-term performance."
+  },
+  {
+    "id": "daily-focus-169",
+    "title": "Enhance Your Data Analysis and Interpretation Skills",
+    "type": "daily-focus",
+    "category": "Personal Development & Skills",
+    "description": "Data literacy transforms good sourcers into strategic advisors."
+  },
+  {
+    "id": "daily-focus-170",
+    "title": "Implement Age Discrimination Prevention",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Age-inclusive sourcing taps into wisdom and experience across generations."
+  },
+  {
+    "id": "daily-focus-171",
+    "title": "Ensure Accessibility in Sourcing Communications",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Accessible communication welcomes all talent and demonstrates inclusive values."
+  },
+  {
+    "id": "daily-focus-172",
+    "title": "Practice Transparent Compensation Discussions",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Salary transparency builds trust and saves everyone time."
+  },
+  {
+    "id": "daily-focus-173",
+    "title": "Implement Candidate Consent Management",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Proper consent management protects both candidates and your organization."
+  },
+  {
+    "id": "daily-focus-174",
+    "title": "Ensure Interview Process Fairness",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Fair processes lead to better hires and legal compliance."
+  },
+  {
+    "id": "daily-focus-175",
+    "title": "Practice Confidentiality and Discretion",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Trust is the foundation of all great recruiting relationships."
+  },
+  {
+    "id": "daily-focus-176",
+    "title": "Implement Anti-Harassment Policies in Recruiting",
+    "type": "daily-focus",
+    "category": "Compliance & Best Practices",
+    "description": "Professional boundaries protect everyone and enhance your reputation."
+  },
+  {
+    "id": "daily-focus-177",
+    "title": "Create Role-Specific Career Path Visuals",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Clear career progression makes opportunities tangible and compelling."
+  },
+  {
+    "id": "daily-focus-178",
+    "title": "Develop Industry Recognition and Awards Messaging",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Third-party validation carries more weight than self-promotion."
+  },
+  {
+    "id": "daily-focus-179",
+    "title": "Showcase Innovation and Technology Leadership",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Top talent wants to work on cutting-edge projects with forward-thinking companies."
+  },
+  {
+    "id": "daily-focus-180",
+    "title": "Leverage Employee Testimonials and Video Content",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Authentic voices resonate more than polished marketing messages."
+  },
+  {
+    "id": "daily-focus-181",
+    "title": "Highlight Learning and Development Opportunities",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Growth-minded candidates are attracted to companies that invest in their people."
+  },
+  {
+    "id": "daily-focus-182",
+    "title": "Emphasize Work-Life Integration and Flexibility",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Modern talent values flexibility as much as compensation."
+  },
+  {
+    "id": "daily-focus-183",
+    "title": "Develop Diversity and Inclusion Messaging",
+    "type": "daily-focus",
+    "category": "Employer Branding & Value Proposition",
+    "description": "Inclusive cultures attract diverse talent and perform better."
+  },
+  {
+    "id": "daily-focus-184",
+    "title": "Master Alumni Network Sourcing",
+    "type": "daily-focus",
+    "category": "Specialized Sourcing Techniques",
+    "description": "Shared alma maters create instant connection and trust."
+  },
+  {
+    "id": "daily-focus-185",
+    "title": "Develop Patent and Publication-Based Sourcing",
+    "type": "daily-focus",
+    "category": "Specialized Sourcing Techniques",
+    "description": "Innovation leaves a paper trail—follow it to find exceptional talent."
+  },
+  {
+    "id": "daily-focus-186",
+    "title": "Leverage Professional Certification Directories",
+    "type": "daily-focus",
+    "category": "Specialized Sourcing Techniques",
+    "description": "Certified professionals often represent the most dedicated and skilled candidates."
+  },
+  {
+    "id": "daily-focus-187",
+    "title": "Master Social Media Deep-Dive Sourcing",
+    "type": "daily-focus",
+    "category": "Specialized Sourcing Techniques",
+    "description": "Social profiles reveal personality, interests, and cultural fit indicators."
+  },
+  {
+    "id": "daily-focus-188",
+    "title": "Implement Reverse Recruiting Strategies",
+    "type": "daily-focus",
+    "category": "Specialized Sourcing Techniques",
+    "description": "Sometimes the best approach is making candidates want to find you."
+  },
+  {
+    "id": "daily-focus-189",
+    "title": "Develop Crisis and Change-Driven Sourcing",
+    "type": "daily-focus",
+    "category": "Specialized Sourcing Techniques",
+    "description": "Market disruptions create talent availability—be ready to capitalize."
+  },
+  {
+    "id": "daily-focus-190",
+    "title": "Master Geographic and Time Zone Sourcing",
+    "type": "daily-focus",
+    "category": "Specialized Sourcing Techniques",
+    "description": "Global talent requires global thinking and cultural awareness."
+  },
+  {
+    "id": "daily-focus-191",
+    "title": "Source for Long-Term Culture Add, Not Just Immediate Fit",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Great teams aren’t cloned—they’re curated."
+  },
+  {
+    "id": "daily-focus-192",
+    "title": "Source for Learning Agility, Not Just Tenure",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Fast learners often outperform long-timers. Spot the momentum."
+  },
+  {
+    "id": "daily-focus-193",
+    "title": "Source with Storytelling in Mind",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Stories stick. Use them to make great talent unforgettable."
+  },
+  {
+    "id": "daily-focus-194",
+    "title": "Source with Market Trends in Mind",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Staying ahead of the curve makes your sourcing sharper and smarter."
+  },
+  {
+    "id": "daily-focus-195",
+    "title": "Prioritize Quality Over Quantity in Outreach",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "A focused message to the right person beats 20 generic ones."
+  },
+  {
+    "id": "daily-focus-196",
+    "title": "Run a Competitive Talent Snapshot",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Knowing what others are hiring for helps sharpen where you search."
+  },
+  {
+    "id": "daily-focus-197",
+    "title": "Source for Role Expandability, Not Just Fit",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Hire not just for today’s job, but for tomorrow’s needs."
+  },
+  {
+    "id": "daily-focus-198",
+    "title": "Source with Succession Planning in Mind",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Sourcing leaders early helps build resilient, future-ready teams."
+  },
+  {
+    "id": "daily-focus-199",
+    "title": "Source for Mentorship and Team Influence Potential",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Great hires don’t just deliver—they elevate the whole team."
+  },
+  {
+    "id": "daily-focus-200",
+    "title": "Source for Candidates with High Change Resilience",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Change-resilient talent strengthens teams in every season."
+  },
+  {
+    "id": "daily-focus-201",
+    "title": "Source for Candidates Who Demonstrate Self-Directed Learning",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Self-motivated learners often become standout performers."
+  },
+  {
+    "id": "daily-focus-202",
+    "title": "Focus on Candidates with Storytelling Strength",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Great candidates don’t just have experience—they know how to express it."
+  },
+  {
+    "id": "daily-focus-203",
+    "title": "Prioritize “Value-Add” Over “Exact Match”",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "The best hires grow the role, not just fill it."
+  },
+  {
+    "id": "daily-focus-204",
+    "title": "Spot Potential from Uncommon Career Paths",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Unexpected paths often lead to exceptional hires."
+  },
+  {
+    "id": "daily-focus-205",
+    "title": "Identify Undervalued Candidates in Oversaturated Markets",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Great talent often gets buried under the noise—dig deeper."
+  },
+  {
+    "id": "daily-focus-206",
+    "title": "Look for Candidates with Evidence of Outcome Thinking",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Sourcing outcome-driven talent leads to impact-driven hires."
+  },
+  {
+    "id": "daily-focus-207",
+    "title": "Target Candidates with Cross-Cultural Collaboration Experience",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Global fluency builds agile, culturally-aware teams."
+  },
+  {
+    "id": "daily-focus-208",
+    "title": "Identify Candidates with Change Management Exposure",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Hiring for change readiness builds future-proof teams."
+  },
+  {
+    "id": "daily-focus-209",
+    "title": "Source for Problem-Solving Mindsets",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Hiring problem-solvers fuels continuous improvement."
+  },
+  {
+    "id": "daily-focus-210",
+    "title": "Spot and Support Hidden Talent",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Sometimes the best hires are the ones who just needed a chance."
+  },
+  {
+    "id": "daily-focus-211",
+    "title": "Review Role-Specific Market Trends",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Knowledge = confidence + trust. Be the expert candidates want to talk to."
+  },
+  {
+    "id": "daily-focus-212",
+    "title": "Align with Business Priorities",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "When sourcing aligns with strategy, it becomes a growth engine."
+  },
+  {
+    "id": "daily-focus-213",
+    "title": "Optimize Your LinkedIn Presence",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Your profile isn’t just a resume—it’s a magnet for great candidates."
+  },
+  {
+    "id": "daily-focus-214",
+    "title": "Reassessing Ideal Candidate Profiles",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Clearer alignment = better sourcing efficiency and stronger candidate matches."
+  },
+  {
+    "id": "daily-focus-215",
+    "title": "Quality Over Quantity",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Fewer, stronger matches = less noise and better results."
+  },
+  {
+    "id": "daily-focus-216",
+    "title": "Prioritization & Smart Time Management",
+    "type": "daily-focus",
+    "category": "Advanced Sourcing Mindsets",
+    "description": "Effective sourcing isn’t about volume; it’s about quality and speed."
+  },
+  {
+    "id": "adhd-1",
+    "title": "Organize Daily Tasks",
+    "type": "gbs-prompts",
+    "category": "ADHD > Organize Daily Tasks",
+    "description": "Transform daily task lists into structured, prioritized schedules with time allocation, break reminders, and flexible adjustments for ADHD-friendly productivity."
+  },
+  {
+    "id": "adhd-2",
+    "title": "Help With Weekly Planning",
+    "type": "gbs-prompts",
+    "category": "ADHD > Help With Weekly Planning",
+    "description": "Create comprehensive weekly schedules that balance task prioritization, time management, and stress reduction with built-in flexibility and focus strategies."
+  },
+  {
+    "id": "adhd-3",
+    "title": "Prioritize Tasks",
+    "type": "gbs-prompts",
+    "category": "ADHD > Prioritize Tasks",
+    "description": "Analyze and rank tasks using urgency, importance, and deadline criteria with clear rationale and adaptive scheduling recommendations for optimal time management."
+  },
+  {
+    "id": "adhd-4",
+    "title": "Create Focus Challenges",
+    "type": "gbs-prompts",
+    "category": "ADHD > Create Focus Challenges",
+    "description": "Design engaging, gamified focus challenges specifically tailored for ADHD individuals with manageable tasks, progress tracking, and concentration-building activities."
+  },
+  {
+    "id": "adhd-5",
+    "title": "Guide Through Mindfulness Exercise",
+    "type": "gbs-prompts",
+    "category": "ADHD > Guide Through Mindfulness Exercise",
+    "description": "Lead structured mindfulness sessions with breathing techniques, body scans, and visualization methods designed to reduce stress and improve mental clarity."
+  },
+  {
+    "id": "adhd-6",
+    "title": "Create Efficient Workflows",
+    "type": "gbs-prompts",
+    "category": "ADHD > Create Efficient Workflows",
+    "description": "Design customized productivity workflows that eliminate bottlenecks, integrate suitable tools, and accommodate individual working styles for sustainable efficiency."
+  },
+  {
+    "id": "others-1",
+    "title": "McKinsey-Style Strategic Report",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > McKinsey-Style Strategic Report",
+    "description": "Transform complex business challenges into actionable strategic recommendations using McKinsey's proven frameworks and methodologies with comprehensive 9-phase analysis process."
+  },
+  {
+    "id": "others-2",
+    "title": "Gemini Professional Prompt Engineer",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Gemini Advanced Templates",
+    "description": "Generate high-quality prompts for Gemini AI using advanced prompt engineering methods including role-based, branching, knowledge level, and emotional techniques."
+  },
+  {
+    "id": "others-3",
+    "title": "Ultimate Prompt Engineering Tutor",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Ultimate Prompt Engineering",
+    "description": "Learn 288 prompt engineering techniques through structured lessons with scholarly research, practical examples, and hands-on practice exercises."
+  },
+  {
+    "id": "others-4",
+    "title": "Investigate Procrastination Patterns",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Guided Exploration Prompting",
+    "description": "Uncover the emotional and psychological drivers behind procrastination through comprehensive behavioral analysis and develop personalized intervention strategies."
+  },
+  {
+    "id": "others-4",
+    "title": "Reverse Genius Protocol",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Reverse Genius Protocol",
+    "description": "Work backward from ideal outcomes to create precise, actionable pathways through reverse engineering, constraint mapping, and milestone sequencing."
+  },
+  {
+    "id": "others-5",
+    "title": "Investigative Journalist Research System",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Research Frameworks",
+    "description": "Conduct comprehensive, layered research on any topic using investigative journalism techniques with infinite expansion capability and specialized knowledge drilling."
+  },
+  {
+    "id": "others-6",
+    "title": "Adopt the role of an elite Conversion Alchemist",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Landing Page Conversion Strategy",
+    "description": "Create high-converting landing page copy by mapping visitor psychology from skepticism to action using proven psychological triggers and conversion methodologies."
+  },
+  {
+    "id": "others-7",
+    "title": "Life System Redesign Methodology",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Life System Redesign",
+    "description": "Build sustainable life systems that work with your psychology through deep pattern recognition, authentic goal architecture, and behavioral coaching support."
+  },
+  {
+    "id": "others-8",
+    "title": "Product Differentiator",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Competitive Positioning",
+    "description": "Define unique positioning that makes your product the obvious choice through competitor analysis, weakness identification, and strategic differentiation framing."
+  },
+  {
+    "id": "others-9",
+    "title": "Attention Span Rebuilder",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Create Focus Challenges",
+    "description": "Retrain your brain using gamified attention training based on neuroscience principles with progressive overload, reward cycles, and trackable improvement metrics."
+  },
+  {
+    "id": "others-10",
+    "title": "Content Strategy Workflow",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Content Strategy",
+    "description": "Transform single pieces of content into comprehensive multi-platform campaigns using current platform best practices and performance optimization strategies."
+  },
+  {
+    "id": "others-11",
+    "title": "Gmail Customer Journey Analysis",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Gmail Customer Journey Analysis",
+    "description": "Analyze Gmail customer interactions to create comprehensive journey maps, identify pain points, and develop email-centric optimization strategies."
+  },
+  {
+    "id": "others-11",
+    "title": "360° Growth Audit & Acceleration Blueprint",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Growth Audit & Strategy",
+    "description": "Perform comprehensive business analysis across 6 key dimensions and develop evidence-backed growth strategies to 5-10X your current trajectory."
+  },
+  {
+    "id": "content-creation-framework",
+    "title": "Content Creation Framework",
+    "type": "gbs-prompts",
+    "category": "Advanced Frameworks & Systems > Content Creation Framework",
+    "description": "Create high-performing, natural-sounding content for any platform using research-backed best practices, psychological triggers, and conversion optimization."
+  },
+  {
+    "id": "ai-recruitment-1",
+    "title": "AI-Powered Resume Analysis & Ranking",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Resume Analysis & Screening",
+    "description": "Use AI to analyze and rank resumes with detailed scoring, bias detection, and actionable insights for improved candidate selection."
+  },
+  {
+    "id": "ai-recruitment-2",
+    "title": "Automated Resume Screening Configuration",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Resume Analysis & Screening",
+    "description": "Configure intelligent resume screening systems that process high volumes while maintaining quality through bias detection and calibration protocols."
+  },
+  {
+    "id": "ai-recruitment-3",
+    "title": "DEI-Focused Recruitment Strategy Development",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Diversity & Inclusion",
+    "description": "Build comprehensive diversity and inclusion strategies that eliminate bias and create equitable hiring processes with measurable outcomes."
+  },
+  {
+    "id": "ai-recruitment-4",
+    "title": "Bias Detection and Mitigation Framework",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Diversity & Inclusion",
+    "description": "Identify and eliminate unconscious bias throughout the hiring process using AI tools and structured interventions for equitable outcomes."
+  },
+  {
+    "id": "ai-recruitment-5",
+    "title": "Predictive Hiring Analytics & Success Modeling",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Predictive Analytics",
+    "description": "Create data-driven models that predict candidate success, performance, and cultural fit using historical hiring patterns and outcomes."
+  },
+  {
+    "id": "ai-recruitment-6",
+    "title": "Retention-Focused Recruitment Intelligence",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Predictive Analytics",
+    "description": "Use predictive analytics to identify candidates likely to stay long-term and optimize recruitment decisions for improved retention outcomes."
+  },
+  {
+    "id": "ai-recruitment-7",
+    "title": "Intelligent Interview Process Automation",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Process Automation",
+    "description": "Automate complex interview coordination and scheduling processes while maintaining excellent candidate experience and operational efficiency."
+  },
+  {
+    "id": "ai-recruitment-8",
+    "title": "High-Volume Hiring Process Automation",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Process Automation",
+    "description": "Design scalable automated recruitment systems for high-volume hiring while maintaining quality standards and cost efficiency."
+  },
+  {
+    "id": "ai-recruitment-9",
+    "title": "AI-Powered Candidate Experience Optimization",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Candidate Experience",
+    "description": "Optimize the entire candidate journey using AI insights, personalized communications, and real-time feedback for superior candidate experience."
+  },
+  {
+    "id": "ai-recruitment-10",
+    "title": "Recruitment Chatbot Development",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Candidate Experience",
+    "description": "Create intelligent recruitment chatbots that handle candidate inquiries, pre-screening, and guidance while integrating with existing systems."
+  },
+  {
+    "id": "ai-recruitment-11",
+    "title": "Skills-Based Hiring Framework Development",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Skills-Based Hiring",
+    "description": "Move beyond traditional credentials to focus on demonstrable skills through comprehensive assessment frameworks and bias-free evaluation."
+  },
+  {
+    "id": "ai-recruitment-12",
+    "title": "AI-Powered Skills Assessment Design",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Skills-Based Hiring",
+    "description": "Create comprehensive AI-driven skills assessments that evaluate technical abilities, problem-solving approaches, and creative thinking beyond traditional testing."
+  },
+  {
+    "id": "ai-recruitment-13",
+    "title": "Remote-First Recruitment Process Design",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Remote & Virtual Hiring",
+    "description": "Build comprehensive remote hiring frameworks that maintain quality, scale efficiently, and optimize virtual candidate experiences."
+  },
+  {
+    "id": "ai-recruitment-14",
+    "title": "Virtual Reality Recruitment Experiences",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Remote & Virtual Hiring",
+    "description": "Design immersive VR-based recruitment experiences that allow realistic job previews and innovative candidate assessment methods."
+  },
+  {
+    "id": "ai-recruitment-15",
+    "title": "Data-Driven Recruitment Marketing Strategy",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Recruitment Marketing",
+    "description": "Optimize employer brand and candidate attraction through data-driven marketing strategies, content personalization, and conversion optimization."
+  },
+  {
+    "id": "ai-recruitment-16",
+    "title": "AI-Powered Talent Pipeline Development",
+    "type": "gbs-prompts",
+    "category": "AI-Powered Recruitment > Recruitment Marketing",
+    "description": "Build and maintain candidate relationships before they're actively job searching through automated engagement and predictive intelligence."
+  },
+  {
+    "id": "branding-1",
+    "title": "Suggest Brand Names",
+    "type": "gbs-prompts",
+    "category": "Branding > Brand Strategy",
+    "description": "Generate unique, memorable brand names that align with company identity, resonate with target markets, and pass trademark availability checks."
+  },
+  {
+    "id": "branding-2",
+    "title": "Craft Mission and Vision Statements",
+    "type": "gbs-prompts",
+    "category": "Branding > Brand Strategy",
+    "description": "Create inspiring mission and vision statements that articulate company purpose, future ambitions, and core values to guide strategy and inspire stakeholders."
+  },
+  {
+    "id": "branding-3",
+    "title": "Plan Long-Term Positioning",
+    "type": "gbs-prompts",
+    "category": "Branding > Brand Strategy",
+    "description": "Develop comprehensive 5-year brand positioning strategies with competitive differentiation, market positioning, and measurable goals for sustained growth."
+  },
+  {
+    "id": "branding-4",
+    "title": "Create Logo Design Concepts",
+    "type": "gbs-prompts",
+    "category": "Branding > Brand Identity",
+    "description": "Develop five distinct logo concepts that reflect brand identity, values, and mission with versatile designs suitable for multiple platforms and formats."
+  },
+  {
+    "id": "branding-5",
+    "title": "Generate Color Scheme",
+    "type": "gbs-prompts",
+    "category": "Branding > Brand Identity",
+    "description": "Recommend strategic color palettes that convey brand personality, resonate with target audiences, and work effectively across all media platforms."
+  },
+  {
+    "id": "branding-6",
+    "title": "Write a Brand Story",
+    "type": "gbs-prompts",
+    "category": "Branding > Brand Identity",
+    "description": "Craft compelling brand narratives that connect emotionally with audiences, convey core values, and differentiate the brand through authentic storytelling."
+  },
+  {
+    "id": "branding-7",
+    "title": "Research Market Trends",
+    "type": "gbs-prompts",
+    "category": "Branding > Market Research",
+    "description": "Analyze current industry trends and predict future developments with comprehensive research to inform strategic business decisions and positioning."
+  },
+  {
+    "id": "budgeting-1",
+    "title": "Create a Monthly Budget Plan",
+    "type": "gbs-prompts",
+    "category": "Budgeting > Planning & Tracking",
+    "description": "Generate comprehensive monthly budgets that balance expenses with savings goals, providing realistic financial plans with cost-saving recommendations and optimization strategies."
+  },
+  {
+    "id": "budgeting-2",
+    "title": "Track Expenses",
+    "type": "gbs-prompts",
+    "category": "Budgeting > Planning & Tracking",
+    "description": "Categorize and analyze monthly expenses to identify spending patterns, trends, and optimization opportunities with actionable insights for improved financial management."
+  },
+  {
+    "id": "budgeting-3",
+    "title": "Set Savings Goals",
+    "type": "gbs-prompts",
+    "category": "Budgeting > Planning & Tracking",
+    "description": "Develop personalized savings strategies with realistic targets, actionable plans, and comprehensive financial guidance for achieving long-term financial stability and growth."
+  },
+  {
+    "id": "budgeting-4",
+    "title": "Find Cost-Cutting Opportunities",
+    "type": "gbs-prompts",
+    "category": "Budgeting > Optimization & Strategy",
+    "description": "Analyze expenses systematically to identify cost-reduction opportunities with data-backed recommendations and practical implementation strategies for financial optimization."
+  },
+  {
+    "id": "budgeting-5",
+    "title": "Plan for Large Purchases",
+    "type": "gbs-prompts",
+    "category": "Budgeting > Optimization & Strategy",
+    "description": "Create structured savings plans for major purchases with realistic timelines, milestone tracking, and flexible strategies for various income levels and financial situations."
+  },
+  {
+    "id": "budgeting-6",
+    "title": "Simulate Financial Scenarios",
+    "type": "gbs-prompts",
+    "category": "Budgeting > Optimization & Strategy",
+    "description": "Model comprehensive financial impacts of major life decisions with detailed cost analysis, scenario planning, and long-term implications for informed decision-making."
+  },
+  {
+    "id": "business-plan-1",
+    "title": "Write Executive Summary",
+    "type": "gbs-prompts",
+    "category": "Business Plan > Core Components",
+    "description": "Create compelling executive summaries that outline business ventures, articulate problems solved, and highlight unique value propositions to attract investors and stakeholders."
+  },
+  {
+    "id": "business-plan-2",
+    "title": "Write a Business Description",
+    "type": "gbs-prompts",
+    "category": "Business Plan > Core Components",
+    "description": "Craft compelling business descriptions that communicate mission, vision, and core values while resonating with target audiences across multiple platforms and applications."
+  },
+  {
+    "id": "business-plan-3",
+    "title": "Conduct Competitor Analysis",
+    "type": "gbs-prompts",
+    "category": "Business Plan > Market & Product Analysis",
+    "description": "Perform comprehensive competitive research using primary and secondary methods to analyze market landscape, identify key players, and develop strategic positioning recommendations."
+  },
+  {
+    "id": "business-plan-4",
+    "title": "Find Products and Services",
+    "type": "gbs-prompts",
+    "category": "Business Plan > Market & Product Analysis",
+    "description": "Analyze business capabilities and market opportunities to suggest products or services with detailed market research, scalability assessment, and launch strategies."
+  },
+  {
+    "id": "business-plan-5",
+    "title": "Develop Pricing Strategy",
+    "type": "gbs-prompts",
+    "category": "Business Plan > Strategy",
+    "description": "Create comprehensive pricing strategies that balance competitive positioning with profitability through market research, value analysis, and customer willingness-to-pay assessment."
+  },
+  {
+    "id": "business-plan-6",
+    "title": "Create Go-To-Market Strategy",
+    "type": "gbs-prompts",
+    "category": "Business Plan > Strategy",
+    "description": "Develop comprehensive market entry strategies with product positioning, distribution channels, marketing tactics, and implementation timelines within budget constraints."
+  },
+  {
+    "id": "candidate-engagement-1",
+    "title": "Craft Personalized Outreach Messages",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Personalized Outreach",
+    "description": "Create compelling, psychology-backed outreach messages that build genuine connections with passive candidates without immediately mentioning job opportunities."
+  },
+  {
+    "id": "candidate-engagement-2",
+    "title": "Generate Engaging Subject Lines",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Personalized Outreach",
+    "description": "Create attention-grabbing email subject lines that stand out in crowded inboxes and intrigue passive candidates to open your message."
+  },
+  {
+    "id": "candidate-engagement-3",
+    "title": "Rewrite Outreach Message Tone",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Personalized Outreach",
+    "description": "Transform formal recruitment messages into casual, friendly communications that focus on career growth rather than job specifications."
+  },
+  {
+    "id": "candidate-engagement-4",
+    "title": "Create a Follow-Up Message",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Personalized Outreach",
+    "description": "Develop strategic follow-up messages that add new value and maintain candidate interest without appearing pushy or desperate."
+  },
+  {
+    "id": "candidate-engagement-5",
+    "title": "Create Referral Narratives from Transcripts",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Referral Strategies",
+    "description": "Extract powerful quotes and stories from conversations to create authentic referral narratives that showcase company culture and mission."
+  },
+  {
+    "id": "candidate-engagement-6",
+    "title": "Generate Referral Request Email",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Referral Strategies",
+    "description": "Build referral request templates that emphasize storytelling and career advancement opportunities rather than financial incentives."
+  },
+  {
+    "id": "candidate-engagement-7",
+    "title": "Identify Referral Generation Spaces",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Referral Strategies",
+    "description": "Discover where your ideal candidates gather online and offline, with tailored messaging strategies for each community or event."
+  },
+  {
+    "id": "candidate-engagement-8",
+    "title": "Craft a Referral Request Follow-Up",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Referral Strategies",
+    "description": "Convert timing mismatches into referral opportunities by maintaining relationships and making it easy for candidates to recommend others."
+  },
+  {
+    "id": "candidate-engagement-9",
+    "title": "Generate Screening Questions",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Pre-Screening Process",
+    "description": "Create comprehensive screening questions that assess both technical competencies and cultural fit based on specific job requirements."
+  },
+  {
+    "id": "candidate-engagement-10",
+    "title": "Develop a Scoring Rubric",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Pre-Screening Process",
+    "description": "Build structured evaluation frameworks that standardize candidate assessment and ensure consistent screening quality across interviews."
+  },
+  {
+    "id": "candidate-engagement-11",
+    "title": "Provide Sample Responses",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Pre-Screening Process",
+    "description": "Generate example candidate responses at different qualification levels to help interviewers better calibrate their evaluation standards."
+  },
+  {
+    "id": "candidate-engagement-12",
+    "title": "Analyze Transcripts for Success Predictors",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Pre-Screening Process",
+    "description": "Identify patterns in interview responses that correlate with successful hires to continuously improve your screening process effectiveness."
+  },
+  {
+    "id": "candidate-engagement-13",
+    "title": "Modify Screening Questions for Collaboration",
+    "type": "gbs-prompts",
+    "category": "Candidate Engagement > Pre-Screening Process",
+    "description": "Adapt technical screening questions to emphasize collaborative problem-solving skills while maintaining rigorous technical assessment standards."
+  },
+  {
+    "id": "career-advice-1",
+    "title": "Explore Career Paths",
+    "type": "gbs-prompts",
+    "category": "Career Advice > Exploration & Goal Setting",
+    "description": "Discover career opportunities that align with your skills and interests through comprehensive assessment, detailed career information, and actionable pursuit guidance."
+  },
+  {
+    "id": "career-advice-2",
+    "title": "Set Career Goals",
+    "type": "gbs-prompts",
+    "category": "Career Advice > Exploration & Goal Setting",
+    "description": "Develop personalized short-term and long-term career objectives based on skills assessment, experience evaluation, and strategic professional progression planning."
+  },
+  {
+    "id": "career-advice-3",
+    "title": "Analyze Skill Gaps",
+    "type": "gbs-prompts",
+    "category": "Career Advice > Job Application Prep",
+    "description": "Identify resume skill gaps and receive detailed recommendations for courses, certifications, and experiences to become a more competitive candidate."
+  },
+  {
+    "id": "career-advice-4",
+    "title": "Optimize Resume & Cover Letter",
+    "type": "gbs-prompts",
+    "category": "Career Advice > Job Application Prep",
+    "description": "Tailor resumes for specific roles with strategic keyword optimization, relevant skill highlighting, and ATS-friendly formatting for improved application success."
+  },
+  {
+    "id": "career-advice-5",
+    "title": "Prepare for Interview",
+    "type": "gbs-prompts",
+    "category": "Career Advice > Job Application Prep",
+    "description": "Practice realistic job interviews with role-specific questions, constructive feedback, and confidence-building techniques for effective interview preparation."
+  },
+  {
+    "id": "career-coaching-1",
+    "title": "Build a Self-Awareness",
+    "type": "gbs-prompts",
+    "category": "Career Coaching > Self-Discovery & Goal Setting",
+    "description": "Uncover your core values, passions, and motivators through structured reflective exercises, questionnaires, and guided discussions to align your career with intrinsic purpose."
+  },
+  {
+    "id": "career-coaching-2",
+    "title": "Define Career Goals",
+    "type": "gbs-prompts",
+    "category": "Career Coaching > Self-Discovery & Goal Setting",
+    "description": "Set SMART career goals tailored to your current situation through comprehensive assessment of interests, skills, and experiences with realistic timeline planning."
+  },
+  {
+    "id": "career-coaching-3",
+    "title": "Identify Strengths and Weaknesses",
+    "type": "gbs-prompts",
+    "category": "Career Coaching > Self-Discovery & Goal Setting",
+    "description": "Discover personal strengths and improvement areas using personality tests, 360-degree feedback, and interviews to create a personalized development action plan."
+  },
+  {
+    "id": "career-coaching-4",
+    "title": "Create Skill Development Roadmap",
+    "type": "gbs-prompts",
+    "category": "Career Coaching > Action & Development",
+    "description": "Build a personalized learning plan with specific courses, certifications, and hands-on experiences to bridge skill gaps and achieve career aspirations."
+  },
+  {
+    "id": "career-coaching-5",
+    "title": "Overcome Career Obstacles",
+    "type": "gbs-prompts",
+    "category": "Career Coaching > Action & Development",
+    "description": "Develop comprehensive strategies to identify root causes of career obstacles and provide personalized, actionable steps including mindset shifts and skill-building activities."
+  },
+  {
+    "id": "career-coaching-6",
+    "title": "Build Daily Habits",
+    "type": "gbs-prompts",
+    "category": "Career Coaching > Action & Development",
+    "description": "Establish small, actionable daily practices for consistent career growth focusing on skill enhancement, networking expansion, and achievable milestone setting."
+  },
+  {
+    "id": "career-coaching-7",
+    "title": "Act as Accountability Partner",
+    "type": "gbs-prompts",
+    "category": "Career Coaching > Action & Development",
+    "description": "Receive ongoing support and motivation through regular check-ins, goal setting, progress evaluation, and constructive feedback to stay on track with career objectives."
+  },
+  {
+    "id": "course-1",
+    "title": "Assist in Research",
+    "type": "gbs-prompts",
+    "category": "Course Creation > Content Development",
+    "description": "Conduct comprehensive research on specific topics and create detailed summaries of latest studies, trends, and developments for current course content."
+  },
+  {
+    "id": "course-2",
+    "title": "Outline Course Syllabus",
+    "type": "gbs-prompts",
+    "category": "Course Creation > Content Development",
+    "description": "Develop comprehensive course syllabi with progressive learning structures, varied teaching methodologies, and clear evaluation methods for effective education."
+  },
+  {
+    "id": "course-3",
+    "title": "Suggest Supplemental Materials",
+    "type": "gbs-prompts",
+    "category": "Course Creation > Content Development",
+    "description": "Identify diverse supplemental resources including books, videos, podcasts, and interactive tools that enhance learning and cater to different learning styles."
+  },
+  {
+    "id": "course-4",
+    "title": "Draft a Script for a Video",
+    "type": "gbs-prompts",
+    "category": "Course Creation > Content Development",
+    "description": "Create engaging video scripts with clear objectives, conversational tone, real-world examples, and logical progression for effective educational content delivery."
+  },
+  {
+    "id": "course-5",
+    "title": "Suggest Discussion Topics",
+    "type": "gbs-prompts",
+    "category": "Course Creation > Student Engagement",
+    "description": "Develop thought-provoking discussion topics that stimulate critical thinking, encourage participation, and incorporate real-world applications for deeper learning."
+  },
+  {
+    "id": "course-6",
+    "title": "Create Personalized Learning Tips",
+    "type": "gbs-prompts",
+    "category": "Course Creation > Student Engagement",
+    "description": "Develop customized learning strategies tailored to individual student needs, learning styles, and strengths with actionable, engaging methods for improved outcomes."
+  },
+  {
+    "id": "course-7",
+    "title": "Give Feedback on Assignments",
+    "type": "gbs-prompts",
+    "category": "Course Creation > Assessment",
+    "description": "Provide constructive, detailed feedback on assignments that highlights strengths, identifies improvements, and supports student learning with actionable guidance."
+  },
+  {
+    "id": "course-8",
+    "title": "Create an Interactive Quiz",
+    "type": "gbs-prompts",
+    "category": "Course Creation > Assessment",
+    "description": "Design comprehensive quizzes with varied question types, immediate feedback mechanisms, and critical thinking challenges aligned with learning objectives."
+  },
+  {
+    "id": "daily-scheduling-1",
+    "title": "Create Time Blocks",
+    "type": "gbs-prompts",
+    "category": "Daily Scheduling > Create Time Blocks",
+    "description": "Analyze tasks and create optimal time blocks considering complexity, priority, and concentration spans with built-in breaks and flexibility for maximum productivity."
+  },
+  {
+    "id": "daily-scheduling-2",
+    "title": "Align Daily Tasks with Long-Term Goals",
+    "type": "gbs-prompts",
+    "category": "Daily Scheduling > Align Daily Tasks with Long-Term Goals",
+    "description": "Connect daily activities to long-term objectives by breaking down goals into actionable tasks with strategic scheduling and progress tracking systems."
+  },
+  {
+    "id": "daily-scheduling-3",
+    "title": "Create Personalized Daily Schedule",
+    "type": "gbs-prompts",
+    "category": "Daily Scheduling > Create Personalized Daily Schedule",
+    "description": "Design comprehensive daily schedules optimized for individual priorities, deadlines, and goals with strategic time allocation and built-in flexibility."
+  },
+  {
+    "id": "daily-scheduling-4",
+    "title": "Manage Daily Priorities",
+    "type": "gbs-prompts",
+    "category": "Daily Scheduling > Manage Daily Priorities",
+    "description": "Evaluate and rank tasks using proven prioritization frameworks like the Eisenhower Matrix with clear rationale for optimal time and resource allocation."
+  },
+  {
+    "id": "daily-scheduling-5",
+    "title": "Act as Accountability Partner",
+    "type": "gbs-prompts",
+    "category": "Daily Scheduling > Act as Accountability Partner",
+    "description": "Provide ongoing support and accountability through SMART goal setting, regular check-ins, progress tracking, and motivational guidance for sustained achievement."
+  },
+  {
+    "id": "data-1",
+    "title": "Validate Data Format",
+    "type": "gbs-prompts",
+    "category": "Data Analysis > Data Preparation",
+    "description": "Ensure data integrity by validating datasets against specified conditions, identifying discrepancies, and documenting the validation process for reliable analysis."
+  },
+  {
+    "id": "data-2",
+    "title": "Clean Data",
+    "type": "gbs-prompts",
+    "category": "Data Analysis > Data Preparation",
+    "description": "Identify and correct errors, inconsistencies, and quality issues in datasets using systematic cleaning techniques with transparent documentation processes."
+  },
+  {
+    "id": "data-3",
+    "title": "Create Mock Datasets",
+    "type": "gbs-prompts",
+    "category": "Data Analysis > Data Preparation",
+    "description": "Generate realistic mock datasets with specified columns that simulate real-world scenarios for testing, analysis, and machine learning projects."
+  },
+  {
+    "id": "data-4",
+    "title": "Segment Data",
+    "type": "gbs-prompts",
+    "category": "Data Analysis > Analysis & Visualization",
+    "description": "Categorize data into meaningful groups based on specified criteria using statistical methods to provide actionable insights for decision-making and strategy."
+  },
+  {
+    "id": "data-5",
+    "title": "Analyze Data Set for an Outcome",
+    "type": "gbs-prompts",
+    "category": "Data Analysis > Analysis & Visualization",
+    "description": "Extract meaningful insights from datasets using statistical methods and visualization techniques to identify patterns and make data-driven recommendations."
+  },
+  {
+    "id": "data-6",
+    "title": "Visualize Data",
+    "type": "gbs-prompts",
+    "category": "Data Analysis > Analysis & Visualization",
+    "description": "Create compelling data visualizations that communicate insights effectively to diverse audiences and support strategic decision-making with actionable recommendations."
+  },
+  {
+    "id": "event-planning-1",
+    "title": "Brainstorm Event Themes",
+    "type": "gbs-prompts",
+    "category": "Event Planning > Conceptualization",
+    "description": "Generate creative, innovative event themes and concepts that resonate with target audiences while considering budget, logistics, and client objectives."
+  },
+  {
+    "id": "event-planning-2",
+    "title": "Help with Decoration and Styling Tips",
+    "type": "gbs-prompts",
+    "category": "Event Planning > Conceptualization",
+    "description": "Provide comprehensive decoration and styling recommendations including color schemes, lighting, and arrangements to create cohesive, immersive event atmospheres."
+  },
+  {
+    "id": "event-planning-3",
+    "title": "Suggest Entertainment",
+    "type": "gbs-prompts",
+    "category": "Event Planning > Conceptualization",
+    "description": "Recommend suitable entertainment options tailored to event objectives, target audience demographics, venue capacity, and overall event atmosphere."
+  },
+  {
+    "id": "event-planning-4",
+    "title": "Plan Event Budget",
+    "type": "gbs-prompts",
+    "category": "Event Planning > Logistics & Management",
+    "description": "Create comprehensive event budgets with detailed cost breakdowns, vendor negotiations, and efficient fund allocation across all event components."
+  },
+  {
+    "id": "event-planning-5",
+    "title": "Create Event Schedule",
+    "type": "gbs-prompts",
+    "category": "Event Planning > Logistics & Management",
+    "description": "Develop detailed event timelines covering all phases from setup to teardown with minute-by-minute schedules and contingency planning for seamless execution."
+  },
+  {
+    "id": "event-planning-6",
+    "title": "Delegate Tasks",
+    "type": "gbs-prompts",
+    "category": "Event Planning > Logistics & Management",
+    "description": "Develop strategic task delegation systems that optimize team member strengths, establish clear communication, and ensure accountability for successful event execution."
+  },
+  {
+    "id": "event-planning-7",
+    "title": "Promote Event",
+    "type": "gbs-prompts",
+    "category": "Event Planning > Promotion",
+    "description": "Create comprehensive marketing strategies with social media campaigns, email marketing, and targeted advertising to maximize event reach and engagement."
+  },
+  {
+    "id": "excel-1",
+    "title": "Explain How Excel Function Works",
+    "type": "gbs-prompts",
+    "category": "Excel > Function Guidance",
+    "description": "Get clear, step-by-step explanations of Excel functions including parameters, use cases, benefits, and optimization tips for better spreadsheet proficiency."
+  },
+  {
+    "id": "excel-2",
+    "title": "Explain How to Use Excel Functions",
+    "type": "gbs-prompts",
+    "category": "Excel > Function Guidance",
+    "description": "Create comprehensive guides for using specific Excel functions to perform targeted actions with easy-to-follow instructions and practical examples."
+  },
+  {
+    "id": "excel-3",
+    "title": "Write Excel Commands",
+    "type": "gbs-prompts",
+    "category": "Excel > Automation & Commands",
+    "description": "Generate accurate Excel commands for specific actions with clear explanations to ensure successful execution and desired outcomes."
+  },
+  {
+    "id": "excel-4",
+    "title": "Write Macros",
+    "type": "gbs-prompts",
+    "category": "Excel > Automation & Commands",
+    "description": "Develop VBA Excel macros that automate repetitive tasks efficiently with user-friendly interfaces and thoroughly tested functionality."
+  },
+  {
+    "id": "excel-5",
+    "title": "Perform Complex Tasks",
+    "type": "gbs-prompts",
+    "category": "Excel > Task Assistance",
+    "description": "Execute advanced Excel tasks including data analysis, formula creation, and report generation with precision and efficiency using expert-level skills."
+  },
+  {
+    "id": "excel-6",
+    "title": "Turn Gemini Into a Useful Excel Assistant",
+    "type": "gbs-prompts",
+    "category": "Excel > Task Assistance",
+    "description": "Get comprehensive Excel assistance with step-by-step instructions for any task including pivot tables, formulas, charts, and data formatting."
+  },
+  {
+    "id": "financial-advice-1",
+    "title": "Analyze Economic Trends",
+    "type": "gbs-prompts",
+    "category": "Financial Advice > Market Analysis",
+    "description": "Conduct comprehensive sector analysis including market conditions, historical data, and future projections with actionable recommendations for informed decision-making."
+  },
+  {
+    "id": "financial-advice-2",
+    "title": "Get Stock Market Updates",
+    "type": "gbs-prompts",
+    "category": "Financial Advice > Market Analysis",
+    "description": "Provide concise market performance analysis highlighting key movements, significant stock performances, and insights into market drivers with future implications."
+  },
+  {
+    "id": "financial-advice-3",
+    "title": "Find Investment Opportunities",
+    "type": "gbs-prompts",
+    "category": "Financial Advice > Investment Strategy",
+    "description": "Research and identify promising investment opportunities with comprehensive risk-reward analysis, market condition assessment, and growth prospect evaluation."
+  },
+  {
+    "id": "financial-advice-4",
+    "title": "Provide Investment Advice",
+    "type": "gbs-prompts",
+    "category": "Financial Advice > Investment Strategy",
+    "description": "Create personalized investment recommendations tailored to client goals and risk tolerance with market trend analysis and long-term growth strategies."
+  },
+  {
+    "id": "financial-advice-5",
+    "title": "Analyze Portfolios",
+    "type": "gbs-prompts",
+    "category": "Financial Advice > Investment Strategy",
+    "description": "Evaluate investment portfolios comprehensively including risk-return profiles, asset allocation, and performance analysis with optimization recommendations."
+  },
+  {
+    "id": "financial-advice-6",
+    "title": "Create Educational Materials",
+    "type": "gbs-prompts",
+    "category": "Financial Advice > Financial Planning",
+    "description": "Develop beginner-friendly financial guides that break down complex concepts into practical, actionable advice with real-life examples and common pitfall warnings."
+  },
+  {
+    "id": "financial-advice-7",
+    "title": "Create a Budget Plan",
+    "type": "gbs-prompts",
+    "category": "Financial Advice > Financial Planning",
+    "description": "Design comprehensive budget plans with personalized spending allocations, debt management strategies, and savings optimization aligned with long-term financial objectives."
+  },
+  {
+    "id": "financial-advice-8",
+    "title": "Plan a Retirement",
+    "type": "gbs-prompts",
+    "category": "Financial Advice > Financial Planning",
+    "description": "Outline comprehensive retirement strategies including savings plans, investment approaches, and timeline milestones tailored to individual circumstances and goals."
+  },
+  {
+    "id": "gbs-productivity-1",
+    "title": "Daily Kick-Start Briefing",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Daily Efficiency",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-2",
+    "title": "Draft a Professional Follow-Up Email",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Daily Efficiency",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-11",
+    "title": "Post-Holiday Catch-Up Briefing",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Daily Efficiency",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-3",
+    "title": "Pre-Meeting Intelligence Report",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Meeting Management",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-4",
+    "title": "Generate Meeting Minutes & Action Items",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Meeting Management",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-5",
+    "title": "Analyze Spreadsheet Data for Trends",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Data & Reporting",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-6",
+    "title": "Create a Presentation Outline from a Report",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Data & Reporting",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-7",
+    "title": "Simplify a Complex Topic",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Data & Reporting",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-8",
+    "title": "Brainstorm Process Improvement Ideas",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Process Improvement",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-9",
+    "title": "Draft a Standard Operating Procedure (SOP)",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Process Improvement",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-10",
+    "title": "Year-End Performance Review Prep",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Process Improvement",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-1",
+    "title": "Draft a Culturally Aware Global Announcement",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Global Communication",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-2",
+    "title": "Localize Communication for a Specific Region",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Global Communication",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-3",
+    "title": "Create a New Hire Onboarding Plan",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Training & Development",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-4",
+    "title": "Generate a Knowledge Quiz from a Document",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Training & Development",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-5",
+    "title": "Develop a 'Frequently Asked Questions' (FAQ)",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Training & Development",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-6",
+    "title": "Identify Project Risks and Mitigation",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Project Risk & Communication",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-7",
+    "title": "Draft a Concise Project Status Update",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Project Risk & Communication",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-8",
+    "title": "Formulate a Stakeholder Communication Plan",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Project Risk & Communication",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-9",
+    "title": "Identify Skills for Career Progression",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Career Development",
+    "description": ""
+  },
+  {
+    "id": "gbs-productivity-10",
+    "title": "Turn Responsibilities into Achievements",
+    "type": "gbs-prompts",
+    "category": "GBS Hub Productivity > Career Development",
+    "description": ""
+  },
+  {
+    "id": "goal-setting-1",
+    "title": "Structure Goals",
+    "type": "gbs-prompts",
+    "category": "Goal Setting > Planning & Strategy",
+    "description": "Break down goals into actionable steps with realistic timelines, milestones, and achievement strategies that balance challenge with feasibility."
+  },
+  {
+    "id": "goal-setting-2",
+    "title": "Plan & Track Goals",
+    "type": "gbs-prompts",
+    "category": "Goal Setting > Planning & Strategy",
+    "description": "Create comprehensive action plans with progress monitoring systems, resource allocation, and adaptive strategies for continuous goal achievement."
+  },
+  {
+    "id": "goal-setting-3",
+    "title": "Brainstorm Goals",
+    "type": "gbs-prompts",
+    "category": "Goal Setting > Planning & Strategy",
+    "description": "Generate SMART goals for specific life areas with clear achievement criteria and practical first steps to inspire motivation and action."
+  },
+  {
+    "id": "goal-setting-4",
+    "title": "Help With Self-Reflection",
+    "type": "gbs-prompts",
+    "category": "Goal Setting > Mindset & Support",
+    "description": "Design guided self-reflection sessions with thought-provoking questions to explore underlying motivations, priorities, and obstacles for deeper goal understanding."
+  },
+  {
+    "id": "goal-setting-5",
+    "title": "Provide Motivation & Accountability",
+    "type": "gbs-prompts",
+    "category": "Goal Setting > Mindset & Support",
+    "description": "Create personalized affirmations that motivate, inspire confidence, and maintain positive mindset while reinforcing belief in goal attainability."
+  },
+  {
+    "id": "graphic-design-1",
+    "title": "Generate Design Concepts",
+    "type": "gbs-prompts",
+    "category": "Graphic Design > Design & Ideation",
+    "description": "Create multiple visual design concepts that are on-brand, visually appealing, and effectively communicate key messages with variety for client selection."
+  },
+  {
+    "id": "graphic-design-2",
+    "title": "Suggest Color Scheme",
+    "type": "gbs-prompts",
+    "category": "Graphic Design > Design & Ideation",
+    "description": "Develop cohesive color palettes based on project goals, target audience, and color psychology principles with clear reasoning and visual presentation."
+  },
+  {
+    "id": "graphic-design-3",
+    "title": "Write Copy",
+    "type": "gbs-prompts",
+    "category": "Graphic Design > Design & Ideation",
+    "description": "Craft compelling, memorable taglines that encapsulate project essence, resonate with target audiences, and differentiate from competitors with clear value communication."
+  },
+  {
+    "id": "graphic-design-4",
+    "title": "Draft Email for Client Updates",
+    "type": "gbs-prompts",
+    "category": "Graphic Design > Client Management",
+    "description": "Create professional project update emails with clear progress reporting, milestone achievements, and positive communication to maintain client engagement and confidence."
+  },
+  {
+    "id": "graphic-design-5",
+    "title": "Interpret Client's Feedback",
+    "type": "gbs-prompts",
+    "category": "Graphic Design > Client Management",
+    "description": "Analyze and implement client feedback effectively while maintaining design principles and collaborating iteratively to achieve complete client satisfaction."
+  },
+  {
+    "id": "instructional-design-1",
+    "title": "Write Lecture Script",
+    "type": "gbs-prompts",
+    "category": "Instructional Design > Content & Curriculum Development",
+    "description": "Create engaging lecture scripts with interactive elements, visual aids, and real-life examples that align with learning objectives and promote active participation."
+  },
+  {
+    "id": "instructional-design-2",
+    "title": "Develop Quizzes and Tests",
+    "type": "gbs-prompts",
+    "category": "Instructional Design > Content & Curriculum Development",
+    "description": "Design comprehensive assessments with varied difficulty levels, clear questions, and explanatory feedback to test knowledge and reinforce learning effectively."
+  },
+  {
+    "id": "instructional-design-3",
+    "title": "Generate Learning Objective",
+    "type": "gbs-prompts",
+    "category": "Instructional Design > Content & Curriculum Development",
+    "description": "Develop creative, engaging themes and concepts that align with educational goals while considering target audience and effective message communication."
+  },
+  {
+    "id": "instructional-design-4",
+    "title": "Suggest Interactive Content",
+    "type": "gbs-prompts",
+    "category": "Instructional Design > Interactive Learning",
+    "description": "Brainstorm engaging interactive learning activities including quizzes, simulations, and case studies that enhance understanding and promote active participation."
+  },
+  {
+    "id": "instructional-design-5",
+    "title": "Brainstorm Virtual Classroom Activities",
+    "type": "gbs-prompts",
+    "category": "Instructional Design > Interactive Learning",
+    "description": "Create diverse virtual learning activities that cater to different learning styles while incorporating technology tools for enhanced online educational experiences."
+  },
+  {
+    "id": "instructional-design-6",
+    "title": "Create Interactive Scenarios",
+    "type": "gbs-prompts",
+    "category": "Instructional Design > Interactive Learning",
+    "description": "Design realistic, engaging scenarios that provide practical contexts for learners to apply knowledge and skills while supporting overall learning outcomes."
+  },
+  {
+    "id": "instructional-design-7",
+    "title": "Review Course Content for Bias",
+    "type": "gbs-prompts",
+    "category": "Instructional Design > Review & Inclusivity",
+    "description": "Analyze educational content for cultural bias and provide recommendations to promote inclusivity, diversity, and culturally responsive teaching practices."
+  },
+  {
+    "id": "interview-prep-1",
+    "title": "Suggest Behavioral Questions",
+    "type": "gbs-prompts",
+    "category": "Interview Preparation > Suggest Behavioral Questions",
+    "description": "Generate comprehensive behavioral interview questions that reveal candidate competencies, work style, and cultural fit through past experience examples."
+  },
+  {
+    "id": "interview-prep-2",
+    "title": "Suggest Scenario-Based Questions",
+    "type": "gbs-prompts",
+    "category": "Interview Preparation > Suggest Scenario-Based Questions",
+    "description": "Create hypothetical workplace scenarios that test problem-solving skills, strategic thinking, and how candidates approach real-world challenges."
+  },
+  {
+    "id": "interview-prep-3",
+    "title": "Answer Tell Me About Yourself Question",
+    "type": "gbs-prompts",
+    "category": "Interview Preparation > Answer Tell Me About Yourself Question",
+    "description": "Craft compelling personal narratives that strategically highlight relevant experience, skills, and achievements while creating memorable first impressions."
+  },
+  {
+    "id": "interview-prep-4",
+    "title": "Discuss Strengths and Weaknesses",
+    "type": "gbs-prompts",
+    "category": "Interview Preparation > Discuss Strengths and Weaknesses",
+    "description": "Develop strategies for authentically presenting strengths and addressing weaknesses while demonstrating self-awareness and growth mindset."
+  },
+  {
+    "id": "interview-prep-5",
+    "title": "Discuss Career Goals",
+    "type": "gbs-prompts",
+    "category": "Interview Preparation > Discuss Career Goals",
+    "description": "Articulate career aspirations that align with company mission while demonstrating ambition, strategic thinking, and mutual value creation."
+  },
+  {
+    "id": "interview-prep-6",
+    "title": "Research Specific Industry",
+    "type": "gbs-prompts",
+    "category": "Interview Preparation > Research Specific Industry",
+    "description": "Conduct comprehensive industry research to demonstrate deep market understanding, identify key trends, and prepare informed responses."
+  },
+  {
+    "id": "interview-prep-7",
+    "title": "Perform Mock Interview",
+    "type": "gbs-prompts",
+    "category": "Interview Preparation > Perform Mock Interview",
+    "description": "Simulate realistic interview experiences with role-specific questions, performance assessment, and constructive feedback for improvement."
+  },
+  {
+    "id": "interview-prep-8",
+    "title": "Suggest Technical Questions",
+    "type": "gbs-prompts",
+    "category": "Interview Preparation > Suggest Technical Questions",
+    "description": "Compile comprehensive technical questions that assess expertise, problem-solving abilities, and practical application of skills for specific roles."
+  },
+  {
+    "id": "job-search-1",
+    "title": "Analyze Job Description",
+    "type": "gbs-prompts",
+    "category": "Job Search > Analyze Job Description",
+    "description": "Extract and analyze keywords, skills, and requirements from job descriptions to optimize applications and understand employer expectations."
+  },
+  {
+    "id": "job-search-2",
+    "title": "Build a Resume",
+    "type": "gbs-prompts",
+    "category": "Job Search > Build a Resume",
+    "description": "Create professional, ATS-optimized resumes that effectively showcase experience, skills, and achievements with quantifiable results."
+  },
+  {
+    "id": "job-search-3",
+    "title": "Write Cover Letter",
+    "type": "gbs-prompts",
+    "category": "Job Search > Write Cover Letter",
+    "description": "Craft compelling, personalized cover letters that highlight relevant qualifications and demonstrate cultural fit with specific companies."
+  },
+  {
+    "id": "job-search-4",
+    "title": "Prepare for Job Interview",
+    "type": "gbs-prompts",
+    "category": "Job Search > Prepare for Job Interview",
+    "description": "Simulate realistic job interviews with comprehensive questions covering background, skills, problem-solving, and cultural alignment."
+  },
+  {
+    "id": "job-search-5",
+    "title": "Provide Self-Assessment",
+    "type": "gbs-prompts",
+    "category": "Job Search > Provide Self-Assessment",
+    "description": "Conduct comprehensive career assessments to identify strengths, interests, market opportunities, and create personalized development action plans."
+  },
+  {
+    "id": "market-research-1",
+    "title": "Suggest Research Methodologies",
+    "type": "gbs-prompts",
+    "category": "Market Research > Market Research Prompts",
+    "description": "Develop comprehensive lists of primary and secondary research methodologies including surveys, focus groups, and digital analytics for strategic market insights."
+  },
+  {
+    "id": "market-research-2",
+    "title": "Gather Public Data",
+    "type": "gbs-prompts",
+    "category": "Market Research > Market Research Prompts",
+    "description": "Compile comprehensive market intelligence using public databases, industry reports, and social media analytics to identify opportunities and challenges."
+  },
+  {
+    "id": "market-research-3",
+    "title": "Create Customer Personas",
+    "type": "gbs-prompts",
+    "category": "Market Research > Market Research Prompts",
+    "description": "Develop detailed customer personas with demographics, psychographics, behavioral traits, and communication preferences for targeted marketing strategies."
+  },
+  {
+    "id": "market-research-4",
+    "title": "Identify Market Gaps",
+    "type": "gbs-prompts",
+    "category": "Market Research > Market Research Prompts",
+    "description": "Conduct comprehensive market analysis to identify unmet needs and opportunities where products or services can gain competitive advantage."
+  },
+  {
+    "id": "market-research-5",
+    "title": "Find Competitors",
+    "type": "gbs-prompts",
+    "category": "Market Research > Market Research Prompts",
+    "description": "Identify and analyze direct and indirect competitors with detailed profiles covering market share, strategies, strengths, and competitive positioning."
+  },
+  {
+    "id": "meeting-notes-1",
+    "title": "Create Meeting Notes From a Transcript",
+    "type": "gbs-prompts",
+    "category": "Meeting Notes > Create Meeting Notes From a Transcript",
+    "description": "Transform raw meeting transcripts into organized, structured notes that capture key decisions, action items, and outcomes for easy reference."
+  },
+  {
+    "id": "meeting-notes-2",
+    "title": "Summarize Meeting Notes",
+    "type": "gbs-prompts",
+    "category": "Meeting Notes > Summarize Meeting Notes",
+    "description": "Create concise executive summaries of meeting notes that enable non-attendees to quickly understand key outcomes and next steps."
+  },
+  {
+    "id": "meeting-notes-3",
+    "title": "Anonymize Meeting Notes",
+    "type": "gbs-prompts",
+    "category": "Meeting Notes > Anonymize Meeting Notes",
+    "description": "Remove sensitive information and personal identifiers from meeting notes while preserving essential content and maintaining confidentiality."
+  },
+  {
+    "id": "meeting-notes-4",
+    "title": "Create Action Items",
+    "type": "gbs-prompts",
+    "category": "Meeting Notes > Create Action Items",
+    "description": "Extract and organize actionable tasks from meeting notes with clear ownership, deadlines, and accountability for effective follow-through."
+  },
+  {
+    "id": "meeting-notes-5",
+    "title": "Create Follow-up Tasks",
+    "type": "gbs-prompts",
+    "category": "Meeting Notes > Create Follow-up Tasks",
+    "description": "Identify and organize follow-up tasks with dependencies, priorities, and timelines to ensure comprehensive post-meeting execution."
+  },
+  {
+    "id": "meeting-notes-6",
+    "title": "Draft an Email With a Meeting Summary",
+    "type": "gbs-prompts",
+    "category": "Meeting Notes > Draft an Email With a Meeting Summary",
+    "description": "Compose professional summary emails that communicate meeting outcomes, decisions, and action items to stakeholders and team members."
+  },
+  {
+    "id": "newsletter-1",
+    "title": "Draft Opinion Piece",
+    "type": "gbs-prompts",
+    "category": "Newsletter > Newsletter Prompts",
+    "description": "Create engaging, fact-backed opinion pieces that spark discussion and maintain audience rapport with conversational tone and compelling calls-to-action."
+  },
+  {
+    "id": "newsletter-2",
+    "title": "Provide Industry Updates",
+    "type": "gbs-prompts",
+    "category": "Newsletter > Newsletter Prompts",
+    "description": "Deliver concise, comprehensive industry summaries that capture key developments, trends, and insights in an engaging, conversational format."
+  },
+  {
+    "id": "newsletter-3",
+    "title": "Summarize Interview",
+    "type": "gbs-prompts",
+    "category": "Newsletter > Newsletter Prompts",
+    "description": "Transform interview content into engaging summaries that highlight key insights while encouraging readers to engage with the full content."
+  },
+  {
+    "id": "newsletter-4",
+    "title": "Edit & Proofread",
+    "type": "gbs-prompts",
+    "category": "Newsletter > Newsletter Prompts",
+    "description": "Provide comprehensive editing and proofreading services ensuring error-free, engaging content with consistent brand voice and optimized layout."
+  },
+  {
+    "id": "newsletter-5",
+    "title": "Generate Catchy Headlines",
+    "type": "gbs-prompts",
+    "category": "Newsletter > Newsletter Prompts",
+    "description": "Create compelling, SEO-friendly headlines that accurately represent content while capturing audience attention and encouraging engagement."
+  },
+  {
+    "id": "newsletter-6",
+    "title": "Write Engaging Intro",
+    "type": "gbs-prompts",
+    "category": "Newsletter > Newsletter Prompts",
+    "description": "Craft captivating introductions that draw readers in with compelling hooks while maintaining consistency with newsletter tone and style."
+  },
+  {
+    "id": "newsletter-7",
+    "title": "Come Up With CTAs",
+    "type": "gbs-prompts",
+    "category": "Newsletter > Newsletter Prompts",
+    "description": "Develop compelling call-to-action phrases that resonate with audiences and drive immediate engagement, clicks, and desired actions."
+  },
+  {
+    "id": "newsletter-8",
+    "title": "Generate Subscription Campaign Ideas",
+    "type": "gbs-prompts",
+    "category": "Newsletter > Newsletter Prompts",
+    "description": "Create innovative subscription campaigns that highlight value propositions and effectively reach target audiences through diverse marketing channels."
+  },
+  {
+    "id": "newsletter-9",
+    "title": "Suggest Cross-Promotion Strategies",
+    "type": "gbs-prompts",
+    "category": "Newsletter > Newsletter Prompts",
+    "description": "Develop strategic cross-promotion opportunities and collaborative activities that leverage existing audiences for mutual growth and engagement."
+  },
+  {
+    "id": "newsletter-10",
+    "title": "Write Article",
+    "type": "gbs-prompts",
+    "category": "Newsletter > Newsletter Prompts",
+    "description": "Create well-researched, engaging articles that align with brand voice and incorporate SEO strategies to drive high open rates and engagement."
+  },
+  {
+    "id": "performance-reviews-1",
+    "title": "Suggest Potential Performance Metrics",
+    "type": "gbs-prompts",
+    "category": "Performance Reviews > Suggest Potential Performance Metrics",
+    "description": "Develop SMART performance metrics that align with organizational goals and accurately measure role-specific contributions and outcomes."
+  },
+  {
+    "id": "performance-reviews-2",
+    "title": "Suggest KPIs for Measuring a Metric",
+    "type": "gbs-prompts",
+    "category": "Performance Reviews > Suggest KPIs for Measuring a Metric",
+    "description": "Create specific, measurable KPIs that effectively track progress and success for targeted performance metrics with clear implementation guidance."
+  },
+  {
+    "id": "performance-reviews-3",
+    "title": "Develop Smart Goals for a Team",
+    "type": "gbs-prompts",
+    "category": "Performance Reviews > Develop Smart Goals for a Team",
+    "description": "Create comprehensive SMART goals for teams that provide clear direction, measurable outcomes, and strategic alignment with organizational objectives."
+  },
+  {
+    "id": "performance-reviews-4",
+    "title": "Benchmark Employee Feedback",
+    "type": "gbs-prompts",
+    "category": "Performance Reviews > Benchmark Employee Feedback",
+    "description": "Analyze and compare employee feedback across departments to identify patterns, strengths, and improvement opportunities for strategic decision-making."
+  },
+  {
+    "id": "performance-reviews-5",
+    "title": "Identify Skill Gaps in a Review",
+    "type": "gbs-prompts",
+    "category": "Performance Reviews > Identify Skill Gaps in a Review",
+    "description": "Analyze performance reviews to pinpoint specific skill deficiencies and provide actionable recommendations for targeted development programs."
+  },
+  {
+    "id": "performance-reviews-6",
+    "title": "Outline Possible Career Paths",
+    "type": "gbs-prompts",
+    "category": "Performance Reviews > Outline Possible Career Paths",
+    "description": "Map comprehensive career progression opportunities with required skills, qualifications, and industry trends for strategic career development planning."
+  },
+  {
+    "id": "performance-reviews-7",
+    "title": "Set Performance Goals",
+    "type": "gbs-prompts",
+    "category": "Performance Reviews > Set Performance Goals",
+    "description": "Establish realistic, motivating SMART performance goals that align with organizational objectives and drive professional growth and productivity."
+  },
+  {
+    "id": "performance-reviews-8",
+    "title": "Suggest Training Programs for a Skill",
+    "type": "gbs-prompts",
+    "category": "Performance Reviews > Suggest Training Programs for a Skill",
+    "description": "Design comprehensive skill development programs with diverse learning methods, clear objectives, and effectiveness measurement for continuous improvement."
+  },
+  {
+    "id": "product-management-1",
+    "title": "Perform Market Research",
+    "type": "gbs-prompts",
+    "category": "Product Management > Product Management Prompts",
+    "description": "Conduct comprehensive market analysis including target identification, competitor analysis, customer needs assessment, and trend evaluation for strategic product development."
+  },
+  {
+    "id": "product-management-2",
+    "title": "Build a Pricing Strategy",
+    "type": "gbs-prompts",
+    "category": "Product Management > Product Management Prompts",
+    "description": "Develop comprehensive pricing strategies that balance profitability with market penetration using value-based approaches and tiered models for competitive positioning."
+  },
+  {
+    "id": "product-management-3",
+    "title": "Create Customer Personas",
+    "type": "gbs-prompts",
+    "category": "Product Management > Product Management Prompts",
+    "description": "Build detailed customer personas with demographics, behaviors, motivations, and pain points to guide product development and marketing strategies effectively."
+  },
+  {
+    "id": "product-management-4",
+    "title": "Create a Product Roadmap",
+    "type": "gbs-prompts",
+    "category": "Product Management > Product Management Prompts",
+    "description": "Develop comprehensive product roadmaps with strategic phases, milestones, timelines, and KPIs from inception through launch and beyond for stakeholder alignment."
+  },
+  {
+    "id": "product-management-5",
+    "title": "Write User Stories",
+    "type": "gbs-prompts",
+    "category": "Product Management > Product Management Prompts",
+    "description": "Craft detailed, prioritized user stories that capture end-user needs, goals, and value propositions to guide user-centric product development effectively."
+  },
+  {
+    "id": "product-management-6",
+    "title": "Analyze Customer Feedback",
+    "type": "gbs-prompts",
+    "category": "Product Management > Product Management Prompts",
+    "description": "Extract actionable insights from customer feedback through pattern analysis, prioritization, and strategic recommendations for product improvement and enhancement."
+  },
+  {
+    "id": "project-management-1",
+    "title": "Create Project Blueprint for a Team",
+    "type": "gbs-prompts",
+    "category": "Project Management > Project Management Prompts",
+    "description": "Develop comprehensive project blueprints with objectives, scope, timelines, budgets, resource allocation, and risk mitigation strategies for successful execution."
+  },
+  {
+    "id": "project-management-2",
+    "title": "Conduct Risk Analysis",
+    "type": "gbs-prompts",
+    "category": "Project Management > Project Management Prompts",
+    "description": "Create comprehensive risk analysis documents that identify, assess, prioritize, and mitigate potential project risks across financial, operational, and technological domains."
+  },
+  {
+    "id": "project-management-3",
+    "title": "Help With Meetings",
+    "type": "gbs-prompts",
+    "category": "Project Management > Project Management Prompts",
+    "description": "Design comprehensive post-project evaluation templates that assess performance, identify lessons learned, and provide recommendations for future project improvements."
+  },
+  {
+    "id": "project-management-4",
+    "title": "Communicate With Stakeholders",
+    "type": "gbs-prompts",
+    "category": "Project Management > Project Management Prompts",
+    "description": "Draft professional stakeholder communications that transparently share achievements and challenges while maintaining confidence and demonstrating proactive problem-solving."
+  },
+  {
+    "id": "project-management-5",
+    "title": "Prioritize Project Tasks",
+    "type": "gbs-prompts",
+    "category": "Project Management > Project Management Prompts",
+    "description": "Strategically prioritize project tasks based on urgency, importance, and resource requirements while managing dependencies and optimizing team efficiency."
+  },
+  {
+    "id": "framework-ptf-1",
+    "title": "P-T-F (Prompt – Task – Format)",
+    "type": "gbs-prompts",
+    "category": "Prompt Frameworks > P-T-F (Prompt – Task – Format)",
+    "description": "Direct, action-first template. Define the role, the exact task, and the output format. Best for concrete deliverables (templates, docs, tables). What it is: A direct, action-first template — say who the AI should be, what exact task to do, and what format you want the output in."
+  },
+  {
+    "id": "framework-tag-1",
+    "title": "T-A-G (Task – Action – Goal)",
+    "type": "gbs-prompts",
+    "category": "Prompt Frameworks > T-A-G (Task – Action – Goal)",
+    "description": "Problem → action the AI should propose → measurable goal. Use for operational fixes with clear success metrics. What it is: Describe the problem, specify the action you want the AI to propose or perform, and attach a measurable goal."
+  },
+  {
+    "id": "framework-bab-1",
+    "title": "B-A-B (Before – After – Bridge)",
+    "type": "gbs-prompts",
+    "category": "Prompt Frameworks > B-A-B (Before – After – Bridge)",
+    "description": "Story arc for transformation. Describe current state, desired state, and practical steps to get there. What it is: Use a narrative arc to show transformation: current state, desired state, and the bridge (steps/tools) to achieve it."
+  },
+  {
+    "id": "framework-care-1",
+    "title": "C-A-R-E (Context – Action – Reference – Effect)",
+    "type": "gbs-prompts",
+    "category": "Prompt Frameworks > C-A-R-E (Context – Action – Reference – Effect)",
+    "description": "Explain why something matters to stakeholders by tying recommended actions to references and business impact. What it is: Use when you need to explain why something matters to stakeholders; tie the action to an authoritative reference and business effect."
+  },
+  {
+    "id": "framework-rise-1",
+    "title": "R-I-S-E (Role – Input – Steps – Expectation)",
+    "type": "gbs-prompts",
+    "category": "Prompt Frameworks > R-I-S-E (Role – Input – Steps – Expectation)",
+    "description": "Operational playbook-style: define the role, the input data, stepwise plan, and measurable expectation. What it is: Specify the role the AI should play, the inputs it has, the step-by-step actions required, and the expected measurable outcome."
+  },
+  {
+    "id": "framework-rain-1",
+    "title": "R-A-I-N (Role – Aim – Input – Numeric target – Format)",
+    "type": "gbs-prompts",
+    "category": "Prompt Frameworks > R-A-I-N (Role – Aim – Input – Numeric target – Format)",
+    "description": "Role-based ask with numeric KPIs. Use when you need deliverables tied to clear metrics. What it is: Add numeric targets to role-based asks so outputs include KPIs."
+  },
+  {
+    "id": "framework-clar-1",
+    "title": "C-L-A-R (Context – Limits – Action – Result)",
+    "type": "gbs-prompts",
+    "category": "Prompt Frameworks > C-L-A-R (Context – Limits – Action – Result)",
+    "description": "Short, constraint-aware brief. Great for scoped operational or compliance tasks where limits must be explicit. What it is: A concise brief that explicitly lists constraints and desired outcome."
+  },
+  {
+    "id": "framework-flow-1",
+    "title": "F-L-O-W (Function – Level – Output – Win metric)",
+    "type": "gbs-prompts",
+    "category": "Prompt Frameworks > F-L-O-W (Function – Level – Output – Win metric)",
+    "description": "Audience-centric content brief for comms, learning modules, and content production. Focus on audience level and success metric. What it is: Use for briefs that must be tailored to an audience and measured by a win metric."
+  },
+  {
+    "id": "framework-pivo-1",
+    "title": "P-I-V-O (Problem – Insights – Voice – Outcome)",
+    "type": "gbs-prompts",
+    "category": "Prompt Frameworks > P-I-V-O (Problem – Insights – Voice – Outcome)",
+    "description": "Reframe issues plus the narrative voice. Use when you want diagnosis and recommendations delivered in a specific tone. What it is: Diagnose the problem, surface key insights, set the narrative voice, and request the expected outcome."
+  },
+  {
+    "id": "framework-seed-1",
+    "title": "S-E-E-D (Situation – Endgoal – Examples – Deliverables)",
+    "type": "gbs-prompts",
+    "category": "Prompt Frameworks > S-E-E-D (Situation – Endgoal – Examples – Deliverables)",
+    "description": "Build systems and playbooks. Use when you want concrete toolkits with examples and final artifacts. What it is: Use to request a toolkit/playbook that includes examples and final deliverables."
+  },
+  {
+    "id": "prompting-techniques-1",
+    "title": "Zero-Shot Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Zero-Shot Prompting",
+    "description": "Ask the AI to perform tasks without providing examples, relying on its built-in knowledge and understanding."
+  },
+  {
+    "id": "prompting-techniques-2",
+    "title": "Few-Shot Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Few-Shot Prompting",
+    "description": "Provide multiple examples to guide the AI's understanding and improve output consistency through pattern recognition."
+  },
+  {
+    "id": "prompting-techniques-3",
+    "title": "One-Shot Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > One-Shot Prompting",
+    "description": "Give exactly one example to demonstrate the desired format or approach before requesting the main task."
+  },
+  {
+    "id": "prompting-techniques-4",
+    "title": "Self-Refine Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Self-Refine Prompting",
+    "description": "Have the AI critique and improve its own responses through iterative self-evaluation and enhancement."
+  },
+  {
+    "id": "prompting-techniques-5",
+    "title": "Comparative Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Comparative Prompting",
+    "description": "Request side-by-side comparisons of multiple items using specific criteria for structured analysis."
+  },
+  {
+    "id": "prompting-techniques-6",
+    "title": "Role Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Role Prompting",
+    "description": "Assign the AI a specific role, persona, or expertise to generate more targeted and contextually appropriate responses."
+  },
+  {
+    "id": "prompting-techniques-7",
+    "title": "Meta Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Meta Prompting",
+    "description": "Ask the AI to generate, analyze, or improve prompts themselves, creating better prompting strategies."
+  },
+  {
+    "id": "prompting-techniques-8",
+    "title": "Input/Output Formatting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Input/Output Formatting",
+    "description": "Specify exact input and output formats to ensure responses match your desired structure and presentation."
+  },
+  {
+    "id": "prompting-techniques-9",
+    "title": "Dynamic Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Dynamic Prompting",
+    "description": "Adapt and build upon previous responses in a conversation for deeper exploration and progressive understanding."
+  },
+  {
+    "id": "prompting-techniques-10",
+    "title": "Recursive Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Recursive Prompting",
+    "description": "Build systematically on previous answers to refine, expand, or analyze information through multiple iterations."
+  },
+  {
+    "id": "prompting-techniques-11",
+    "title": "Interleaved Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Interleaved Prompting",
+    "description": "Combine multiple question types or tasks within a single prompt for comprehensive, multi-faceted responses."
+  },
+  {
+    "id": "prompting-techniques-12",
+    "title": "Least-to-Most Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Least-to-Most Prompting",
+    "description": "Break complex problems into smaller subproblems and solve them sequentially from simplest to most complex."
+  },
+  {
+    "id": "prompting-techniques-13",
+    "title": "Simulated Interaction Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Simulated Interaction Prompting",
+    "description": "Create realistic scenarios for role-playing conversations or interactive simulations with dynamic responses."
+  },
+  {
+    "id": "prompting-techniques-14",
+    "title": "Guided Exploration Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Guided Exploration Prompting",
+    "description": "Structure prompts to explore topics systematically through organized stages or progressive learning steps."
+  },
+  {
+    "id": "prompting-techniques-15",
+    "title": "Tree-of-Thought Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Tree-of-Thought Prompting",
+    "description": "Guide the AI to consider multiple solution paths or decision branches before selecting the optimal approach."
+  },
+  {
+    "id": "prompting-techniques-16",
+    "title": "Generated Knowledge Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Generated Knowledge Prompting",
+    "description": "Have the AI generate relevant background knowledge first, then use that information to answer the main question."
+  },
+  {
+    "id": "prompting-techniques-17",
+    "title": "Task-Specific Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Task-Specific Prompting",
+    "description": "Clearly define specific tasks with precise constraints and requirements for highly targeted, accurate outputs."
+  },
+  {
+    "id": "prompting-techniques-18",
+    "title": "Iterative Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Iterative Prompting",
+    "description": "Refine prompts and responses through multiple rounds of feedback and improvement for optimal results."
+  },
+  {
+    "id": "prompting-techniques-19",
+    "title": "Directional-Stimulus Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Directional-Stimulus Prompting",
+    "description": "Include specific keywords, cues, or constraints to guide the AI's output toward desired themes or elements."
+  },
+  {
+    "id": "prompting-techniques-20",
+    "title": "Chain-of-Thought Prompting",
+    "type": "gbs-prompts",
+    "category": "Prompting Techniques > Chain-of-Thought Prompting",
+    "description": "Encourage step-by-step reasoning and logical progression to improve accuracy in complex problem-solving tasks."
+  },
+  {
+    "id": "recruitment-1",
+    "title": "Understand the Role and Job Market",
+    "type": "gbs-prompts",
+    "category": "Recruitment > Understand the Role and Job Market",
+    "description": "Analyze roles comprehensively including responsibilities, skills, qualifications, and current market trends with salary benchmarks and demand insights."
+  },
+  {
+    "id": "recruitment-2",
+    "title": "Write Job Descriptions",
+    "type": "gbs-prompts",
+    "category": "Recruitment > Write Job Descriptions",
+    "description": "Create compelling, inclusive job descriptions that attract qualified candidates while clearly communicating role expectations and company culture."
+  },
+  {
+    "id": "recruitment-3",
+    "title": "Analyze and Find Potential Gaps in Resumes",
+    "type": "gbs-prompts",
+    "category": "Recruitment > Analyze and Find Potential Gaps in Resumes",
+    "description": "Identify resume inconsistencies, employment gaps, and potential red flags to prepare targeted interview questions and assessments."
+  },
+  {
+    "id": "recruitment-4",
+    "title": "Come Up With Interview Questions",
+    "type": "gbs-prompts",
+    "category": "Recruitment > Come Up With Interview Questions",
+    "description": "Develop comprehensive interview questions that assess technical skills, soft skills, and cultural fit while ensuring legal compliance."
+  },
+  {
+    "id": "recruitment-5",
+    "title": "Draft an Email to a Potential Candidate",
+    "type": "gbs-prompts",
+    "category": "Recruitment > Draft an Email to a Potential Candidate",
+    "description": "Compose professional, welcoming candidate communications that outline next steps and create positive first impressions of your organization."
+  },
+  {
+    "id": "recruitment-6",
+    "title": "Draft a Reject Email to a Candidate",
+    "type": "gbs-prompts",
+    "category": "Recruitment > Draft a Reject Email to a Candidate",
+    "description": "Create respectful, empathetic rejection communications that maintain positive candidate experience and protect company reputation."
+  },
+  {
+    "id": "recruitment-7",
+    "title": "Create an Onboarding Strategy",
+    "type": "gbs-prompts",
+    "category": "Recruitment > Create an Onboarding Strategy",
+    "description": "Design comprehensive onboarding programs that integrate new hires into company culture while ensuring rapid productivity and engagement."
+  },
+  {
+    "id": "recruitment-8",
+    "title": "Draft Post-onboarding Feedback",
+    "type": "gbs-prompts",
+    "category": "Recruitment > Draft Post-onboarding Feedback",
+    "description": "Create structured feedback questionnaires to evaluate onboarding effectiveness and identify improvement opportunities for future hires."
+  },
+  {
+    "id": "research-market-intelligence-1",
+    "title": "Analyze Talent Market for a Specific Role/Location",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Talent Market Analysis",
+    "description": "Conduct comprehensive talent market research with verifiable data on supply, demand, trends, and key employers for strategic hiring decisions."
+  },
+  {
+    "id": "research-market-intelligence-2",
+    "title": "Research Compensation and Benefits",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Talent Market Analysis",
+    "description": "Gather current compensation data, benefits packages, and emerging trends to inform competitive salary offers and talent attraction strategies."
+  },
+  {
+    "id": "research-market-intelligence-3",
+    "title": "Compare Talent Markets Across Locations",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Talent Market Analysis",
+    "description": "Compare talent markets across multiple locations to identify optimal hiring regions, cost advantages, and market opportunities."
+  },
+  {
+    "id": "research-market-intelligence-4",
+    "title": "Recommend Sources for Market Intelligence Validation",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Talent Market Analysis",
+    "description": "Identify authoritative sources and validation methods to ensure accuracy and reliability of market intelligence data for decision-making."
+  },
+  {
+    "id": "research-market-intelligence-5",
+    "title": "Explain a Complex Role in Simple Terms",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Decoding Roles & Skills Across Industries",
+    "description": "Break down complex or niche roles into understandable terms, clarifying responsibilities, business applications, and value to organizations."
+  },
+  {
+    "id": "research-market-intelligence-6",
+    "title": "Identify Alternative Job Titles for a Role",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Decoding Roles & Skills Across Industries",
+    "description": "Discover how roles are titled across different industries, company sizes, and regions to improve search strategies and candidate identification."
+  },
+  {
+    "id": "research-market-intelligence-7",
+    "title": "Analyze Equivalent and Overlapping Roles",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Decoding Roles & Skills Across Industries",
+    "description": "Map role equivalencies and skill overlaps across industries to identify broader talent pools and alternative candidate sources."
+  },
+  {
+    "id": "research-market-intelligence-8",
+    "title": "Identify Transferable Skills and Career Paths for a Role",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Decoding Roles & Skills Across Industries",
+    "description": "Uncover non-obvious career pathways and transferable skills that lead to success in specific roles, expanding candidate pool strategies."
+  },
+  {
+    "id": "research-market-intelligence-9",
+    "title": "Analyze a Competitor's Talent Strategy",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Competitive Intelligence",
+    "description": "Research competitor talent strategies using public information to identify successful practices, attraction factors, and differentiation opportunities."
+  },
+  {
+    "id": "research-market-intelligence-10",
+    "title": "Compare Employer Brands",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Competitive Intelligence",
+    "description": "Benchmark your employer brand against competitors to identify competitive advantages, gaps, and opportunities for brand differentiation."
+  },
+  {
+    "id": "research-market-intelligence-11",
+    "title": "Analyze Public Employee Reviews for a Competitor",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Competitive Intelligence",
+    "description": "Analyze employee sentiment and feedback patterns from review sites to understand competitor strengths, weaknesses, and culture trends."
+  },
+  {
+    "id": "research-market-intelligence-12",
+    "title": "Recommend Sources for Competitive Intelligence Validation",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Competitive Intelligence",
+    "description": "Identify reliable sources and validation methods for competitive intelligence to ensure accuracy and completeness of competitor analysis."
+  },
+  {
+    "id": "research-market-intelligence-13",
+    "title": "Analyze Emerging Skills Trends in an Industry",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Industry Trend Analysis",
+    "description": "Identify and analyze emerging skill requirements and technology trends to anticipate future talent needs and hiring strategies."
+  },
+  {
+    "id": "research-market-intelligence-14",
+    "title": "Compare Skills Trends from Multiple Sources",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Industry Trend Analysis",
+    "description": "Cross-reference skill trends from multiple data sources to identify consensus patterns and conflicting signals for strategic planning."
+  },
+  {
+    "id": "research-market-intelligence-15",
+    "title": "Identify Sources for Trend Validation",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Industry Trend Analysis",
+    "description": "Find authoritative sources and thought leaders for validating industry trends and ensuring your intelligence is current and accurate."
+  },
+  {
+    "id": "research-market-intelligence-16",
+    "title": "Compare Job Postings for a Single Role",
+    "type": "gbs-prompts",
+    "category": "Research & Market Intelligence > Industry Trend Analysis",
+    "description": "Analyze how different companies describe similar roles to understand market variations, unique requirements, and terminology differences."
+  },
+  {
+    "id": "resume-update-1",
+    "title": "Gather Information From Current Resume",
+    "type": "gbs-prompts",
+    "category": "Resume Update > Gather Information From Current Resume",
+    "description": "Extract and organize key information from existing resumes into structured formats for hiring team review and decision-making support."
+  },
+  {
+    "id": "resume-update-2",
+    "title": "Write ATS-Friendly Resume",
+    "type": "gbs-prompts",
+    "category": "Resume Update > Write ATS-Friendly Resume",
+    "description": "Create resumes optimized for Applicant Tracking Systems with proper keywords, formatting, and structure while maintaining human readability."
+  },
+  {
+    "id": "resume-update-3",
+    "title": "Tailor Resume for Specific Industry",
+    "type": "gbs-prompts",
+    "category": "Resume Update > Tailor Resume for Specific Industry",
+    "description": "Customize resumes for specific industries using relevant keywords, formatting, and content emphasis to match industry expectations and hiring practices."
+  },
+  {
+    "id": "resume-update-4",
+    "title": "Identify Key Skills & Requirements",
+    "type": "gbs-prompts",
+    "category": "Resume Update > Identify Key Skills & Requirements",
+    "description": "Analyze job roles to identify essential technical and soft skills, qualifications, and future competency requirements for effective recruitment and career planning."
+  },
+  {
+    "id": "resume-update-5",
+    "title": "Proofread Resume for Grammar & Syntax",
+    "type": "gbs-prompts",
+    "category": "Resume Update > Proofread Resume for Grammar & Syntax",
+    "description": "Provide comprehensive resume editing including grammar correction, content enhancement, and strategic recommendations for professional presentation and impact."
+  },
+  {
+    "id": "resume-writing-1",
+    "title": "Gather and Organize All Necessary Information",
+    "type": "gbs-prompts",
+    "category": "Resume Writing > Gather and Organize All Necessary Information",
+    "description": "Conduct comprehensive information gathering through strategic questioning to collect all necessary details for building complete, compelling resumes."
+  },
+  {
+    "id": "resume-writing-2",
+    "title": "Write a Full Resume in One Go",
+    "type": "gbs-prompts",
+    "category": "Resume Writing > Write a Full Resume in One Go",
+    "description": "Create complete, ATS-optimized resumes from scratch using provided information, focusing on keyword integration and professional formatting for maximum impact."
+  },
+  {
+    "id": "resume-writing-3",
+    "title": "Proofread and Edit the Resume for Errors",
+    "type": "gbs-prompts",
+    "category": "Resume Writing > Proofread and Edit the Resume for Errors",
+    "description": "Provide comprehensive resume editing services including grammar correction, content enhancement, and structural improvements for professional presentation."
+  },
+  {
+    "id": "resume-writing-4",
+    "title": "Tailor Resume to a Job Description",
+    "type": "gbs-prompts",
+    "category": "Resume Writing > Tailor Resume to a Job Description",
+    "description": "Customize existing resumes to match specific job requirements through strategic keyword integration and content prioritization for targeted applications."
+  },
+  {
+    "id": "sales-1",
+    "title": "Perform Market Research",
+    "type": "gbs-prompts",
+    "category": "Sales > Market Research",
+    "description": "Conduct comprehensive market analysis to understand competitive landscape, identify target segments, and develop data-driven sales strategies with pricing and promotional tactics."
+  },
+  {
+    "id": "sales-2",
+    "title": "Help With Sales Enablement",
+    "type": "gbs-prompts",
+    "category": "Sales > Sales Enablement",
+    "description": "Create strategic sales outlines that identify customer needs, highlight product benefits, and build compelling value propositions for targeted customer engagement."
+  },
+  {
+    "id": "sales-3",
+    "title": "Write Sales Scripts",
+    "type": "gbs-prompts",
+    "category": "Sales > Sales Enablement",
+    "description": "Develop compelling sales scripts with engaging openings, objection handling, interactive questions, and strong closing techniques to maximize conversion rates."
+  },
+  {
+    "id": "sales-4",
+    "title": "Simulate Sales Call",
+    "type": "gbs-prompts",
+    "category": "Sales > Sales Enablement",
+    "description": "Practice sales scenarios by simulating realistic customer objections including price concerns, relevance doubts, and effectiveness questions for improved objection handling."
+  },
+  {
+    "id": "sales-5",
+    "title": "Suggest Sales Collaterals",
+    "type": "gbs-prompts",
+    "category": "Sales > Sales Enablement",
+    "description": "Recommend effective sales materials including brochures, case studies, demos, and testimonials with strategic guidance for usage throughout the sales funnel."
+  },
+  {
+    "id": "sourcing-strategy-1",
+    "title": "Analyze Target Employers",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Sourcing Strategy Development",
+    "description": "Research and identify companies that employ your target talent, including job title variations, certifications, and educational backgrounds for strategic sourcing."
+  },
+  {
+    "id": "sourcing-strategy-2",
+    "title": "Identify Niche Sourcing Channels",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Sourcing Strategy Development",
+    "description": "Discover specialized professional communities, conferences, associations, and thought leaders where your ideal candidates are most active and engaged."
+  },
+  {
+    "id": "sourcing-strategy-3",
+    "title": "Analyze Candidate Motivations",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Sourcing Strategy Development",
+    "description": "Understand what drives career decisions, pain points, and motivators for your target talent to craft more compelling outreach and opportunities."
+  },
+  {
+    "id": "sourcing-strategy-4",
+    "title": "Create a Sourcing Strategy Plan",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Sourcing Strategy Development",
+    "description": "Develop comprehensive sourcing strategies with ranked channels, targeted outreach content, and execution steps based on probability of success."
+  },
+  {
+    "id": "sourcing-strategy-5",
+    "title": "Develop Hiring Manager Alignment Guide",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Hiring Manager Collaboration",
+    "description": "Create structured intake processes that align hiring managers and recruiters on role requirements, success metrics, and team dynamics."
+  },
+  {
+    "id": "sourcing-strategy-6",
+    "title": "Create a Requirements Validation Framework",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Hiring Manager Collaboration",
+    "description": "Build frameworks to validate job requirements against market reality, identifying deal-breakers versus flexible criteria for better hiring outcomes."
+  },
+  {
+    "id": "sourcing-strategy-7",
+    "title": "Analyze Job Description Change Impact",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Hiring Manager Collaboration",
+    "description": "Assess how evolving job requirements affect hiring timelines, candidate pipelines, and sourcing strategies to maintain recruitment momentum."
+  },
+  {
+    "id": "sourcing-strategy-8",
+    "title": "Role-Play: Overcoming Hiring Manager Bias",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Hiring Manager Collaboration",
+    "description": "Practice conversations with resistant hiring managers through interactive role-play scenarios to improve persuasion and collaboration skills."
+  },
+  {
+    "id": "sourcing-strategy-9",
+    "title": "Interactive Role-Play: Persuading a Resistant HM",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Hiring Manager Collaboration",
+    "description": "Engage in realistic role-play scenarios to practice overcoming hiring manager objections about candidate qualifications and industry experience requirements."
+  },
+  {
+    "id": "sourcing-strategy-10",
+    "title": "Generate Inclusive Boolean Search String",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Talent Search Optimization",
+    "description": "Create comprehensive Boolean search strings that include variations, alternative terms, and implicit indicators to maximize candidate discovery."
+  },
+  {
+    "id": "sourcing-strategy-11",
+    "title": "Review Boolean String for Bias",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Talent Search Optimization",
+    "description": "Audit search strings for potential bias, exclusions, and regional variations to ensure inclusive and comprehensive talent discovery."
+  },
+  {
+    "id": "sourcing-strategy-12",
+    "title": "Create a GitHub Sourcing Guide",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Talent Search Optimization",
+    "description": "Master technical sourcing techniques using GitHub's native search and Google X-Ray methods to find software developers efficiently."
+  },
+  {
+    "id": "sourcing-strategy-13",
+    "title": "Plan Sourcing for Hard-to-Fill Roles",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Talent Search Optimization",
+    "description": "Develop creative sourcing strategies for challenging positions by identifying niche communities, alternative titles, and adjacent skill sets."
+  },
+  {
+    "id": "sourcing-strategy-14",
+    "title": "Identify Non-Obvious Talent Pools",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Talent Search Optimization",
+    "description": "Discover hidden talent sources by analyzing adjacent roles, transferable skills, career transition patterns, and alternative qualification paths."
+  },
+  {
+    "id": "sourcing-strategy-15",
+    "title": "Create a Skills-Based Evaluation Matrix",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Candidate-Job Matching",
+    "description": "Build objective evaluation frameworks that assess technical competencies, project experience, and transferable skills for consistent candidate assessment."
+  },
+  {
+    "id": "sourcing-strategy-16",
+    "title": "Expand Job Title and Skill Search Terms",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Candidate-Job Matching",
+    "description": "Identify comprehensive search terms including alternative job titles, related technologies, implicit skills, and industry-specific terminology for broader talent discovery."
+  },
+  {
+    "id": "sourcing-strategy-17",
+    "title": "Compare Candidate Profiles to Framework",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Candidate-Job Matching",
+    "description": "Objectively evaluate candidate profiles against established criteria, focusing on skill alignment, experience relevance, and development potential."
+  },
+  {
+    "id": "sourcing-strategy-18",
+    "title": "Identify Alternative Candidate Qualifications",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Candidate-Job Matching",
+    "description": "Recognize non-traditional pathways and alternative experiences that demonstrate competency, expanding your qualified candidate pool beyond conventional backgrounds."
+  },
+  {
+    "id": "sourcing-strategy-19",
+    "title": "Review Evaluation Framework for Bias",
+    "type": "gbs-prompts",
+    "category": "Sourcing Strategy > Candidate-Job Matching",
+    "description": "Audit assessment criteria for unconscious bias and ensure fair evaluation of diverse backgrounds while maintaining competency standards."
+  },
+  {
+    "id": "time-management-1",
+    "title": "Organize Daily Tasks",
+    "type": "gbs-prompts",
+    "category": "Time Management > Daily Planning",
+    "description": "Create detailed daily schedules with task prioritization, time estimates, and deadline management to ensure focused and productive workdays."
+  },
+  {
+    "id": "time-management-2",
+    "title": "Set Daily Goals",
+    "type": "gbs-prompts",
+    "category": "Time Management > Daily Planning",
+    "description": "Establish SMART daily goals with specific, measurable, and actionable steps to maintain focus and productivity throughout the workday."
+  },
+  {
+    "id": "time-management-3",
+    "title": "Prioritizing Work",
+    "type": "gbs-prompts",
+    "category": "Time Management > Daily Planning",
+    "description": "Evaluate and prioritize tasks based on urgency, importance, and dependencies to create manageable daily workflows and reduce overwhelm."
+  },
+  {
+    "id": "time-management-4",
+    "title": "Adjust Daily Schedule",
+    "type": "gbs-prompts",
+    "category": "Time Management > Daily Planning",
+    "description": "Reschedule and reprioritize daily tasks to accommodate unexpected changes while ensuring important deadlines and commitments are maintained."
+  },
+  {
+    "id": "time-management-5",
+    "title": "Create a Time Block Schedule",
+    "type": "gbs-prompts",
+    "category": "Time Management > Daily Planning",
+    "description": "Design structured time block schedules that allocate specific time slots for tasks, breaks, and activities to maximize productivity and maintain focus."
+  },
+  {
+    "id": "time-management-6",
+    "title": "Organize Email Inbox",
+    "type": "gbs-prompts",
+    "category": "Time Management > Productivity & Organization",
+    "description": "Implement effective email management strategies to reduce clutter, prioritize important communications, and streamline workflow processes."
+  },
+  {
+    "id": "time-management-7",
+    "title": "Improve Focus",
+    "type": "gbs-prompts",
+    "category": "Time Management > Productivity & Organization",
+    "description": "Discover proven techniques and strategies to enhance concentration, minimize distractions, and maintain sustained focus during work hours."
+  },
+  {
+    "id": "time-management-8",
+    "title": "Manage Work-Life Balance",
+    "type": "gbs-prompts",
+    "category": "Time Management > Productivity & Organization",
+    "description": "Create balanced schedules that integrate work responsibilities with personal time to maintain well-being and prevent burnout effectively."
+  },
+  {
+    "id": "time-management-9",
+    "title": "Track Project Milestones",
+    "type": "gbs-prompts",
+    "category": "Time Management > Project & Team Management",
+    "description": "Monitor and document project progress, key accomplishments, and deviations to evaluate performance and communicate updates to stakeholders."
+  },
+  {
+    "id": "time-management-10",
+    "title": "Coordinate Team Tasks",
+    "type": "gbs-prompts",
+    "category": "Time Management > Project & Team Management",
+    "description": "Develop comprehensive task lists with clear responsibilities, deadlines, and action items to ensure team alignment and project objective achievement."
+  },
+  {
+    "id": "ux-design-1",
+    "title": "Craft User Personas",
+    "type": "gbs-prompts",
+    "category": "UX Design > User Research",
+    "description": "Create detailed, data-backed user personas that represent primary user bases with demographics, behaviors, and motivations to guide design decisions effectively."
+  },
+  {
+    "id": "ux-design-2",
+    "title": "Generate Survey Questions",
+    "type": "gbs-prompts",
+    "category": "UX Design > User Research",
+    "description": "Develop comprehensive survey questions that uncover user behaviors, preferences, and pain points to gather insights for enhanced user experience improvements."
+  },
+  {
+    "id": "ux-design-3",
+    "title": "Suggest Color Scheme",
+    "type": "gbs-prompts",
+    "category": "UX Design > Design & Prototyping",
+    "description": "Recommend strategic color schemes that align with brand identity, appeal to target audiences, and consider color psychology and accessibility standards."
+  },
+  {
+    "id": "ux-design-4",
+    "title": "Generate Wireframes",
+    "type": "gbs-prompts",
+    "category": "UX Design > Design & Prototyping",
+    "description": "Create detailed wireframes for user flows with strategic layout designs, intuitive navigation, and user-friendly interfaces that facilitate seamless experiences."
+  },
+  {
+    "id": "ux-design-5",
+    "title": "Generate Design Concepts",
+    "type": "gbs-prompts",
+    "category": "UX Design > Design & Prototyping",
+    "description": "Develop innovative design concepts that reflect brand identity, cater to user needs, and incorporate cutting-edge trends while pushing creative boundaries."
+  },
+  {
+    "id": "ux-design-6",
+    "title": "Create User Flows",
+    "type": "gbs-prompts",
+    "category": "UX Design > Strategy & Documentation",
+    "description": "Map comprehensive user journeys that outline intuitive, engaging pathways from initial interaction through task completion with detailed touchpoint analysis."
+  },
+  {
+    "id": "ux-design-7",
+    "title": "Write Design Guidelines",
+    "type": "gbs-prompts",
+    "category": "UX Design > Strategy & Documentation",
+    "description": "Create comprehensive design guidelines covering best practices for consistency, accessibility, and user experience optimization across all design elements."
+  },
+  {
+    "id": "ux-design-8",
+    "title": "Write Project Briefs",
+    "type": "gbs-prompts",
+    "category": "UX Design > Strategy & Documentation",
+    "description": "Develop detailed project briefs that outline goals, target audiences, scope, deliverables, and design approaches with clear timelines and responsibilities."
+  },
+  {
+    "id": "vba-1",
+    "title": "Create VBA Macro to Automate Reports in Powerpoint",
+    "type": "gbs-prompts",
+    "category": "VBA > Automation",
+    "description": "Develop VBA macros that automatically update PowerPoint presentations with Excel data, creating dynamic connections for seamless report generation."
+  },
+  {
+    "id": "vba-2",
+    "title": "Automate Email Sending From Outlook",
+    "type": "gbs-prompts",
+    "category": "VBA > Automation",
+    "description": "Create efficient VBA scripts that automate personalized email sending with attachments using contact data from Excel spreadsheets."
+  },
+  {
+    "id": "vba-3",
+    "title": "Write VBA Code to Automate Excel Task",
+    "type": "gbs-prompts",
+    "category": "VBA > Automation",
+    "description": "Develop custom VBA solutions for automating repetitive Excel tasks including data manipulation, formatting, and report generation with user-friendly interfaces."
+  },
+  {
+    "id": "vba-4",
+    "title": "Optimize Existing VBA Code",
+    "type": "gbs-prompts",
+    "category": "VBA > Code Management",
+    "description": "Analyze and optimize VBA code for improved performance, efficiency, and speed by identifying redundant sections and implementing best practices."
+  },
+  {
+    "id": "vba-5",
+    "title": "Make VBA Code More Readable",
+    "type": "gbs-prompts",
+    "category": "VBA > Code Management",
+    "description": "Refactor VBA code to improve readability, maintainability, and organization through better structure, naming conventions, and comprehensive documentation."
+  },
+  {
+    "id": "vba-6",
+    "title": "Develop Custom VBA Function",
+    "type": "gbs-prompts",
+    "category": "VBA > Function Development",
+    "description": "Create specialized VBA functions that perform specific calculations and automate repetitive tasks to improve data analysis efficiency and accuracy."
+  },
+  {
+    "id": "training-1-1",
+    "title": "Session 1.1: Prompt Engineering 101 for Recruiters",
+    "type": "training",
+    "category": "Session 1-1",
+    "description": "Your guide to moving from simple questions to expert commands."
+  },
+  {
+    "id": "training-1-2",
+    "title": "Session 1.2: AI-Powered Email &amp; Content Lab",
+    "type": "training",
+    "category": "Session 1-2",
+    "description": "Our Goal: To move beyond just drafting. Today, you will learn to use AI as your co-editor, creative partner, and summarizer for the most important writing you do: candidate outreach. We will learn to write better emails, faster — using the C.R.E.A.T.E. framework."
+  },
+  {
+    "id": "training-1-3",
+    "title": "Session 1.3: Success Spotlight & Prompt Clinic #1",
+    "type": "training",
+    "category": "Session 1-3",
+    "description": "Today is different. There are no new concepts. This session is all about you. We will see a real-world win from a peer and solve your real-world prompting challenges together, live."
+  },
+  {
+    "id": "training-2-1",
+    "title": "Session 2.1: AI for Advanced Sourcing",
+    "type": "training",
+    "category": "Session 2-1",
+    "description": "Our Goal: To use AI to move beyond obvious keywords and become true market intelligence experts. We will find better candidates, faster."
+  },
+  {
+    "id": "training-2-2",
+    "title": "Session 2.2: The Randstad AI Toolkit",
+    "type": "training",
+    "category": "Session 2-2",
+    "description": "Our Goal: To eliminate \"tool confusion\" with a simple decision-making framework that prioritizes security, integration, and efficiency."
+  },
+  {
+    "id": "training-2-3",
+    "title": "Session 2.3: Responsible AI & Final Showcase",
+    "type": "training",
+    "category": "Session 2-3",
+    "description": "Our Goal: To cover the most important topic of becoming responsible and ethical AI users, and then to celebrate your progress with a final showcase."
+  },
+  {
+    "id": "training-3-1",
+    "title": "Session 3.1: Data Insights with Gemini in Sheets",
+    "type": "training",
+    "category": "Session 3-1",
+    "description": "Welcome to the AI Champions Track! Today, we're taking a huge leap forward. You will learn how to make your data talk back to you, moving from being a user of data to becoming an analyst—all without writing a single complex formula."
+  },
+  {
+    "id": "training-3-2",
+    "title": "Session 3.2: Building an Intelligent Knowledge Base (No-Code RAG)",
+    "type": "training",
+    "category": "Session 3-2",
+    "description": "Let's ask a question that was impossible yesterday: What if you could \"talk\" to your entire team's history of CVs and interview notes? Today, we're going to build the tool that does exactly that."
+  },
+  {
+    "id": "training-4-1",
+    "title": "Session 4.1: Introduction to No-Code Automation",
+    "type": "training",
+    "category": "Session 4-1",
+    "description": "Our Goal: To build a workflow that completely automates a boring task. Let's connect the dots and build a system that works for you, even when you're not looking."
+  },
+  {
+    "id": "training-5-1",
+    "title": "Session 5.1: Becoming an AI Champion",
+    "type": "training",
+    "category": "Session 5-1",
+    "description": "Your journey so far has made you a skilled power user. This session is about the final, most important step: learning how to share that knowledge. You are now the AI leaders for your team. Your role is to empower, guide, and support."
+  },
+  {
+    "id": "training-5-2",
+    "title": "Session 5.2: Capstone Project Showcase",
+    "type": "training",
+    "category": "Session 5-2",
+    "description": "This is not a training session; it is a formal presentation to leadership. The objective is to demonstrate the tangible business value, ROI, and innovative potential of the tools our AI Champions have built."
+  },
+  {
+    "id": "training-6-1",
+    "title": "Session 6.1: Developing an RPO-Specific AI Roadmap",
+    "type": "training",
+    "category": "Session 6-1",
+    "description": "A Strategic Workshop for RPO Leadership. Our goal is to collaboratively build the strategic map that will guide our team's AI efforts for the next year, ensuring we invest in projects that deliver maximum business value."
+  },
+  {
+    "id": "training-7-1",
+    "title": "Session 7.1: The ROI of AI in Recruiting",
+    "type": "training",
+    "category": "Session 7-1",
+    "description": "A Strategic Workshop for RPO Leadership. Our goal is to build a data-driven, compelling business case for our top-priority project, turning our strategic ideas into funded, measurable projects."
+  }
+]

@@ -5,7 +5,8 @@
   "main": ".eleventy.js",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy && vite build --config vite.config.js",
+    "build": "npm run build:search-index && eleventy && vite build --config vite.config.js",
+    "build:search-index": "node scripts/build-search-index.js",
     "build:css": "npx tailwindcss -i ./shared/styles/base.css -o ./shared/styles/tailwind.css --minify",
     "lint": "eslint --config eslint.config.cjs .",
     "format": "prettier --write .",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
     "eslint": "^8.57.0",
+    "globals": "^15.6.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
