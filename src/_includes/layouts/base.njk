@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="/shared/hub-button.css">
     <link rel="stylesheet" href="/shared/styles/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    {% include "partials/analytics.njk" %}
 </head>
 <body class="antialiased bg-gray-50 text-gray-800">
     {% if nav %}
         {% include "partials/backButton.njk" %}
     {% endif %}
     {% block content %}{% endblock %}
+    {% include "partials/feedback.njk" %}
     {% include "partials/footer.njk" %}
     {% block scripts %}{% endblock %}
 </body>
