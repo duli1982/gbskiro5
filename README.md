@@ -2,6 +2,10 @@
 
 This repository hosts static web pages and assets used for GBS AI learning resources, including workshop materials and a prompt library.
 
+## Roadmap
+
+Curious about what's coming next? See the [project roadmap](./roadmap.md) for planned modules and milestones. It is updated quarterly to maintain transparency and momentum.
+
 ## Project Structure
 
 - `index.html` – landing page for the site
