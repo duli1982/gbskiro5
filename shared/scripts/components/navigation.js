@@ -22,11 +22,6 @@ export function initializeNavigation() {
     const closeBtn = qs('[data-mobile-menu-close]', { required: true });
     const menuItems = qsa('[data-mobile-menu-item]', menu);
 
-    // Accessibility attributes
-    openBtn.setAttribute('aria-expanded', 'false');
-    menu.setAttribute('role', 'menu');
-    menuItems.forEach(item => item.setAttribute('role', 'menuitem'));
-
     /**
      * Opens the mobile menu and overlay.
      */
@@ -34,7 +29,6 @@ export function initializeNavigation() {
       menu.classList.add('active');
       overlay.classList.add('active');
       document.body.style.overflow = 'hidden'; // Prevent background scrolling
-      openBtn.setAttribute('aria-expanded', 'true');
     };
 
     /**
@@ -44,22 +38,10 @@ export function initializeNavigation() {
       menu.classList.remove('active');
       overlay.classList.remove('active');
       document.body.style.overflow = ''; // Restore background scrolling
-      openBtn.setAttribute('aria-expanded', 'false');
     };
 
     // Event listeners
     openBtn.addEventListener('click', openMenu);
-    openBtn.addEventListener('keydown', (e) => {
-      if (['Enter', ' '].includes(e.key)) {
-        e.preventDefault();
-        openMenu();
-        menuItems[0]?.focus();
-      } else if (e.key === 'ArrowDown') {
-        e.preventDefault();
-        openMenu();
-        menuItems[0]?.focus();
-      }
-    });
     closeBtn.addEventListener('click', closeMenu);
     overlay.addEventListener('click', closeMenu);
 
@@ -72,24 +54,6 @@ export function initializeNavigation() {
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && menu.classList.contains('active')) {
         closeMenu();
-        openBtn.focus();
-      }
-    });
-
-    menu.addEventListener('keydown', (e) => {
-      const items = Array.from(menuItems);
-      const currentIndex = items.indexOf(document.activeElement);
-      if (e.key === 'ArrowDown') {
-        e.preventDefault();
-        const nextIndex = (currentIndex + 1) % items.length;
-        items[nextIndex].focus();
-      } else if (e.key === 'ArrowUp') {
-        e.preventDefault();
-        const prevIndex = (currentIndex - 1 + items.length) % items.length;
-        items[prevIndex].focus();
-      } else if (e.key === 'Escape') {
-        closeMenu();
-        openBtn.focus();
       }
     });
 
